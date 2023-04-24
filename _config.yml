@@ -349,8 +349,8 @@ plugins:
 #   yandex:              <verification-id>
 
 # Used for twitter cards
-# twitter:
-#   username:            <username>
+twitter:
+  username:            <username>
 
 # Used for facebook open graph
 # facebook:
@@ -359,11 +359,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+social:
+  name:                <Seongrok> <Kim>
+  links:
+    - https://twitter.com/rocknche
+    - https://github.com/LearningnRunning
 
 
 # Plugin Configs

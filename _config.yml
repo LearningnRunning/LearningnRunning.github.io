@@ -350,7 +350,7 @@ plugins:
 
 # Used for twitter cards
 twitter:
-  username:            <username>
+  username:            rocknche
 
 # Used for facebook open graph
 # facebook:
@@ -363,7 +363,7 @@ social:
   name:                <Seongrok> <Kim>
   links:
     - https://twitter.com/rocknche
-    - https://github.com/LearningnRunning
+    - https://github.com/<LearningnRunning>
 
 
 # Plugin Configs

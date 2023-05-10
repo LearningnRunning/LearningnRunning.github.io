@@ -4,6 +4,8 @@ title:  "개발하고 달리 보이는 것"
 date:   2022-08-08 21:07:11 +0900
 categories: Tech review
 ---
+### 개발하고 달리 보이는 것
+
 ### 신한은행에서 내놓은 배달어플 "땡겨요"
 ![](https://velog.velcdn.com/images/sungrok7/post/8604b488-2927-4093-8f67-12d53529bf33/image.png)
 ## 기본 배달어플과의 차이점

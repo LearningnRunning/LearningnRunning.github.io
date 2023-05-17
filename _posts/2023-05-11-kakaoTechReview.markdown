@@ -63,6 +63,7 @@ LLM을 활용하는 스킬을 가진 개발자의 미래에 대해 공통적으�
 세미나에서 좋은 자료를 많이 주셨다.
 
 [프롬프트 엔지니어링 정리](https://tech.kakaoenterprise.com/188)
+[개발자를 위한 ChatGPT 프롬프트 엔지니어링: OpenAI 및 DeepLearning.AI의 단기 과정](https://youtu.be/H4YK_7MAckk)
 [NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)
 NeMo Guardrails는 프로그래밍 가능한 가드레일을 LLM 기반 대화형 시스템에 쉽게 추가하기 위한 오픈 소스 툴킷
 

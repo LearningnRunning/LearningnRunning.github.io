@@ -27,7 +27,7 @@ title:                 Learning&Running
 description:           >
   Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
   with a focus on personal sites that are meant to impress.
-
+url: https://learningnrunning.github.io
 # A shorter description for the sidebar.
 tagline:               A space for inspection and recording.
 
@@ -80,7 +80,7 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-theme: jekyll-theme-hydejack
+# theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack@v9
 
 

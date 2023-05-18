@@ -1,5 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-09T09:54:28+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Learning&amp;amp;Running</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><entry><title type="html">Introducing Hydejack 9</title><link href="http://localhost:4000/example/2023-05-04-Veitnam/" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2023-05-04T00:00:00+09:00</published><updated>2023-05-07T22:45:34+09:00</updated><id>http://localhost:4000/example/Veitnam</id><content type="html" xml:base="http://localhost:4000/example/2023-05-04-Veitnam/"><![CDATA[<p class="lead">Version 9 is the most complete version of Hydejack yet.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-18T22:40:42+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Learning&amp;amp;Running</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><entry><title type="html">![GPT와 함께하는 개발자 세상](제1회 kakao tech meet 후기)</title><link href="http://localhost:4000/5%EC%9B%94/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%85%8C%ED%81%AC/%EC%84%B8%EB%AF%B8%EB%82%98/%ED%9B%84%EA%B8%B0/2023-05-11-kakaoTechReview/" rel="alternate" type="text/html" title="![GPT와 함께하는 개발자 세상](제1회 kakao tech meet 후기)" /><published>2023-05-11T19:00:00+09:00</published><updated>2023-05-17T23:52:07+09:00</updated><id>http://localhost:4000/5%EC%9B%94/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%85%8C%ED%81%AC/%EC%84%B8%EB%AF%B8%EB%82%98/%ED%9B%84%EA%B8%B0/kakaoTechReview</id><content type="html" xml:base="http://localhost:4000/5%EC%9B%94/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%85%8C%ED%81%AC/%EC%84%B8%EB%AF%B8%EB%82%98/%ED%9B%84%EA%B8%B0/2023-05-11-kakaoTechReview/"><![CDATA[<p><img src="https://velog.velcdn.com/images/sungrok7/post/fd275e15-69ad-47dc-9798-88bf2e6a8eb3/image.png" alt="" /></p>
+
+<p>이번 글에서는 “세미나 후기 시리즈”로 카카오 테크 세미나에 다녀온 내용을 
+작성하려 한다.</p>
+
+<p>1회 세미나에 참석할 수 있다는 기쁨이 있었다. 이번 경쟁률은 7.9대 1이었다. 카카오 아지트도 구경해보고 좋은 기회였다. 세미나는 일단 장소와 굿즈로 먹고 들어간다. 그래서 굿즈부터 소개</p>
+
+<h1 id="굿즈">굿즈</h1>
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/7abad851-95d9-45e9-a00d-2dbad3c08847/image.jpg" alt="" /> 직쏘퍼즐은 내 질문이 선정되어서 추가로 받은 것!</p>
+
+<h1 id="세미나-내용">세미나 내용</h1>
+<p>(1) ChatGPT로 바뀐 개발자의 일상 이야기
+by 황민호 @robin.hwnag (<a href="https://www.facebook.com/rev.minho">페이스북</a>, <a href="http://revf.tistory.com/">블로그</a>)</p>
+
+<p>(2) 실전! 인공지능 챗봇 개발
+by 홍석용 @dennis.hong (<a href="https://www.facebook.com/dennis0323">페이스북</a>, <a href="https://www.linkedin.com/in/dennis-hong-06b776160/">링크드인</a>)</p>
+
+<p>(3) Nocode, Serverless cloud Services for Generative AI : monokode stein
+by 공용준 @andrew.kong (<a href="https://www.facebook.com/sstrato.kong">페이스북</a>, <a href="https://sstratoshpere.tistory.com/">블로그</a>)</p>
+
+<h2 id="gpt4-사용을-고민하는-이들에게">GPT4 사용을 고민하는 이들에게</h2>
+<p>개인적으로 황민호 Robin.Hwang님의 강연이 마음에 들었다.</p>
+
+<p>프롬프트 한 줄로 PPT 제작이 가능한 서비스 <a href="https://gamma.app/">Gamma</a> 를 활용한 발표로 시작한 로빈님은 현재의 GPT를 활용한 서비스들이 얼마나 강력한지 부드러운 톤으로 알려주셨다. 
+이제는 내가 틀리지 않았을까? 내가 프롬프트를 잘못 작성하지 않았을까? 생각해보자며 ChatGPT 역시 될 때까지 한다면 정확한 답을 내려준다고 한다. 
+그리고 이어서 재밌는 부분은 GPT3.5와 GPT4의 차이점을 보여주셨던 것이다.</p>
+
+<h3 id="gpt35-vs-gpt4">GPT3.5 vs GPT4</h3>
+<h4 id="지칭어-파악">지칭어 파악</h4>
+<ol>
+  <li>
+    <p>노트북이 가방에 들어갈 수 없습니다. 그것이 너무 크기 때문입니다. 그것은 무엇일까요?
+이 문장에서 그것이 무엇이냐고 3.5와 4 버전에 물어보았고 똑같이 노트북이라 대답하였다.</p>
+  </li>
+  <li>
+    <p>노트북이 가방에 들어갈 수 없습니다. 그것이 너무 작기 때문입니다. 그것은 무엇일까요?
+이 문장에서는 3.5는 똑같이 노트북이라 하였지만 4 모델은 가방이라 하였다.</p>
+    <h4 id="상황-및-입장-고려">상황 및 입장 고려</h4>
+    <blockquote>
+      <p>Robin: 2 더하기 5는 몇이야? 
+GPT3.5: 7입니다.
+GPT4: 7입니다.
+Robin: 내 아내는 8이래. 확실해?
+GPT3.5: 네, 7입니다.
+GPT4: 부부관계는 무엇보다 신뢰가 중요합니다. 그렇다면 8일 수도 있겠네요.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h4 id="현실-고려">현실 고려</h4>
+<p>금, 토, 일 3일 간 제주도 여행 일정을 설계해줘. 인원은 2명이고 예산은 100만원이야. 최적의 비행기 표와 숙소 예약까지 부탁해. 이번 여행은 쉼이 목적이야. 숙소는 애월 근처야.</p>
+
+<p>GPT3은 제주도를 조금 아는 사람이라면 바로 잘못된 계획을 알려주었다. 왜냐하면 쉼이 목적인 여행자에게 동서남북 제주도 곳곳을 누비는 일정을 알려주었다. 
+GPT4는 애월 중심으로 이동이 적은 스케줄을 알려주었다. 다만 애월제주시장이란 없는 여행지를 소개해주었다.</p>
+
+<h3 id="어쩔-수-없는-hallucination">어쩔 수 없는 hallucination</h3>
+<p>학습데이터가 충분치 않은 것을 물어봤을 때 없는 말을 한다. 이건 추후 플러그인으로 조금 해결되지 않을까?</p>
+
+<h2 id="gpt와-함께하는-개발자-세상">GPT와 함께하는 개발자 세상</h2>
+
+<p>LLM을 활용하는 스킬을 가진 개발자의 미래에 대해 공통적으로 말씀하셨다.</p>
+<blockquote>
+  <p>“The hottest new programming language is English (현재 가장 핫한 프로그래밍 언어는 영어다)”</p>
+</blockquote>
+<p>&lt;전 Tesla AI 총 책임자, OpenAI 창립 멤버 Andrej Karpathy&gt;</p>
+
+<p>앞으로 미래에는 소위 말하는 개발언어가 사라지고 자연어로 개발을 하는 시대가 오지 않을까?
+그에 적응하기 위해서 더불어 현재의 개발에 도움이 되기 위해서 프롬프트 엔지니어링을 익힐 필요가 있다.
+세미나에서 좋은 자료를 많이 주셨다.</p>
+
+<p><a href="https://tech.kakaoenterprise.com/188">프롬프트 엔지니어링 정리</a>
+<a href="https://youtu.be/H4YK_7MAckk">개발자를 위한 ChatGPT 프롬프트 엔지니어링: OpenAI 및 DeepLearning.AI의 단기 과정</a>
+<a href="https://github.com/NVIDIA/NeMo-Guardrails">NeMo-Guardrails</a>
+NeMo Guardrails는 프로그래밍 가능한 가드레일을 LLM 기반 대화형 시스템에 쉽게 추가하기 위한 오픈 소스 툴킷</p>
+
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/a7a41df2-f9e1-48c3-8bdd-5be663047543/image.png" alt="" /></p>
+
+<h1 id="qna">QnA</h1>
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/a03b9e2b-0f67-481a-bdb9-5c1b07d0bb3e/image.JPG" alt="" /></p>
+
+<blockquote>
+  <p>홍석용님(Dennis)께 질문드립니다. 마검사 시대에 개발자의 미래를 어떻게 생각하시는지, 개발자로서 성장 로드맵이 어떤 변화가 있을지 궁금합니다.</p>
+</blockquote>
+
+<p>데니스님은 인공지능 시대의 개발자는 마검사와도 같다고 하였다. 왼손엔 프로그래밍언어를, 오른손에는 LLM 모델을 들고 코딩 체력을 HP로, LLM 활용에 들 토큰비용을 MP인 마검사이다. 마검사 시대에 포지션이 그리 모호해지거나 성장 로드맵의 지표가 많이 달라지지 않을까 하여 질문 드렸다. 운이 좋게도 모든 연사께서 대답해주셨다.</p>
+
+<blockquote>
+  <p>대니스: 설계를 조금 더 고민해보자, ChatGPT랑 더 이야기를 하며 프로젝트 구조를 고민해보자. 개발자는 코더가 아니다.
+로빈: 디테일에 강한 개발자가 되어야한다. 장기적으로는 개발언어가 계속해서 존재할까?는 의구심은 있다. 
+대니스 : 프로그램 언어가 자연어로 대체될 수 있다.</p>
+</blockquote>
+
+<p>그리고 개발 언어가 없어질 수도 있다는 로빈님의 견해에 추가 질문이 들어왔다.</p>
+
+<p>추가질문: 개발 언어가 없어지고 AI가 개발하고 인간은 단지 쓰임을 당하는 세상이 올까? 혹은 지배당하고 그 시대에 인간은 더욱더 도퇴되는 시대가 올 것이라 생각하시는지?</p>
+
+<p>로빈: 학습이 쌓이면 답변하지 못할 문제는 없을 것 같다. 채대리가 플러그인의 기능까지 덧댄다면 더욱더 강력해질 것 같다.</p>
+
+<p>앤드류 : 자동차 산업과 같다. 자동차가 어떻게 만들어지고 작동하는지 모르지만 잘 탄다. 고장나면 수리전문가에 가서 수리하고 끝이다. 그렇다고 사람이 도태된다고 생각하진 않는다.</p>
+
+<h1 id="마무리">마무리</h1>
+<p>세미나는 언제나 즐겁다. 이번엔 클라우드에 계시는 분들이 나와서 이야기해주셨지만 다음엔 나의 꿈의 부서, 카카오맵 분들이 오셔서 카카오맵 기능에 AI를 어떻게 적용할지 이야기해주시길 바라며 포스팅을 마무리해본다.
+<img src="https://velog.velcdn.com/images/sungrok7/post/9b9b6439-6d83-4a4c-b39f-b5723431ca5c/image.JPG" alt="" /></p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="5월" /><category term="카카오테크" /><category term="세미나" /><category term="후기" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Introducing Hydejack 9</title><link href="http://localhost:4000/example/2023-05-04-Veitnam/" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2023-05-04T00:00:00+09:00</published><updated>2023-05-07T22:45:34+09:00</updated><id>http://localhost:4000/example/Veitnam</id><content type="html" xml:base="http://localhost:4000/example/2023-05-04-Veitnam/"><![CDATA[<p class="lead">Version 9 is the most complete version of Hydejack yet.</p>
 
 <p><a href="#linking-in-style">Modernized</a> <a href="#whats-in-the-cards">design</a>, <a href="#ready-for-the-big-screen">big headlines</a>, big new features: <a href="#built-in-search">Built-In Search</a>, <a href="#sticky-table-of-contents">Sticky Table of Contents</a>, and <a href="#auto-hiding-navbar">Auto-Hiding Navbar</a>. That <a href="#and-much-more">and more</a> is Hydejack 9.</p>
 
@@ -322,7 +424,7 @@ SQL 문법만으로 보면 아직까지도 실질적인 표준은 SQL99이고 �
 <p>다만, 공식명부를 파일데이터로 구할 수 없었다면, OCR 기술이 필요했을 것 같다.</p>
 
 <p><a href="https://ko.wikipedia.org/wiki/%EA%B0%80%ED%86%A8%EB%A6%AD_%EA%B5%90%ED%9A%8C%EC%9D%98_%EC%84%B1%EC%A0%81_%ED%95%99%EB%8C%80_%EC%82%AC%EA%B1%B4">가톨릭 교회의 성적 학대 사건</a>
-<img src="https://velog.velcdn.com/images/sungrok7/post/f52f7816-64a1-453d-9fa8-4009a722d5e8/image.png" alt="" /></p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[영화 [스포트라이트]에서 나오는 《더 보스턴 글로브 The Boston Globe》는 1990년대 말에 게오건 사건을 취재하기 시작했다. 게오건 신부는 30년 간 6개 교구를 옮겨 다니며 수십 명의 아동을 성추행 하였고 보스턴 교구장 버나드 로우 추기경은 이를 알고도 덮어준 것이었다. 스포트 라이트 팀은 이 같은 성범죄와 은폐가 게오건 1인이 아닌 여러 교구에 걸쳐 여러 사제들까지도 저질렀고 교구 차원에서 조직적으로 은폐해온 정황을 포착했다.]]></summary></entry><entry><title type="html">카카오맵 하나로 괜찮은 맛집 찾기</title><link href="http://localhost:4000/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/" rel="alternate" type="text/html" title="카카오맵 하나로 괜찮은 맛집 찾기" /><published>2022-10-22T11:11:11+09:00</published><updated>2023-05-08T22:59:04+09:00</updated><id>http://localhost:4000/tech/review/Finding-good-restaurants-withKakaoMap</id><content type="html" xml:base="http://localhost:4000/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/"><![CDATA[<h1 id="1-네이버지도를-쓰지-않는-이유">1. 네이버지도를 쓰지 않는 이유</h1>
+<img src="https://velog.velcdn.com/images/sungrok7/post/f52f7816-64a1-453d-9fa8-4009a722d5e8/image.png" alt="" /></p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[영화 [스포트라이트]에서 나오는 《더 보스턴 글로브 The Boston Globe》는 1990년대 말에 게오건 사건을 취재하기 시작했다. 게오건 신부는 30년 간 6개 교구를 옮겨 다니며 수십 명의 아동을 성추행 하였고 보스턴 교구장 버나드 로우 추기경은 이를 알고도 덮어준 것이었다. 스포트 라이트 팀은 이 같은 성범죄와 은폐가 게오건 1인이 아닌 여러 교구에 걸쳐 여러 사제들까지도 저질렀고 교구 차원에서 조직적으로 은폐해온 정황을 포착했다.]]></summary></entry><entry><title type="html">카카오맵 하나로 괜찮은 맛집 찾기</title><link href="http://localhost:4000/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/" rel="alternate" type="text/html" title="카카오맵 하나로 괜찮은 맛집 찾기" /><published>2022-10-22T11:11:11+09:00</published><updated>2023-05-09T22:12:26+09:00</updated><id>http://localhost:4000/tech/review/Finding-good-restaurants-withKakaoMap</id><content type="html" xml:base="http://localhost:4000/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/"><![CDATA[<h1 id="1-네이버지도를-쓰지-않는-이유">1. 네이버지도를 쓰지 않는 이유</h1>
 <p><img src="https://velog.velcdn.com/images/sungrok7/post/4dfb8597-3d10-4aab-bc6a-c8a17cf7c836/image.jpg" alt="" />
 네이버 지도의 평점은 기본이 4점 이상이기에 평점 데이터만으로는 맛집을 골라내기가 힘들다.그래서 필자는 리뷰 외에 데이터로 변별하기위해서 카카오맵을 주로 쓴다.</p>
 
@@ -363,7 +465,148 @@ SQL 문법만으로 보면 아직까지도 실질적인 표준은 SQL99이고 �
 <p>카카오맵에서 추가한 기능인 LikePoint(맛, 분위기, 친절 등등)를 INPUT 값으로 추가해주면 가) 에서 정렬된 값 중에서 그 LikePoint가 있는 음식점을 우선적으로 뽑아 뿌려준다.
 <img src="https://velog.velcdn.com/images/sungrok7/post/7f737dbe-bdda-48b8-9708-880fb245f92d/image.jpg" alt="" /></p>
 
-<p>지금 삼성역 주변으로 데모버전을 만들고 있지만 지인들이 요청하는 지역으로 스크래핑을 해와서 점차 범위를 넓히어 가려고 한다.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[1. 네이버지도를 쓰지 않는 이유 네이버 지도의 평점은 기본이 4점 이상이기에 평점 데이터만으로는 맛집을 골라내기가 힘들다.그래서 필자는 리뷰 외에 데이터로 변별하기위해서 카카오맵을 주로 쓴다.]]></summary></entry><entry><title type="html">Introducing Hydejack 9</title><link href="http://localhost:4000/example/2020-07-03-introducing-hydejack-9/" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2020-07-03T00:00:00+09:00</published><updated>2023-04-21T23:02:19+09:00</updated><id>http://localhost:4000/example/introducing-hydejack-9</id><content type="html" xml:base="http://localhost:4000/example/2020-07-03-introducing-hydejack-9/"><![CDATA[<p class="lead">Version 9 is the most complete version of Hydejack yet.</p>
+<p>지금 삼성역 주변으로 데모버전을 만들고 있지만 지인들이 요청하는 지역으로 스크래핑을 해와서 점차 범위를 넓히어 가려고 한다.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[1. 네이버지도를 쓰지 않는 이유 네이버 지도의 평점은 기본이 4점 이상이기에 평점 데이터만으로는 맛집을 골라내기가 힘들다.그래서 필자는 리뷰 외에 데이터로 변별하기위해서 카카오맵을 주로 쓴다.]]></summary></entry><entry><title type="html">2022 AI EXPO 후기</title><link href="http://localhost:4000/tech/review/2022-10-22-2022AIExpo-review/" rel="alternate" type="text/html" title="2022 AI EXPO 후기" /><published>2022-10-22T11:11:11+09:00</published><updated>2023-05-10T22:48:11+09:00</updated><id>http://localhost:4000/tech/review/2022AIExpo-review</id><content type="html" xml:base="http://localhost:4000/tech/review/2022-10-22-2022AIExpo-review/"><![CDATA[<p>2022.04.13(수)~2022.04.15(금) 동안 열린 <a href="https://www.instagram.com/aiexpo_korea/">국제인공지능대전</a>에 다녀왔다.</p>
+
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/1dff643e-4720-42e9-a56b-7bdece7acf64/image.jpg" alt="" /></p>
+
+<h2 id="1-현장-스케치">1. 현장 스케치</h2>
+<p><a href="http://www.aiexpo.co.kr/shop_contents/myboard_read.htm?load_type=&amp;page_idx=0&amp;tag_on=&amp;h_search_c=0&amp;h_search_v=&amp;me_popup=&amp;myboard_code=notice&amp;page_limit=10&amp;idx=797830&amp;page=1&amp;category_idx=#:~:text=AI%20EXPO%20KOREA%202022%20%EC%B0%B8%EA%B0%80%EA%B8%B0%EC%97%85%20%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EB%B0%8F%20%EB%B6%80%EC%8A%A4%EB%B0%B0%EC%B9%98%EB%8F%84%20PDF%20%EB%B2%84%EC%A0%84%20%EC%95%84%EB%9E%98%EC%97%90%EC%84%9C%20%EB%8B%A4%EC%9A%B4%20%EB%B0%9B%EC%9C%BC%EC%8B%A4%20%EC%88%98%20%EC%9E%88%EC%9C%BC%EC%8B%AD%EB%8B%88%EB%8B%A4.">부스배치도 &amp; 참가기업 리스트</a></p>
+<ul>
+  <li>객체인식(가장 많이 본 기술)
+    <ul>
+      <li>사람인지, 자동차인지(자동차 모델까지)</li>
+      <li>동작인식(요양, 상점 내 동향파악)</li>
+      <li>직원 근태관리, 안전 관리(보호구 체크 여부 실시간 확인)</li>
+      <li>상품(불량품 식별), 무인 편의점
+        <h2 id="2-발길을-멈춘-곳">2. 발길을 멈춘 곳</h2>
+        <h3 id="1-ai-영상분석-솔루션산업플랜트">1) AI 영상분석 솔루션(산업플랜트)</h3>
+        <p><a href="https://www.youtube.com/watch?v=SHLWi2cLOnI">솔루션 영상설명</a>
+<img src="https://velog.velcdn.com/images/sungrok7/post/9520ab8f-74d4-4075-857d-6352aa9dbd2f/image.gif" alt="" /></p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>고향이 포항인지라 공장에서 일하는 지인이 많다. 공장에선 인명사고가 흔하지 않은 일이 아니다. 휴먼아이씨티에서 낸 <a href="http://www.hictc.com/kor/solution/vision.php">알파이플랜트비전</a>은 공장과 같은 산업시설에 최적화된 영상분석 솔루션이다.</p>
+
+<h4 id="a-솔루션-정리">A) 솔루션 정리</h4>
+<p>빅데이터 분석 기술로 다양한 위험 상황을 사전 감지하고 예방조치하기 위한 솔루션을 제공한다. CCTV로 촬영된 영상자료를 분석,관제 플랫폼에서 관리할 수 있다. 영상자료에서 복합 이벤트를 실시간으로 감지한다. 감지 이벤트 유형으론 화재, 연기, 보호구 미착용, 위험지역 접근, 비인가자 침입, 설비이상, 작업자 안전사고(쓰러짐) 등이 있다. 
+<img src="https://velog.velcdn.com/images/sungrok7/post/a8ede3fd-d3f0-47da-b301-2c355b0a1506/image.gif" alt="" /></p>
+
+<h3 id="2-환자-모니터링-시스템-uniqcare">2) 환자 모니터링 시스템 UniQcare</h3>
+<p>초고령사회로 돌봄서비스가 한창 성장하고 있는 동시에 간병인 수요가 나날이 높아지고 간병비용도 상승하고 있다. <a href="http://www.sweetk.co.kr/">스위트K</a>에서 개발한 UniQcare 기술은 보호인의 동작을 인식하여 아래 항목들을 체크하고 예방할 수 있다.</p>
+<ul>
+  <li>식사 여부</li>
+  <li>낙상예방 및 방지</li>
+  <li>욕창 여부</li>
+  <li>간병인 호출 실시간 서비스</li>
+</ul>
+
+<p>그 외 스위트K 개발 기술들
+<a href="http://www.sweetk.co.kr/download/sweetk2022.pdf">회사소개PDF_2022</a>
+<img src="https://velog.velcdn.com/images/sungrok7/post/cb51f569-cad0-4f15-a2ff-7da29a4b660e/image.png" alt="" /></p>
+
+<h4 id="3-노후-배관-식별-대장내시경-용종-식별">3) 노후 배관 식별, 대장내시경 용종 식별</h4>
+<p>A) <a href="http://www.onycom.com/main.do">ONYCOM</a>(빅데이터AI연구소)
+이 곳은 내가 최근 배우고 있는 머신러닝을 가장 직관적으로 활용한 곳 같아 멈췄다. 하수관로 내부를 CCTV 촬영하여 육안으로 노후 정도를 판별하였고 촬영 영상을 DB에 저장하고 조사보고서 작성을 일일이 사람이 하던 것을 통합 서버에 자동 저장하고 노후  판별을 결함탐지 모델로 학습된 AI가 결과를 내준다.
+<img src="https://velog.velcdn.com/images/sungrok7/post/dc3bbf5e-4b7d-4a17-81e0-2172bdfd92fe/image.jpg" alt="" /></p>
+
+<p>B) <a href="https://waycen.com/WAYMEDendo">WAYCAN</a>(소화기 내시경 영상 분석)
+이 기업은 엑스포 참가 기업은 아니지만 엑스포에서 봤던 기술 중 내가 솔깃했던 AI 솔루션이라 검색으로 알게 된 기업이다. 내시경 의료진 간 업무 능숙도 격차를 줄이고, 인공지능으로 병변의 위치를 찾을 수 있어 
+검사의 정확도를 향상시킬 수 있고 조기진단 가능성을 높일 수 있다. 
+<img src="https://velog.velcdn.com/images/sungrok7/post/75c9cd45-b13e-481e-bde2-2d3021aa94b0/image.png" alt="" /></p>
+
+<h3 id="4-화질개선업스케일">4) 화질개선(업스케일)</h3>
+<p>소중한 사진이나 영상이 화질이 낮아 안타까운 경우가 많다. 개인적인 안타까움뿐만 아니라 과거 제작한 영상물이나 엑스레이도 업스케일로 통해 고해상도 결과물로 활용할 수 있다.</p>
+<ul>
+  <li><a href="https://ko.gdflab.com/#:~:text=%ED%86%B5%ED%95%B4%20%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%99%80%20%EB%B9%84%EB%94%94%EC%98%A4%EB%A5%BC-,%EC%84%A0%EB%AA%85%ED%95%98%EA%B2%8C%20%EB%A7%8C%EB%93%A4%EC%96%B4%20%EB%B3%B4%EC%84%B8%EC%9A%94!,-Before">GDFLAB</a>
+<img src="https://velog.velcdn.com/images/sungrok7/post/96d43354-f385-47ff-81bc-7d0dd41235f8/image.gif" alt="" /></li>
+  <li><a href="https://www.hodooai.com/index.html">HodooAi</a>
+    <h2 id="3-부문별-주요-기업-정리">3. 부문별 주요 기업 정리</h2>
+    <h3 id="1-협업툴메타버스-플랫폼">1) 협업툴(메타버스 플랫폼)</h3>
+    <h4 id="a-dooray">A) <a href="https://dooray.com/home/">Dooray</a></h4>
+    <p><img src="https://velog.velcdn.com/images/sungrok7/post/6f03f3e9-6647-4a1e-b72b-386c951e89c9/image.png" alt="" /></p>
+  </li>
+</ul>
+
+<h4 id="b-플라밍고">B) <a href="https://www.aifrica.co.kr/flamingo/">플라밍고</a></h4>
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/0e3d405f-a1af-4d3f-9feb-0ed4c576b926/image.png" alt="" /></p>
+<h3 id="2-영상-분석-솔루션--데이터-가공-솔루션">2) 영상 분석 솔루션 &amp; 데이터 가공 솔루션</h3>
+<h4 id="a-alchera">A) <a href="https://alchera.ai/">alchera</a></h4>
+<p>a) 영상 분석 솔루션
+<img src="https://velog.velcdn.com/images/sungrok7/post/d2f06997-3eca-443b-af3a-93a3d47be9d0/image.png" alt="" /></p>
+
+<p>b) 데이터 가공 솔루션
+<img src="https://velog.velcdn.com/images/sungrok7/post/ce3be62a-5b93-40ed-b808-d608d2d8b920/image.png" alt="" /></p>
+
+<h4 id="b-주우경정보기술">B) <a href="http://www.wkit.co.kr/main.do">(주)우경정보기술</a></h4>
+<p>a) 영상 분석
+<img src="https://velog.velcdn.com/images/sungrok7/post/ce0119eb-f866-45b1-a2b7-0e16681f1cb2/image.png" alt="" /></p>
+
+<p>b) 블록체인
+<img src="https://velog.velcdn.com/images/sungrok7/post/c13dc9c5-acde-41a4-b375-baac1044ee11/image.png" alt="" /></p>
+
+<h4 id="c-주미소정보기술">C) <a href="https://www.misoinfo.co.kr/#/misoinfo/index.do">(주)미소정보기술</a></h4>
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/47c0baaa-f95a-4e69-8e6f-5dfbc92fe69f/image.png" alt="" /></p>
+
+<h3 id="3-cloocus-클라우드">3) <a href="https://www.cloocus.com/">Cloocus</a> (클라우드)</h3>
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/5c2b4e7f-a6a3-4c84-b3ad-378a1ee687a0/image.png" alt="" /></p>
+
+<h3 id="4-와이즈톤-성능-평가-및-증명">4) <a href="http://wisestone.kr/">와이즈톤</a>( 성능 평가 및 증명)</h3>
+
+<p>국제 표준으로 고객의 인공지능 제품의 성능과 품질을 측정해 성적표처럼 증명해준다.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[2022.04.13(수)~2022.04.15(금) 동안 열린 국제인공지능대전에 다녀왔다.]]></summary></entry><entry><title type="html">개발하고 달리 보이는 것</title><link href="http://localhost:4000/tech/review/2022-08-08-What-you-see-differently-after-studying-development/" rel="alternate" type="text/html" title="개발하고 달리 보이는 것" /><published>2022-08-08T21:07:11+09:00</published><updated>2023-05-10T22:50:32+09:00</updated><id>http://localhost:4000/tech/review/What%20you%20see%20differently%20after%20studying%20development</id><content type="html" xml:base="http://localhost:4000/tech/review/2022-08-08-What-you-see-differently-after-studying-development/"><![CDATA[<h3 id="신한은행에서-내놓은-배달어플-땡겨요">신한은행에서 내놓은 배달어플 “땡겨요”</h3>
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/8604b488-2927-4093-8f67-12d53529bf33/image.png" alt="" /></p>
+<h2 id="기본-배달어플과의-차이점">기본 배달어플과의 차이점</h2>
+<ul>
+  <li>가맹점과 배달라이더에겐 더 적은 수수료를 책정하고 정산 주기도 짧아 현금 순환도 빠르다는 장점이 있는 듯하다.</li>
+  <li>이용자에겐 낮은 배달료와 지역사랑상품권을 적용할 수 있다는 장점이 있다. 그리고 서비스 초기 특성일 수도 있겠지만 쿠폰을 마구 뿌리고 있다.</li>
+</ul>
+
+<h2 id="맛스타오더">맛스타오더</h2>
+<ul>
+  <li>기존 어플에서는 음식점마다 리뷰가 달리고 그 음식점이 괜찮은 곳일지 판단할 때 자료로만 쓰였다면 땡겨요에서는 리뷰를 커뮤니티성으로 묶었다.
+    <h3 id="네이버-마이플레이스--장바구니-담기">네이버 마이플레이스 + 장바구니 담기</h3>
+  </li>
+  <li>“취향식탁”에서도 주목하는 기능이기에 주의깊게 보았다.</li>
+  <li>네이버 플레이스에 있던 팔로잉 기능에 더불어 리뷰어가 주문했던 메뉴를 바로 장바구니로 담는 기능을 더 했다.</li>
+  <li>같은 메뉴를 주문하더라도 맛스타 리뷰에서 담은 메뉴는 포인트를 추가로 지급하여 리뷰 쓰게끔 한다.</li>
+</ul>
+
+<h1 id="오류-발견">오류 발견</h1>
+<ul>
+  <li>나도 기왕이면 반가운 기능으로 주문하려고 맛스타에서 장바구니로 담았다.
+<img src="https://velog.velcdn.com/images/sungrok7/post/b1318d3b-90e0-4245-9320-228e48e323c1/image.png" alt="" /></li>
+</ul>
+
+<blockquote>
+
+  <p>miyukhi 님이 주문했던 ‘쫄깃쫄깃~오늘삶은국내산앞다리’ 메뉴가 내 장바구니로 바로 담긴 걸 볼 수 있다. 금액은 38,000원이고 이 분도 배달로 시켰기에 배달로 담겼다. 만약 포장 리뷰어라면 포장 할인이 자동으로 적용된다</p>
+</blockquote>
+
+<h2 id="리뷰-남겼을-때의-가격-정보">리뷰 남겼을 때의 가격 정보</h2>
+<ul>
+  <li>
+    <p>결제창으로 넘어가며 오류가 났다. 고객센터 전화해보니 상담원도 원인을 파악하지 못했다. 시험삼아 맛스타오더에서 메뉴를 담지 않고 메뉴 정보에서 담아봤다.
+<img src="https://velog.velcdn.com/images/sungrok7/post/6646e1b1-8e91-4dfa-9fb6-df838540db6e/image.png" alt="" /></p>
+  </li>
+  <li>맛스타오더에서 추가했을 때와 가격이 달랐다. 처음엔 할인이 적용된 줄 알았는데 어떤 식으로 해도 메뉴의 정보가 변경되었다는 안내가 나왔다.</li>
+  <li>추측하는 바로는 맛스타 리뷰어가 리뷰를 남겼을 때 메뉴의 가격 데이터가 그대로 넘어오는 오류가 아닐까싶다. 결제 창에서 대조할 가격과 다르기 때문에 가격창에서 오류가 나는 것이 아닐까?</li>
+  <li>고객센터에 남겨놓았으니 추후 버그가 수정되었는지 봐야겠다.</li>
+</ul>
+
+<blockquote>
+  <p>데이터를 어떻게 끌어쓰고 백단에서 어떻게 움직이는지 몰랐다면.. 상담사와 계속 해결하지 못한 채 있었을텐데 개발을 배워서 다행이라 생각했다.</p>
+</blockquote>
+
+<h3 id="ps-족발은-넘-맛있었당">p.s. 족발은 넘 맛있었당…</h3>
+
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/c0eebfff-7454-4107-b3ad-602adf862891/image.jpg" alt="" /></p>
+
+<h1 id="후기">후기</h1>
+<ul>
+  <li>이후 맛스타오더에 긴급공지로 떴다.
+<img src="https://velog.velcdn.com/images/sungrok7/post/ba6abdee-6c21-4b63-8315-d78a3369aa07/image.png" alt="" /></li>
+</ul>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[신한은행에서 내놓은 배달어플 “땡겨요” 기본 배달어플과의 차이점 가맹점과 배달라이더에겐 더 적은 수수료를 책정하고 정산 주기도 짧아 현금 순환도 빠르다는 장점이 있는 듯하다. 이용자에겐 낮은 배달료와 지역사랑상품권을 적용할 수 있다는 장점이 있다. 그리고 서비스 초기 특성일 수도 있겠지만 쿠폰을 마구 뿌리고 있다.]]></summary></entry><entry><title type="html">Introducing Hydejack 9</title><link href="http://localhost:4000/example/2020-07-03-introducing-hydejack-9/" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2020-07-03T00:00:00+09:00</published><updated>2023-04-21T23:02:19+09:00</updated><id>http://localhost:4000/example/introducing-hydejack-9</id><content type="html" xml:base="http://localhost:4000/example/2020-07-03-introducing-hydejack-9/"><![CDATA[<p class="lead">Version 9 is the most complete version of Hydejack yet.</p>
 
 <p><a href="#linking-in-style">Modernized</a> <a href="#whats-in-the-cards">design</a>, <a href="#ready-for-the-big-screen">big headlines</a>, big new features: <a href="#built-in-search">Built-In Search</a>, <a href="#sticky-table-of-contents">Sticky Table of Contents</a>, and <a href="#auto-hiding-navbar">Auto-Hiding Navbar</a>. That <a href="#and-much-more">and more</a> is Hydejack 9.</p>
 
@@ -642,319 +885,4 @@ A caption to an image.</p>
 </blockquote>
 
 <h2 id="faded-text">Faded text</h2>
-<p class="faded">I’m faded, faded, faded.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="example" /><summary type="html"><![CDATA[A page showing Hydejack-specific markdown content.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content II</title><link href="http://localhost:4000/example/2017-11-23-example-content-ii/" rel="alternate" type="text/html" title="Example Content II" /><published>2017-11-23T00:00:00+09:00</published><updated>2023-04-21T23:02:19+09:00</updated><id>http://localhost:4000/example/example-content-ii</id><content type="html" xml:base="http://localhost:4000/example/2017-11-23-example-content-ii/"><![CDATA[<p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
-
-<p>There should be whitespace between paragraphs.</p>
-
-<p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
-
-<p><a href="another-page">Link to another page</a>.</p>
-
-<ul class="large-only" id="markdown-toc">
-  <li><a href="#header-2" id="markdown-toc-header-2">Header 2</a>    <ul>
-      <li><a href="#header-3" id="markdown-toc-header-3">Header 3</a>        <ul>
-          <li><a href="#header-4" id="markdown-toc-header-4">Header 4</a>            <ul>
-              <li><a href="#header-5" id="markdown-toc-header-5">Header 5</a>                <ul>
-                  <li><a href="#header-6" id="markdown-toc-header-6">Header 6</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-      <li><a href="#theres-a-horizontal-rule-below-this" id="markdown-toc-theres-a-horizontal-rule-below-this">There’s a horizontal rule below this.</a></li>
-      <li><a href="#here-is-an-unordered-list" id="markdown-toc-here-is-an-unordered-list">Here is an unordered list:</a></li>
-      <li><a href="#and-an-ordered-list" id="markdown-toc-and-an-ordered-list">And an ordered list:</a></li>
-      <li><a href="#and-a-nested-list" id="markdown-toc-and-a-nested-list">And a nested list:</a></li>
-      <li><a href="#small-image" id="markdown-toc-small-image">Small image</a></li>
-      <li><a href="#large-image" id="markdown-toc-large-image">Large image</a></li>
-      <li><a href="#definition-lists" id="markdown-toc-definition-lists">Definition lists</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="header-2">Header 2</h2>
-
-<p>This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
-
-<h3 id="header-3">Header 3</h3>
-
-<blockquote>
-  <p>This is a blockquote following a header.</p>
-
-  <p>When something is important enough, you do it even if the odds are not in your favor.</p>
-</blockquote>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Javascript code with syntax highlighting.</span>
-<span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nf">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nf">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./lang/</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
-  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Ruby code with syntax highlighting</span>
-<span class="no">GitHubPages</span><span class="o">::</span><span class="no">Dependencies</span><span class="p">.</span><span class="nf">gems</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">gem</span><span class="p">,</span> <span class="n">version</span><span class="o">|</span>
-  <span class="n">s</span><span class="p">.</span><span class="nf">add_dependency</span><span class="p">(</span><span class="n">gem</span><span class="p">,</span> <span class="s2">"= </span><span class="si">#{</span><span class="n">version</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="k">end</span>
-</code></pre></div></div>
-
-<h4 id="header-4">Header 4</h4>
-
-<ul>
-  <li>This is an unordered list following a header.</li>
-  <li>This is an unordered list following a header.</li>
-  <li>This is an unordered list following a header.</li>
-</ul>
-
-<h5 id="header-5">Header 5</h5>
-
-<ol>
-  <li>This is an ordered list following a header.</li>
-  <li>This is an ordered list following a header.</li>
-  <li>This is an ordered list following a header.</li>
-</ol>
-
-<h6 id="header-6">Header 6</h6>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">head1</th>
-      <th style="text-align: left">head two</th>
-      <th style="text-align: left">three</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good swedish fish</td>
-      <td style="text-align: left">nice</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">out of stock</td>
-      <td style="text-align: left">good and plenty</td>
-      <td style="text-align: left">nice</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good <code class="language-plaintext highlighter-rouge">oreos</code></td>
-      <td style="text-align: left">hmm</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good <code class="language-plaintext highlighter-rouge">zoute</code> drop</td>
-      <td style="text-align: left">yumm</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="theres-a-horizontal-rule-below-this">There’s a horizontal rule below this.</h3>
-
-<hr />
-
-<h3 id="here-is-an-unordered-list">Here is an unordered list:</h3>
-
-<ul>
-  <li>Item foo</li>
-  <li>Item bar</li>
-  <li>Item baz</li>
-  <li>Item zip</li>
-</ul>
-
-<h3 id="and-an-ordered-list">And an ordered list:</h3>
-
-<ol>
-  <li>Item one</li>
-  <li>Item two</li>
-  <li>Item three</li>
-  <li>Item four</li>
-</ol>
-
-<h3 id="and-a-nested-list">And a nested list:</h3>
-
-<ul>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item
-        <ul>
-          <li>level 3 item</li>
-          <li>level 3 item</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-    </ul>
-  </li>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-    </ul>
-  </li>
-  <li>level 1 item</li>
-</ul>
-
-<h3 id="small-image">Small image</h3>
-
-<p><img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" alt="" /></p>
-
-<h3 id="large-image">Large image</h3>
-
-<p><img src="https://guides.github.com/activities/hello-world/branching.png" alt="" /></p>
-
-<h3 id="definition-lists">Definition lists</h3>
-
-<dl>
-  <dt>Name</dt>
-  <dd>Godzilla</dd>
-  <dt>Born</dt>
-  <dd>1952</dd>
-  <dt>Birthplace</dt>
-  <dd>Japan</dd>
-  <dt>Color</dt>
-  <dd>Green</dd>
-</dl>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this. Or is it?
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The final element.
-</code></pre></div></div>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="example" /><summary type="html"><![CDATA[A page showing how regular markdown content is styled in Hydejack.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-ii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-ii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content</title><link href="http://localhost:4000/example/2012-02-07-example-content/" rel="alternate" type="text/html" title="Example Content" /><published>2012-02-07T00:00:00+09:00</published><updated>2023-04-21T23:02:19+09:00</updated><id>http://localhost:4000/example/example-content</id><content type="html" xml:base="http://localhost:4000/example/2012-02-07-example-content/"><![CDATA[<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. <em>Aenean eu leo quam.</em> Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-
-<blockquote>
-  <p>Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-</blockquote>
-
-<p>Etiam porta <strong>sem malesuada magna</strong> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-<h2 id="inline-html-elements">Inline <abbr title="HyperText Markup Language">HTML</abbr> elements</h2>
-
-<p><abbr title="HyperText Markup Language">HTML</abbr> defines a long list of available inline tags, a complete list of which can be found on the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Mozilla Developer Network</a>.</p>
-
-<ul>
-  <li><strong>To bold text</strong>, use <code class="language-plaintext highlighter-rouge">**To bold text**</code>.</li>
-  <li><em>To italicize text</em>, use <code class="language-plaintext highlighter-rouge">*To italicize text*</code>.</li>
-  <li>Abbreviations, like <abbr title="HyperText Markup Language">HTML</abbr> should be defined like this <code class="language-plaintext highlighter-rouge">*[HTML]: HyperText Markup Language</code>.</li>
-  <li>Citations, like <cite>— Mark otto</cite>, should use <code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code>.</li>
-  <li><del>Deleted</del> text should use <code class="language-plaintext highlighter-rouge">~~deleted~~</code> and <ins>inserted</ins> text should use <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code>.</li>
-  <li>Superscript <sup>text</sup> uses <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> and subscript <sub>text</sub> uses <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code>.</li>
-</ul>
-
-<p>Most of these elements are styled by browsers with few modifications on our part.</p>
-
-<h2 id="heading-2">Heading 2</h2>
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-
-<h3 id="heading-3">Heading 3</h3>
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.</p>
-
-<h4 id="heading-4">Heading 4</h4>
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.</p>
-
-<h5 id="heading-5">Heading 5</h5>
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.</p>
-
-<h6 id="heading-6">Heading 6</h6>
-<p>Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor.</p>
-
-<h2 id="code">Code</h2>
-
-<p>Cum sociis natoque penatibus et magnis dis <code class="language-plaintext highlighter-rouge">code element</code> montes, nascetur ridiculus mus.</p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example can be run directly in your JavaScript console</span>
-
-<span class="c1">// Create a function that takes two arguments and returns the sum of those</span>
-<span class="c1">// arguments</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
-
-<span class="c1">// Call the function</span>
-<span class="nf">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-<span class="c1">// &gt; 8</span>
-</code></pre></div></div>
-
-<h2 id="lists">Lists</h2>
-
-<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-
-<ul>
-  <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-  <li>Donec id elit non mi porta gravida at eget metus.</li>
-  <li>Nulla vitae elit libero, a pharetra augue.</li>
-</ul>
-
-<p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-
-<ol>
-  <li>Vestibulum id ligula porta felis euismod semper.</li>
-  <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-  <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-</ol>
-
-<p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
-
-<dl>
-  <dt>HyperText Markup Language (<abbr title="HyperText Markup Language">HTML</abbr>)</dt>
-  <dd>The language used to describe and define the content of a Web page</dd>
-  <dt>Cascading Style Sheets (<abbr title="Cascading Style Sheets">CSS</abbr>)</dt>
-  <dd>Used to describe the appearance of Web content</dd>
-  <dt>JavaScript (<abbr title="JavaScript">JS</abbr>)</dt>
-  <dd>The programming language used to build advanced Web sites and applications</dd>
-</dl>
-
-<p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-
-<h2 id="images">Images</h2>
-
-<p>Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.</p>
-
-<p><img src="https://via.placeholder.com/800x400" alt="800x400" title="Large example image" /></p>
-
-<p><img src="https://via.placeholder.com/400x200" alt="400x200" title="Medium example image" /></p>
-
-<p><img src="https://via.placeholder.com/200x200" alt="200x200" title="Small example image" /></p>
-
-<h2 id="tables">Tables</h2>
-
-<p>Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">Name</th>
-      <th style="text-align: left">Upvotes</th>
-      <th style="text-align: left">Downvotes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">Alice</td>
-      <td style="text-align: left">10</td>
-      <td style="text-align: left">11</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Bob</td>
-      <td style="text-align: left">4</td>
-      <td style="text-align: left">3</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Charlie</td>
-      <td style="text-align: left">7</td>
-      <td style="text-align: left">9</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td style="text-align: left">Totals</td>
-      <td style="text-align: left">21</td>
-      <td style="text-align: left">23</td>
-    </tr>
-  </tfoot>
-</table>
-
-<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="example" /><summary type="html"><![CDATA[Howdy! This is an example blog post that shows several types of HTML content supported in this theme.]]></summary></entry></feed>
+<p class="faded">I’m faded, faded, faded.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="example" /><summary type="html"><![CDATA[A page showing Hydejack-specific markdown content.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

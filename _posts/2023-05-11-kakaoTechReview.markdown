@@ -3,11 +3,21 @@ layout: post
 title:  "![GPT와 함께하는 개발자 세상](제1회 kakao tech meet 후기)"
 date:   2023-05-11 19:00:00 +0900
 categories: 5월 카카오테크 세미나 후기
+description: >
+   테크 세미나 뽀개기_카카오편
+image: 
+  path: https://velog.velcdn.com/images/sungrok7/post/a03b9e2b-0f67-481a-bdb9-5c1b07d0bb3e/image.JPG
 ---
-![](https://velog.velcdn.com/images/sungrok7/post/fd275e15-69ad-47dc-9798-88bf2e6a8eb3/image.png)
+
+
+
+
+
 
 이번 글에서는 “세미나 후기 시리즈”로 카카오 테크 세미나에 다녀온 내용을 
 작성하려 한다.
+
+![](https://velog.velcdn.com/images/sungrok7/post/fd275e15-69ad-47dc-9798-88bf2e6a8eb3/image.png)
 
 1회 세미나에 참석할 수 있다는 기쁨이 있었다. 이번 경쟁률은 7.9대 1이었다. 카카오 아지트도 구경해보고 좋은 기회였다. 세미나는 일단 장소와 굿즈로 먹고 들어간다. 그래서 굿즈부터 소개
 

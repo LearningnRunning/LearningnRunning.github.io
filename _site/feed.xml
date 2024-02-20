@@ -1,5 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2023-05-19T00:00:12+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Learning&amp;amp;Running</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
-</subtitle><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><entry><title type="html">![GPT와 함께하는 개발자 세상](제1회 kakao tech meet 후기)</title><link href="http://localhost:4000/5%EC%9B%94/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%85%8C%ED%81%AC/%EC%84%B8%EB%AF%B8%EB%82%98/%ED%9B%84%EA%B8%B0/2023-05-11-kakaoTechReview/" rel="alternate" type="text/html" title="![GPT와 함께하는 개발자 세상](제1회 kakao tech meet 후기)" /><published>2023-05-11T19:00:00+09:00</published><updated>2023-05-17T23:52:07+09:00</updated><id>http://localhost:4000/5%EC%9B%94/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%85%8C%ED%81%AC/%EC%84%B8%EB%AF%B8%EB%82%98/%ED%9B%84%EA%B8%B0/kakaoTechReview</id><content type="html" xml:base="http://localhost:4000/5%EC%9B%94/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%85%8C%ED%81%AC/%EC%84%B8%EB%AF%B8%EB%82%98/%ED%9B%84%EA%B8%B0/2023-05-11-kakaoTechReview/"><![CDATA[<p><img src="https://velog.velcdn.com/images/sungrok7/post/fd275e15-69ad-47dc-9798-88bf2e6a8eb3/image.png" alt="" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-02-20T21:16:49+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Learning&amp;amp;Running</title><subtitle>Hydejack is a boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.
+</subtitle><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><entry><title type="html">스타트업 서비스 개발기</title><link href="http://localhost:4000/tech/review/2023-08-05-.Startup-service-development-period/" rel="alternate" type="text/html" title="스타트업 서비스 개발기" /><published>2023-08-05T11:11:11+09:00</published><updated>2023-08-12T23:22:00+09:00</updated><id>http://localhost:4000/tech/review/.Startup-service-development-period</id><content type="html" xml:base="http://localhost:4000/tech/review/2023-08-05-.Startup-service-development-period/"><![CDATA[<p>피부진단 프로젝트를 진행하며 대표님께 google 오픈소스 MediaPipe를 설명드린 적이 있다. 일본 출장을 다녀온 대표님은 얼마 안 되어, 슬랙이 왔다
+<img src="https://velog.velcdn.com/images/sungrok7/post/040d6b7c-db87-44ba-afe1-6513d2424bbd/image.png" alt="" /></p>
+
+<h1 id="mediapipe란">MediaPipe란?</h1>
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/0c55a2ca-8d73-4370-9cd3-1e40de99a5ef/image.png" alt="" /></p>
+
+<p>정확히 말하자면 MediaPipe 중 Face Mesh를 설명드렸었다. 얼굴의 landmark detection하여 위치값을 알려주는 오픈소스이다. SDK 탑재도 가능할 만큼 경량화 되어 있으면서도 빠른 분석을 해주는 굉장한 오픈소스이다. 눈동자 중심을 정확히 찍을 만큼 정확도도 높다.</p>
+
+<h1 id="그래서-관상은-어떻게">그래서 관상은 어떻게?</h1>
+<p>처음엔 아무리 일본 사람들이 관상을 좋아한다고 하지만 뷰티앱에 갑자기 관상?이란 생각이 들었다. 일단 가능 여부를 조사해보았다.</p>
+
+<blockquote>
+  <ol>
+    <li>눈과 눈썹 사이가 먼 남자는 대체로 단호한 성격을 가지지 못하여 거절을 잘 하지 못하고 우유부단한 성격이 많겠습니다.</li>
+    <li>눈빛에 힘이 없고 탁한 남자의 경우 엄밀히 말하면 바람을 피우는 남자보다는 꼭 여성분들이 피해야 하는 남자 관상이겠습니다.</li>
+    <li>눈꺼풀 아래에 점이 있는 남자는 정에 약하며 파란만장한 애정운을 타고난 관상입니다.
+출처_홍카페
+<img src="https://velog.velcdn.com/images/sungrok7/post/e58b6371-f8a1-4c7c-8292-9877c4374cc3/image.png" alt="" /></li>
+  </ol>
+</blockquote>
+
+<p>일단 관상을 판별하는 데 필요한 얼굴의 값들을 탐지하는 것에서 가능한 부분도 있었고 MediaPipe만으론 부족한 부분도 있었다. 탐지 후에는 그 값들을 활용하여 관상 결과 추론을 위해 군집화가 필요했고 그 전엔 관상에 대한 공부가 필요했다. 긴 프로젝트가 될 것 같았다. 애초에 대표님께서 관상을 말씀하신 이유는 빨리 끝낼 수 있는 프로젝트 같아서였기 때문에 대안을 말씀드렸다.(지금 생각하면 관상이 쉬웠을지도..)</p>
+
+<h2 id="밸런스-메이크업">밸런스 메이크업</h2>
+<p>셀카 한 번으로 이상적인 비율에 따른 메이크업 가이드를 제공하는 서비스
+<img src="https://velog.velcdn.com/images/sungrok7/post/99c023e6-5f21-4818-834f-0f2812330cfb/image.png" alt="" /><a href="https://m.blog.naver.com/2011jysky/220735193632">사진출처</a></p>
+
+<p>이는 길이 측정 만으로도 가능했다. 측정한 결과와 메이크업 기획이 더해져 황금비율에 따른 메이크업 가이드가 제공할 수 있다면, 꾸미는 법을 모르고 지냈던 사람들, 꾸미고 싶어 하는 사람들에게서 ‘촌티‘를 벗겨줄 수 있는 가이드가 될 수 있을 것 같았다. 메이크업 가이드는 모두가 완벽한 하나의 얼굴로 만들기 위함이 아닌 자신의 얼굴에서 더 조화로운 얼굴로 만들어 보는 것을 가이드로 줄 수 있으면 좋겠다 생각했다. 그건 외모지상주의가 아닌 개성주의와 또 상통하는 것 같아 더 적절하다 생각했다. ‘나에게 맞는 미‘, ‘내 얼굴에 맞는 메이크업’을 제시해주는 것이 목표라면 자신에게 필요한 정보는 집중해서 보는 일본 유포리세대에게도 매력적인 서비스가 될 거라 생각한다. 처음으로 PoC도 과정도 준비해봤다.</p>
+
+<h1 id="결론">결론</h1>
+<p>대표님은 바로 사내 마케터들을 불렀다. 일본에 진출해 있는 뷰티앱이기에 일본 마케터분도 계셨다. 그분을 콕 집어 밸런스메이크업 서비스가 당기냐 안 당기냐 한마디로 얘기해달라고 했다.</p>
+<blockquote>
+  <p>당깁니다, 그리고 도움이 많이 될 거 같습니다.</p>
+</blockquote>
+
+<p>그렇게 프로젝트가 시작되었다. 2023년 3월 15일이었다. 귀신 피하려다가 준비한 밸런스 메이크업 기획 제안이 오히려 호랑이를 만난 꼴이 된 거란 걸 3개월 동안 톡톡히 알게 되었다.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[피부진단 프로젝트를 진행하며 대표님께 google 오픈소스 MediaPipe를 설명드린 적이 있다. 일본 출장을 다녀온 대표님은 얼마 안 되어, 슬랙이 왔다]]></summary></entry><entry><title type="html">B마트의 큰 그림, 선물의 민족</title><link href="http://localhost:4000/tech/review/2023-07-16-B-mart-review/" rel="alternate" type="text/html" title="B마트의 큰 그림, 선물의 민족" /><published>2023-07-16T11:11:11+09:00</published><updated>2023-07-17T00:05:27+09:00</updated><id>http://localhost:4000/tech/review/B-mart-review</id><content type="html" xml:base="http://localhost:4000/tech/review/2023-07-16-B-mart-review/"><![CDATA[<p><img src="https://velog.velcdn.com/images/sungrok7/post/62326062-af0d-4364-984c-8d1040aef203/image.jpg" alt="" /></p>
+
+<p>B마트 -&gt; 마이크로풀필먼트센터 -&gt;  배민스토어
+<img src="https://velog.velcdn.com/images/sungrok7/post/29b1043a-22b8-4897-8e8d-082293d82b68/image.jpg" alt="" /></p>
+
+<p>배송이 점점 더 빨라지더니 이젠 거의 배달 수준이 된 서비스가 있다.</p>
+
+<h2 id="quick-commerce">Quick commerce</h2>
+<p>퀵커머스가 무엇일까 바드Bard에게 물어봤다. 퀵커머스(quick commerce)는 1시간 이내로 상품을 배송하는 서비스이다. 주로 식료품, 생활용품, 생필품 등을 대상으로 하며 소비자의 편의성을 높이고, 배송 시간을 단축시킨다는 장점이 있다만 그만큼 구축하기가 힘든다. 라는 답변을 하였다.</p>
+
+<h2 id="마이크로풀필먼트센터mfc">마이크로풀필먼트센터(MFC)</h2>
+<p>마이크로풀필먼트센터(MFC), 도심에 소규모 물류센터를 다량 확보하는 것은 퀵커머스 사업에서 큰 이점이다. 소규모 물류센터는 네이버와 쿠팡처럼 전통적인 풀필먼트 체계보다 규모가 작지만, 도심에 촘촘히 위치하고 있어 배송 시간을 단축할 수 있다. 게다가 배민은 수많은 배민커낵터도 보유하고 있다. 두 가지 이점으로 배민은 늘 하던 배달에서 발빠른 배송이 가능한 배민스토어로 확장이 가능했다.
+<img src="https://velog.velcdn.com/images/sungrok7/post/34c34a19-4c36-4e1f-9e87-bf239284b53f/image.png" alt="" /></p>
+
+<h2 id="카카오의-i-라스">카카오의 i 라스</h2>
+<p>카카오의 i라스는 물류 비즈니스의 효율성을 높이는 AI 기반 B2B 서비스형 소프트웨어(SaaS) 플랫폼이다. 화주와 회원사를 연결하여 물류에 관한 모든 프로세스를 편리하게 처리할 수 있는 플랫폼 제공 형태로 카카오는 물류생태계에 참여하였다.</p>
+
+<p>i라스의 주요 기능은 다음과 같다.</p>
+
+<ul>
+  <li>화주와 회원사를 연결하여 물류 서비스를 제공한다.</li>
+  <li>AI를 기반으로 물류 효율성을 높이고 비용을 절감한다.</li>
+  <li>물류 산업의 디지털 전환하여 관리할 수 있다.</li>
+</ul>
+
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/63fb70da-9e72-4fd7-81f1-368b74bd3ce7/image.png" alt="" /> 지금은 근교 물류센터를 연결해주고 있지만 도심 중심으로 마이크로풀필먼트센터(MFC)를 디지털 전환하여 주고 편리하게 이용할 수 있는 플랫폼이 된다면 굉장한 경쟁력이 될 거 같다.</p>
+
+<h1 id="선물의-민족">선물의 민족</h1>
+
+<p>한국의 선물하기 시장은 2021년 기준으로 5조 원을 넘어섰으며, 2027년에는 10조 원에 이를 것으로 전망된다. 현재 카카오(3조 3000억 원)가 65% 이상으로 점유율 1위를 차지하고 있으며,쿠팡(300억원), 네이버(60억원) 등이 뒤를 잇고 있다. B마트로 MFC를 다량 확보하고 있으며, 배민커넥터와 연계하여 빠른 배송을 제공할 수 있는 배달의 민족은 선물하기 시장에서 강력한 경쟁력을 가진다. 1시간 이내의 배송과 편리한 온라인 결제는 딱 맞는 조합이기 때문이다. 중요한 지인의 생일을 깜빡할 때 1 시간 이내 배송으로 선물을 전달 할 수 있다.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">![GPT와 함께하는 개발자 세상](제1회 kakao tech meet 후기)</title><link href="http://localhost:4000/5%EC%9B%94/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%85%8C%ED%81%AC/%EC%84%B8%EB%AF%B8%EB%82%98/%ED%9B%84%EA%B8%B0/2023-05-11-kakaoTechReview/" rel="alternate" type="text/html" title="![GPT와 함께하는 개발자 세상](제1회 kakao tech meet 후기)" /><published>2023-05-11T19:00:00+09:00</published><updated>2023-05-17T23:52:07+09:00</updated><id>http://localhost:4000/5%EC%9B%94/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%85%8C%ED%81%AC/%EC%84%B8%EB%AF%B8%EB%82%98/%ED%9B%84%EA%B8%B0/kakaoTechReview</id><content type="html" xml:base="http://localhost:4000/5%EC%9B%94/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%85%8C%ED%81%AC/%EC%84%B8%EB%AF%B8%EB%82%98/%ED%9B%84%EA%B8%B0/2023-05-11-kakaoTechReview/"><![CDATA[<p><img src="https://velog.velcdn.com/images/sungrok7/post/fd275e15-69ad-47dc-9798-88bf2e6a8eb3/image.png" alt="" /></p>
 
 <p>이번 글에서는 “세미나 후기 시리즈”로 카카오 테크 세미나에 다녀온 내용을 
 작성하려 한다.</p>
@@ -424,48 +488,7 @@ SQL 문법만으로 보면 아직까지도 실질적인 표준은 SQL99이고 �
 <p>다만, 공식명부를 파일데이터로 구할 수 없었다면, OCR 기술이 필요했을 것 같다.</p>
 
 <p><a href="https://ko.wikipedia.org/wiki/%EA%B0%80%ED%86%A8%EB%A6%AD_%EA%B5%90%ED%9A%8C%EC%9D%98_%EC%84%B1%EC%A0%81_%ED%95%99%EB%8C%80_%EC%82%AC%EA%B1%B4">가톨릭 교회의 성적 학대 사건</a>
-<img src="https://velog.velcdn.com/images/sungrok7/post/f52f7816-64a1-453d-9fa8-4009a722d5e8/image.png" alt="" /></p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[영화 [스포트라이트]에서 나오는 《더 보스턴 글로브 The Boston Globe》는 1990년대 말에 게오건 사건을 취재하기 시작했다. 게오건 신부는 30년 간 6개 교구를 옮겨 다니며 수십 명의 아동을 성추행 하였고 보스턴 교구장 버나드 로우 추기경은 이를 알고도 덮어준 것이었다. 스포트 라이트 팀은 이 같은 성범죄와 은폐가 게오건 1인이 아닌 여러 교구에 걸쳐 여러 사제들까지도 저질렀고 교구 차원에서 조직적으로 은폐해온 정황을 포착했다.]]></summary></entry><entry><title type="html">카카오맵 하나로 괜찮은 맛집 찾기</title><link href="http://localhost:4000/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/" rel="alternate" type="text/html" title="카카오맵 하나로 괜찮은 맛집 찾기" /><published>2022-10-22T11:11:11+09:00</published><updated>2023-05-09T22:12:26+09:00</updated><id>http://localhost:4000/tech/review/Finding-good-restaurants-withKakaoMap</id><content type="html" xml:base="http://localhost:4000/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/"><![CDATA[<h1 id="1-네이버지도를-쓰지-않는-이유">1. 네이버지도를 쓰지 않는 이유</h1>
-<p><img src="https://velog.velcdn.com/images/sungrok7/post/4dfb8597-3d10-4aab-bc6a-c8a17cf7c836/image.jpg" alt="" />
-네이버 지도의 평점은 기본이 4점 이상이기에 평점 데이터만으로는 맛집을 골라내기가 힘들다.그래서 필자는 리뷰 외에 데이터로 변별하기위해서 카카오맵을 주로 쓴다.</p>
-
-<h1 id="2-달라진-카카오맵">2. 달라진 카카오맵</h1>
-<p><img src="https://velog.velcdn.com/images/sungrok7/post/3bbf9d54-57e8-49cd-b122-67c875cfcaa6/image.png" alt="" />
-평점만으로 괜찮은 음식점인지 판단할 때 가장 주의해야할 점은 광고 리뷰 여부 판단이다. 네이버 뉴스와 다음 뉴스의 리뷰어 정보에서도 마찬가지인 차이인데 네이버와 달리 다음과 카카오는 리뷰어의 다른 정보를 알 수 있다. 이번에 업데이트된 점에서도 그런 변화가 제일 크다. 해당 리뷰를 남긴 사람이 어떤 리뷰 성향인지 알 수 있다. 그런 성향은 광고 리뷰어인지 아닌지 판단하는 데에 좋은 단서가 된다.</p>
-
-<h2 id="1-인간카카오맵">1) 인간카카오맵</h2>
-<p>내가 사는 지역도, 연고도 없는 곳이지만 서울 어느 곳에서 괜찮은 음식점 아는 데가 있냐고 묻는 지인들이 많다. ‘취향식탁’ 프로젝트를 하고 있다고 동네방네 소문 내고 난 뒤에는 맛집 찾는 기계로 생각하는 거 같아, 내가 찾는 형태의 기반으로 RESTAPI 형태로 만들어 보고 있다.</p>
-
-<h3 id="가-카카오맵에서-빠르게-지역-맛집을-찾는-방법">가) 카카오맵에서 빠르게 지역 맛집을 찾는 방법</h3>
-<ol>
-  <li>음식점 평균 평점이 3.5 이상</li>
-  <li>개인 평균 평점이 3.5점 이하인데 해당 음식점에 4점이상 준 인원이 많은 순(깐깐한 리뷰어의 후한 점수)</li>
-  <li>개인 평점이 4점 이상인데 해당 가게에 2점 이하를 줬다면 제외(불호 다수)</li>
-</ol>
-
-<blockquote>
-  <p>1번 조건의 음식점 중에서 3번 조건에 해당하지 않고 2번 조건의 리뷰어들이 많은 순으로 정렬하기</p>
-</blockquote>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> 
-<span class="k">FROM</span> <span class="n">matkimatki</span><span class="p">.</span><span class="n">test1</span> 
-<span class="k">where</span> <span class="n">score_min</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">5</span>
-<span class="k">and</span> <span class="n">rate</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">5</span>
-<span class="k">and</span> <span class="n">reviewAt</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">;</span>
-<span class="o">//</span> <span class="mi">3</span><span class="err">번</span> <span class="err">조건과</span> <span class="k">row</span> <span class="err">개수</span> <span class="err">기반</span> <span class="err">정렬을</span> <span class="err">보충해야한다</span><span class="p">.</span>
-</code></pre></div></div>
-
-<h1 id="3-추가할-기능">3. 추가할 기능</h1>
-<p>추가로 INPUT 하고 싶은 것은 카테고리와 태그가 있다.</p>
-
-<h2 id="1-카테고리">1) 카테고리</h2>
-<p><img src="https://velog.velcdn.com/images/sungrok7/post/fa8b4701-98ae-430d-b363-26790ba65a5b/image.png" alt="" />
-카카오맵에서 국밥, 해장국, 삼겹살과 같이 업태를 나누어 놨다. 업태를 추가로 입력해주면 그 업태 중에서만 가)의 목록을 뿌려준다.</p>
-
-<h2 id="2-likepoint">2) LikePoint</h2>
-<p>카카오맵에서 추가한 기능인 LikePoint(맛, 분위기, 친절 등등)를 INPUT 값으로 추가해주면 가) 에서 정렬된 값 중에서 그 LikePoint가 있는 음식점을 우선적으로 뽑아 뿌려준다.
-<img src="https://velog.velcdn.com/images/sungrok7/post/7f737dbe-bdda-48b8-9708-880fb245f92d/image.jpg" alt="" /></p>
-
-<p>지금 삼성역 주변으로 데모버전을 만들고 있지만 지인들이 요청하는 지역으로 스크래핑을 해와서 점차 범위를 넓히어 가려고 한다.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[1. 네이버지도를 쓰지 않는 이유 네이버 지도의 평점은 기본이 4점 이상이기에 평점 데이터만으로는 맛집을 골라내기가 힘들다.그래서 필자는 리뷰 외에 데이터로 변별하기위해서 카카오맵을 주로 쓴다.]]></summary></entry><entry><title type="html">2022 AI EXPO 후기</title><link href="http://localhost:4000/tech/review/2022-10-22-2022AIExpo-review/" rel="alternate" type="text/html" title="2022 AI EXPO 후기" /><published>2022-10-22T11:11:11+09:00</published><updated>2023-05-10T22:48:11+09:00</updated><id>http://localhost:4000/tech/review/2022AIExpo-review</id><content type="html" xml:base="http://localhost:4000/tech/review/2022-10-22-2022AIExpo-review/"><![CDATA[<p>2022.04.13(수)~2022.04.15(금) 동안 열린 <a href="https://www.instagram.com/aiexpo_korea/">국제인공지능대전</a>에 다녀왔다.</p>
+<img src="https://velog.velcdn.com/images/sungrok7/post/f52f7816-64a1-453d-9fa8-4009a722d5e8/image.png" alt="" /></p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[영화 [스포트라이트]에서 나오는 《더 보스턴 글로브 The Boston Globe》는 1990년대 말에 게오건 사건을 취재하기 시작했다. 게오건 신부는 30년 간 6개 교구를 옮겨 다니며 수십 명의 아동을 성추행 하였고 보스턴 교구장 버나드 로우 추기경은 이를 알고도 덮어준 것이었다. 스포트 라이트 팀은 이 같은 성범죄와 은폐가 게오건 1인이 아닌 여러 교구에 걸쳐 여러 사제들까지도 저질렀고 교구 차원에서 조직적으로 은폐해온 정황을 포착했다.]]></summary></entry><entry><title type="html">2022 AI EXPO 후기</title><link href="http://localhost:4000/tech/review/2022-10-22-2022AIExpo-review/" rel="alternate" type="text/html" title="2022 AI EXPO 후기" /><published>2022-10-22T11:11:11+09:00</published><updated>2023-05-10T22:48:11+09:00</updated><id>http://localhost:4000/tech/review/2022AIExpo-review</id><content type="html" xml:base="http://localhost:4000/tech/review/2022-10-22-2022AIExpo-review/"><![CDATA[<p>2022.04.13(수)~2022.04.15(금) 동안 열린 <a href="https://www.instagram.com/aiexpo_korea/">국제인공지능대전</a>에 다녀왔다.</p>
 
 <p><img src="https://velog.velcdn.com/images/sungrok7/post/1dff643e-4720-42e9-a56b-7bdece7acf64/image.jpg" alt="" /></p>
 
@@ -554,7 +577,48 @@ SQL 문법만으로 보면 아직까지도 실질적인 표준은 SQL99이고 �
 
 <h3 id="4-와이즈톤-성능-평가-및-증명">4) <a href="http://wisestone.kr/">와이즈톤</a>( 성능 평가 및 증명)</h3>
 
-<p>국제 표준으로 고객의 인공지능 제품의 성능과 품질을 측정해 성적표처럼 증명해준다.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[2022.04.13(수)~2022.04.15(금) 동안 열린 국제인공지능대전에 다녀왔다.]]></summary></entry><entry><title type="html">개발하고 달리 보이는 것</title><link href="http://localhost:4000/tech/review/2022-08-08-What-you-see-differently-after-studying-development/" rel="alternate" type="text/html" title="개발하고 달리 보이는 것" /><published>2022-08-08T21:07:11+09:00</published><updated>2023-05-10T22:50:32+09:00</updated><id>http://localhost:4000/tech/review/What%20you%20see%20differently%20after%20studying%20development</id><content type="html" xml:base="http://localhost:4000/tech/review/2022-08-08-What-you-see-differently-after-studying-development/"><![CDATA[<h3 id="신한은행에서-내놓은-배달어플-땡겨요">신한은행에서 내놓은 배달어플 “땡겨요”</h3>
+<p>국제 표준으로 고객의 인공지능 제품의 성능과 품질을 측정해 성적표처럼 증명해준다.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[2022.04.13(수)~2022.04.15(금) 동안 열린 국제인공지능대전에 다녀왔다.]]></summary></entry><entry><title type="html">카카오맵 하나로 괜찮은 맛집 찾기</title><link href="http://localhost:4000/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/" rel="alternate" type="text/html" title="카카오맵 하나로 괜찮은 맛집 찾기" /><published>2022-10-22T11:11:11+09:00</published><updated>2023-05-09T22:12:26+09:00</updated><id>http://localhost:4000/tech/review/Finding-good-restaurants-withKakaoMap</id><content type="html" xml:base="http://localhost:4000/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/"><![CDATA[<h1 id="1-네이버지도를-쓰지-않는-이유">1. 네이버지도를 쓰지 않는 이유</h1>
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/4dfb8597-3d10-4aab-bc6a-c8a17cf7c836/image.jpg" alt="" />
+네이버 지도의 평점은 기본이 4점 이상이기에 평점 데이터만으로는 맛집을 골라내기가 힘들다.그래서 필자는 리뷰 외에 데이터로 변별하기위해서 카카오맵을 주로 쓴다.</p>
+
+<h1 id="2-달라진-카카오맵">2. 달라진 카카오맵</h1>
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/3bbf9d54-57e8-49cd-b122-67c875cfcaa6/image.png" alt="" />
+평점만으로 괜찮은 음식점인지 판단할 때 가장 주의해야할 점은 광고 리뷰 여부 판단이다. 네이버 뉴스와 다음 뉴스의 리뷰어 정보에서도 마찬가지인 차이인데 네이버와 달리 다음과 카카오는 리뷰어의 다른 정보를 알 수 있다. 이번에 업데이트된 점에서도 그런 변화가 제일 크다. 해당 리뷰를 남긴 사람이 어떤 리뷰 성향인지 알 수 있다. 그런 성향은 광고 리뷰어인지 아닌지 판단하는 데에 좋은 단서가 된다.</p>
+
+<h2 id="1-인간카카오맵">1) 인간카카오맵</h2>
+<p>내가 사는 지역도, 연고도 없는 곳이지만 서울 어느 곳에서 괜찮은 음식점 아는 데가 있냐고 묻는 지인들이 많다. ‘취향식탁’ 프로젝트를 하고 있다고 동네방네 소문 내고 난 뒤에는 맛집 찾는 기계로 생각하는 거 같아, 내가 찾는 형태의 기반으로 RESTAPI 형태로 만들어 보고 있다.</p>
+
+<h3 id="가-카카오맵에서-빠르게-지역-맛집을-찾는-방법">가) 카카오맵에서 빠르게 지역 맛집을 찾는 방법</h3>
+<ol>
+  <li>음식점 평균 평점이 3.5 이상</li>
+  <li>개인 평균 평점이 3.5점 이하인데 해당 음식점에 4점이상 준 인원이 많은 순(깐깐한 리뷰어의 후한 점수)</li>
+  <li>개인 평점이 4점 이상인데 해당 가게에 2점 이하를 줬다면 제외(불호 다수)</li>
+</ol>
+
+<blockquote>
+  <p>1번 조건의 음식점 중에서 3번 조건에 해당하지 않고 2번 조건의 리뷰어들이 많은 순으로 정렬하기</p>
+</blockquote>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> 
+<span class="k">FROM</span> <span class="n">matkimatki</span><span class="p">.</span><span class="n">test1</span> 
+<span class="k">where</span> <span class="n">score_min</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">5</span>
+<span class="k">and</span> <span class="n">rate</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">5</span>
+<span class="k">and</span> <span class="n">reviewAt</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">;</span>
+<span class="o">//</span> <span class="mi">3</span><span class="err">번</span> <span class="err">조건과</span> <span class="k">row</span> <span class="err">개수</span> <span class="err">기반</span> <span class="err">정렬을</span> <span class="err">보충해야한다</span><span class="p">.</span>
+</code></pre></div></div>
+
+<h1 id="3-추가할-기능">3. 추가할 기능</h1>
+<p>추가로 INPUT 하고 싶은 것은 카테고리와 태그가 있다.</p>
+
+<h2 id="1-카테고리">1) 카테고리</h2>
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/fa8b4701-98ae-430d-b363-26790ba65a5b/image.png" alt="" />
+카카오맵에서 국밥, 해장국, 삼겹살과 같이 업태를 나누어 놨다. 업태를 추가로 입력해주면 그 업태 중에서만 가)의 목록을 뿌려준다.</p>
+
+<h2 id="2-likepoint">2) LikePoint</h2>
+<p>카카오맵에서 추가한 기능인 LikePoint(맛, 분위기, 친절 등등)를 INPUT 값으로 추가해주면 가) 에서 정렬된 값 중에서 그 LikePoint가 있는 음식점을 우선적으로 뽑아 뿌려준다.
+<img src="https://velog.velcdn.com/images/sungrok7/post/7f737dbe-bdda-48b8-9708-880fb245f92d/image.jpg" alt="" /></p>
+
+<p>지금 삼성역 주변으로 데모버전을 만들고 있지만 지인들이 요청하는 지역으로 스크래핑을 해와서 점차 범위를 넓히어 가려고 한다.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[1. 네이버지도를 쓰지 않는 이유 네이버 지도의 평점은 기본이 4점 이상이기에 평점 데이터만으로는 맛집을 골라내기가 힘들다.그래서 필자는 리뷰 외에 데이터로 변별하기위해서 카카오맵을 주로 쓴다.]]></summary></entry><entry><title type="html">개발하고 달리 보이는 것</title><link href="http://localhost:4000/tech/review/2022-08-08-What-you-see-differently-after-studying-development/" rel="alternate" type="text/html" title="개발하고 달리 보이는 것" /><published>2022-08-08T21:07:11+09:00</published><updated>2023-05-10T22:50:32+09:00</updated><id>http://localhost:4000/tech/review/What%20you%20see%20differently%20after%20studying%20development</id><content type="html" xml:base="http://localhost:4000/tech/review/2022-08-08-What-you-see-differently-after-studying-development/"><![CDATA[<h3 id="신한은행에서-내놓은-배달어플-땡겨요">신한은행에서 내놓은 배달어플 “땡겨요”</h3>
 <p><img src="https://velog.velcdn.com/images/sungrok7/post/8604b488-2927-4093-8f67-12d53529bf33/image.png" alt="" /></p>
 <h2 id="기본-배달어플과의-차이점">기본 배달어플과의 차이점</h2>
 <ul>
@@ -606,283 +670,4 @@ SQL 문법만으로 보면 아직까지도 실질적인 표준은 SQL99이고 �
 <ul>
   <li>이후 맛스타오더에 긴급공지로 떴다.
 <img src="https://velog.velcdn.com/images/sungrok7/post/ba6abdee-6c21-4b63-8315-d78a3369aa07/image.png" alt="" /></li>
-</ul>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[신한은행에서 내놓은 배달어플 “땡겨요” 기본 배달어플과의 차이점 가맹점과 배달라이더에겐 더 적은 수수료를 책정하고 정산 주기도 짧아 현금 순환도 빠르다는 장점이 있는 듯하다. 이용자에겐 낮은 배달료와 지역사랑상품권을 적용할 수 있다는 장점이 있다. 그리고 서비스 초기 특성일 수도 있겠지만 쿠폰을 마구 뿌리고 있다.]]></summary></entry><entry><title type="html">Introducing Hydejack 9</title><link href="http://localhost:4000/example/2020-07-03-introducing-hydejack-9/" rel="alternate" type="text/html" title="Introducing Hydejack 9" /><published>2020-07-03T00:00:00+09:00</published><updated>2023-04-21T23:02:19+09:00</updated><id>http://localhost:4000/example/introducing-hydejack-9</id><content type="html" xml:base="http://localhost:4000/example/2020-07-03-introducing-hydejack-9/"><![CDATA[<p class="lead">Version 9 is the most complete version of Hydejack yet.</p>
-
-<p><a href="#linking-in-style">Modernized</a> <a href="#whats-in-the-cards">design</a>, <a href="#ready-for-the-big-screen">big headlines</a>, big new features: <a href="#built-in-search">Built-In Search</a>, <a href="#sticky-table-of-contents">Sticky Table of Contents</a>, and <a href="#auto-hiding-navbar">Auto-Hiding Navbar</a>. That <a href="#and-much-more">and more</a> is Hydejack 9.</p>
-
-<ul class="large-only" id="markdown-toc">
-  <li><a href="#linking-in-style" id="markdown-toc-linking-in-style">Linking in Style</a></li>
-  <li><a href="#ready-for-the-big-screen" id="markdown-toc-ready-for-the-big-screen">Ready for the Big Screen</a></li>
-  <li><a href="#whats-in-the-cards" id="markdown-toc-whats-in-the-cards">What’s in the Cards?</a></li>
-  <li><a href="#built-in-search" id="markdown-toc-built-in-search">Built-In Search</a></li>
-  <li><a href="#auto-hiding-navbar" id="markdown-toc-auto-hiding-navbar">Auto-Hiding Navbar</a></li>
-  <li><a href="#sticky-table-of-contents" id="markdown-toc-sticky-table-of-contents">Sticky Table of Contents</a></li>
-  <li><a href="#and-much-more" id="markdown-toc-and-much-more">…and much more</a></li>
-  <li><a href="#even-more-to-come" id="markdown-toc-even-more-to-come">Even More to Come</a></li>
-  <li><a href="#get-it-now" id="markdown-toc-get-it-now">Get It Now</a></li>
-</ul>
-
-<h2 id="linking-in-style">Linking in Style</h2>
-
-<p>Ever since the introduction of Dark Mode, link styles have been a bit of an issue. Specifically, finding an accent color that worked on both light and dark backgrounds was the problem. With Hydejack 9, the <a href="#linking-in-style">link style</a> has been revamped so that legibility is no longer tied to the choice of accent_color, giving you much more freedom in creating a unique design flavor for your site.</p>
-
-<h2 id="ready-for-the-big-screen">Ready for the Big Screen</h2>
-
-<p>The theme on which Hydejack is based was designed for a different era of the web. Hydejack has inherited many of its limitations, but over time I’ve made adjustments, such as centering the content column for better reading ergonomics.</p>
-
-<p>With version 9, Hydejack takes full advantage of large displays. Whether it’s design indulgences such as oversized headlines, or quality of life improvements such as a floating table of contents, Hydejack now finds use for all that extra screen real estate<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
-
-<h2 id="whats-in-the-cards">What’s in the Cards?</h2>
-
-<p>Hydejack 9 now lets you use content cards for both projects and posts. 
-The cards have been redesigned with a new hover style and drop shadows and they retain their unique transition-to-next-page animations, which now also work on the <code class="language-plaintext highlighter-rouge">blog</code> layout. The new <code class="language-plaintext highlighter-rouge">grid</code> layout lets you do that.</p>
-
-<p>Good images are key to making the most out of content cards. For that reason, a <a href="/docs/basics/#adding-images">chapter on images</a> has been added to the documentation.</p>
-
-<h2 id="built-in-search">Built-In Search</h2>
-
-<p>Hydejack now has Built-In Search. It even works offline. I’ve been prototyping many approaches and eventually settled on a fully client-side, off-the-main thread solution that perfectly fits the use case of personal sites and shows surprisingly good results<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
-
-<p>The new search UI is custom made for Hydejack and shows beautiful previews of your posts and pages, right on top of your regular content.</p>
-
-<p>Together with the Auto-Hiding Navbar, your entire content library is now only a couple of keystrokes away.</p>
-
-<h2 id="auto-hiding-navbar">Auto-Hiding Navbar</h2>
-
-<p>A navbar that’s there when you need it, and disappears when you don’t. Simple as that.</p>
-
-<h2 id="sticky-table-of-contents">Sticky Table of Contents</h2>
-
-<p>Already a staple on so many sites on the web, this pattern is now also available in Hydejack. 
-What’s unique about it is that it simply picks up the table of contents already created by kramdown’s <code class="language-plaintext highlighter-rouge">{:toc}</code> tag and transparently upgrades it to a fully dynamic version.</p>
-
-<h2 id="and-much-more">…and much more</h2>
-
-<p>Other noteworthy changes include:</p>
-<ul>
-  <li>Support for Jekyll 4</li>
-  <li>Choice between MathJax and KaTeX for math rendering</li>
-  <li>Use of <code class="language-plaintext highlighter-rouge">jekyll-include-cache</code> for drastically improved page building speeds</li>
-  <li>New variables configuration file — adjust content width, sidebar width, font size, etc…</li>
-  <li>…and the option to disable grouping projects by year.</li>
-</ul>
-
-<p>Read the the <a href="/CHANGELOG/" class="heading flip-title">CHANGELOG</a> for the full scope of features and improvements made in Hydejack 9.
-Maybe just glance at it to confirm that it is indeed a pretty long list.</p>
-
-<h2 id="even-more-to-come">Even More to Come</h2>
-
-<p>New features for 9.1 are already lined up. Code block headers and code line highlights for even better technical blogging, as well as download buttons on the resume page for PDF, vCard, and Resume JSON are just around the corner.</p>
-
-<h2 id="get-it-now">Get It Now</h2>
-<p>The Free Version of Hydejack is now availabe on <a href="https://rubygems.org/gems/jekyll-theme-hydejack">RubyGems</a>
-and for the first time also on <a href="https://github.com/hydecorp/hydejack/packages">GitHub Packages</a>. 
-The source code is available on <a href="https://github.com/hydecorp/hydejack">GitHub</a> as always.</p>
-
-<p>The PRO Version is scheduled to release on July 7th on Gumroad. Pre-Orders are open now:</p>
-
-<div class="gumroad-product-embed" data-gumroad-product-id="nuOluY"><a href="https://gumroad.com/l/nuOluY">Loading…</a></div>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>If you are a fan of the old two-column layout, or don’t like modern design tropes such as mega headlines, Hydejack lets you revert these changes on a case-by-case basis via configuration options. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-    </li>
-    <li id="fn:2" role="doc-endnote">
-
-      <p>Search was mainly tested for English and German. Please let me know about issues in other languages. 
-  While I’ve tried to find a multi-language solution, most showed drastically worse  results for the English base case.
-  If you’re technically inclined, you can adopt the code located in <code class="language-plaintext highlighter-rouge">_includes/js/search-worker.js</code> to your needs. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="example" /><summary type="html"><![CDATA[Version 9 is the most complete version of Hydejack yet. Modernized design, big headlines, and big new features.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/jeremy-bishop@0,5x.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Example Content III</title><link href="http://localhost:4000/example/2018-06-01-example-content-iii/" rel="alternate" type="text/html" title="Example Content III" /><published>2018-06-01T00:00:00+09:00</published><updated>2023-04-21T23:02:19+09:00</updated><id>http://localhost:4000/example/example-content-iii</id><content type="html" xml:base="http://localhost:4000/example/2018-06-01-example-content-iii/"><![CDATA[<p>Hydejack offers a few additional features to markup your markdown.
-Don’t worry, these are merely CSS classes added with kramdown’s <code class="language-plaintext highlighter-rouge">{:...}</code> syntax,
-so that your content remains compatible with other Jekyll themes.</p>
-
-<h2 id="large-tables">Large Tables</h2>
-
-<table class="scroll-table">
-  <thead>
-    <tr>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-    </tr>
-    <tr>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-    </tr>
-    <tr>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-    </tr>
-    <tr>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-    <tr>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-    <tr>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="code-blocks">Code blocks</h2>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Example can be run directly in your JavaScript console</span>
-
-<span class="c1">// Create a function that takes two arguments and returns the sum of those</span>
-<span class="c1">// arguments</span>
-<span class="kd">var</span> <span class="nx">adder</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Function</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">return a + b</span><span class="dl">"</span><span class="p">);</span>
-
-<span class="c1">// Call the function</span>
-<span class="nf">adder</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-<span class="c1">// &gt; 8</span>
-</code></pre></div></div>
-
-<h2 id="math">Math</h2>
-<p>Lorem ipsum \(f(x) = x^2\).</p>
-
-\[\begin{aligned}
-  \phi(x,y) &amp;= \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right) \\[2em]
-            &amp;= \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j)            \\[2em]
-            &amp;= (x_1, \ldots, x_n)
-               \left(\begin{array}{ccc}
-                 \phi(e_1, e_1)  &amp; \cdots &amp; \phi(e_1, e_n) \\
-                 \vdots          &amp; \ddots &amp; \vdots         \\
-                 \phi(e_n, e_1)  &amp; \cdots &amp; \phi(e_n, e_n)
-               \end{array}\right)
-               \left(\begin{array}{c}
-                 y_1    \\
-                 \vdots \\
-                 y_n
-               \end{array}\right)
-\end{aligned}\]
-
-<h2 id="message-boxes">Message boxes</h2>
-<p class="message"><strong>NOTE</strong>: You can add a message box.</p>
-
-<h2 id="large-text">Large text</h2>
-<p class="lead">You can add large text.</p>
-
-<h2 id="large-images">Large images</h2>
-<p><img src="https://via.placeholder.com/800x100" alt="Full-width image" class="lead" width="800" height="100" /></p>
-
-<h2 id="captions-to-images">Captions to images</h2>
-<p class="figure"><img src="https://via.placeholder.com/800x100" alt="Full-width image" class="lead" width="800" height="100" />
-A caption to an image.</p>
-
-<h2 id="large-quotes">Large quotes</h2>
-<blockquote class="lead">
-  <p>You can make a quote “pop out”.</p>
-</blockquote>
-
-<h2 id="faded-text">Faded text</h2>
-<p class="faded">I’m faded, faded, faded.</p>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="example" /><summary type="html"><![CDATA[A page showing Hydejack-specific markdown content.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/example-content-iii.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+</ul>]]></content><author><name>Kim Seongrok</name><email>seongrok.kim@elinha.net</email></author><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[신한은행에서 내놓은 배달어플 “땡겨요” 기본 배달어플과의 차이점 가맹점과 배달라이더에겐 더 적은 수수료를 책정하고 정산 주기도 짧아 현금 순환도 빠르다는 장점이 있는 듯하다. 이용자에겐 낮은 배달료와 지역사랑상품권을 적용할 수 있다는 장점이 있다. 그리고 서비스 초기 특성일 수도 있겠지만 쿠폰을 마구 뿌리고 있다.]]></summary></entry></feed>

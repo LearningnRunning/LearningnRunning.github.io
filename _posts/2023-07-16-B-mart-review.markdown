@@ -3,15 +3,23 @@ layout: post
 title:  "B마트의 큰 그림, 선물의 민족"
 date:   2023-07-16 11:11:11 +0900
 categories: Tech review
+description: >
+   우아한형제들은 다 계획이 있었다.
+image: 
+  path: https://velog.velcdn.com/images/sungrok7/post/62326062-af0d-4364-984c-8d1040aef203/image.jpg
 ---
+
 # B마트의 큰 그림, 선물의 민족
-![](https://velog.velcdn.com/images/sungrok7/post/62326062-af0d-4364-984c-8d1040aef203/image.jpg)
 
 
 
 
 
-B마트 -> 마이크로풀필먼트센터 ->  배민스토어
+
+
+
+### B마트 -> 마이크로풀필먼트센터 ->  배민스토어
+
 ![](https://velog.velcdn.com/images/sungrok7/post/29b1043a-22b8-4897-8e8d-082293d82b68/image.jpg)
 
 배송이 점점 더 빨라지더니 이젠 거의 배달 수준이 된 서비스가 있다.

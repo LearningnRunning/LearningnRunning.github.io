@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v9.1.6 <https://hydejack.com/>
+-->
+
+
+
+
+
+
+
+<head>
+  
+
+
+
+
+
+
+  
+    
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>스타트업 서비스 개발기 | Learning&amp;Running</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="스타트업 서비스 개발기" />
+<meta name="author" content="<Kim> <Seongrok>" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="피부진단 프로젝트를 진행하며 대표님께 google 오픈소스 MediaPipe를 설명드린 적이 있다. 일본 출장을 다녀온 대표님은 얼마 안 되어, 슬랙이 왔다" />
+<meta property="og:description" content="피부진단 프로젝트를 진행하며 대표님께 google 오픈소스 MediaPipe를 설명드린 적이 있다. 일본 출장을 다녀온 대표님은 얼마 안 되어, 슬랙이 왔다" />
+<link rel="canonical" href="http://localhost:4001/example/tech/review/2023-08-05-.Startup-service-development-period-copy/" />
+<meta property="og:url" content="http://localhost:4001/example/tech/review/2023-08-05-.Startup-service-development-period-copy/" />
+<meta property="og:site_name" content="Learning&amp;Running" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-08-05T11:11:11+09:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="스타트업 서비스 개발기" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"<Kim> <Seongrok>"},"dateModified":"2024-02-21T19:33:08+09:00","datePublished":"2023-08-05T11:11:11+09:00","description":"피부진단 프로젝트를 진행하며 대표님께 google 오픈소스 MediaPipe를 설명드린 적이 있다. 일본 출장을 다녀온 대표님은 얼마 안 되어, 슬랙이 왔다","headline":"스타트업 서비스 개발기","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4001/example/tech/review/2023-08-05-.Startup-service-development-period-copy/"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4001/assets/img/logo.png"},"name":"<Kim> <Seongrok>"},"url":"http://localhost:4001/example/tech/review/2023-08-05-.Startup-service-development-period-copy/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+
+
+
+  <meta name="theme-color" content="rgb(25,55,71)">
+
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Learning&Running">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<meta name="application-name" content="Learning&Running">
+
+<meta name="generator" content="Hydejack v9.1.6" />
+
+
+<link rel="alternate" href="http://localhost:4001/example/tech/review/2023-08-05-.Startup-service-development-period-copy/" hreflang="en">
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4001/feed.xml" title="Learning&amp;Running" />
+
+
+<link rel="shortcut icon"    href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<link rel="manifest" href="/assets/site.webmanifest">
+
+<link rel="dns-prefetch" href="https://fonts.googleapis.com"><link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+<link rel="preload" href="/assets/img/swipe.svg" as="image" id="_hrefSwipeSVG">
+
+
+
+
+
+
+<script>!function(r,c){"use strict";function a(e,t,n,o){e.addEventListener?e.addEventListener(t,n,o):e.attachEvent?e.attachEvent("on"+t,n):e["on"+t]=n}r.loadJS=function(e,t){var n=c.createElement("script"),e=(n.src=e,t&&a(n,"load",t,{once:!0}),c.scripts[0]);return e.parentNode.insertBefore(n,e),n},r._loaded=!1,r.loadJSDeferred=function(e,t){var n=c.createElement("script");function o(){r._loaded=!0,t&&a(n,"load",t,{once:!0});var e=c.scripts[0];e.parentNode.insertBefore(n,e)}return n.src=e,r._loaded?o():a(r,"load",o,{once:!0}),n},r.setRel=r.setRelStylesheet=function(e){a(c.getElementById(e),"load",function(){this.rel="stylesheet"},{once:!0})}}(window,document);
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+!function(w) {
+  w._baseURL = '/';
+  w._publicPath = '/assets/js/';
+  w._noPushState = false;
+  w._noDrawer = false;
+  w._noNavbar = false;
+  w._noToc = false;
+  w._noSearch = false;
+  w._search = {
+    DATA_URL: '/assets/sitedata.json?no-cache',
+    STORAGE_KEY: 'mini-search/',
+    INDEX_KEY: 'index--2024-02-23T00:05:31+09:00',
+  };
+  w._clapButton = true;
+}(window);</script>
+
+
+<script async src="/assets/bower_components/MathJax/es5/tex-mml-chtml.js" id="_MathJax"></script>
+
+
+<!--[if gt IE 8]><!---->
+
+  
+
+
+
+
+<link rel="stylesheet" href="/assets/css/hydejack-9.1.6.css" id="_stylePreload">
+<link rel="stylesheet" href="/assets/icomoon/style.css" id="_iconsPreload">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i&display=swap" id="_fontsPreload">
+
+
+
+  <style id="_pageStyle">
+
+html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.5);--accent-color-highlight: rgba(79, 177, 186, 0.1);--accent-color-darkened: #409ba3;--theme-color: rgb(25,55,71)}
+</style>
+
+
+<!--<![endif]-->
+
+
+<link rel="apple-touch-icon" sizes="120x120" href="https://LearningnRunning.github.io/blog/assets/img/logo.ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://LearningnRunning.github.io/blog/assets/img/logo.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://LearningnRunning.github.io/blog/assets/img/logo.ico/favicon-16x16.png">
+<link rel="manifest" href="https://LearningnRunning.github.io/blog/assets/img/logo.ico/site.webmanifest">
+<link rel="mask-icon" href="https://LearningnRunning.github.io/blog/assets/img/logo.ico/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="theme-color" content="#ffffff">
+
+
+
+</head>
+
+<body class="no-break-layout">
+  
+
+
+<hy-push-state
+  id="_pushState"
+  replace-selector="#_main"
+  link-selector="a[href]:not([href^='/assets/']):not(.external):not(.no-push-state)"
+  script-selector="script"
+  duration="500"
+  hashchange
+>
+  
+  
+  <div id="_navbar" class="navbar fixed-top">
+  <div class="content">
+    <span class="sr-only">Jump to:</span>
+    <div class="nav-btn-bar">
+      <a id="_menu" class="nav-btn no-hover" href="#_drawer--opened">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+      <div class="nav-span"></div>
+    </div>
+  </div>
+</div>
+<hr class="sr-only" hidden />
+
+  <main
+  id="_main"
+  class="content layout-post"
+  role="main"
+>
+  <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+    <li><a href="/">home</a></li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/example/">example</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/example/tech/">tech</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          
+          
+          <a href="/example/tech/review/">review</a>
+        
+      </li>
+    
+      <li>
+        
+          <span>/</span>
+          <span>2023-08-05-.Startup-service-development-period-copy</span>
+        
+      </li>
+    
+  
+</ul></nav>
+  
+
+
+
+
+
+
+
+
+
+
+<article id="post-example-tech-review-.Startup-service-development-period copy" class="page post mb6" role="article">
+  <header>
+    <h1 class="post-title flip-project-title">
+      
+        스타트업 서비스 개발기
+      
+    </h1>
+
+    <div class="post-date">
+      
+      <span class="ellipsis mr1">
+        <time datetime="2023-08-05T11:11:11+09:00">05 Aug 2023</time> in <a href="/example/" class="flip-title">정리</a> / <span>Tech</span> / <span>Review</span> 
+      </span>
+      
+        
+          
+          
+          
+            
+            
+            <span class="ellipsis" data-tippy-content="Last modified at: 21 Feb 2024">
+              <span class="sr-only">Last modified at:</span>
+              <span class="icon-history"></span>
+              <time datetime="2024-02-21T19:33:08+09:00">2024-02-21</time>
+            </span>
+          
+        
+      
+    </div>
+
+    
+    
+
+    
+
+
+
+  <div class="hr pb0"></div>
+
+
+  </header>
+
+  
+    <p>피부진단 프로젝트를 진행하며 대표님께 google 오픈소스 MediaPipe를 설명드린 적이 있다. 일본 출장을 다녀온 대표님은 얼마 안 되어, 슬랙이 왔다
+<img src="https://velog.velcdn.com/images/sungrok7/post/040d6b7c-db87-44ba-afe1-6513d2424bbd/image.png" alt="" /></p>
+
+<h1 id="mediapipe란">MediaPipe란?</h1>
+<p><img src="https://velog.velcdn.com/images/sungrok7/post/0c55a2ca-8d73-4370-9cd3-1e40de99a5ef/image.png" alt="" /></p>
+
+<p>정확히 말하자면 MediaPipe 중 Face Mesh를 설명드렸었다. 얼굴의 landmark detection하여 위치값을 알려주는 오픈소스이다. SDK 탑재도 가능할 만큼 경량화 되어 있으면서도 빠른 분석을 해주는 굉장한 오픈소스이다. 눈동자 중심을 정확히 찍을 만큼 정확도도 높다.</p>
+
+<h1 id="그래서-관상은-어떻게">그래서 관상은 어떻게?</h1>
+<p>처음엔 아무리 일본 사람들이 관상을 좋아한다고 하지만 뷰티앱에 갑자기 관상?이란 생각이 들었다. 일단 가능 여부를 조사해보았다.</p>
+
+<blockquote>
+  <ol>
+    <li>눈과 눈썹 사이가 먼 남자는 대체로 단호한 성격을 가지지 못하여 거절을 잘 하지 못하고 우유부단한 성격이 많겠습니다.</li>
+    <li>눈빛에 힘이 없고 탁한 남자의 경우 엄밀히 말하면 바람을 피우는 남자보다는 꼭 여성분들이 피해야 하는 남자 관상이겠습니다.</li>
+    <li>눈꺼풀 아래에 점이 있는 남자는 정에 약하며 파란만장한 애정운을 타고난 관상입니다.
+출처_홍카페
+<img src="https://velog.velcdn.com/images/sungrok7/post/e58b6371-f8a1-4c7c-8292-9877c4374cc3/image.png" alt="" /></li>
+  </ol>
+</blockquote>
+
+<p>일단 관상을 판별하는 데 필요한 얼굴의 값들을 탐지하는 것에서 가능한 부분도 있었고 MediaPipe만으론 부족한 부분도 있었다. 탐지 후에는 그 값들을 활용하여 관상 결과 추론을 위해 군집화가 필요했고 그 전엔 관상에 대한 공부가 필요했다. 긴 프로젝트가 될 것 같았다. 애초에 대표님께서 관상을 말씀하신 이유는 빨리 끝낼 수 있는 프로젝트 같아서였기 때문에 대안을 말씀드렸다.(지금 생각하면 관상이 쉬웠을지도..)</p>
+
+<h2 id="밸런스-메이크업">밸런스 메이크업</h2>
+<p>셀카 한 번으로 이상적인 비율에 따른 메이크업 가이드를 제공하는 서비스
+<img src="https://velog.velcdn.com/images/sungrok7/post/99c023e6-5f21-4818-834f-0f2812330cfb/image.png" alt="" /><a href="https://m.blog.naver.com/2011jysky/220735193632">사진출처</a></p>
+
+<p>이는 길이 측정 만으로도 가능했다. 측정한 결과와 메이크업 기획이 더해져 황금비율에 따른 메이크업 가이드가 제공할 수 있다면, 꾸미는 법을 모르고 지냈던 사람들, 꾸미고 싶어 하는 사람들에게서 ‘촌티‘를 벗겨줄 수 있는 가이드가 될 수 있을 것 같았다. 메이크업 가이드는 모두가 완벽한 하나의 얼굴로 만들기 위함이 아닌 자신의 얼굴에서 더 조화로운 얼굴로 만들어 보는 것을 가이드로 줄 수 있으면 좋겠다 생각했다. 그건 외모지상주의가 아닌 개성주의와 또 상통하는 것 같아 더 적절하다 생각했다. ‘나에게 맞는 미‘, ‘내 얼굴에 맞는 메이크업’을 제시해주는 것이 목표라면 자신에게 필요한 정보는 집중해서 보는 일본 유포리세대에게도 매력적인 서비스가 될 거라 생각한다. 처음으로 PoC도 과정도 준비해봤다.</p>
+
+<h1 id="결론">결론</h1>
+<p>대표님은 바로 사내 마케터들을 불렀다. 일본에 진출해 있는 뷰티앱이기에 일본 마케터분도 계셨다. 그분을 콕 집어 밸런스메이크업 서비스가 당기냐 안 당기냐 한마디로 얘기해달라고 했다.</p>
+<blockquote>
+  <p>당깁니다, 그리고 도움이 많이 될 거 같습니다.</p>
+</blockquote>
+
+<p>그렇게 프로젝트가 시작되었다. 2023년 3월 15일이었다. 귀신 피하려다가 준비한 밸런스 메이크업 기획 제안이 오히려 호랑이를 만난 꼴이 된 거란 걸 3개월 동안 톡톡히 알게 되었다.</p>
+
+
+  
+</article>
+
+
+
+  <hr class="dingbat related mb6" />
+
+
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+
+
+<img
+  
+    src="https://velog.velcdn.com/images/sungrok7/post/d34e938b-615f-4d10-ade3-c4a5a3edf909/image.png"
+    srcset="https://velog.velcdn.com/images/sungrok7/post/d34e938b-615f-4d10-ade3-c4a5a3edf909/image.png 1x,https://velog.velcdn.com/images/sungrok7/post/d34e938b-615f-4d10-ade3-c4a5a3edf909/image.png 2x"
+    
+  
+  alt="<Kim> <Seongrok>"
+  class="avatar"
+  
+  width="120"
+  height="120"
+  loading="lazy"
+/>
+
+  
+
+  
+  
+  <h2  class="page-title hr-bottom">
+    About
+  </h2>
+
+  <p>누군가에게 필요한 것을, 누군가가 이상한 것을 구조화하고 서비스화하는 것을 즐깁니다.</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="<https://github.com/LearningnRunning>" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+  
+
+  
+    
+
+
+  <aside class="related mb4" role="complementary">  <h2 class="hr-bottom">Related Posts</h2>  <ul class="related-posts">                  <li class="h4">  <a href="/example/tech/review/2023-12-20-Deploying-AI-services-in-80-days/" class="flip-title"><span>80일 안에 AI 서비스 배포하기</span></a>  <time class="faded fine" datetime="2023-12-20T19:11:11+09:00">20 Dec 2023</time></li>                        <li class="h4">  <a href="/example/tech/review/2023-12-11-a-little-different-topic-modeling/" class="flip-title"><span>조금 다른 Topic 모델링(Feat. 모두콘)</span></a>  <time class="faded fine" datetime="2023-12-11T20:23:11+09:00">11 Dec 2023</time></li>                        <li class="h4">  <a href="/example/tech/review/2023-12-06-Reference-lessservices-fromplanningtodeployment/" class="flip-title"><span>레퍼런스 없는 서비스, 기획부터 배포까지</span></a>  <time class="faded fine" datetime="2023-12-06T21:51:11+09:00">06 Dec 2023</time></li>            </ul></aside>
+
+  
+
+  
+  
+
+  
+    
+
+  
+
+
+  
+<footer class="content" role="contentinfo">
+  <hr/>
+  
+    <p><small class="copyright">© 2021. All rights reserved.
+</small></p>
+  
+  
+    <nav class="legal"><small>
+    
+      
+      <a class="heading flip-title" href="/LICENSE/">LICENSE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/NOTICE/">NOTICE</a>
+      |
+    
+      
+      <a class="heading flip-title" href="/CHANGELOG/">CHANGELOG</a>
+      
+    
+    </small></nav>
+  
+    <p><small>Powered by <a class="external" href="https://hydejack.com/">Hydejack</a> v<span id="_version">9.1.6</span></small></p>
+  <hr class="sr-only"/>
+</footer>
+
+
+</main>
+
+  <hy-drawer
+  id="_drawer"
+  class=""
+  side="left"
+  threshold="10"
+  noscroll
+  
+>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+
+
+
+
+<div class="sidebar-bg sidebar-overlay" style="background-color:rgb(25,55,71);background-image:url(/assets/img/sidebar-bg.jpg)"></div>
+
+    <div class="sidebar-sticky">
+  <div class="sidebar-about">
+    
+      <a class="no-hover" href="/" tabindex="-1">
+        <img src="/assets/img/logo.png" class="avatar" alt="Learning&Running" width="120" height="120" loading="lazy" />
+      </a>
+    
+    <a class="sidebar-title" href="/"><h2 class="h1">Learning&Running</h2></a>
+    
+    
+      <p class="">
+        A space for inspection and recording.
+
+      </p>
+    
+  </div>
+
+  <nav class="sidebar-nav heading" role="navigation">
+    <span class="sr-only">Navigation:</span>
+<ul>
+  
+    
+      
+      <li>
+        <a
+          id="_drawer--opened"
+          href="/example/"
+          class="sidebar-nav-item "
+          
+        >
+          Post
+        </a>
+      </li>
+    
+      
+      <li>
+        <a
+          
+          href="/about/"
+          class="sidebar-nav-item "
+          
+        >
+          About
+        </a>
+      </li>
+    
+  
+</ul>
+
+  </nav>
+
+  
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+      
+
+
+
+  
+
+  
+  
+  
+  
+
+  
+
+  
+
+  <li>
+    <a href="<https://github.com/LearningnRunning>" title="GitHub" class="no-mark-external">
+      <span class="icon-github"></span>
+      <span class="sr-only">GitHub</span>
+    </a>
+  </li>
+
+
+    
+  
+</ul>
+
+  </div>
+</div>
+  </header>
+</hy-drawer>
+<hr class="sr-only" hidden />
+
+</hy-push-state>
+
+
+  <!--[if gt IE 10]><!---->
+  <script nomodule>!function(){var t,n=document.createElement("script");!("noModule"in n)&&"onbeforeload"in n&&(t=!1,document.addEventListener("beforeload",function(e){if(e.target===n)t=!0;else if(!e.target.hasAttribute("nomodule")||!t)return;e.preventDefault()},!0),n.type="module",n.src=".",document.head.appendChild(n),n.remove())}();
+</script>
+  <script src="/assets/js/hydejack-9.1.6.js" type="module"></script>
+  <script src="/assets/js/LEGACY-hydejack-9.1.6.js" nomodule defer></script>
+  
+
+  
+
+<!--<![endif]-->
+  <!-- <script>
+  document.querySelector('hy-push-state').setAttribute('prefetch', '');
+
+  document.querySelectorAll('.sidebar a[href^="/"]').forEach(function (el) { 
+    el.addEventListener('click', function (e) {
+      if (el.pathname === window.location.pathname) {
+        e.preventDefault();
+        e.stopPropagation();
+        document.querySelector('hy-drawer').close();
+      }
+    });
+  });
+</script> -->
+
+<!--
+Code for integrating CloudFlare's email protection with Hydejack's single page app loading.
+-->
+<script>
+  document.getElementById('_pushState').addEventListener('hy-push-state-after', function (e) {
+    function e(e){
+      (console.error?console.error:console.log).call(console,e)
+    }
+
+    function t(e){
+      return l.innerHTML='<a href="'+e.replace(/"/g,"&quot;")+'"></a>',l.childNodes[0].getAttribute("href")
+    }
+
+    function r(e,t){
+      var r=e.substr(t,2);return parseInt(r,16)
+    }
+
+    function n(e,n){
+      for(var o="",c=r(e,n),a=n+2;a<e.length;a+=2){
+        var l=r(e,a)^c;
+        o+=String.fromCharCode(l)
+      }
+      return t(o)
+    }
+
+    var o="/cdn-cgi/l/email-protection#",
+        c=".__cf_email__",
+        a="data-cfemail",
+        l=document.createElement("div");
+
+    !function(){
+      for(var t=document.getElementsByTagName("a"),r=0;r<t.length;r++)
+        try{
+          var c=t[r],a=c.href.indexOf(o);
+          a>-1&&(c.href="mailto:"+n(c.href,a+o.length))
+        }catch(t){
+          e(t)
+        }
+    }(),
+    function(){
+      for(var t=document.querySelectorAll(c),r=0;r<t.length;r++)
+        try{
+          var o=t[r],l=n(o.getAttribute(a),0),i=document.createTextNode(l);
+          o.parentNode.replaceChild(i,o)
+        }catch(t){
+          e(t)
+        }
+    }()
+  });
+</script>
+
+
+
+
+
+<div hidden>
+  
+  <h2 class="sr-only">Templates (for web app):</h2>
+
+  <template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <nav id="breadcrumbs" class="screen-only"><ul>
+  
+  
+</ul></nav>
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+  <template id="_loading-template">
+  <div class="loading nav-btn fr">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+  <template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+  <template id="_permalink-template">
+  <a href="#" class="permalink">
+    <span class="sr-only">Permalink</span>
+    <span class="content-hash"></span>
+  </a>
+</template>
+
+</div>
+
+
+</body>
+</html>

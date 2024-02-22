@@ -42,8 +42,8 @@ logo:                  /assets/img/logo.png
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
   # Used by `jekyll-feed`:
-  name:                <Kim> <Seongrok>
-  email:               <seongrok.kim@elinha.net>
+  name:                Kim Seongrok
+  email:               seongrok.kim@elinha.net
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
@@ -78,7 +78,7 @@ paginate_path:         /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-theme: jekyll-theme-hydejack
+# theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack@v9
 
 
@@ -347,8 +347,8 @@ plugins:
 #   yandex:              <verification-id>
 
 # Used for twitter cards
-# twitter:
-#   username:            <username>
+twitter:
+  username:            rocknche
 
 # Used for facebook open graph
 # facebook:
@@ -357,11 +357,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+social:
+  name:                <Seongrok> <Kim>
+  links:
+    - https://twitter.com/rocknche
+    - https://learningnrunning.github.io
 
 
 # Plugin Configs
@@ -418,4 +418,4 @@ jekyll_compose:
         path: /assets/img/sidebar-bg.jpg
       links:
         - title: Project Link
-          url: https://example.com
+          url: https://learningnrunning.github.io

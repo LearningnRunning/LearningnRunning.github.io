@@ -25,11 +25,10 @@ title:                 Learning&Running
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hydejack is a boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  데이터를 통해 비즈니스의 효율성을 높이고,고객의 경험을 향상시키는 데 기여하고 싶은 데이터 엔지니어, 김성록입니다.
 
 # A shorter description for the sidebar.
-tagline:               A space for inspection and recording.
+tagline:               la douleur passe la beauté reste.
 
 # A list of keywords for your blog
 keywords:              []

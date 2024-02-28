@@ -18,11 +18,13 @@ redirect_from:
 ## ELINHA Co., Ltd
 2022.10.31 ~ 현재 
 
-Checco라는 플랫폼을 통해 일본에서 한국 화장품에 대한 정보를 제공하며, AI 서비스 체험, 커뮤니티, 특가 판매 등 다양한 서비스를 운영, 일본 애플 앱스토어의 한국 화장품 카테고리에서 1위
+Checco라는 플랫폼을 통해 일본에서 한국 화장품에 대한 정보를 제공하며, AI 서비스 체험, 커뮤니티, 특가 판매 등 다양한 서비스를 운영하고 있습니다. 일본 애플 앱스토어의 한국 화장품 카테고리에서 1위를 한 바가 있습니다.
 ### 주요 프로젝트 1. AI Snap
 [기간: 2023.07.26. ~ 2023.12.12](https://learningnrunning.github.io/example/tech/review/2023-12-20-Deploying-AI-services-in-80-days/)
 
-![Screenshot](assets/img/blog/ai_snap/snap_generator_1.png){:.lead width="1920" height="1080" loading="lazy"}
+![Screenshot](assets/img/blog/ai_snap/snap_generator_1.png){:.lead width="1920" height="1080" loading="lazy"}   
+유저의 셀카 이미지로 다양한 콘셉트의 이미지 사진을 제작해 주는 AI 서비스
+   
 #### 기여한 부분
 1. SNOW의 AI 프로필, Meitu, Carat 등 경쟁 AI 이미지 생성 서비스 리뷰 후 자사만의 차별 서비스 기획
 2. 정면 여부 판단 기능, 얼굴 쪽 머리카락 지우는 기능, 눈가 및 팔자주름 지우는 기능 개발
@@ -45,12 +47,14 @@ Checco라는 플랫폼을 통해 일본에서 한국 화장품에 대한 정보�
    
 ### 주요 프로젝트 2. BalanceMakeUp
 [기간: 2023.03.13.~2023.07.18.](https://learningnrunning.github.io/example/tech/review/2023-12-20-Deploying-AI-services-in-80-days/)
-
+![Screenshot](assets/img/blog/ai_snap/balancemakeup_ex.png){:.lead width="1920" height="1080" loading="lazy"}   
+유저의 얼굴 분석을 통해 ‘나에게 맞는 미‘, ‘내 얼굴에 맞는 메이크업’을 제시해주는 서비스
+   
 ### 기여한 부분
 1. 기획서 작성부터 PoC 진행 등 모든 회의에 참석하여 서비스 개발을 주도
 2. 얼굴 분석 모델 개발
-    a. 얼굴형 분류 기능
-    b. 얼굴 비율 분석 기능
+   1.  얼굴형 분류 기능
+   2.  얼굴 비율 분석 기능
 3. 메이크업 전문가와 협업을 통해 메이크업 가이드 문구 정리
 4. Docker Compose를 이용하여 Nginx와 FastAPI를 사용하는 병렬 처리 구현
 
@@ -64,7 +68,7 @@ Checco라는 플랫폼을 통해 일본에서 한국 화장품에 대한 정보�
 - Docker
 - Docker Compose
 
-# Other Experiences.
+# Other Experience.
 ## 사이드 프로젝트 
 ### 1. [What2Eat 머먹?](https://what2eat-chat.streamlit.app/)
 카카오맵 리뷰에서 광고 평점은 거르고 깐깐한 리뷰어들의 평가만 모은 맛집 추천 서비스
@@ -82,10 +86,19 @@ Checco라는 플랫폼을 통해 일본에서 한국 화장품에 대한 정보�
 
 [What2Eat(지도 기반)](https://what2eat.streamlit.app/)
 
-[깃허브](https://github.com/LearningnRunning/What2Eat/tree/main)
+[What2Eat 소스코드](https://github.com/LearningnRunning/What2Eat/tree/main)
 
 ### 2. NoCountryForOldMan
 세대 간 인식의 격차가 심화되는 오늘날의 추세 속에, 영화 <인턴>의 리뷰를 통해 주니어 세대가 바라보는 이상적인 시니어 세대의 모습을 알아보는 것을 목적으로 하는 모두랩 논문 연구 프로젝트
+
+#### 사용한 기술
+- Pandas
+- Selenium
+- BeautifulSoup4
+- LangChain
+- Mistral-7B
+- Sentence-transformers model
+  
 #### 기여한 부분
 1. CGV, 왓챠, 다음영화에서 리뷰 스크래핑 
 2. 맞춤법검사, 문장분리, 감성분석, 군집화 전반적인 코드 작업
@@ -103,10 +116,9 @@ Checco라는 플랫폼을 통해 일본에서 한국 화장품에 대한 정보�
 2. [Pypi 업로드](https://pypi.org/project/navertrans/)
 
 
+## Skill.
+![Screenshot](assets/img/blog/ai_snap/skill.png){:.lead width="1920" height="1080" loading="lazy"
 
-
-
-## 수상
 - [2022 빅데이터 경진대회 ‘사회보장 유레카’ 우수상](https://drive.google.com/file/d/10DcADYbd8-W5dN6VphZve3X8pT1ti-IH/view?usp=sharing)
 - [2022 공개 SW개발자대회 동상](https://drive.google.com/file/d/1-EWjBM--Uu_0Jr7v5Wm9UtcdhvqnmFi2/view?usp=drive_link)
 - 2023 수묵화 데이터셋을 활용한 공모전 장려상

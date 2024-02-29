@@ -3,6 +3,10 @@ layout: post
 title:  "테크 리더 3인이 말하는 '개발자 원칙'"
 date:   2023-03-29 19:00:00 +0900
 categories: 3월 우아한테크 세미나 후기
+description: >
+   테크 세미나 뽀개기_우아한형제들
+image: 
+  path: https://velog.velcdn.com/images/sungrok7/post/923adf18-226d-428d-b598-8266d7c9b90b/image.jpeg
 ---
 이번 글에서는 "세미나 후기 시리즈"로 우아한 테크에 다녀온 내용을 작성하려 한다.
 

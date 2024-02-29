@@ -37,16 +37,16 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
 <meta property="og:locale" content="en" />
 <meta name="description" content="A boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress." />
 <meta property="og:description" content="A boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress." />
-<link rel="canonical" href="http://localhost:4008/about/" />
-<meta property="og:url" content="http://localhost:4008/about/" />
+<link rel="canonical" href="http://localhost:4009/about/" />
+<meta property="og:url" content="http://localhost:4009/about/" />
 <meta property="og:site_name" content="Learning&amp;Running" />
-<meta property="og:image" content="http://localhost:4008/assets/img/blog/LearningnRunning-001.png" />
+<meta property="og:image" content="http://localhost:4009/assets/img/blog/LearningnRunning-001.png" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="http://localhost:4008/assets/img/blog/LearningnRunning-001.png" />
+<meta property="twitter:image" content="http://localhost:4009/assets/img/blog/LearningnRunning-001.png" />
 <meta property="twitter:title" content="About Me" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"<Kim> <Seongrok>"},"dateModified":"2024-02-28T03:18:19+09:00","description":"A boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.","headline":"About Me","image":"http://localhost:4008/assets/img/blog/LearningnRunning-001.png","name":"Learning&amp;Running","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4008/assets/img/logo.png"},"name":"<Kim> <Seongrok>"},"url":"http://localhost:4008/about/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"<Kim> <Seongrok>"},"dateModified":"2024-02-28T15:54:03+09:00","description":"A boutique Jekyll theme for hackers, nerds, and academics, with a focus on personal sites that are meant to impress.","headline":"About Me","image":"http://localhost:4009/assets/img/blog/LearningnRunning-001.png","name":"Learning&amp;Running","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4009/assets/img/logo.png"},"name":"<Kim> <Seongrok>"},"url":"http://localhost:4009/about/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -74,9 +74,9 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
 <meta name="generator" content="Hydejack v9.1.6" />
 
 
-<link rel="alternate" href="http://localhost:4008/about/" hreflang="en">
+<link rel="alternate" href="http://localhost:4009/about/" hreflang="en">
 
-<link type="application/atom+xml" rel="alternate" href="http://localhost:4008/feed.xml" title="Learning&amp;Running" />
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4009/feed.xml" title="Learning&amp;Running" />
 
 
 <link rel="shortcut icon"    href="/assets/icons/favicon.ico">
@@ -109,7 +109,7 @@ Powered by Hydejack v9.1.6 <https://hydejack.com/>
   w._search = {
     DATA_URL: '/assets/sitedata.json?no-cache',
     STORAGE_KEY: 'mini-search/',
-    INDEX_KEY: 'index--2024-02-28T15:53:03+09:00',
+    INDEX_KEY: 'index--2024-02-29T13:40:20+09:00',
   };
   w._clapButton = true;
 }(window);</script>
@@ -317,18 +317,46 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 <h1 id="other-experience">Other Experience.</h1>
 <h2 id="사이드-프로젝트">사이드 프로젝트</h2>
 <h3 id="1-what2eat-머먹">1. <a href="https://what2eat-chat.streamlit.app/">What2Eat 머먹?</a></h3>
-<p>카카오맵 리뷰에서 광고 평점은 거르고 깐깐한 리뷰어들의 평가만 모은 맛집 추천 서비스</p>
+<p>카카오맵 리뷰에서 유의미한 평가만 모은 맛집 추천 서비스</p>
 <h4 id="기여한-부분-2">기여한 부분</h4>
 <p>일에 치여 기운이 없을 때마다 꿈의 프로젝트를 생각하며 한 단계씩 업그레이드 해나가는 저만의 프로젝트입니다.
 로고디자인, 스크래핑, 데이터구조 설계, 웹 서비스 개발 등 혼자 하였습니다.
 지인 개발자끼리 모여 하루 해커톤을 열어, 데이터 구조 개편 작업을 하였습니다. 덕분에 읽기 속도가 빨라 졌습니다.</p>
 
-<h4 id="사용한-기술-2">사용한 기술</h4>
-<ul>
-  <li>Streamlit</li>
-  <li>Pandas</li>
-  <li>Selenium</li>
-</ul>
+<h4 id="개발-방법">개발 방법</h4>
+<p><img src="/assets/img/blog/ai_snap/What2Eat_AnalysisMethods.png" alt="Screenshot" class="lead" width="1920" height="1080" loading="lazy" /></p>
+<ol>
+  <li>유의미한 호(好) 리뷰 찾는 방법
+카카오맵에서 스크래핑 해온 음식점 리뷰 데이터에서 개인의 평균 평점이 3.8 이상인 유저가 해당 음식점에 4점 이상의 별점을 남겼다면 유의미한 호(好) 리뷰어라고 판단했습니다.
+    <ul>
+      <li>쩝쩝박사 - 유의미한 호(好) 리뷰어 인원</li>
+      <li>쩝쩝퍼센트 - (유의미한 호(好) 리뷰어 수/ 전체 리뷰어 수) * 100</li>
+    </ul>
+
+    <h5 id="화면-노출-조건">화면 노출 조건</h5>
+    <p>쩝쩝박사 인원 수가 5명이 넘는 음식점 중에서 쩝쩝 퍼센트가 높은 순으로 목록을 제공됩니다.</p>
+  </li>
+  <li>유의미한 비호(非好) 리뷰 찾는 방법
+개인의 평균 평점이 3.5 이상인 유저가 해당 음식점에 1.5점 이하로 별점을 남겼다면 유의미한 비호(非好) 리뷰어라고 판단했습니다.
+    <ul>
+      <li>비호퍼센트 - 유의미한 비호(非好) 리뷰어 수 / 전체 리뷰어수 * 100
+        <h5 id="화면-노출-조건-1">화면 노출 조건</h5>
+        <p>비호퍼센트가 10프로 넘으면 호(好) 화면 노출 조건에 맞더라도 비호퍼센트를 노출하며 주의를 줍니다.</p>
+      </li>
+    </ul>
+  </li>
+  <li>채팅 형식의 UX
+처음엔 지도 기반으로 개발 하였습니다. Streamlit으로 프런트를 짜다보니, 자유도가 많이 떨어졌습니다. 지도에 갖혀 벗어나지 못 하는 등 유저들이 불편하다는 피드백이 많았습니다.
+그러다가 카카오톡에서 친구에게 맛집 리스트를 보내주듯 구현하면 어떨까 아이디어가 떠올라. 맛잘알 친구가 알려주는 맛집 리스트 개념으로 UX를 잡았습니다.
+  <img src="assets/img/blog/ai_snap/What2Eat_Examplescreen.png" alt="Screenshot" class="lead" width="1920" height="1080" loading="lazy" />
+    <h4 id="사용한-기술-2">사용한 기술</h4>
+    <ul>
+      <li>Streamlit</li>
+      <li>Pandas</li>
+      <li>Selenium</li>
+    </ul>
+  </li>
+</ol>
 
 <p><a href="https://what2eat-chat.streamlit.app/">What2Eat_Chat(채팅 기반)</a></p>
 
@@ -372,7 +400,7 @@ html{--accent-color: rgb(79,177,186);--accent-color-faded: rgba(79, 177, 186, 0.
 </ol>
 
 <h2 id="skill">Skill.</h2>
-<p><img src="/assets/img/blog/ai_snap/skill.png" alt="Screenshot" />{:.lead width=”1920” height=”1080” loading=”lazy”</p>
+<p><img src="/assets/img/blog/ai_snap/skill.png" alt="Screenshot" class="lead" width="1920" height="1080" loading="lazy" /></p>
 
 <ul>
   <li><a href="https://drive.google.com/file/d/10DcADYbd8-W5dN6VphZve3X8pT1ti-IH/view?usp=sharing">2022 빅데이터 경진대회 ‘사회보장 유레카’ 우수상</a></li>

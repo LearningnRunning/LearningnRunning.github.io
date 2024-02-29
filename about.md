@@ -113,6 +113,7 @@ Checco라는 플랫폼을 통해 일본에서 한국 화장품에 대한 정보�
 - Pandas
 - Selenium
 - BeautifulSoup4
+- scikit-learn
 - LangChain
 - Mistral-7B
 - Sentence-transformers model

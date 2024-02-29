@@ -1,61 +1,53 @@
 ---
 layout: post
-title:  "80일 안에 AI 서비스 배포하기"
-date:   2023-12-20 19:11:11 +0900
+title:  "NAVER DEVIEW 2023 후기"
+date:   2023-02-28 19:11:11 +0900
 categories: Tech review
 description: >
   대표님 말씀대로 '하루빨리' AI 서비스 개발기
 image: 
   path: https://file.noononda.com/article/202306/20230612002916.jpg
 ---
-# 80일 안에 AI 서비스 배포하기
+
+3년 만에 오프라인으로 개최한 네이버 개발자 컨퍼런스에 다녀왔습니다. 추후 온라인으로도 풀리겠지만 저번 AI엑스포에 다녀온 경험이 좋아서 현장으로 다녀왔습니다. 오랜만에 연 오프라인 DEVIEW라서 티켓팅이 싸이 콘서트만 했다고 들었습니다. 다녀오지 못한 분들을 위해 다녀온 만큼의 정보를 얻을 수 있는 포스팅을 하려고 합니다. 
+
+# 세션 소개
+[Home](https://deview.kr/2023/sessions) 세션마다 간략한 소개, 발표자 정보 그리고 발표자료가 정보가 담겨있습니다.
+
+[질문방](https://ntalk.naver.com/ch/N1nth)
+
+## 09:50 ~ 10:45 
+> KEYNOTE
+
+![](https://velog.velcdn.com/images/sungrok7/post/d9f2df60-df11-4367-9ed0-ee2c206a81f2/image.jpeg)
+키노트에서는 이틀간의 컨퍼런스에서
+ChatGPT
+키워드는 우리가 파악하겠다
+
+키노트 외에는 4개의 파티션으로 나눠 진행했습니다. 
+
+## 11:15 ~ 12:00
+['더' 잘 읽히고 자연스러운 이미지 번역을 위해(파파고 텍스트 렌더링 개발기)](https://deview.kr/data/deview/session/attach/[141]+'%EB%8D%94'+%EC%9E%98+%EC%9D%BD%ED%9E%88%EA%B3%A0+%EC%9E%90%EC%97%B0%EC%8A%A4%EB%9F%AC%EC%9A%B4+%EC%9D%B4%EB%AF%B8%EC%A7%80+%EB%B2%88%EC%97%AD%EC%9D%84+%EC%9C%84%ED%95%B4(%ED%8C%8C%ED%8C%8C%EA%B3%A0+%ED%85%8D%EC%8A%A4%ED%8A%B8+%EB%A0%8C%EB%8D%94%EB%A7%81+%EA%B0%9C%EB%B0%9C%EA%B8%B0).pdf)
+
+## 12:15 ~ 13:00
+[초등학생 AI모델 고등학교 보내기: Continual Learning으로 지속적으로 성장하는 AI 시스템 만들기](https://deview.kr/data/deview/session/attach/[112]%EC%B4%88%EB%93%B1%ED%95%99%EC%83%9D%20AI%EB%AA%A8%EB%8D%B8%20%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90%20%EB%B3%B4%EB%82%B4%EA%B8%B0%20Continual%20Learning%EC%9C%BC%EB%A1%9C%20%EC%A7%80%EC%86%8D%EC%A0%81%EC%9C%BC%EB%A1%9C%20%EC%84%B1%EC%9E%A5%ED%95%98%EB%8A%94%20AI%20%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0.pdf)
+
+## 14:00 ~ 14:45
+[검출과 인식 모델을 하나로? : challenge 우승 OCR 서비스 모델 새 출시!](https://deview.kr/data/deview/session/attach/[143]%EA%B2%80%EC%B6%9C%EA%B3%BC%EC%9D%B8%EC%8B%9D%EB%AA%A8%EB%8D%B8%EC%9D%84%ED%95%98%EB%82%98%EB%A1%9C+challenge+%EC%9A%B0%EC%8A%B9+OCR%EB%AA%A8%EB%8D%B8+%EC%83%88%EC%B6%9C%EC%8B%9C.pdf)
+
+## 15:00 ~ 15:45
+[상황에 맞는 취향 장소 발견하기. HyperLocal 추천 시스템 A to Z](https://deview.kr/data/deview/session/attach/[134]%EC%83%81%ED%99%A9%EC%97%90+%EB%A7%9E%EB%8A%94+%EC%B7%A8%ED%96%A5+%EC%9E%A5%EC%86%8C+%EB%B0%9C%EA%B2%AC%ED%95%98%EA%B8%B0.+HyperLocal+%EC%B6%94%EC%B2%9C+%EC%8B%9C%EC%8A%A4%ED%85%9C+A+to+Z_Final%20(1).pdf)
 
 
-2023년 하반기, SNOW 사의 AI 프로필의 성행으로 AI를 기반으로 내가 찍은 듯한 사진을 제공하는 서비스가 큰 인기를 끌었다. 이에 우리 회사 대표님도 이러한 서비스를 개발하고 싶다는 뜻을 밝히셨다. 그것도 "하루 빨리"
+## 16:00 ~ 16:45
+[이제는 AI가 읽고(Language), 보고(Vision), 생성하는 Large-scale Multimodal의 시대입니다](https://deview.kr/data/deview/session/attach/[125]%EC%9D%B4%EC%A0%9C%EB%8A%94+AI%EA%B0%80+%EC%9D%BD%EA%B3%A0(Language),+%EB%B3%B4%EA%B3%A0(Vision),+%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94+Large-scale+Multimodal%EC%9D%98+%EC%8B%9C%EB%8C%80%EC%9E%85%EB%8B%88%EB%8B%A4.pdf)
 
 
-![](https://file.noononda.com/article/202306/20230612002916.jpg)
-이에 따라, 2023년 7월 26일, AI 사진 서비스 프로젝트가 시작되었다. 다시 한번 멘땅의 헤딩이 시작되는 듯 하였지만 저번 프로젝트 [BalanceMakeUp]와 달리 확실한 레퍼런스가 있는 듯하여 조금은 안심이 되었다. 두려웠던 건 빡빡한 프로젝트 기간과 유료 서비스 계획이었다. 
+## 17:00 ~ 17:45
+[언어 모델 기반의 범용 유저 임베딩과 이를 활용한 추천시스템 및 광고 타겟팅](https://deview.kr/data/deview/session/attach/[126]%EC%96%B8%EC%96%B4+%EB%AA%A8%EB%8D%B8+%EA%B8%B0%EB%B0%98%EC%9D%98+%EB%B2%94%EC%9A%A9+%EC%9C%A0%EC%A0%80+%EC%9E%84%EB%B2%A0%EB%94%A9%EA%B3%BC+%EC%9D%B4%EB%A5%BC+%ED%99%9C%EC%9A%A9%ED%95%9C+%EC%B6%94%EC%B2%9C%EC%8B%9C%EC%8A%A4%ED%85%9C+%EB%B0%8F+%EA%B4%91%EA%B3%A0+%ED%83%80%EA%B2%9F%ED%8C%85.pdf)
 
-먼저, SNOW의 AI 프로필을 리뷰하였다. 또한, 메이튜, [캐럿](https://carat.im/)과 같이 AI 이미지 생성 서비스를 하고 있는 다른 플랫폼도 리뷰하였다. 
-
-## AI 프로필은 사실 딥페이크?
-
-레퍼런스 조사를 통해 경쟁 서비스의 구현 구조를 파악하려 하였다. 처음엔 Stable Diffusion를 활용한 사진 생성 서비스가 아닐까 하였지만 실제는 옷이나 배경은 변경하지 않고 얼굴만 바꿔주는 서비스가 아닐까 싶었다.
-![](https://velog.velcdn.com/images/sungrok7/post/c8ca0979-c52a-4c1b-8ccf-b5cedad1fe90/image.jpg)
-
-이 가설을 토대로 기능 설계를 해보았다. 먼저 틀로 쓸 사진 세트가 필요했고 이용자의 얼굴을 딥페이크로 입혀보는 기능을 준비했다. 
-
-## 사진 테마 정하기
-AI프로필과는 완전히 똑같이 할 수 없었고 다른 테마가 필요했다. 레퍼런스 조사를 통해 경쟁 서비스가 이용자들에게 어떤 만족을 주고, 어떤 욕구를 해결해주었는지 살펴보았다. 
-
-- 다른 장소나 스타일링을 손쉽게 경험할 수 있다.
-- 정돈된 모습으로 자신을 표현할 수 있다.
-
-이러한 이용자의 니즈와 SNOW사의 AI프로필과의 차별점을 살려, Snap 사진을 콘셉트로 정했고 서비스 이름도 'AI Snap'으로 하였다.
-
-Snap사진은 이용자들이 다양한 경험과 자신을 표현할 수 있는 기회를 제공하고자 한다. 다양한 장소와 스타일링으로 전문 작가가 찍은 듯한 사진을 제공하는 것이 서비스의 목표였다.
-
-전문 작가가 찍은 것처럼 각 테마별로 세트를 준비하였다. 예를 들어, 봄 버전은 꽃이 만개했고 여름은 싱그러운 파란색 배경에서 가을은 단풍이나 은행나무 배경으로 겨울은 흰 배경으로 사계절를 세트로 하였다. AI 서비스 특성상 일회성 이용이 아닌 여러 테마를 제공함으로써 지속적인 관심을 유도할 수 있다는 장점도 가지고 있다.
-![](https://velog.velcdn.com/images/sungrok7/post/5a72e14c-24f1-4e45-b641-712e021eae6f/image.jpg)
-
-
-
-## 선명하지 않음이 오히려 자연스럽다는 것
-
-AI 사진 특성상 피부가 매우 매끄럽다. 딥페이크를 적용한 결과물을 Photoshop에서 이런 저런 조정을 해보며  AI스럽지 않은 이미지를 만들어 보았다.
-
-- 대비를 낮추어, 사진의 자연스러움을 높였다.
-- Noise를 추가하여, 사진의 질감을 살렸다.
-
-이를 OpenCV를 이용하여 적용해보았다.
-![](https://velog.velcdn.com/images/sungrok7/post/1725ed5f-c3fc-4e0f-91f6-f1c427c5068d/image.jpg)
-
-
-# 결론
-71일 만에 Phase 1이 배포되었고 지금은 Phase 2에서는 좀더 여러 테마를 보일 예정이다. 
-![](https://velog.velcdn.com/images/sungrok7/post/21daf748-d86f-4621-b602-33a1c8fc79d7/image.jpg)
-
+# PREVIOUS
+[나 대신 손글씨 써주는 AI 만들기 (성공적인 Side Project)](https://deview.kr/2019/schedule/294)
 
 
 사진출처

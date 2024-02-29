@@ -40,6 +40,7 @@ Checco라는 플랫폼을 통해 일본에서 한국 화장품에 대한 정보�
 - Stable Diffusion
 - MediaPipe, Google
 - Docker
+- NAVER CLOUD PLATFORM
 
 #### 성과
 1. [Phase2 업데이트에 맞춰 일본 대형 이커머스와 크리스마스 콜라보 프로젝트 진행](https://www.qoo10.jp/gmkt.inc/Special/Special.aspx?sid=298299)
@@ -67,6 +68,7 @@ Checco라는 플랫폼을 통해 일본에서 한국 화장품에 대한 정보�
 - Ngnix
 - Docker
 - Docker Compose
+- NAVER CLOUD PLATFORM
 
 # Other Experience.
 ## 사이드 프로젝트 

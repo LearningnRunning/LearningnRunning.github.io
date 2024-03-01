@@ -4,9 +4,9 @@ title:  "NAVER DEVIEW 2023 후기"
 date:   2023-02-28 19:11:11 +0900
 categories: Tech review
 description: >
-  대표님 말씀대로 '하루빨리' AI 서비스 개발기
+  취향식탁을 2016년부터 하고 있던 네이버 AirSearch 팀을 발견하다
 image: 
-  path: https://file.noononda.com/article/202306/20230612002916.jpg
+  path: https://velog.velcdn.com/images/sungrok7/post/d9f2df60-df11-4367-9ed0-ee2c206a81f2/image.jpeg
 ---
 
 3년 만에 오프라인으로 개최한 네이버 개발자 컨퍼런스에 다녀왔습니다. 추후 온라인으로도 풀리겠지만 저번 AI엑스포에 다녀온 경험이 좋아서 현장으로 다녀왔습니다. 오랜만에 연 오프라인 DEVIEW라서 티켓팅이 싸이 콘서트만 했다고 들었습니다. 다녀오지 못한 분들을 위해 다녀온 만큼의 정보를 얻을 수 있는 포스팅을 하려고 합니다. 

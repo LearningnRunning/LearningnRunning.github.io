@@ -22,7 +22,7 @@ redirect_from:
 ### 주요 프로젝트 1. AI Snap
 [기간: 2023.07.26. ~ 2023.12.12](https://learningnrunning.github.io/example/tech/review/2023-12-20-Deploying-AI-services-in-80-days/)
 
-![Screenshot](assets/img/blog/ai_snap/snap_generator_1.png){:.lead width="1920" height="1080" loading="lazy"}   
+![Screenshot](../../assets/img/blog/ai_snap/ai_snap_process_ex.png){:.lead width="1920" height="1080" loading="lazy"}   
 유저의 셀카 이미지로 다양한 콘셉트의 이미지 사진을 제작해 주는 AI 서비스
    
 #### 기여한 부분
@@ -45,7 +45,11 @@ redirect_from:
 #### 성과
 1. [Phase2 업데이트에 맞춰 일본 대형 이커머스와 크리스마스 콜라보 프로젝트 진행](https://www.qoo10.jp/gmkt.inc/Special/Special.aspx?sid=298299)
 2. checco 플랫폼 가입자 수 AI Snap 기능 출시 후 300% 증가
-   
+
+#### 이용 가이드
+[checco AppStore](https://apps.apple.com/kr/app/checco-%E3%83%81%E3%82%A7%E3%83%83%E3%82%B3-%E9%9F%93%E5%9B%BD%E3%82%B3%E3%82%B9%E3%83%A1%E4%BD%93%E9%A8%93-%E8%82%8C%E8%A8%BA%E6%96%AD-%E5%8C%96%E7%B2%A7%E5%93%81%E6%88%90%E5%88%86/id1453489096)
+![Screenshot](../../assets/img/blog/ai_snap/ai_snap_use_guide.png){:.lead width="1920" height="1080" loading="lazy"}
+
 ### 주요 프로젝트 2. BalanceMakeUp
 [기간: 2023.03.13.~2023.07.18.](https://learningnrunning.github.io/example/tech/review/2023-12-20-Deploying-AI-services-in-80-days/)
 ![Screenshot](assets/img/blog/ai_snap/balancemakeup_ex.png){:.lead width="1920" height="1080" loading="lazy"}   
@@ -67,8 +71,12 @@ redirect_from:
 - FastAPI
 - Ngnix
 - Docker
-- Docker Compose
+- Docker Co
 - NAVER CLOUD PLATFORM
+
+#### 이용 가이드
+[checco AppStore](https://apps.apple.com/kr/app/checco-%E3%83%81%E3%82%A7%E3%83%83%E3%82%B3-%E9%9F%93%E5%9B%BD%E3%82%B3%E3%82%B9%E3%83%A1%E4%BD%93%E9%A8%93-%E8%82%8C%E8%A8%BA%E6%96%AD-%E5%8C%96%E7%B2%A7%E5%93%81%E6%88%90%E5%88%86/id1453489096)![Screenshot](../../assets/img/blog/ai_snap/balanceMakeup_use_guide.png){:.lead width="1920" height="1080" loading="lazy"}
+
 
 # Other Experience.
 ## 사이드 프로젝트 
@@ -139,7 +147,7 @@ redirect_from:
 
 ## Skill.
 ![Screenshot](assets/img/blog/ai_snap/skill.png){:.lead width="1920" height="1080" loading="lazy"}
-
+## 수상
 - [2022 빅데이터 경진대회 ‘사회보장 유레카’ 우수상](https://drive.google.com/file/d/10DcADYbd8-W5dN6VphZve3X8pT1ti-IH/view?usp=sharing)
 - [2022 공개 SW개발자대회 동상](https://drive.google.com/file/d/1-EWjBM--Uu_0Jr7v5Wm9UtcdhvqnmFi2/view?usp=drive_link)
 - 2023 수묵화 데이터셋을 활용한 공모전 장려상

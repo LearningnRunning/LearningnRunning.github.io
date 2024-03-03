@@ -1,5 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-03-03T21:42:17+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Learning&amp;amp;Running</title><subtitle>데이터를 통해 비즈니스의 효율성을 높이고,고객의 경험을 향상시키는 데 기여하고 싶은 데이터 엔지니어, 김성록입니다.
-</subtitle><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><entry><title type="html">80일 안에 AI 서비스 배포하기</title><link href="http://localhost:4000/example/tech/review/2023-12-20-Deploying-AI-services-in-80-days/" rel="alternate" type="text/html" title="80일 안에 AI 서비스 배포하기" /><published>2023-12-20T19:11:11+09:00</published><updated>2024-02-21T19:33:08+09:00</updated><id>http://localhost:4000/example/tech/review/Deploying%20AI%20services%20in%2080%20days</id><content type="html" xml:base="http://localhost:4000/example/tech/review/2023-12-20-Deploying-AI-services-in-80-days/"><![CDATA[<p>2023년 하반기, SNOW 사의 AI 프로필의 성행으로 AI를 기반으로 내가 찍은 듯한 사진을 제공하는 서비스가 큰 인기를 끌었다. 이에 우리 회사 대표님도 이러한 서비스를 개발하고 싶다는 뜻을 밝히셨다. 그것도 “하루 빨리”</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-03-04T01:02:47+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Learning&amp;amp;Running</title><subtitle>데이터를 통해 비즈니스의 효율성을 높이고,고객의 경험을 향상시키는 데 기여하고 싶은 데이터 엔지니어, 김성록입니다.
+</subtitle><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><entry><title type="html">카카오록에서 머먹이 되기까지</title><link href="http://localhost:4000/example/tech/review/2024-03-03-from-kakaoRok-to-What2Eat/" rel="alternate" type="text/html" title="카카오록에서 머먹이 되기까지" /><published>2024-03-03T19:11:11+09:00</published><updated>2024-03-04T01:02:47+09:00</updated><id>http://localhost:4000/example/tech/review/from%20kakaoRok%20to%20What2Eat</id><content type="html" xml:base="http://localhost:4000/example/tech/review/2024-03-03-from-kakaoRok-to-What2Eat/"><![CDATA[<p>지난 포스팅 <a href="https://learningnrunning.github.io/example/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/"><strong>카카오맵 하나로 괜찮은 맛집 찾기</strong></a> 이후 계속해서 작업을 해왔고 어느 정도 프로토타입을 완성하여, 정리 겸 글을 써본다.</p>
+
+<p>일단 인간 카카오맵인 내가 맛집을 찾을 때면, 해당 지역에서 ‘맛집’을 검색한 후 음식점 평균 평점이 3.5 이상이 되는 맛집들을 하나씩 살펴본다.리뷰를 중점으로 봐왔지만 개인의 평균평점이 노출되는 카카오맵의 업데이트 이후 평점을 위주로 봐왔다. 그걸 자동화 해봤다.</p>
+
+<h2 id="분석-방법">분석 방법</h2>
+<blockquote>
+  <p>만족한 유저와 불만족한 유저 수를 계산하여 노출하기</p>
+</blockquote>
+
+<p><img src="/assets/img/blog/ai_snap/What2Eat_AnalysisMethods.png" alt="Screenshot" class="lead" width="1920" height="1080" loading="lazy" /></p>
+
+<ol>
+  <li>유의미한 호(好) 리뷰 찾는 방법</li>
+</ol>
+
+<p>카카오맵에서 스크래핑 해온 음식점 리뷰 데이터에서 개인의 평균 평점이 3.8 이상인 유저가 해당 음식점에 4점 이상의 별점을 남겼다면 그 음식점에 만족을 했다고 보고 유의미한 호(好) 리뷰어라고 판단</p>
+
+<ul>
+  <li>
+    <p>쩝쩝박사 - 유의미한 호(好) 리뷰어 인원</p>
+  </li>
+  <li>
+    <p>쩝쩝퍼센트 - (유의미한 호(好) 리뷰어 수/ 전체 리뷰어 수) * 100</p>
+  </li>
+</ul>
+
+<h5 id="화면-노출-조건"><strong>화면 노출 조건</strong></h5>
+
+<p>쩝쩝박사 인원 수가 5명이 넘는 음식점 중에서 쩝쩝 퍼센트가 높은 순으로 목록을 제공됩니다.</p>
+
+<ol>
+  <li>유의미한 비호(非好) 리뷰 찾는 방법</li>
+</ol>
+
+<p>개인의 평균 평점이 3.5 이상인 유저가 해당 음식점에 1.5점 이하로 별점을 남겼다면 그 음식점에 불만족을 했다고 보고 유의미한 비호(非好) 리뷰어라고 판단</p>
+
+<ul>
+  <li>비호퍼센트 - 유의미한 비호(非好) 리뷰어 수 / 전체 리뷰어수 * 100</li>
+</ul>
+
+<h5 id="화면-노출-조건-1"><strong>화면 노출 조건</strong></h5>
+
+<p>비호퍼센트가 10프로 넘으면 호(好) 화면 노출 조건에 맞더라도 비호퍼센트를 노출하며 주의를 줍니다.</p>
+
+<h2 id="uiux-고민">UI/UX 고민</h2>
+
+<h3 id="프롬프트-버전카카오록">프롬프트 버전(카카오록)</h3>
+
+<p>프롬프트 버전으로 가장 간단하게 구현해봤다. 가장 빨리 만들 수 있는 방법이었고 먼저 팀 내에서 사용할 목적이었기 때문이다. 바로 지도가 필요하다는 피드백이 왔다.</p>
+
+<p><img src="/assets/img/blog/prompt_kakaorok.png" alt="Screenshot" /></p>
+
+<h3 id="streamlit으로는-한계인-지도-기반-버전">Streamlit으로는 한계인 지도 기반 버전</h3>
+
+<p>처음엔 지도 기반으로 개발 하였다. 이는 Streamlit 프레임워크로 개발하기엔 한계점인데, 그 이유는 앱에서 사용하기가 불편하기 때문이다. 그래서 여전히 Web 버전으로 남겨두었다. 그리고 이때 데이터를 읽어들이는 과정에서 개선을 하기 위해, 하루 해커톤을 하였고 이 과정에서 kakaoRok이 아닌 What2Eat으로 명칭을 변경하였다.</p>
+
+<p><img src="/assets/img/blog/ai_snap/what2eat_map_ver.png" alt="Screenshot" /></p>
+
+<h3 id="채팅-형식의-ux로-바꾼-이유">채팅 형식의 UX로 바꾼 이유</h3>
+
+<p>앱에서 이용하기 불편한 이유에서인지  What2Eat을 소개한 친구들도 여전히 나한테 맛집을 물어보는 친구들이 많았다. 카톡으로 여러 맛집을 이름/링크/추천이유를 보내던 중, What2Eat도 친구에게 보내주듯 구현하면 어떨까 아이디어가 떠올라. 친구가 알려주는 맛집 리스트 개념으로 UX를 잡았다.</p>
+
+<p><img src="/assets/img/blog/ai_snap/What2Eat_Examplescreen.png" alt="Screenshot" class="lead" width="1920" height="1080" loading="lazy" />
+<br /><br /></p>
+
+<h1 id="결과">결과</h1>
+<p><a href="https://what2eat-chat.streamlit.app/">What2Eat_Chat(채팅 기반)</a><br />
+<a href="https://what2eat.streamlit.app/">What2Eat(지도 기반)</a><br />
+<a href="https://github.com/LearningnRunning/What2Eat/tree/main">What2Eat 소스코드</a><br /></p>
+
+<h2 id="후기">후기</h2>
+<p>What2Eat 믿고 찾아 가보기</p>
+<h3 id="신촌에서">신촌에서</h3>
+<p><img src="../../assets/img/blog/what2eat_review.png" alt="Screenshot" class="lead" width="1920" height="1080" loading="lazy" />
+날씨가 추워 많이 걷지 못하여, 500미터로 하였고 좋아하는 카테고리를 모두 골라보았다. 평점을 남긴 사람 중에 절반 가까이가 솔직한 평가인 쩝쩝박사가 인증한 곳이다. 신촌에 1년 넘게 산 적이 있는데 그 당시에도 있었을 법했고 살던 곳 근처인데도 몰랐던 맛집이라 신기했다. 결과는 대만족이었다…</p>
+
+<p>‘What2Eat(머먹)’으로 찾은 곳은 신기하게도 그 음식점 주변은 조용한데, 그 음식점만 바글바글 사람이 많다.</p>]]></content><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><category term="example" /><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[데이터 분석 결과만으로 찐맛집 찾기 프로젝트]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/fromkakaorokTowhat2eat.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/fromkakaorokTowhat2eat.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">80일 안에 AI 서비스 배포하기</title><link href="http://localhost:4000/example/tech/review/2023-12-20-Deploying-AI-services-in-80-days/" rel="alternate" type="text/html" title="80일 안에 AI 서비스 배포하기" /><published>2023-12-20T19:11:11+09:00</published><updated>2024-02-21T19:33:08+09:00</updated><id>http://localhost:4000/example/tech/review/Deploying%20AI%20services%20in%2080%20days</id><content type="html" xml:base="http://localhost:4000/example/tech/review/2023-12-20-Deploying-AI-services-in-80-days/"><![CDATA[<p>2023년 하반기, SNOW 사의 AI 프로필의 성행으로 AI를 기반으로 내가 찍은 듯한 사진을 제공하는 서비스가 큰 인기를 끌었다. 이에 우리 회사 대표님도 이러한 서비스를 개발하고 싶다는 뜻을 밝히셨다. 그것도 “하루 빨리”</p>
 
 <p><img src="https://file.noononda.com/article/202306/20230612002916.jpg" alt="" />
 이에 따라, 2023년 7월 26일, AI 사진 서비스 프로젝트가 시작되었다. 다시 한번 멘땅의 헤딩이 시작되는 듯 하였지만 저번 프로젝트 [BalanceMakeUp]와 달리 확실한 레퍼런스가 있는 듯하여 조금은 안심이 되었다. 두려웠던 건 빡빡한 프로젝트 기간과 유료 서비스 계획이었다.</p>
@@ -522,7 +598,7 @@ NeMo Guardrails는 프로그래밍 가능한 가드레일을 LLM 기반 대화�
 
 <h3 id="기록하는-실패">기록하는 실패</h3>
 <p><br />
-박미정님이 말씀해주신 대로 이제는 “실패”를 한다면 실패 루틴을 기록하기로 했다. 먼저 이번 달 실패인 “한 달에 다섯번만 술 마시기” 실패 루틴을 가볍게 작성해보려한다.</p>]]></content><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><category term="example" /><category term="3월" /><category term="우아한테크" /><category term="세미나" /><category term="후기" /><summary type="html"><![CDATA[테크 세미나 뽀개기_우아한형제들]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://velog.velcdn.com/images/sungrok7/post/923adf18-226d-428d-b598-8266d7c9b90b/image.jpeg" /><media:content medium="image" url="https://velog.velcdn.com/images/sungrok7/post/923adf18-226d-428d-b598-8266d7c9b90b/image.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">NAVER DEVIEW 2023 후기</title><link href="http://localhost:4000/example/tech/review/2023-02-28-naver_deview/" rel="alternate" type="text/html" title="NAVER DEVIEW 2023 후기" /><published>2023-02-28T19:11:11+09:00</published><updated>2024-03-01T19:48:50+09:00</updated><id>http://localhost:4000/example/tech/review/naver_deview</id><content type="html" xml:base="http://localhost:4000/example/tech/review/2023-02-28-naver_deview/"><![CDATA[<p>3년 만에 오프라인으로 개최한 네이버 개발자 컨퍼런스에 다녀왔다. 추후 온라인으로도 풀리겠지만 저번 AI엑스포에 다녀온 경험이 좋아서 현장으로 꼭 다녀오고 싶었다. 오랜만에 연 오프라인 DEVIEW라서 티켓팅이 싸이 콘서트만큼 힘들었다고 들었다. 다녀오지 못한 분들을 위해 다녀온 만큼의 정보를 얻을 수 있는 포스팅을 한다.</p>
+박미정님이 말씀해주신 대로 이제는 “실패”를 한다면 실패 루틴을 기록하기로 했다. 먼저 이번 달 실패인 “한 달에 다섯번만 술 마시기” 실패 루틴을 가볍게 작성해보려한다.</p>]]></content><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><category term="example" /><category term="3월" /><category term="우아한테크" /><category term="세미나" /><category term="후기" /><summary type="html"><![CDATA[테크 세미나 뽀개기_우아한형제들]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://velog.velcdn.com/images/sungrok7/post/923adf18-226d-428d-b598-8266d7c9b90b/image.jpeg" /><media:content medium="image" url="https://velog.velcdn.com/images/sungrok7/post/923adf18-226d-428d-b598-8266d7c9b90b/image.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">NAVER DEVIEW 2023 후기</title><link href="http://localhost:4000/example/tech/review/2023-02-28-naver_deview/" rel="alternate" type="text/html" title="NAVER DEVIEW 2023 후기" /><published>2023-02-28T19:11:11+09:00</published><updated>2024-03-03T21:47:56+09:00</updated><id>http://localhost:4000/example/tech/review/naver_deview</id><content type="html" xml:base="http://localhost:4000/example/tech/review/2023-02-28-naver_deview/"><![CDATA[<p>3년 만에 오프라인으로 개최한 네이버 개발자 컨퍼런스에 다녀왔다. 추후 온라인으로도 풀리겠지만 저번 AI엑스포에 다녀온 경험이 좋아서 현장으로 꼭 다녀오고 싶었다. 오랜만에 연 오프라인 DEVIEW라서 티켓팅이 싸이 콘서트만큼 힘들었다고 들었다. 다녀오지 못한 분들을 위해 다녀온 만큼의 정보를 얻을 수 있는 포스팅을 한다.</p>
 
 <h1 id="세션-소개">세션 소개</h1>
 <p><a href="https://deview.kr/2023/sessions">Home</a> 세션마다 간략한 소개, 발표자 정보 그리고 발표자료가 정보가 있다.</p>
@@ -600,45 +676,4 @@ SQL 문법만으로 보면 아직까지도 실질적인 표준은 SQL99이고 �
 <p>다만, 공식명부를 파일데이터로 구할 수 없었다면, OCR 기술이 필요했을 것 같다.</p>
 
 <p><a href="https://ko.wikipedia.org/wiki/%EA%B0%80%ED%86%A8%EB%A6%AD_%EA%B5%90%ED%9A%8C%EC%9D%98_%EC%84%B1%EC%A0%81_%ED%95%99%EB%8C%80_%EC%82%AC%EA%B1%B4">가톨릭 교회의 성적 학대 사건</a>
-<img src="https://velog.velcdn.com/images/sungrok7/post/f52f7816-64a1-453d-9fa8-4009a722d5e8/image.png" alt="" /></p>]]></content><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><category term="example" /><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[영화 [스포트라이트]에서 나오는 《더 보스턴 글로브 The Boston Globe》는 1990년대 말에 게오건 사건을 취재하기 시작했다. 게오건 신부는 30년 간 6개 교구를 옮겨 다니며 수십 명의 아동을 성추행 하였고 보스턴 교구장 버나드 로우 추기경은 이를 알고도 덮어준 것이었다. 스포트 라이트 팀은 이 같은 성범죄와 은폐가 게오건 1인이 아닌 여러 교구에 걸쳐 여러 사제들까지도 저질렀고 교구 차원에서 조직적으로 은폐해온 정황을 포착했다.]]></summary></entry><entry><title type="html">카카오맵 하나로 괜찮은 맛집 찾기</title><link href="http://localhost:4000/example/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/" rel="alternate" type="text/html" title="카카오맵 하나로 괜찮은 맛집 찾기" /><published>2022-10-22T11:11:11+09:00</published><updated>2024-02-21T19:33:08+09:00</updated><id>http://localhost:4000/example/tech/review/Finding-good-restaurants-withKakaoMap</id><content type="html" xml:base="http://localhost:4000/example/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/"><![CDATA[<h1 id="1-네이버지도를-쓰지-않는-이유">1. 네이버지도를 쓰지 않는 이유</h1>
-<p><img src="https://velog.velcdn.com/images/sungrok7/post/4dfb8597-3d10-4aab-bc6a-c8a17cf7c836/image.jpg" alt="" />
-네이버 지도의 평점은 기본이 4점 이상이기에 평점 데이터만으로는 맛집을 골라내기가 힘들다.그래서 필자는 리뷰 외에 데이터로 변별하기위해서 카카오맵을 주로 쓴다.</p>
-
-<h1 id="2-달라진-카카오맵">2. 달라진 카카오맵</h1>
-<p><img src="https://velog.velcdn.com/images/sungrok7/post/3bbf9d54-57e8-49cd-b122-67c875cfcaa6/image.png" alt="" />
-평점만으로 괜찮은 음식점인지 판단할 때 가장 주의해야할 점은 광고 리뷰 여부 판단이다. 네이버 뉴스와 다음 뉴스의 리뷰어 정보에서도 마찬가지인 차이인데 네이버와 달리 다음과 카카오는 리뷰어의 다른 정보를 알 수 있다. 이번에 업데이트된 점에서도 그런 변화가 제일 크다. 해당 리뷰를 남긴 사람이 어떤 리뷰 성향인지 알 수 있다. 그런 성향은 광고 리뷰어인지 아닌지 판단하는 데에 좋은 단서가 된다.</p>
-
-<h2 id="1-인간카카오맵">1) 인간카카오맵</h2>
-<p>내가 사는 지역도, 연고도 없는 곳이지만 서울 어느 곳에서 괜찮은 음식점 아는 데가 있냐고 묻는 지인들이 많다. ‘취향식탁’ 프로젝트를 하고 있다고 동네방네 소문 내고 난 뒤에는 맛집 찾는 기계로 생각하는 거 같아, 내가 찾는 형태의 기반으로 RESTAPI 형태로 만들어 보고 있다.</p>
-
-<h3 id="가-카카오맵에서-빠르게-지역-맛집을-찾는-방법">가) 카카오맵에서 빠르게 지역 맛집을 찾는 방법</h3>
-<ol>
-  <li>음식점 평균 평점이 3.5 이상</li>
-  <li>개인 평균 평점이 3.5점 이하인데 해당 음식점에 4점이상 준 인원이 많은 순(깐깐한 리뷰어의 후한 점수)</li>
-  <li>개인 평점이 4점 이상인데 해당 가게에 2점 이하를 줬다면 제외(불호 다수)</li>
-</ol>
-
-<blockquote>
-  <p>1번 조건의 음식점 중에서 3번 조건에 해당하지 않고 2번 조건의 리뷰어들이 많은 순으로 정렬하기</p>
-</blockquote>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> 
-<span class="k">FROM</span> <span class="n">matkimatki</span><span class="p">.</span><span class="n">test1</span> 
-<span class="k">where</span> <span class="n">score_min</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">5</span>
-<span class="k">and</span> <span class="n">rate</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">.</span><span class="mi">5</span>
-<span class="k">and</span> <span class="n">reviewAt</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">;</span>
-<span class="o">//</span> <span class="mi">3</span><span class="err">번</span> <span class="err">조건과</span> <span class="k">row</span> <span class="err">개수</span> <span class="err">기반</span> <span class="err">정렬을</span> <span class="err">보충해야한다</span><span class="p">.</span>
-</code></pre></div></div>
-
-<h1 id="3-추가할-기능">3. 추가할 기능</h1>
-<p>추가로 INPUT 하고 싶은 것은 카테고리와 태그가 있다.</p>
-
-<h2 id="1-카테고리">1) 카테고리</h2>
-<p><img src="https://velog.velcdn.com/images/sungrok7/post/fa8b4701-98ae-430d-b363-26790ba65a5b/image.png" alt="" />
-카카오맵에서 국밥, 해장국, 삼겹살과 같이 업태를 나누어 놨다. 업태를 추가로 입력해주면 그 업태 중에서만 가)의 목록을 뿌려준다.</p>
-
-<h2 id="2-likepoint">2) LikePoint</h2>
-<p>카카오맵에서 추가한 기능인 LikePoint(맛, 분위기, 친절 등등)를 INPUT 값으로 추가해주면 가) 에서 정렬된 값 중에서 그 LikePoint가 있는 음식점을 우선적으로 뽑아 뿌려준다.
-<img src="https://velog.velcdn.com/images/sungrok7/post/7f737dbe-bdda-48b8-9708-880fb245f92d/image.jpg" alt="" /></p>
-
-<p>지금 삼성역 주변으로 데모버전을 만들고 있지만 지인들이 요청하는 지역으로 스크래핑을 해와서 점차 범위를 넓히어 가려고 한다.</p>]]></content><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><category term="example" /><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[1. 네이버지도를 쓰지 않는 이유 네이버 지도의 평점은 기본이 4점 이상이기에 평점 데이터만으로는 맛집을 골라내기가 힘들다.그래서 필자는 리뷰 외에 데이터로 변별하기위해서 카카오맵을 주로 쓴다.]]></summary></entry></feed>
+<img src="https://velog.velcdn.com/images/sungrok7/post/f52f7816-64a1-453d-9fa8-4009a722d5e8/image.png" alt="" /></p>]]></content><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><category term="example" /><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[영화 [스포트라이트]에서 나오는 《더 보스턴 글로브 The Boston Globe》는 1990년대 말에 게오건 사건을 취재하기 시작했다. 게오건 신부는 30년 간 6개 교구를 옮겨 다니며 수십 명의 아동을 성추행 하였고 보스턴 교구장 버나드 로우 추기경은 이를 알고도 덮어준 것이었다. 스포트 라이트 팀은 이 같은 성범죄와 은폐가 게오건 1인이 아닌 여러 교구에 걸쳐 여러 사제들까지도 저질렀고 교구 차원에서 조직적으로 은폐해온 정황을 포착했다.]]></summary></entry></feed>

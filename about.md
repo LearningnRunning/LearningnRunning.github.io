@@ -13,13 +13,29 @@ redirect_from:
 
 <!--author-->
 
-# Work Experience.
+# 목차
 
-## ELINHA Co., Ltd
+|프로젝트 이름|설명|
+|----------|----|
+|[AI Snap](https://learningnrunning.github.io/about/#%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-1-ai-snap)|유저의 셀카 이미지로 다양한 콘셉트의 이미지 사진을 제작해 주는 AI 서비스|
+|[BalanceMakeup](https://learningnrunning.github.io/about/#%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2-balancemakeup)|유저의 얼굴 분석을 통해 ‘나에게 맞는 미‘, ‘나의 얼굴에 맞는 메이크업’을 제시해주는 서비스|
+|[Catch V](https://learningnrunning.github.io/about/#3-catch-v)|디지털 성범죄 피해자 얼굴을 학습하여, <br />유포 범죄에 악용되는 피해자 영상 URL를 찾아주는 오픈소스 프로젝트|
+|[What2Eat](https://learningnrunning.github.io/about/#1-what2eat-%EB%A8%B8%EB%A8%B9)|데이터 분석을 통한 맛집 추천 서비스|
+|[NoCountryForOldMan](https://learningnrunning.github.io/about/#2-nocountryforoldman)|NLP를 활용하는 모두랩 논문 연구 프로젝트|
+|[naverTrans](https://learningnrunning.github.io/about/#3-navertrans)|번역 기능을 사용할 수 있는 파이썬 패키지|
+
+[🛠️ 기술스택](https://learningnrunning.github.io/about/#%EF%B8%8F-%EA%B8%B0%EC%88%A0%EC%8A%A4%ED%83%9D)
+[🎖️ 수상 ](https://learningnrunning.github.io/about/#%EF%B8%8F-%EC%88%98%EC%83%81)
+[🗣️ 발표 및 기타 활동](https://learningnrunning.github.io/about/#%EF%B8%8F-%EB%B0%9C%ED%91%9C-%EB%B0%8F-%EA%B8%B0%ED%83%80-%ED%99%9C%EB%8F%99)
+
+# Work Experience.
+## 🏢 ELINHA Co., Ltd
 2022.10.31 ~ 현재 
 
 [checco](https://apps.apple.com/kr/app/checco-%E3%83%81%E3%82%A7%E3%83%83%E3%82%B3-%E9%9F%93%E5%9B%BD%E3%82%B3%E3%82%B9%E3%83%A1%E4%BD%93%E9%A8%93-%E8%82%8C%E8%A8%BA%E6%96%AD-%E5%8C%96%E7%B2%A7%E5%93%81%E6%88%90%E5%88%86/id1453489096)라는 플랫폼을 통해 일본에서 한국 화장품에 대한 정보를 제공하며, AI 서비스 체험, 커뮤니티, 특가 판매 등 다양한 서비스를 운영하고 있습니다. 일본 애플 앱스토어의 한국 화장품 카테고리에서 1위를 한 바가 있습니다.
-### 주요 프로젝트 1. AI Snap
+
+## 🗂️ 주요 프로젝트
+### 1. AI Snap
 [기간: 2023.07.26. ~ 2023.12.12](https://learningnrunning.github.io/example/tech/review/2023-12-20-Deploying-AI-services-in-80-days/)
 
 ![Screenshot](../../assets/img/blog/ai_snap/ai_snap_process_ex.png){:.lead width="1920" height="1080" loading="lazy"}   
@@ -50,7 +66,7 @@ redirect_from:
 [checco AppStore](https://apps.apple.com/kr/app/checco-%E3%83%81%E3%82%A7%E3%83%83%E3%82%B3-%E9%9F%93%E5%9B%BD%E3%82%B3%E3%82%B9%E3%83%A1%E4%BD%93%E9%A8%93-%E8%82%8C%E8%A8%BA%E6%96%AD-%E5%8C%96%E7%B2%A7%E5%93%81%E6%88%90%E5%88%86/id1453489096)
 ![Screenshot](../../assets/img/blog/ai_snap/ai_snap_use_guide.png){:.lead width="1920" height="1080" loading="lazy"}
 
-### 주요 프로젝트 2. BalanceMakeUp
+### 2. BalanceMakeUp
 [기간: 2023.03.13.~2023.07.18.](https://learningnrunning.github.io/example/tech/review/2023-12-20-Deploying-AI-services-in-80-days/)
 ![Screenshot](assets/img/blog/ai_snap/balancemakeup_ex.png){:.lead width="1920" height="1080" loading="lazy"}   
 유저의 얼굴 분석을 통해 ‘나에게 맞는 미‘, ‘내 얼굴에 맞는 메이크업’을 제시해주는 서비스
@@ -71,14 +87,37 @@ redirect_from:
 - FastAPI
 - Ngnix
 - Docker
-- Docker Co
+- Docker Compose
 - NAVER CLOUD PLATFORM
 
 #### 이용 가이드
 [checco AppStore](https://apps.apple.com/kr/app/checco-%E3%83%81%E3%82%A7%E3%83%83%E3%82%B3-%E9%9F%93%E5%9B%BD%E3%82%B3%E3%82%B9%E3%83%A1%E4%BD%93%E9%A8%93-%E8%82%8C%E8%A8%BA%E6%96%AD-%E5%8C%96%E7%B2%A7%E5%93%81%E6%88%90%E5%88%86/id1453489096)![Screenshot](../../assets/img/blog/ai_snap/balanceMakeup_use_guide.png){:.lead width="1920" height="1080" loading="lazy"}
 
+### 3. Catch V
+기간: 2022.06.20.~2022.12.02.<br />
+디지털성범죄피해자를 지원하기 위해, 유포 범죄에 악용된 영상의 URL 주소를 찾아주는  오픈소스 프로젝트[소개영상](https://www.youtube.com/watch?v=0Ui0ibt0NYQ)
 
-# Other Experience.
+#### 기여한 부분
+
+1. 프로젝트 리더 및 기획
+2. 프로젝트 아키텍처 설계
+3. 유포 우려가 있는 사이트 URL 수집을 위한 웹크롤러 개발
+4. YOLO와 FaceNet를 활용한 닮은 얼굴 디텍팅 모델 개발
+
+#### 사용한 기술
+- Flask
+- Pytorch
+- TensorFlow
+- OpenCV
+- YOLO(Object Detection)
+- FaceNet
+- AmazonRDS
+
+#### 성과
+1. [디지털 성범죄 피해자를 지원하는 공개 소프트웨어 개발](https://github.com/Catch-V/DL)
+2. [2022 SW개발자 대회에서 동상 수상](https://www.oss.kr/dev_competition_activities/show/df4dcf99-2ae1-4ff9-abd8-db699e5bff41?category_item_id=498)
+    
+# 📚 Other Experience.
 ## 사이드 프로젝트 
 ### 1. [What2Eat 머먹?](https://what2eat-chat.streamlit.app/)
 카카오맵 리뷰에서 유의미한 평가만 모은 맛집 추천 서비스
@@ -89,15 +128,18 @@ redirect_from:
 
 #### 개발 방법
 ![Screenshot](assets/img/blog/ai_snap/What2Eat_AnalysisMethods.png){:.lead width="1920" height="1080" loading="lazy"}
+
+> 만족한 유저와 불만족한 유저 수를 계산하여 노출하기
+
 1. 유의미한 호(好) 리뷰 찾는 방법
-   카카오맵에서 스크래핑 해온 음식점 리뷰 데이터에서 개인의 평균 평점이 3.8 이상인 유저가 해당 음식점에 4점 이상의 별점을 남겼다면 유의미한 호(好) 리뷰어라고 판단했습니다.
+   카카오맵에서 스크래핑 해온 음식점 리뷰 데이터에서 개인의 평균 평점이 3.8 이상인 유저가 해당 음식점에 4점 이상의 별점을 남겼다면 그 음식점에 만족을 했다고 보고 유의미한 호(好) 리뷰어라고 판단했습니다.
    * 쩝쩝박사 - 유의미한 호(好) 리뷰어 인원
    * 쩝쩝퍼센트 - (유의미한 호(好) 리뷰어 수/ 전체 리뷰어 수) * 100
    
    ##### 화면 노출 조건
    쩝쩝박사 인원 수가 5명이 넘는 음식점 중에서 쩝쩝 퍼센트가 높은 순으로 목록을 제공됩니다.
 2. 유의미한 비호(非好) 리뷰 찾는 방법
-   개인의 평균 평점이 3.5 이상인 유저가 해당 음식점에 1.5점 이하로 별점을 남겼다면 유의미한 비호(非好) 리뷰어라고 판단했습니다.
+   개인의 평균 평점이 3.5 이상인 유저가 해당 음식점에 1.5점 이하로 별점을 남겼다면 그 음식점에 불만족을 했다고 보고 유의미한 비호(非好) 리뷰어라고 판단했습니다.
    * 비호퍼센트 - 유의미한 비호(非好) 리뷰어 수 / 전체 리뷰어수 * 100
    ##### 화면 노출 조건
    비호퍼센트가 10프로 넘으면 호(好) 화면 노출 조건에 맞더라도 비호퍼센트를 노출하며 주의를 줍니다.
@@ -144,15 +186,27 @@ redirect_from:
 1. 네이버 검색창 Ajax API를 활용한 패키지 코드 작업
 2. [Pypi 업로드](https://pypi.org/project/navertrans/)
 
+#### 이용가이드
+```bash
+pip install navertrans
+```
+```python
+from navertrans import navertrans
 
-## Skill.
+src_txt = 'Please give a round of applause to NAVER.'
+result = navertrans.translate(src_txt, src_lan="en", tar_lan= "ko")
+
+print(result)  # Output: '네이버에게 박수 부탁드립니다.'
+```
+
+## 🛠️ 기술스택
 ![Screenshot](assets/img/blog/ai_snap/skill.png){:.lead width="1920" height="1080" loading="lazy"}
-## 수상
+## 🎖️ 수상
 - [2022 빅데이터 경진대회 ‘사회보장 유레카’ 우수상](https://drive.google.com/file/d/10DcADYbd8-W5dN6VphZve3X8pT1ti-IH/view?usp=sharing)
 - [2022 공개 SW개발자대회 동상](https://drive.google.com/file/d/1-EWjBM--Uu_0Jr7v5Wm9UtcdhvqnmFi2/view?usp=drive_link)
 - 2023 수묵화 데이터셋을 활용한 공모전 장려상
 
-## 발표 및 기타 활동
+## 🗣️ 발표 및 기타 활동
 - 요기요 '취향식탁' 마케팅팀 기술 PT
 - 네이버 부스트코스 코딩코치
   - 코칭스터디 Data Science Projects 2024
@@ -163,7 +217,7 @@ redirect_from:
 
 ![Screenshot](assets/img/blog/Presentation_Experience.png){:.lead width="1920" height="1080" loading="lazy"}
 
-## 교육
+## 🎓 교육
 - 2011 포항 대동고등학교 
 - 2015 용인대학교 영화영상학과
 - 2022 (주)엔코아 부트캠프 PLAYDATA AI 과정

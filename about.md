@@ -119,7 +119,10 @@ redirect_from:
 #### 성과
 1. [디지털 성범죄 피해자를 지원하는 공개 소프트웨어 개발](https://github.com/Catch-V/DL)
 2. [2022 SW개발자 대회에서 동상 수상](https://www.oss.kr/dev_competition_activities/show/df4dcf99-2ae1-4ff9-abd8-db699e5bff41?category_item_id=498)
-    
+
+#### 이용 가이드
+[CatchV Github](https://github.com/Catch-V/DL)
+
 # 📚 Other Experience.
 ## 사이드 프로젝트 
 ### 1. [What2Eat 머먹?](https://what2eat-chat.streamlit.app/)
@@ -155,6 +158,7 @@ redirect_from:
 - Pandas
 - Selenium
 
+#### 이용가이드
 [What2Eat_Chat(채팅 기반)](https://what2eat-chat.streamlit.app/)
 
 [What2Eat(지도 기반)](https://what2eat.streamlit.app/)

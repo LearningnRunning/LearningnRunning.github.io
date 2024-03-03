@@ -17,8 +17,8 @@ redirect_from:
 
 |프로젝트 이름|설명|
 |----------|----|
-|[AI Snap](https://learningnrunning.github.io/about/#%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-1-ai-snap)|유저의 셀카 이미지로 다양한 콘셉트의 이미지 사진을 제작해 주는 AI 서비스|
-|[BalanceMakeup](https://learningnrunning.github.io/about/#%EC%A3%BC%EC%9A%94-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2-balancemakeup)|유저의 얼굴 분석을 통해 ‘나에게 맞는 미‘, ‘나의 얼굴에 맞는 메이크업’을 제시해주는 서비스|
+|[AI Snap](https://learningnrunning.github.io/about/#1-ai-snap)|유저의 셀카 이미지로 다양한 콘셉트의 이미지 사진을 제작해 주는 AI 서비스|
+|[BalanceMakeup](https://learningnrunning.github.io/about/#2-balancemakeup)|유저의 얼굴 분석을 통해 ‘나에게 맞는 미‘, ‘나의 얼굴에 맞는 메이크업’을 제시해주는 서비스|
 |[Catch V](https://learningnrunning.github.io/about/#3-catch-v)|디지털 성범죄 피해자 얼굴을 학습하여, <br />유포 범죄에 악용되는 피해자 영상 URL를 찾아주는 오픈소스 프로젝트|
 |[What2Eat](https://learningnrunning.github.io/about/#1-what2eat-%EB%A8%B8%EB%A8%B9)|데이터 분석을 통한 맛집 추천 서비스|
 |[NoCountryForOldMan](https://learningnrunning.github.io/about/#2-nocountryforoldman)|NLP를 활용하는 모두랩 논문 연구 프로젝트|

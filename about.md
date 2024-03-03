@@ -126,7 +126,7 @@ redirect_from:
 로고디자인, 스크래핑, 데이터구조 설계, 웹 서비스 개발 등 혼자 하였습니다.
 지인 개발자끼리 모여 하루 해커톤을 열어, 데이터 구조 개편 작업을 하였습니다. 덕분에 읽기 속도가 빨라 졌습니다. 
 
-#### 개발 방법
+#### [개발 방법](https://learningnrunning.github.io/example/tech/review/2024-03-03-from-kakaoRok-to-What2Eat/)
 ![Screenshot](assets/img/blog/ai_snap/What2Eat_AnalysisMethods.png){:.lead width="1920" height="1080" loading="lazy"}
 
 > 만족한 유저와 불만족한 유저 수를 계산하여 노출하기

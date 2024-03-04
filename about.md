@@ -1,6 +1,6 @@
 ---
 layout: about
-image: /assets/img/blog/LearningnRunning-001.png
+image: https://velog.velcdn.com/images/sungrok7/post/8526a151-6a97-49c3-84c3-9d889f53d453/image.png
 description: >
   안녕하세요:) 끊임없이 배우고 탄력적으로 성장하는 개발자, 김성록입니다.
 hide_description: true

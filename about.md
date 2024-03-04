@@ -2,8 +2,7 @@
 layout: about
 image: /assets/img/blog/LearningnRunning-001.png
 description: >
-  A boutique Jekyll theme for hackers, nerds, and academics,
-  with a focus on personal sites that are meant to impress.
+  안녕하세요:) 끊임없이 배우고 탄력적으로 성장하는 개발자, 김성록입니다.
 hide_description: true
 redirect_from:
   - /download/

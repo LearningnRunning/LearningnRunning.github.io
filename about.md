@@ -209,7 +209,7 @@ print(result)  # Output: '네이버에게 박수 부탁드립니다.'
 ## 🛠️ 기술스택
 ![Screenshot](assets/img/blog/ai_snap/skill.png){:.lead width="1920" height="1080" loading="lazy"}
 ## 🎖️ 수상
-- [2022 빅데이터 경진대회 ‘사회보장 유레카’ 우수상](https://drive.google.com/file/d/10DcADYbd8-W5dN6VphZve3X8pT1ti-IH/view?usp=sharing)
+- [2022 빅데이터 경진대회 ‘사회보장 유레카’ 우수상](https://drive.google.com/file/d/1jei56tezjEMANGGgcfgHV-8MdGQWAFL-/view?usp=sharing)
 - [2022 공개 SW개발자대회 동상](https://drive.google.com/file/d/1-EWjBM--Uu_0Jr7v5Wm9UtcdhvqnmFi2/view?usp=drive_link)
 - 2023 수묵화 데이터셋을 활용한 공모전 장려상
 

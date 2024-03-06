@@ -65,14 +65,17 @@ image:
 [What2Eat(지도 기반)](https://what2eat.streamlit.app/)<br/>
 [What2Eat 소스코드](https://github.com/LearningnRunning/What2Eat/tree/main)<br/>
 
-## 후기
-What2Eat 믿고 찾아 가보기
+## What2Eat 믿고 직접 찾아 가보기
+
 ### 신촌에서
 ![Screenshot](../../assets/img/blog/what2eat_review.png){:.lead width="1920" height="1080" loading="lazy"}
 날씨가 추워 많이 걷지 못하여, 500미터로 하였고 좋아하는 카테고리를 모두 골라보았다. 평점을 남긴 사람 중에 절반 가까이가 솔직한 평가인 쩝쩝박사가 인증한 곳이다. 신촌에 1년 넘게 산 적이 있는데 그 당시에도 있었을 법했고 살던 곳 근처인데도 몰랐던 맛집이라 신기했다. 결과는 대만족이었다… 
 
 ‘What2Eat(머먹)’으로 찾은 곳은 신기하게도 그 음식점 주변은 조용한데, 그 음식점만 바글바글 사람이 많다.
 
+### 선릉에서
+![Screenshot](../../assets/img/blog/pongyear_1.png){:.lead width="1920" height="1080" loading="lazy"}
+같이 개발 공부하던 친구들이랑 번개 일정이 잡혀서 급하게 머먹으로 찾았는데 대성공이었다. 연거푸 '진짜 맛있다'는 친구들의 평가에 머먹의 뿌듯함을 한껏 느꼈다. 번개를 친 다음주에 또 갔고 이번에도 같이 간 일행들이 모두 만족하였다.
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll

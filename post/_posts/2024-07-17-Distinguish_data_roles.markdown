@@ -19,13 +19,13 @@ image:
 
 그림으로 쉽게 풀어준 이미지를 찾았다.
 
-![[출처] [https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/데이터-분야의-직군-소개](https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%95%BC%EC%9D%98-%EC%A7%81%EA%B5%B0-%EC%86%8C%EA%B0%9C)](https://prod-files-secure.s3.us-west-2.amazonaws.com/3c6e1714-7240-433c-99b0-d075649060a9/bae3d029-8efb-4404-84e7-70515a6ad97d/Untitled.png)
+![[출처] [https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/데이터-분야의-직군-소개](https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%95%BC%EC%9D%98-%EC%A7%81%EA%B5%B0-%EC%86%8C%EA%B0%9C)](https://camo.githubusercontent.com/34bd5dd4b46b0452f0aa375d55b46e281b7a25ffd497cc41aeffb967406e9449/68747470733a2f2f7777772e64726f70626f782e636f6d2f732f77316a76736466306d7638667a346a2f53637265656e73686f74253230323031382d30372d323025323031312e35362e31392e706e673f7261773d31)
 
 [출처] [https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/데이터-분야의-직군-소개](https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%95%BC%EC%9D%98-%EC%A7%81%EA%B5%B0-%EC%86%8C%EA%B0%9C)
 
 데이터를 석유로 비유하자면 석유를 채굴하고 정제하는 엔지니어, 제품을 분석하고 품질 검사하는 분석가, 제품을 혁신적으로 활용하는 방법을 연구하는 사이언티스트로 설명할 수 있다. 
 
-# 단, 회사 by 회사
+## 단, 회사 by 회사
 
 하지만 회사의 규모와 데이터를 활용하는 정도에 따라 역할이 명확하게 구별되지 않을 수 있다. 게다가 한 사람에게 여러 역할을 요구하는 경우도 많다. 규모별 특성과 장단점을 살펴보자.
 
@@ -112,7 +112,7 @@ image:
 - 데이터 시각화 전문가는 "개발자"와 "마케터" 성향이 강하지만 개발자 성향이 약간 더 강하다.
 - 그로스해커는 "마케터" 성향이 가장 강하다.
 
-# 결론
+## 결론
 나는 기획자와 개발자의 성향이 강한 것 같다. 하지만 기획보단 지금의 연차에서는 개발자의 성향을 살려 커리어를 쌓을 때이고 재밌는 것도 개발 일이 더 재밌다. 
 
 데이터 사이언티스트도 고려하지 않은 건 아니지만 AI서비스는 결국 데이터의 양에 따라 성능이 오고 가기에 규모의 경제로 입지가 많이 줄어들 것이 두렵다. 

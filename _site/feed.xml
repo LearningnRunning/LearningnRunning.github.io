@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-07-17T09:51:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Learning&amp;amp;Running</title><subtitle>데이터를 통해 비즈니스의 효율성을 높이고,고객의 경험을 향상시키는 데 기여하고 싶은 데이터 엔지니어, 김성록입니다.
-</subtitle><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><entry><title type="html">데이터 엔지니어, 분석가, 사이언티스트: 역할과 내 커리어의 방향성</title><link href="http://localhost:4000/post/tech/review/2024-07-17-Distinguish_data_roles/" rel="alternate" type="text/html" title="데이터 엔지니어, 분석가, 사이언티스트: 역할과 내 커리어의 방향성" /><published>2024-07-17T09:09:09+09:00</published><updated>2024-07-17T09:46:11+09:00</updated><id>http://localhost:4000/post/tech/review/Distinguish_data_roles</id><content type="html" xml:base="http://localhost:4000/post/tech/review/2024-07-17-Distinguish_data_roles/"><![CDATA[<p>입사 6개월 차까지만 해도 데이터분석가, 데이터엔지니어, 데이터사이언티스트를 구별할 줄 몰랐다. 구성원이 10명 채 안되는 스타트업이다보니 데이터와 관련된 업무는 무엇이든 주워 하였다. 2 년 차쯤되니 구별되기 시작 하였다. 그래서 내가 한 일에서 직군별로 구별하여 정리해보는 시간을 가지기로 했다. 지금쯤에서 한기용 멘토님의 말씀처럼 “급변하는 시대에 결국 내가 좋아하는 것이 무엇인지”  정하고 방향성을 정해야하는 중요한 시기라고 여겼다.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-07-17T09:54:19+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Learning&amp;amp;Running</title><subtitle>데이터를 통해 비즈니스의 효율성을 높이고,고객의 경험을 향상시키는 데 기여하고 싶은 데이터 엔지니어, 김성록입니다.
+</subtitle><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><entry><title type="html">데이터 엔지니어, 분석가, 사이언티스트: 역할과 내 커리어의 방향성</title><link href="http://localhost:4000/post/tech/review/2024-07-17-Distinguish_data_roles/" rel="alternate" type="text/html" title="데이터 엔지니어, 분석가, 사이언티스트: 역할과 내 커리어의 방향성" /><published>2024-07-17T09:09:09+09:00</published><updated>2024-07-17T09:52:39+09:00</updated><id>http://localhost:4000/post/tech/review/Distinguish_data_roles</id><content type="html" xml:base="http://localhost:4000/post/tech/review/2024-07-17-Distinguish_data_roles/"><![CDATA[<p>입사 6개월 차까지만 해도 데이터분석가, 데이터엔지니어, 데이터사이언티스트를 구별할 줄 몰랐다. 구성원이 10명 채 안되는 스타트업이다보니 데이터와 관련된 업무는 무엇이든 주워 하였다. 2 년 차쯤되니 구별되기 시작 하였다. 그래서 내가 한 일에서 직군별로 구별하여 정리해보는 시간을 가지기로 했다. 지금쯤에서 한기용 멘토님의 말씀처럼 “급변하는 시대에 결국 내가 좋아하는 것이 무엇인지”  정하고 방향성을 정해야하는 중요한 시기라고 여겼다.</p>
 
 <p>먼저 세 직군의 역할을 정리해보자.</p>
 
@@ -160,9 +160,8 @@
   </li>
 </ol>
 
-<p>2년 안에 여러가지를 해보았지만 그만큼 깊이가 없다고 느꼈다. 이쯤에서 이직 계획하며 한 직군에 전문성을 쌓고 싶었다.</p>
-
-<p>결국 내가 다른 일보다 열의를 가지고 했던 작업은 데이터를 수집하고 정리하거나 가공하여, 새로운 가치를 띄는 데이터를 만드는 것이었다. 정리와 가공을 하는 과정에서 ML/DL을 이용하는 것에 적극적이었다.</p>
+<p>2년 안에 여러가지를 해보았지만 그만큼 깊이가 없다고 느꼈다. 이쯤에서 이직 계획하며 한 직군에 전문성을 쌓고 싶었다.
+결국 내가 다른 일보다 열의를 가지고 했던 작업은 데이터를 수집하고 정리하거나 가공하여, 새로운 가치를 띄는 데이터를 만드는 것이었다. 정리와 가공을 하는 과정에서 ML/DL을 이용하는 것에 적극적이었다.</p>
 
 <h3 id="문장-유사도를-활용한-상품-매칭">문장 유사도를 활용한 상품 매칭</h3>
 
@@ -178,9 +177,8 @@
 
 <h3 id="나의-성향-파악">나의 성향 파악</h3>
 
-<p>위 링크의 위키에 나온 내용과 함께 6가지 직군을 성향별로 정리를 해보면</p>
-
-<p>모두 개발자이긴 하지만</p>
+<p>위 링크의 위키에 나온 내용과 함께 6가지 직군을 성향별로 정리를 해보면 
+모두 개발자이긴 하지만</p>
 
 <ul>
   <li>데이터 분석가는 “기획자” 성향이 강하고</li>
@@ -192,13 +190,11 @@
 </ul>
 
 <h2 id="결론">결론</h2>
-<p>나는 기획자와 개발자의 성향이 강한 것 같다. 하지만 기획보단 지금의 연차에서는 개발자의 성향을 살려 커리어를 쌓을 때이고 재밌는 것도 개발 일이 더 재밌다.</p>
+<p>나는 기획자와 개발자의 성향이 강한 것 같다. 하지만 기획보단 지금의 연차에서는 개발자의 성향을 살려 커리어를 쌓을 때이고 재밌는 것도 개발 일이 더 재밌다. 
+데이터 사이언티스트도 고려하지 않은 건 아니지만 AI서비스는 결국 데이터의 양에 따라 성능이 오고 가기에 규모의 경제로 입지가 많이 줄어들 것이 두렵다. 
+결국 내가 보다 더 열의를 가지고 흥미 있어하는 직군은 머신러닝/딥러닝을 할 줄 아는 데이터 엔지니어라고 결론을 내렸다.</p>
 
-<p>데이터 사이언티스트도 고려하지 않은 건 아니지만 AI서비스는 결국 데이터의 양에 따라 성능이 오고 가기에 규모의 경제로 입지가 많이 줄어들 것이 두렵다.</p>
-
-<p>결국 내가 보다 더 열의를 가지고 흥미 있어하는 직군은 머신러닝/딥러닝을 할 줄 아는 데이터 엔지니어라고 결론을 내렸다.</p>
-
-<p>다음 포스팅</p>
+<h3 id="다음-포스팅">다음 포스팅</h3>
 
 <p>머신러닝/딥러닝 할 줄 아는 데이터 엔지니어의 로드맵</p>]]></content><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><category term="post" /><category term="Tech" /><category term="review" /><summary type="html"><![CDATA[누구인가? 누가 데이터 소리를 내었어?]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/img/blog/Paper.Holistics.14-2.png" /><media:content medium="image" url="http://localhost:4000/assets/img/blog/Paper.Holistics.14-2.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">카카오록에서 머먹이 되기까지</title><link href="http://localhost:4000/post/tech/review/2024-03-03-from-kakaoRok-to-What2Eat/" rel="alternate" type="text/html" title="카카오록에서 머먹이 되기까지" /><published>2024-03-03T19:11:11+09:00</published><updated>2024-07-17T09:46:11+09:00</updated><id>http://localhost:4000/post/tech/review/from%20kakaoRok%20to%20What2Eat</id><content type="html" xml:base="http://localhost:4000/post/tech/review/2024-03-03-from-kakaoRok-to-What2Eat/"><![CDATA[<p>지난 포스팅 <a href="https://learningnrunning.github.io/example/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/"><strong>카카오맵 하나로 괜찮은 맛집 찾기</strong></a> 이후 계속해서 작업을 해왔고 어느 정도 프로토타입을 완성하여, 정리 겸 글을 써본다.</p>
 

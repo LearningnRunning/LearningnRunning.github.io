@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-07-17T09:55:53+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Learning&amp;amp;Running</title><subtitle>데이터를 통해 비즈니스의 효율성을 높이고,고객의 경험을 향상시키는 데 기여하고 싶은 데이터 엔지니어, 김성록입니다.
-</subtitle><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><entry><title type="html">데이터 엔지니어, 분석가, 사이언티스트: 역할과 내 커리어의 방향성</title><link href="http://localhost:4000/post/tech/review/2024-07-17-Distinguish_data_roles/" rel="alternate" type="text/html" title="데이터 엔지니어, 분석가, 사이언티스트: 역할과 내 커리어의 방향성" /><published>2024-07-17T09:09:09+09:00</published><updated>2024-07-17T09:55:32+09:00</updated><id>http://localhost:4000/post/tech/review/Distinguish_data_roles</id><content type="html" xml:base="http://localhost:4000/post/tech/review/2024-07-17-Distinguish_data_roles/"><![CDATA[<p>입사 6개월 차까지만 해도 데이터분석가, 데이터엔지니어, 데이터사이언티스트를 구별할 줄 몰랐다. 구성원이 10명 채 안되는 스타트업이다보니 데이터와 관련된 업무는 무엇이든 주워 하였다. 2 년 차쯤되니 구별되기 시작 하였다. 그래서 내가 한 일에서 직군별로 구별하여 정리해보는 시간을 가지기로 했다. 지금쯤에서 한기용 멘토님의 말씀처럼 “급변하는 시대에 결국 내가 좋아하는 것이 무엇인지”  정하고 방향성을 정해야하는 중요한 시기라고 여겼다.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2024-07-17T11:37:19+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Learning&amp;amp;Running</title><subtitle>데이터를 통해 비즈니스의 효율성을 높이고,고객의 경험을 향상시키는 데 기여하고 싶은 데이터 엔지니어, 김성록입니다.
+</subtitle><author><name>&lt;Kim&gt; &lt;Seongrok&gt;</name><email>&lt;seongrok.kim@elinha.net&gt;</email></author><entry><title type="html">데이터 엔지니어, 분석가, 사이언티스트: 역할과 내 커리어의 방향성</title><link href="http://localhost:4000/post/tech/review/2024-07-17-Distinguish_data_roles/" rel="alternate" type="text/html" title="데이터 엔지니어, 분석가, 사이언티스트: 역할과 내 커리어의 방향성" /><published>2024-07-17T09:09:09+09:00</published><updated>2024-07-17T09:55:59+09:00</updated><id>http://localhost:4000/post/tech/review/Distinguish_data_roles</id><content type="html" xml:base="http://localhost:4000/post/tech/review/2024-07-17-Distinguish_data_roles/"><![CDATA[<p>입사 6개월 차까지만 해도 데이터분석가, 데이터엔지니어, 데이터사이언티스트를 구별할 줄 몰랐다. 구성원이 10명 채 안되는 스타트업이다보니 데이터와 관련된 업무는 무엇이든 주워 하였다. 2 년 차쯤되니 구별되기 시작 하였다. 그래서 내가 한 일에서 직군별로 구별하여 정리해보는 시간을 가지기로 했다. 지금쯤에서 한기용 멘토님의 말씀처럼 “급변하는 시대에 결국 내가 좋아하는 것이 무엇인지”  정하고 방향성을 정해야하는 중요한 시기라고 여겼다.</p>
 
 <p>먼저 세 직군의 역할을 정리해보자.</p>
 
@@ -61,7 +61,7 @@
 <h3 id="중간-규모-회사">중간 규모 회사</h3>
 
 <ul>
-  <li>데이터 분석가와 데이터 엔지니어 역할이 결합되거나, 데이터 엔지니어와 사이언티스트 역할이 결합될 수 있습니다.</li>
+  <li>데이터 분석가와 데이터 엔지니어 역할이 결합되거나, 데이터 엔지니어와 사이언티스트 역할이 결합될 수 있다.</li>
   <li>
     <p>분석가와 데이터 엔지니어, 데이터 엔지니어와 사이언티스트 두 직무를 묶어서 하는 경우도 있고 데이터엔지니어의 역할은 백엔드가 맡고 ML엔지니어와 데이터 사이언티스트 일을 묶어서 맡을 수도 있다.</p>
 

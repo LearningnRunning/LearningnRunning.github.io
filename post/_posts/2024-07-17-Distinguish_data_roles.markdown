@@ -19,7 +19,7 @@ image:
 
 그림으로 쉽게 풀어준 이미지를 찾았다.
 
-![[출처] [https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/데이터-분야의-직군-소개](https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%95%BC%EC%9D%98-%EC%A7%81%EA%B5%B0-%EC%86%8C%EA%B0%9C)](https://camo.githubusercontent.com/34bd5dd4b46b0452f0aa375d55b46e281b7a25ffd497cc41aeffb967406e9449/68747470733a2f2f7777772e64726f70626f782e636f6d2f732f77316a76736466306d7638667a346a2f53637265656e73686f74253230323031382d30372d323025323031312e35362e31392e706e673f7261773d31)
+![][https://camo.githubusercontent.com/88ea600210f0f0011d76453ae7555a224c907628903fa40361ad71d324d4b0a3/68747470733a2f2f7777772e64726f70626f782e636f6d2f732f77316a76736466306d7638667a346a2f53637265656e73686f74253230323031382d30372d323025323031312e35362e31392e706e673f7261773d31]
 
 [출처] [https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/데이터-분야의-직군-소개](https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%95%BC%EC%9D%98-%EC%A7%81%EA%B5%B0-%EC%86%8C%EA%B0%9C)
 

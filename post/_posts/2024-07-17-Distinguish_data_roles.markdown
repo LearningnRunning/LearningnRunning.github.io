@@ -18,9 +18,7 @@ image:
 | 역할 | 기존 데이터를 분석하여 의미 있는 인사이트를 도출 | 데이터 인프라 구축 및 관리 | 고급 분석 기법과 머신러닝을 활용한 문제 해결 |
 
 그림으로 쉽게 풀어준 이미지를 찾았다.
-
-![](https://camo.githubusercontent.com/88ea600210f0f0011d76453ae7555a224c907628903fa40361ad71d324d4b0a3/68747470733a2f2f7777772e64726f70626f782e636f6d2f732f77316a76736466306d7638667a346a2f53637265656e73686f74253230323031382d30372d323025323031312e35362e31392e706e673f7261773d31]
-
+![](https://camo.githubusercontent.com/88ea600210f0f0011d76453ae7555a224c907628903fa40361ad71d324d4b0a3/68747470733a2f2f7777772e64726f70626f782e636f6d2f732f77316a76736466306d7638667a346a2f53637265656e73686f74253230323031382d30372d323025323031312e35362e31392e706e673f7261773d31)
 [출처] [https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/데이터-분야의-직군-소개](https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%B6%84%EC%95%BC%EC%9D%98-%EC%A7%81%EA%B5%B0-%EC%86%8C%EA%B0%9C)
 
 데이터를 석유로 비유하자면 석유를 채굴하고 정제하는 엔지니어, 제품을 분석하고 품질 검사하는 분석가, 제품을 혁신적으로 활용하는 방법을 연구하는 사이언티스트로 설명할 수 있다. 

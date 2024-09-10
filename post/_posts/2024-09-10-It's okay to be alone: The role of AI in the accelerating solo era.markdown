@@ -6,7 +6,7 @@ categories: Tech review
 description: >
   머지않은 Her의 사만다
 image: 
-  path: [/assets/img/blog/Paper.Holistics.14-2.png](https://i0.wp.com/moviesupclose.com/wp-content/uploads/2022/12/20131205_her_theatricaltrailer2.jpg?fit=960%2C540&ssl=1)
+  path: https://i0.wp.com/moviesupclose.com/wp-content/uploads/2022/12/20131205_her_theatricaltrailer2.jpg?fit=960%2C540&ssl=1
 ---
 
 ![](https://velog.velcdn.com/images/sungrok7/post/0b58007e-1296-4e98-afc6-1f08e2af041e/image.png)

@@ -6,7 +6,7 @@ categories: Tech review
 description: >
   취향과 상황에 맞는 나만의 자타공인 맛집 찾기
 image: 
-  path: ./assets/img/blog/rok/orange_what2eat.jpg
+  path: https://velog.velcdn.com/images/sungrok7/post/5dac900c-4db6-4bb4-8288-223c2a8fb432/image.jpg
 ---
 
 > "오늘 뭐 먹지?"

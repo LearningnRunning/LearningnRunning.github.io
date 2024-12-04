@@ -6,7 +6,7 @@ categories: Tech review
 description: >
   머먹(What2Eat) 리뷰 데이터 분석: 기존 방식과 업그레이드된 평가 방식
 image: 
-  path: https://velog.velcdn.com/images/sungrok7/post/3c70db0d-5424-44b6-a1a7-46d703821c6e/image.png
+  path: https://velog.velcdn.com/images/sungrok7/post/7c02d42a-acd0-49a3-b57c-cae5b5685bdf/image.jpg
 ---
 
 

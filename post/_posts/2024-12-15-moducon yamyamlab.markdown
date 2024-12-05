@@ -4,9 +4,9 @@ title:  "모두콘2024 쩝쩝LAB"
 date:   2024-10-25 09:09:09 +0900
 categories: Tech review
 description: >
-  머먹(What2Eat) 리뷰 데이터 분석: 기존 방식과 업그레이드된 평가 방식
+  취향과 상황에 따른 맛집 추천 시스템 개발기
 image: 
-  path: https://velog.velcdn.com/images/sungrok7/post/7c02d42a-acd0-49a3-b57c-cae5b5685bdf/image.jpg
+  path: https://velog.velcdn.com/images/sungrok7/post/bc48c6c6-bf44-4f8c-b135-742ab3fcb1f9/image.jpeg
 ---
 
 

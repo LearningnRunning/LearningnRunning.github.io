@@ -6,11 +6,14 @@ categories: Tech review
 description: >
   머먹(What2Eat) 리뷰 데이터 분석: 기존 방식과 업그레이드된 평가 방식
 image: 
-  path: https://velog.velcdn.com/images/sungrok7/post/7c02d42a-acd0-49a3-b57c-cae5b5685bdf/image.jpg
+  path: https://velog.velcdn.com/images/sungrok7/post/af0f1268-fc4a-4aad-a4c5-48015c8cd151/image.jpeg
 ---
 
 
 머먹(What2Eat)의 핵심은 단순히 음식점의 평점을 숫자로만 평가하지 않고, 리뷰어 개개인의 기준에서 리뷰를 해석하여 보다 신뢰도 높은 음식점 랭킹을 제공하는 데 있습니다. 
+
+![](https://velog.velcdn.com/images/sungrok7/post/cdcf8e8b-6edb-4cb8-abb6-e616609c3cfc/image.jpeg)
+
 
 기존 평가 방식과 이를 업그레이드하게 된 배경, 그리고 문제 해결 과정에서 적용한 새로운 접근법을 공유합니다.
 
@@ -18,6 +21,8 @@ image:
 
 # **1. 기존 평가 방식: 리뷰어 기준의 만족도 계산**
 머먹의 기본 아이디어는 "평점은 단순히 숫자가 아니라, 리뷰어 개인의 기준에서 평가해야 한다"는 것이었습니다. 이를 위해 다음과 같은 방식으로 음식점을 평가했습니다:
+
+![](https://velog.velcdn.com/images/sungrok7/post/220e7ccb-e89a-4a3c-9677-1a83cfd6a1ea/image.jpeg)
 
 1. **리뷰어 기준의 만족과 불만족 정의**:
    - 리뷰어 평균 평점(`reviewer_avg`)을 기준으로, 
@@ -53,6 +58,7 @@ image:
 
 ## **1) 리뷰어 활동 레벨 가중치**
 리뷰어마다 카카오맵에서 제공하는 `badge_level`을 활용했습니다.  
+![](https://velog.velcdn.com/images/sungrok7/post/a6192037-a3ea-4a6f-95ef-8a09d54247ec/image.jpeg)
 
 ### **a). 배지(Badge)의 등급(Grade)과 레벨(Level) 소개**
 - **카카오맵 배지 서비스**는 **2023년 5월 9일**부터 공개된 서비스로, 사용자가 지도에서 활동을 통해 점수를 쌓으면 레벨과 배지가 부여됩니다.
@@ -95,6 +101,7 @@ image:
 
 ## **2) 리뷰 작성 날짜 가중치**
 리뷰의 최신성을 반영하기 위해 리뷰 작성 날짜(`reviewer_review_date`)에 가중치를 부여했습니다.
+![](https://velog.velcdn.com/images/sungrok7/post/fe9f3307-b128-455f-8a90-636ab589d146/image.jpeg)
 
 ### **적용 방식**
 - 최신 리뷰일수록 더 높은 가중치를, 오래된 리뷰일수록 낮은 가중치를 부여.
@@ -122,6 +129,7 @@ image:
 
 ## **3) 개선된 리뷰 점수 계산**
 리뷰어 활동 레벨과 리뷰 작성 날짜를 반영하여 최종적으로 가중치가 적용된 점수를 계산했습니다:
+![](https://velog.velcdn.com/images/sungrok7/post/6c1ae4eb-e7c1-442b-af94-f829ccb41da6/image.jpeg)
 
 ```python
 def calculate_weighted_score(row, today=current_date, alpha=0.7):
@@ -136,6 +144,8 @@ def calculate_weighted_score(row, today=current_date, alpha=0.7):
 
 # **4. 랭킹 계산**
 업그레이드된 리뷰 점수를 기반으로 음식점 랭킹을 다시 계산했습니다:
+
+![](https://velog.velcdn.com/images/sungrok7/post/fdf31573-7063-4250-9e2c-94a67362fcad/image.jpeg)
 
 ## **1) 음식점별 가중치 평균 및 합계 계산**
 각 음식점에 대해 가중치가 적용된 리뷰 점수(`weighted_score`)의 평균과 합계를 계산한 후에 혼합 지표 생성하였습니다. 리뷰 개수가 단순히 많을 곳과 리뷰 개수가 적지면 좋은 점수로 분포한 것을 고루 반영하기 위함입니다. 
@@ -171,6 +181,7 @@ ranked_diner_df["rank"] = ranked_diner_df["weighted_avg_score"].rank(ascending=F
 ## **3) 결과**
 - `weighted_avg_score`(평균 점수)와 `weighted_sum_score`(총 점수)를 기준으로 정렬된 음식점 랭킹을 얻음.
 - 각 음식점의 "불호주의 퍼센트"도 유지하여 불만족 리뷰가 높은 음식점을 경고로 표시.
+![](https://velog.velcdn.com/images/sungrok7/post/9563e945-1a03-4f4b-ba2f-7b10e25a11ce/image.jpeg)
 
 ---
 

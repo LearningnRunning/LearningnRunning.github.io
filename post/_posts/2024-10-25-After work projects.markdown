@@ -70,6 +70,10 @@ image:
 
 ![](https://velog.velcdn.com/images/sungrok7/post/01cdb727-5403-4532-a28b-0482d1100939/image.jpg)
 
+
+## Youtube 다시보기
+[퇴근 후 개발자(이그나이트) #우아콘2024 #우아한형제들](https://youtu.be/pZX75fzaggU?si=1eZbUofvn-bxFK3k&t=608)
+
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/

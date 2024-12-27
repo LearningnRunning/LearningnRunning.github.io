@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "모두콘2024 쩝쩝LAB"
-date:   2024-10-25 09:09:09 +0900
+date:   2024-12-15 09:09:09 +0900
 categories: Tech review
 description: >
   취향과 상황에 따른 맛집 추천 시스템 개발기

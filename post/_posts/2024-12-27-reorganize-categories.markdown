@@ -6,7 +6,7 @@ categories: Tech review
 description: >
   ML활용을 위한 카카오맵 데이터 조정
 image: 
-  path: https://velog.velcdn.com/images/sungrok7/post/bb6d9527-dc62-4280-aea6-3f06f0a5fa5f/image.jpeg
+  path: https://i.pinimg.com/736x/6e/55/b6/6e55b6b3ee079fcba14a5c7bdbc1e5b9.jpg
 ---
 
 

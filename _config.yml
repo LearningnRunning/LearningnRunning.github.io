@@ -3,7 +3,7 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# url:                   https://username.github.io
+url: https://learningnrunning.github.io
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -17,15 +17,14 @@
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  en
+lang: ko_KR
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Learning&Running
+title: LearningnRunning's Blog
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
-description:           >
-  데이터를 통해 비즈니스의 효율성을 높이고,고객의 경험을 향상시키는 데 기여하고 싶은 데이터 엔지니어, 김성록입니다.
+description: 학습과 실행을 통한 지식 공유 블로그
 
 # A shorter description for the sidebar.
 tagline:               la douleur passe la beauté reste.
@@ -39,12 +38,7 @@ keywords:              []
 logo:                  /assets/img/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
-author:
-  # Used by `jekyll-feed`:
-  name:                <Kim> <Seongrok>
-  email:               <seongrok.kim@elinha.net>
-  # # Used by `jekyll-seo-tag`:
-  # twitter:             <username>
+author: LearningnRunning
 
 # Add links to the sidebar.
 menu:
@@ -166,7 +160,7 @@ kramdown:
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
-# google_analytics:      UA-XXXXXXXX-X
+google_analytics: # 구글 애널리틱스 ID 입력
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
@@ -345,8 +339,9 @@ plugins:
 #   yandex:              <verification-id>
 
 # Used for twitter cards
-# twitter:
-#   username:            <username>
+twitter:
+  username: learningnrunning
+  card: summary_large_image
 
 # Used for facebook open graph
 # facebook:
@@ -355,11 +350,11 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+social:
+  name: LearningnRunning
+  links:
+    - https://github.com/LearningnRunning
+    - https://twitter.com/learningnrunning
 
 
 # Plugin Configs
@@ -417,3 +412,8 @@ jekyll_compose:
       links:
         - title: Project Link
           url: https://example.com
+
+# Jekyll SEO 태그 설정
+locale: ko_KR
+google_site_verification: # 구글 사이트 소유권 확인 코드 입력
+naver_site_verification: # 네이버 사이트 소유권 확인 코드 입력

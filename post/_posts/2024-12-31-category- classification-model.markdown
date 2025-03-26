@@ -7,9 +7,17 @@ description: >
   ML활용을 위한 카카오맵 데이터분석
 image: 
   path: https://i.pinimg.com/736x/a3/34/93/a334934e44e7c10ffd190390a68e0b0a.jpg
+author: LearningnRunning
+keywords: 맛집, 카카오맵, 머신러닝, 데이터분석, BERT, 분류모델, NLP, 음식점 추천, KoBERT
+seo:
+  date_modified: 2024-12-31
+  type: BlogPosting
+sitemap:
+  changefreq: monthly
+  priority: 0.8
 ---
 
-맛집을 선정할 때 흔히 사용되는 “평점 평균”이나 “리뷰수”가 아니라, 리뷰어 특성과 최신성, 주관적인 평가 편차 등을 고려해 더 정교하고 신뢰도 높은 점수를 산출하는 과정을 공유합니다.
+맛집을 선정할 때 흔히 사용되는 "평점 평균"이나 "리뷰수"가 아니라, 리뷰어 특성과 최신성, 주관적인 평가 편차 등을 고려해 더 정교하고 신뢰도 높은 점수를 산출하는 과정을 공유합니다.
 
 ---
 ---

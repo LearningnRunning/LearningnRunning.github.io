@@ -37,8 +37,8 @@
       
       {% if post.image.path %}
       <image:image>
-        <image:loc>{{ post.image.path | absolute_url }}</image:loc>
-        <image:title>{% if post.image.title %}{{ post.image.title }}{% else %}{{ post.title }}{% endif %}</image:title>
+        <image:loc>{{ post.image.path | xml_escape }}</image:loc>
+        <image:title>{% if post.image.title %}{{ post.image.title | xml_escape }}{% else %}{{ post.title | xml_escape }}{% endif %}</image:title>
       </image:image>
       {% endif %}
     </url>
@@ -48,7 +48,7 @@
   {% for page in site.pages %}
     {% if page.layout != nil and page.layout != 'feed' and page.sitemap != false %}
     <url>
-      <loc>{{ site.url }}{{ page.url }}</loc>
+      <loc>{{ site.url }}{{ page.url | xml_escape }}</loc>
       {% if page.lastmod == null %}
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
       {% else %}
@@ -73,7 +73,7 @@
   <!-- 카테고리 페이지 -->
   {% for category in site.categories %}
   <url>
-    <loc>{{ site.url }}/categories/{{ category[0] | slugify }}/</loc>
+    <loc>{{ site.url }}/categories/{{ category[0] | slugify | xml_escape }}/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -83,7 +83,7 @@
   <!-- 태그 페이지 -->
   {% for tag in site.tags %}
   <url>
-    <loc>{{ site.url }}/tags/{{ tag[0] | slugify }}/</loc>
+    <loc>{{ site.url }}/tags/{{ tag[0] | slugify | xml_escape }}/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

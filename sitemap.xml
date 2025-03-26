@@ -1,7 +1,19 @@
 ---
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- 메인 페이지 -->
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- 블로그 포스트 -->
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
@@ -12,17 +24,69 @@
       {% endif %}
 
       {% if post.sitemap.changefreq == null %}
-        <changefreq>daily</changefreq>
+        <changefreq>weekly</changefreq>
       {% else %}
         <changefreq>{{ post.sitemap.changefreq }}</changefreq>
       {% endif %}
 
       {% if post.sitemap.priority == null %}
-          <priority>0.5</priority>
+        <priority>0.7</priority>
       {% else %}
         <priority>{{ post.sitemap.priority }}</priority>
       {% endif %}
-
+      
+      {% if post.image.path %}
+      <image:image>
+        <image:loc>{{ post.image.path | absolute_url }}</image:loc>
+        <image:title>{% if post.image.title %}{{ post.image.title }}{% else %}{{ post.title }}{% endif %}</image:title>
+      </image:image>
+      {% endif %}
     </url>
+  {% endfor %}
+  
+  <!-- 정적 페이지 -->
+  {% for page in site.pages %}
+    {% if page.layout != nil and page.layout != 'feed' and page.sitemap != false %}
+    <url>
+      <loc>{{ site.url }}{{ page.url }}</loc>
+      {% if page.lastmod == null %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ page.lastmod | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      
+      {% if page.sitemap.changefreq == null %}
+        <changefreq>monthly</changefreq>
+      {% else %}
+        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+      {% endif %}
+      
+      {% if page.sitemap.priority == null %}
+        <priority>0.5</priority>
+      {% else %}
+        <priority>{{ page.sitemap.priority }}</priority>
+      {% endif %}
+    </url>
+    {% endif %}
+  {% endfor %}
+  
+  <!-- 카테고리 페이지 -->
+  {% for category in site.categories %}
+  <url>
+    <loc>{{ site.url }}/categories/{{ category[0] | slugify }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endfor %}
+  
+  <!-- 태그 페이지 -->
+  {% for tag in site.tags %}
+  <url>
+    <loc>{{ site.url }}/tags/{{ tag[0] | slugify }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
   {% endfor %}
 </urlset>

@@ -2,7 +2,7 @@
 layout: post
 title:  "맛집 아직도 평균 평점으로만 찾으시나요?"
 date:   2024-12-30 23:16:09 +0900
-categories: Tech review
+categories: [data-analytics]
 description: >
   ML활용을 위한 카카오맵 데이터분석
 image: 

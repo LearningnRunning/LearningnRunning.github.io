@@ -27,16 +27,15 @@ title: LearningnRunning's Blog
 description: 학습과 실행을 통한 지식 공유 블로그
 
 # A shorter description for the sidebar.
-tagline:               la douleur passe la beauté reste.
+tagline: la douleur passe la beauté reste.
 
 # A list of keywords for your blog
-keywords:              []
+keywords: [Recommendation System, Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Reinforcement Learning, 맛집추천, 머신러닝]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
-
+logo: /assets/img/logo.png
 # This should be the same author as first entry in `_data/authors.yml`.
 author: LearningnRunning
 

@@ -8,18 +8,15 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    ELINHA Co.라는 스타트업에서 1년 반 경력으로 기획/개발/배포 일을 하였습니다. 개발에선 오픈소스 AI 모델을 활용하여 데이터를 가공 후 전달하는 서빙 API를 만들었습니다. 
-    생성형 모델을 활용한 AI Snap과 Image Detection, GAN 모델을 활용한 バランスメイク(밸런스메이크업)을 주요 프로젝트로 진행하였습니다. [checco AppStore](https://apps.apple.com/kr/app/checco-%E3%83%81%E3%82%A7%E3%83%83%E3%82%B3-%E9%9F%93%E5%9B%BD%E3%82%B3%E3%82%B9%E3%83%A1%E4%BD%93%E9%A8%93-%E8%82%8C%E8%A8%BA%E6%96%AD-%E5%8C%96%E7%B2%A7%E5%93%81%E6%88%90%E5%88%86/id1453489096)에서 확인할 수 있습니다.
+    머신러닝 기반의 제품 개발을 주도해온 ML 엔지니어, 김성록입니다.
+    B2C 이미지 처리 서비스, NLP 처리 서비스, DB 및 백엔드 설계를 포함한 다양한 프로젝트를 Python 중심으로 수행했습니다.
+    사내에서는 AI 부분에서 모델 설계부터 실제 서비스 배포까지 리딩한 경험이 있습니다.
 
-    
-
-    📍 자동화 = '분신술' <br/>
-    자동화 잘 해내는 것을 ‘분신술’로 여기고 있습니다. 그렇게 두 사람, 세 사람, N사람 역할을 하는 것이 매우 뿌듯합니다. 비효율적인 작업을 자동화로 개선하고 그 작업을 하던 팀원과 지속적인 소통으로 기능을 업데이트 하는 것을 사내에서 사이드 프로젝트로 했고 어느 정도 검증이 되면 정식화하는 작업을 했습니다.
-
-    🍗 취향을 고려한 맛집 추천 서비스의 꿈 <br/>
-    ’적절한 맛집을 찾는 능력‘을 귀한 능력으로 여기고 있습니다. 같은 지역, 같은 시간의 유저라도 유저 취향에 따른 맛집을 리스팅할 수 있는 것이 꿈의 프로젝트로 여기고 있습니다.
-    
-
+    회사 밖에서는 쩝쩝LAB이라는 연구 모임을 운영하며, GNN을 활용한 개인화 맛집 추천 시스템을 연구 중입니다.
+    또한, 음식점 리뷰 분석 기반 추천 서비스 ‘What2Eat’ 프로젝트를 기획하고 streamlit 기반으로 구현한 바 있습니다.
+    영화 리뷰 데이터를 크롤링해 국가 간 표현 차이를 네트워크 분석한 뒤, 사회학자들과 공동 연구로 논문을 출간하기도 했습니다.
+    우아콘 2024와 모두콘 2024 등에서 발표자로 참여해 지식 나눔에도 적극적입니다.
+    짧은 경력이지만, 연구와 실무를 잇는 실행력과 리더십을 바탕으로 빠르게 성장해왔습니다.
   # This photo will be used in the about section
   picture:
     path:            https://velog.velcdn.com/images/sungrok7/post/8526a151-6a97-49c3-84c3-9d889f53d453/image.png
@@ -34,7 +31,7 @@ author1:
   social:
     # twitter:         <username>
     github:          https://github.com/LearningnRunning
-    # email:           <mail@domain.tld>
+    email:           max_sungrok@naver.com
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
@@ -63,7 +60,7 @@ author1:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # linkedin:        <firstname-lastname-string>
+    linkedin:        learningnrunning
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
@@ -73,16 +70,16 @@ author1:
     # keybase          <username>
 
 # Another author (optional)
-author2:
-  name:              <firtname> <lastname>
-  email:             <mail@domain.tld>
-  about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+# author2:
+#   name:              <firtname> <lastname>
+#   email:             <mail@domain.tld>
+#   about:             |
+#     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+#     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+#     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-    Open `_data/authors.yml` to edit this text.
+#     Open `_data/authors.yml` to edit this text.
 
-  picture:           https://placehold.it/128x128
-  twitter:           <username>
-  github:            <username>
+#   picture:           https://placehold.it/128x128
+#   twitter:           <username>
+#   github:            <username>

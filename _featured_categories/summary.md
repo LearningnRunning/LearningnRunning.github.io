@@ -23,7 +23,7 @@ sitemap: false
 
 ## 카테고리 목차
 
-- [확률과 통계](/probability-statistics/) - 확률과 통계에 관련된 학습 및 연구 내용
+- [Probability and statistics](/probability-statistics/) - 확률과 통계에 관련된 학습 및 연구 내용
 - [ML/DL](/ml-dl/) - 머신러닝과 딥러닝에 관련된 학습 및 연구 내용
 - [Engineering](/engineering/) - 소프트웨어 엔지니어링과 관련된 학습 및 개발 내용
 - [Data Analytic](/data-analytics/) - 데이터 분석 방법론과 실제 적용 사례

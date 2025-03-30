@@ -7,6 +7,14 @@ description: >
   ML활용을 위한 카카오맵 데이터 조정
 image: 
   path: https://i.pinimg.com/736x/6e/55/b6/6e55b6b3ee079fcba14a5c7bdbc1e5b9.jpg
+author: LearningnRunning
+keywords: 맛집, 카카오맵, 머신러닝, 데이터분석, BERT, 분류모델, NLP, 음식점 추천, KoBERT
+seo:
+  date_modified: 2024-12-31
+  type: BlogPosting
+sitemap:
+  changefreq: monthly
+  priority: 0.8
 ---
 
 

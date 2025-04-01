@@ -12,7 +12,7 @@ redirect_from:
 
 <!--author-->
 
-⸻
+
 
 ### 💡 기술 기반 실무 & 프로젝트 경험 요약
 
@@ -26,7 +26,7 @@ Docker 및 클라우드 환경에서의 서비스 운영도 익숙합니다.
 또한, streamlit과 gradio를 활용해 빠르게 MVP를 만들고,
 사용자 피드백을 받아 반복적으로 개선하며 PoC를 완성한 경험이 다수 있습니다.
 
-사이드 프로젝트에서는 데이터 수집, 분석, 추천 모델 설계까지 전 과정을 직접 리딩했고,
+사이드 프로젝트에서는 데이터 수집, 분석,정제까지 전 과정을 직접 리딩했고,
 음식점 리뷰 기반 추천 시스템, GNN 기반 개인화 추천 연구 등을 꾸준히 이어가고 있습니다.
 
 기술을 실험과 연구로 끝내지 않고, 서비스로 연결하는 일에 가치를 둡니다.
@@ -39,7 +39,7 @@ Docker 및 클라우드 환경에서의 서비스 운영도 익숙합니다.
 | 언어 | Python, SQL |
 | 웹 백엔드 | FastAPI, Flask, Nginx, Docker |
 | 프론트엔드/MVP | Streamlit, Gradio |
-| 데이터베이스 | PostgreSQL, MySQL, Amazon RDS |
+| 데이터베이스 | PostgreSQL, MySQL |
 | 머신러닝/딥러닝 | PyTorch, TensorFlow, OpenCV, YOLO, GNN |
 | 데이터 수집/분석 | Selenium, BeautifulSoup, Pandas, scikit-learn |
 
@@ -52,7 +52,8 @@ Docker 및 클라우드 환경에서의 서비스 운영도 익숙합니다.
 - [쩝쩝LAB](https://github.com/lunch-corp/yamyam-lab) - 개인화 맛집 추천 서비스
 - [What2Eat](https://github.com/LearningnRunning/What2Eat) – 음식점 평점 기반 추천 서비스  
 - [Catch V](https://github.com/Catch-V/DL) – 디지털 성범죄 탐지 오픈소스 
----
+
+
 
 
 

@@ -71,8 +71,8 @@ paginate_path:         /:n
 # Theme
 # ---------------------------------------------------------------------------------------
 # 커밋시 주석처리
-theme: jekyll-theme-hydejack
-# remote_theme: hydecorp/hydejack@v9
+# theme: jekyll-theme-hydejack
+remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton

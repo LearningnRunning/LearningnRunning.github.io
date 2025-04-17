@@ -8,7 +8,7 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    머신러닝 기반의 제품 개발을 주도해온 ML 엔지니어, 김성록입니다.
+    서비스 개발을 주로 진행한 ML 엔지니어, 김성록입니다.
     B2C 이미지 처리 서비스, NLP 처리 서비스, DB 및 백엔드 설계를 포함한 다양한 프로젝트를 Python 중심으로 수행했습니다.
     사내에서는 AI 부분에서 모델 설계부터 실제 서비스 배포까지 리딩한 경험이 있습니다.
 

@@ -2,12 +2,20 @@
 layout: post
 title:  "조금 다른 Topic 모델링"
 date:   2023-12-11 20:23:11 +0900
-categories: Tech review
+categories: ml-dl
 description: >
   2023 모두콘에서 발표한 내용을 정리하였습니다.
   Sentence Similarity, LLM 등을 이용한 Topic 모델링
 image: 
   path: https://velog.velcdn.com/images/sungrok7/post/e62011cd-0211-4046-9f08-138f90437e04/image.png
+author: LearningnRunning
+keywords: 토픽 모델링, LLM, 모두콘, 맞춤법 검사, Sentence Similarity, 감성분석, 군집화, 문장 임베딩, NLP, RAG
+seo:
+  date_modified: 2023-12-20
+  type: BlogPosting
+sitemap:
+  changefreq: monthly
+  priority: 0.8
 ---
 # 조금 다른 Topic 모델링(Feat. 모두콘)
 

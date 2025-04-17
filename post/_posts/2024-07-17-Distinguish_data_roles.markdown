@@ -2,7 +2,7 @@
 layout: post
 title:  "데이터 엔지니어, 분석가, 사이언티스트: 역할과 내 커리어의 방향성"
 date:   2024-07-17 09:09:09 +0900
-categories: Tech review
+categories: [engineering]
 description: >
   누구인가? 누가 데이터 소리를 내었어?
 image: 

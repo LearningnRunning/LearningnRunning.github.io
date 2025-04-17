@@ -2,7 +2,7 @@
 layout: post
 title:  "레퍼런스 없는 서비스, 기획부터 배포까지"
 date:   2023-12-06 21:51:11 +0900
-categories: Tech review
+categories: [engineering]
 description: >
   입사한 지 5개월 차에 시작한 프로젝트에서 기획부터 배포까지 경험해보았다.
 image: 

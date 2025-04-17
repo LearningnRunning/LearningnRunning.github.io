@@ -2,7 +2,7 @@
 layout: post
 title:  "B마트의 큰 그림, 선물의 민족"
 date:   2023-07-16 11:11:11 +0900
-categories: Tech review
+categories: [engineering]
 description: >
    우아한형제들은 다 계획이 있었다.
 image: 

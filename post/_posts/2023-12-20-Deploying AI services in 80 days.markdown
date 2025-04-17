@@ -2,11 +2,19 @@
 layout: post
 title:  "80일 안에 AI 서비스 배포하기"
 date:   2023-12-20 19:11:11 +0900
-categories: Tech review
+categories: engineering
 description: >
   대표님 말씀대로 '하루빨리' AI 서비스 개발기
 image: 
   path: https://file.noononda.com/article/202306/20230612002916.jpg
+author: LearningnRunning
+keywords: AI 서비스, 딥페이크, AI 프로필, SNOW, AI Snap, 서비스 개발, 이미지 처리, OpenCV, 애플리케이션 개발, 프로젝트 관리
+seo:
+  date_modified: 2023-12-25
+  type: BlogPosting
+sitemap:
+  changefreq: monthly
+  priority: 0.8
 ---
 # 80일 안에 AI 서비스 배포하기
 

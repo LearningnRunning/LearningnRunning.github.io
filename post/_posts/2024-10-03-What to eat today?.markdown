@@ -2,11 +2,19 @@
 layout: post
 title:  "데이터 분석과 머신러닝을 통한 유저 맛집 추천하기"
 date:   2024-10-03 09:09:09 +0900
-categories: Tech review
+categories: ml-dl
 description: >
   취향과 상황에 맞는 나만의 자타공인 맛집 찾기
 image: 
   path: https://velog.velcdn.com/images/sungrok7/post/5dac900c-4db6-4bb4-8288-223c2a8fb432/image.jpg
+author: LearningnRunning
+keywords: 맛집 추천, 머신러닝, 데이터 분석, 그래프 신경망, GNN, What2Eat, 취향식탁, 리뷰 분석, LLM, 형태소 분석, 개인화 추천, 음식점 추천
+seo:
+  date_modified: 2024-10-10
+  type: BlogPosting
+sitemap:
+  changefreq: monthly
+  priority: 0.8
 ---
 
 > "오늘 뭐 먹지?"

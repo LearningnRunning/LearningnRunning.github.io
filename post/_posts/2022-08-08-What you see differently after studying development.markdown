@@ -2,7 +2,19 @@
 layout: post
 title:  "개발하고 달리 보이는 것"
 date:   2022-08-08 21:07:11 +0900
-categories: Tech review
+categories: engineering
+description: >
+  개발자 시각에서 본 신한은행의 배달 앱 '땡겨요'와 발견한 버그
+image: 
+  path: https://velog.velcdn.com/images/sungrok7/post/8604b488-2927-4093-8f67-12d53529bf33/image.png
+author: LearningnRunning
+keywords: 배달앱, 땡겨요, 개발 오류, 데이터 오류, 맛스타오더, 버그 발견, 개발자 시각, 앱 리뷰
+seo:
+  date_modified: 2022-08-15
+  type: BlogPosting
+sitemap:
+  changefreq: monthly
+  priority: 0.8
 ---
 ### 개발하고 달리 보이는 것
 

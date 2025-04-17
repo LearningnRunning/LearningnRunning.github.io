@@ -2,7 +2,19 @@
 layout: post
 title:  "카카오맵 하나로 괜찮은 맛집 찾기"
 date:   2022-10-22 11:11:11 +0900
-categories: Tech review
+categories: data-analytics
+description: >
+  카카오맵을 활용하여 괜찮은 맛집을 찾는 방법에 대한 고찰
+image: 
+  path: https://velog.velcdn.com/images/sungrok7/post/4dfb8597-3d10-4aab-bc6a-c8a17cf7c836/image.jpg
+author: LearningnRunning
+keywords: 맛집, 카카오맵, 음식점 추천, 평점 분석, 리뷰 분석, 데이터 기반 추천
+seo:
+  date_modified: 2022-10-31
+  type: BlogPosting
+sitemap:
+  changefreq: monthly
+  priority: 0.8
 ---
 # 카카오맵 하나로 괜찮은 맛집 찾기
 

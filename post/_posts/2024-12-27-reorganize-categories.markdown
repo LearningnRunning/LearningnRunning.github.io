@@ -2,7 +2,7 @@
 layout: post
 title:  "ML활용을 위한 카카오맵 음식점 카테고리 재배치"
 date:   2024-12-27 09:09:09 +0900
-categories: Tech review
+categories: ml-dl
 description: >
   ML활용을 위한 카카오맵 데이터 조정
 image: 

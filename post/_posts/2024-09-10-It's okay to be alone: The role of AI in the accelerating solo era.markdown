@@ -2,7 +2,7 @@
 layout: post
 title:  "혼자여도 괜찮아: 가속되는 1인 시대에서 AI의 역할"
 date:   2024-09-10 09:09:09 +0900
-categories: Tech review
+categories: [ml-dl]
 description: >
   머지않은 Her의 사만다
 image: 

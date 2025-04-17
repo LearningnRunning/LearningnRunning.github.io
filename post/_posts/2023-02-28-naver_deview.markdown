@@ -2,11 +2,19 @@
 layout: post
 title:  "NAVER DEVIEW 2023 후기"
 date:   2023-02-28 19:11:11 +0900
-categories: Tech review
+categories: ml-dl
 description: >
   취향식탁을 2016년부터 하고 있던 네이버 AirSearch 팀을 발견하다
 image: 
   path: https://velog.velcdn.com/images/sungrok7/post/d9f2df60-df11-4367-9ed0-ee2c206a81f2/image.jpeg
+author: LearningnRunning
+keywords: NAVER, DEVIEW, 개발자 컨퍼런스, 텍스트 렌더링, OCR, 추천시스템, Continual Learning, HyperLocal, AI, 이미지 번역
+seo:
+  date_modified: 2023-03-10
+  type: BlogPosting
+sitemap:
+  changefreq: monthly
+  priority: 0.8
 ---
 
 3년 만에 오프라인으로 개최한 네이버 개발자 컨퍼런스에 다녀왔다. 추후 온라인으로도 풀리겠지만 저번 AI엑스포에 다녀온 경험이 좋아서 현장으로 꼭 다녀오고 싶었다. 오랜만에 연 오프라인 DEVIEW라서 티켓팅이 싸이 콘서트만큼 힘들었다고 들었다. 다녀오지 못한 분들을 위해 다녀온 만큼의 정보를 얻을 수 있는 포스팅을 한다. 

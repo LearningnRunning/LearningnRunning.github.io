@@ -2,7 +2,19 @@
 layout: post
 title:  "SQL/Pandas를 배워야하는 이유"
 date:   2022-12-08 17:00:00 +0900
-categories: Tech review
+categories: engineering
+description: >
+  영화 스포트라이트의 사례를 통해 알아보는 SQL과 Pandas의 중요성
+image: 
+  path: https://velog.velcdn.com/images/sungrok7/post/aa436f44-a399-427d-ac22-1ab84dd0825b/image.png
+author: LearningnRunning
+keywords: SQL, Pandas, 데이터분석, 데이터 처리, 데이터 추출, 영화 스포트라이트, 데이터 엔지니어링
+seo:
+  date_modified: 2022-12-15
+  type: BlogPosting
+sitemap:
+  changefreq: monthly
+  priority: 0.8
 ---
 영화 [스포트라이트]에서 나오는 《더 보스턴 글로브 The Boston Globe》는 1990년대 말에 게오건 사건을 취재하기 시작했다. 게오건 신부는 30년 간 6개 교구를 옮겨 다니며 수십 명의 아동을 성추행 하였고 보스턴 교구장 버나드 로우 추기경은 이를 알고도 덮어준 것이었다. 스포트 라이트 팀은 이 같은 성범죄와 은폐가 게오건 1인이 아닌 여러 교구에 걸쳐 여러 사제들까지도 저질렀고 교구 차원에서 조직적으로 은폐해온 정황을 포착했다. 
 ![](https://velog.velcdn.com/images/sungrok7/post/aa436f44-a399-427d-ac22-1ab84dd0825b/image.png)

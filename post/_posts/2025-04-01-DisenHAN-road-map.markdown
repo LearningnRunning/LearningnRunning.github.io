@@ -2,7 +2,7 @@
 layout: post
 title:  "그래프 기반 추천 시스템 학습 로드맵"
 date:   2025-03-31 19:16:09 +0900
-categories: [ML/DL]
+categories: [ml-dl]
 description: >
   DisenHAN 연관 논문 리뷰를 위한 로드맵
 image: 

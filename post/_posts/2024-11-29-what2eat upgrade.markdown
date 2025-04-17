@@ -2,7 +2,7 @@
 layout: post
 title:  "카카오맵 리뷰데이터 분석으로 음식점 랭킹화"
 date:   2024-11-29 09:09:09 +0900
-categories: Tech review
+categories: [data-analytics]
 description: >
   머먹(What2Eat) 리뷰 데이터 분석: 기존 방식과 업그레이드된 평가 방식
 image: 

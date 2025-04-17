@@ -2,11 +2,19 @@
 layout: post
 title:  "2022 AI EXPO 후기"
 date:   2022-10-22 11:11:11 +0900
-categories: Tech review
+categories: ml-dl
 description: >
    테크 세미나 뽀개기_AI EXPO
 image: 
   path: https://velog.velcdn.com/images/sungrok7/post/a8ede3fd-d3f0-47da-b301-2c355b0a1506/image.gif
+author: LearningnRunning
+keywords: AI EXPO, 인공지능, 객체인식, 영상분석, 솔루션, 메타버스, 화질개선, 업스케일, 머신러닝, 엑스포, 기술 전시
+seo:
+  date_modified: 2022-10-30
+  type: BlogPosting
+sitemap:
+  changefreq: monthly
+  priority: 0.8
 ---
 2022.04.13(수)~2022.04.15(금) 동안 열린 [국제인공지능대전](https://www.instagram.com/aiexpo_korea/)에 다녀왔다. 
 

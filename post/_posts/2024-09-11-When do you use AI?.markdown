@@ -2,7 +2,7 @@
 layout: post
 title:  "AI 언제 활용하시나요?"
 date:   2024-09-11 09:09:09 +0900
-categories: Tech review
+categories: [ml-dl]
 description: >
   AI 운영체제를 위해 필요한 기술
 image: 

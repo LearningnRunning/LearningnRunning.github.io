@@ -13,7 +13,7 @@ redirect_from:
 <!--author-->
 
 [Github](https://github.com/LearningnRunning){:.lead width="256" height="256" loading="lazy"}   
-
+[Github](https://github.com/LearningnRunning){:.lead width="256" height="256" loading="lazy"}   
 
 # 목차
 

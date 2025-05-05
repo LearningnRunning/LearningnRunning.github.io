@@ -2,7 +2,7 @@
 layout: post
 title:  "![GPT와 함께하는 개발자 세상](제1회 kakao tech meet 후기)"
 date:   2023-05-11 19:00:00 +0900
-categories: 5월 카카오테크 세미나 후기
+categories: [engineering]
 description: >
    테크 세미나 뽀개기_카카오
 image: 

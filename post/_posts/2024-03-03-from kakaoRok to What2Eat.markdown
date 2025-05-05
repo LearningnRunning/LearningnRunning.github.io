@@ -2,7 +2,7 @@
 layout: post
 title:  "카카오록에서 머먹이 되기까지"
 date:   2024-03-03 19:11:11 +0900
-categories: Tech review
+categories: [engineering]
 description: >
   데이터 분석 결과만으로 찐맛집 찾기 프로젝트
 image: 

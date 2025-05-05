@@ -2,7 +2,7 @@
 layout: post
 title:  "퇴근 후 프로젝트"
 date:   2024-10-25 09:09:09 +0900
-categories: Tech review
+categories: [engineering]
 description: >
   WOOWACON 2024 발표
 image: 

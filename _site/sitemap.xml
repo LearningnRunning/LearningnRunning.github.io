@@ -1,107 +1,888 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>http://localhost:4000/example/</loc>
-<lastmod>2024-03-06T20:25:17+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2022-08-08-What-you-see-differently-after-studying-development/</loc>
-<lastmod>2024-03-06T20:21:51+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2022-10-22-2022AIExpo-review/</loc>
-<lastmod>2024-03-06T20:21:51+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/</loc>
-<lastmod>2024-03-06T20:21:51+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2022-12-08-Why-learn-to-SQL-Pandas/</loc>
-<lastmod>2024-03-06T20:21:51+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2023-02-28-naver_deview/</loc>
-<lastmod>2024-03-06T20:21:51+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/3%EC%9B%94/%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC/%EC%84%B8%EB%AF%B8%EB%82%98/%ED%9B%84%EA%B8%B0/2023-03-29-listening-to-techleader-copy-2/</loc>
-<lastmod>2024-03-06T20:21:51+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/5%EC%9B%94/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%85%8C%ED%81%AC/%EC%84%B8%EB%AF%B8%EB%82%98/%ED%9B%84%EA%B8%B0/2023-05-11-kakaoTechReview/</loc>
-<lastmod>2024-03-06T20:21:51+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2023-07-16-B-mart-review/</loc>
-<lastmod>2024-03-06T20:21:51+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2023-08-05-.Startup-service-development-period-copy/</loc>
-<lastmod>2024-03-06T20:21:51+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2023-12-06-Reference-lessservices-fromplanningtodeployment/</loc>
-<lastmod>2024-03-06T20:21:51+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2023-12-11-a-little-different-topic-modeling/</loc>
-<lastmod>2024-03-06T20:21:51+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2023-12-20-Deploying-AI-services-in-80-days/</loc>
-<lastmod>2024-03-06T20:21:51+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2024-03-03-from-kakaoRok-to-What2Eat/</loc>
-<lastmod>2024-07-17T09:46:11+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2024-07-17-Distinguish_data_roles/</loc>
-<lastmod>2024-09-06T13:05:12+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2024-09-10-It&apos;s-okay-to-be-alone-The-role-of-AI-in-the-accelerating-solo-era/</loc>
-<lastmod>2024-09-11T17:03:40+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2024-09-11-When-do-you-use-AI/</loc>
-<lastmod>2024-09-11T17:03:40+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2024-10-03-What-to-eat-today/</loc>
-<lastmod>2024-10-03T17:42:59+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2024-10-25-After-work-projects/</loc>
-<lastmod>2024-10-25T23:09:37+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/post/tech/review/2024-10-25-what2eat-upgrade/</loc>
-<lastmod>2024-12-04T08:25:25+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/about/</loc>
-<lastmod>2023-04-21T23:02:19+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/about/</loc>
-<lastmod>2024-03-04T13:55:30+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/</loc>
-<lastmod>2023-04-21T23:02:19+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/%E2%80%8B/</loc>
-<lastmod>2023-04-21T23:02:19+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/posts/</loc>
-<lastmod>2023-04-21T23:02:19+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/:n/</loc>
-<lastmod>2023-04-21T23:02:19+09:00</lastmod>
-</url>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" 
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- 메인 페이지 -->
+  <url>
+    <loc>http://localhost:4000/</loc>
+    <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- 블로그 포스트 -->
+  
+    <url>
+      <loc>http://localhost:4000/post/engineering/2025-04-17-Using-crontab/</loc>
+      
+        <lastmod>2025-04-17T12:16:09+09:00</lastmod>
+      
+
+      
+        <changefreq>monthly</changefreq>
+      
+
+      
+        <priority>0.8</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR66FyYBvwDfT5R8UQNCqk4o1i4wvMQzj50NCphTLlGD3FL7WbSKORgDdJ_6002YpvCP-E&amp;usqp=CAU</image:loc>
+        <image:title>리눅스에서 crontab으로 반복 작업 자동화하기</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/ml-dl/2025-03-31-DisenHAN-road-map/</loc>
+      
+        <lastmod>2025-03-31T19:16:09+09:00</lastmod>
+      
+
+      
+        <changefreq>monthly</changefreq>
+      
+
+      
+        <priority>0.8</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://github.com/LearningnRunning/LearningnRunning.github.io/blob/main/assets/img/blog/DisenHAN_roadmap.png?raw=true</image:loc>
+        <image:title>그래프 기반 추천 시스템 학습 로드맵</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/probability-statistics/2025-03-29-Understanding-probability-distributions/</loc>
+      
+        <lastmod>2025-03-29T19:16:09+09:00</lastmod>
+      
+
+      
+        <changefreq>monthly</changefreq>
+      
+
+      
+        <priority>0.8</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://datasciencedojo.com/wp-content/uploads/Important-Distributions-in-Data-Science-1.jpg</image:loc>
+        <image:title>ML를 위한 확률분포의 이해</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/data-analytics/2024-12-30-Aggregate-restaurant-ratings-data/</loc>
+      
+        <lastmod>2024-12-30T23:16:09+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://i.pinimg.com/736x/a3/34/93/a334934e44e7c10ffd190390a68e0b0a.jpg</image:loc>
+        <image:title>맛집 아직도 평균 평점으로만 찾으시나요?</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/ml-dl/2024-12-27-reorganize-categories/</loc>
+      
+        <lastmod>2024-12-27T09:09:09+09:00</lastmod>
+      
+
+      
+        <changefreq>monthly</changefreq>
+      
+
+      
+        <priority>0.8</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://i.pinimg.com/736x/6e/55/b6/6e55b6b3ee079fcba14a5c7bdbc1e5b9.jpg</image:loc>
+        <image:title>ML활용을 위한 카카오맵 음식점 카테고리 재배치</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/engineering/2024-12-15-moducon-yamyamlab/</loc>
+      
+        <lastmod>2024-12-15T09:09:09+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/bb6d9527-dc62-4280-aea6-3f06f0a5fa5f/image.jpeg</image:loc>
+        <image:title>모두콘2024 쩝쩝LAB</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/data-analytics/2024-11-29-what2eat-upgrade/</loc>
+      
+        <lastmod>2024-11-29T09:09:09+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/af0f1268-fc4a-4aad-a4c5-48015c8cd151/image.jpeg</image:loc>
+        <image:title>카카오맵 리뷰데이터 분석으로 음식점 랭킹화</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/tech/review/2024-10-25-After-work-projects/</loc>
+      
+        <lastmod>2024-10-25T09:09:09+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/3c70db0d-5424-44b6-a1a7-46d703821c6e/image.png</image:loc>
+        <image:title>퇴근 후 프로젝트</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/ml-dl/2024-10-03-What-to-eat-today/</loc>
+      
+        <lastmod>2024-10-03T09:09:09+09:00</lastmod>
+      
+
+      
+        <changefreq>monthly</changefreq>
+      
+
+      
+        <priority>0.8</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/5dac900c-4db6-4bb4-8288-223c2a8fb432/image.jpg</image:loc>
+        <image:title>데이터 분석과 머신러닝을 통한 유저 맛집 추천하기</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/tech/review/2024-09-11-When-do-you-use-AI/</loc>
+      
+        <lastmod>2024-09-11T09:09:09+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://ih1.redbubble.net/image.1098957229.9059/fposter,small,wall_texture,product,750x1000.u1.jpg</image:loc>
+        <image:title>AI 언제 활용하시나요?</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/ml-dl/2024-09-10-It's-okay-to-be-alone-The-role-of-AI-in-the-accelerating-solo-era/</loc>
+      
+        <lastmod>2024-09-10T09:09:09+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://i0.wp.com/moviesupclose.com/wp-content/uploads/2022/12/20131205_her_theatricaltrailer2.jpg?fit=960%2C540&amp;ssl=1</image:loc>
+        <image:title>혼자여도 괜찮아: 가속되는 1인 시대에서 AI의 역할</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/engineering/2024-07-17-Distinguish_data_roles/</loc>
+      
+        <lastmod>2024-07-17T09:09:09+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>/assets/img/blog/Paper.Holistics.14-2.png</image:loc>
+        <image:title>데이터 엔지니어, 분석가, 사이언티스트: 역할과 내 커리어의 방향성</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/tech/review/2024-03-03-from-kakaoRok-to-What2Eat/</loc>
+      
+        <lastmod>2024-03-03T19:11:11+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>/assets/img/blog/fromkakaorokTowhat2eat.png</image:loc>
+        <image:title>카카오록에서 머먹이 되기까지</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/engineering/2023-12-20-Deploying-AI-services-in-80-days/</loc>
+      
+        <lastmod>2023-12-20T19:11:11+09:00</lastmod>
+      
+
+      
+        <changefreq>monthly</changefreq>
+      
+
+      
+        <priority>0.8</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://file.noononda.com/article/202306/20230612002916.jpg</image:loc>
+        <image:title>80일 안에 AI 서비스 배포하기</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/ml-dl/2023-12-11-a-little-different-topic-modeling/</loc>
+      
+        <lastmod>2023-12-11T20:23:11+09:00</lastmod>
+      
+
+      
+        <changefreq>monthly</changefreq>
+      
+
+      
+        <priority>0.8</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/e62011cd-0211-4046-9f08-138f90437e04/image.png</image:loc>
+        <image:title>조금 다른 Topic 모델링(Feat. 모두콘)</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/engineering/2023-12-06-Reference-lessservices-fromplanningtodeployment/</loc>
+      
+        <lastmod>2023-12-06T21:51:11+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/2e3ecdc8-b48d-4025-9b1f-0883c980a645/image.png</image:loc>
+        <image:title>레퍼런스 없는 서비스, 기획부터 배포까지</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/engineering/2023-08-05-.Startup-service-development-period-copy/</loc>
+      
+        <lastmod>2023-08-05T11:11:11+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/engineering/2023-07-16-B-mart-review/</loc>
+      
+        <lastmod>2023-07-16T11:11:11+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/62326062-af0d-4364-984c-8d1040aef203/image.jpg</image:loc>
+        <image:title>B마트의 큰 그림, 선물의 민족</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/5%EC%9B%94/%EC%B9%B4%EC%B9%B4%EC%98%A4%ED%85%8C%ED%81%AC/%EC%84%B8%EB%AF%B8%EB%82%98/%ED%9B%84%EA%B8%B0/2023-05-11-kakaoTechReview/</loc>
+      
+        <lastmod>2023-05-11T19:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/a03b9e2b-0f67-481a-bdb9-5c1b07d0bb3e/image.JPG</image:loc>
+        <image:title>![GPT와 함께하는 개발자 세상](제1회 kakao tech meet 후기)</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/engineering/2023-03-29-listening-to-techleader-copy-2/</loc>
+      
+        <lastmod>2023-03-29T19:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>weekly</changefreq>
+      
+
+      
+        <priority>0.7</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/923adf18-226d-428d-b598-8266d7c9b90b/image.jpeg</image:loc>
+        <image:title>테크 리더 3인이 말하는 &apos;개발자 원칙&apos;</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/ml-dl/2023-02-28-naver_deview/</loc>
+      
+        <lastmod>2023-02-28T19:11:11+09:00</lastmod>
+      
+
+      
+        <changefreq>monthly</changefreq>
+      
+
+      
+        <priority>0.8</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/d9f2df60-df11-4367-9ed0-ee2c206a81f2/image.jpeg</image:loc>
+        <image:title>NAVER DEVIEW 2023 후기</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/engineering/2022-12-08-Why-learn-to-SQL-Pandas/</loc>
+      
+        <lastmod>2022-12-08T17:00:00+09:00</lastmod>
+      
+
+      
+        <changefreq>monthly</changefreq>
+      
+
+      
+        <priority>0.8</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/aa436f44-a399-427d-ac22-1ab84dd0825b/image.png</image:loc>
+        <image:title>SQL/Pandas를 배워야하는 이유</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/data-analytics/2022-10-22-Finding-good-restaurants-withKakaoMap/</loc>
+      
+        <lastmod>2022-10-22T11:11:11+09:00</lastmod>
+      
+
+      
+        <changefreq>monthly</changefreq>
+      
+
+      
+        <priority>0.8</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/4dfb8597-3d10-4aab-bc6a-c8a17cf7c836/image.jpg</image:loc>
+        <image:title>카카오맵 하나로 괜찮은 맛집 찾기</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/ml-dl/2022-10-22-2022AIExpo-review/</loc>
+      
+        <lastmod>2022-10-22T11:11:11+09:00</lastmod>
+      
+
+      
+        <changefreq>monthly</changefreq>
+      
+
+      
+        <priority>0.8</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/a8ede3fd-d3f0-47da-b301-2c355b0a1506/image.gif</image:loc>
+        <image:title>2022 AI EXPO 후기</image:title>
+      </image:image>
+      
+    </url>
+  
+    <url>
+      <loc>http://localhost:4000/post/engineering/2022-08-08-What-you-see-differently-after-studying-development/</loc>
+      
+        <lastmod>2022-08-08T21:07:11+09:00</lastmod>
+      
+
+      
+        <changefreq>monthly</changefreq>
+      
+
+      
+        <priority>0.8</priority>
+      
+      
+      
+      <image:image>
+        <image:loc>https://velog.velcdn.com/images/sungrok7/post/8604b488-2927-4093-8f67-12d53529bf33/image.png</image:loc>
+        <image:title>개발하고 달리 보이는 것</image:title>
+      </image:image>
+      
+    </url>
+  
+  
+  <!-- 정적 페이지 -->
+  
+    
+    <url>
+      <loc>http://localhost:4000/404.html</loc>
+      
+        <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+      
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/404.html</loc>
+      
+        <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+      
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/about%20copy/</loc>
+      
+        <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+      
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/about/</loc>
+      
+        <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+      
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/about/</loc>
+      
+        <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+      
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/feed.xml</loc>
+      
+        <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+      
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/</loc>
+      
+        <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+      
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/%E2%80%8B/</loc>
+      
+        <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+      
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/posts/</loc>
+      
+        <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+      
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/:n/</loc>
+      
+        <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+      
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/:n/</loc>
+      
+        <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+      
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+  
+  <!-- 카테고리 페이지 -->
+  
+  <url>
+    <loc>http://localhost:4000/categories/post/</loc>
+    <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/categories/engineering/</loc>
+    <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/categories/ml-dl/</loc>
+    <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/categories/data-analytics/</loc>
+    <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/categories/5월/</loc>
+    <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/categories/카카오테크/</loc>
+    <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/categories/세미나/</loc>
+    <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/categories/후기/</loc>
+    <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/categories/tech/</loc>
+    <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/categories/review/</loc>
+    <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:4000/categories/probability-statistics/</loc>
+    <lastmod>2025-04-17T19:56:25+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  
+  <!-- 태그 페이지 -->
+  
 </urlset>

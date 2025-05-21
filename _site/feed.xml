@@ -5,8 +5,22 @@
     <description>학습과 실행을 통한 지식 공유 블로그</description>
     <link>http://localhost:4000</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>Thu, 17 Apr 2025 12:16:09 +0900</lastBuildDate>
+	<lastBuildDate>Sun, 18 May 2025 11:14:09 +0900</lastBuildDate>
 	
+	<item>
+		<title>DisenHAN 논문 리뷰: 요인을 분리하여 더 똑똑한 추천 시스템 만들기</title>
+        
+        
+            <description>&lt;blockquote&gt;
+  &lt;p&gt;쩝쩝LAB의 ‘취향과 상황에 맞는 레스토랑 추천 시스템’을 위한 그래프 기반 모델 리뷰&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        
+        <pubDate>Sun, 18 May 2025 11:14:09 +0900</pubDate>
+        <link>http://localhost:4000/post/ml-dl/2025-05-18-DisenHAN-Paper-Review/</link>
+        <guid isPermaLink="true">http://localhost:4000/post/ml-dl/2025-05-18-DisenHAN-Paper-Review/</guid>
+      </item>
+    
 	<item>
 		<title>리눅스에서 crontab으로 반복 작업 자동화하기</title>
         
@@ -99,8 +113,8 @@
 </description>
         
         <pubDate>Fri, 25 Oct 2024 09:09:09 +0900</pubDate>
-        <link>http://localhost:4000/post/tech/review/2024-10-25-After-work-projects/</link>
-        <guid isPermaLink="true">http://localhost:4000/post/tech/review/2024-10-25-After-work-projects/</guid>
+        <link>http://localhost:4000/post/engineering/2024-10-25-After-work-projects/</link>
+        <guid isPermaLink="true">http://localhost:4000/post/engineering/2024-10-25-After-work-projects/</guid>
       </item>
     
 	<item>
@@ -115,18 +129,6 @@
         <pubDate>Thu, 03 Oct 2024 09:09:09 +0900</pubDate>
         <link>http://localhost:4000/post/ml-dl/2024-10-03-What-to-eat-today/</link>
         <guid isPermaLink="true">http://localhost:4000/post/ml-dl/2024-10-03-What-to-eat-today/</guid>
-      </item>
-    
-	<item>
-		<title>AI 언제 활용하시나요?</title>
-        
-        
-            <description>&lt;p&gt;요즘 AI를 사용하지 않는 날이 없다. 출근길 지하철에서는 블로그에 올릴 글을 AI와 아이디어를 나누며 완성해간다. 지금 이 글도 그렇다. “‘영화 Her의 AI 운영체제와 비슷한 기술이 우리 생활 속에 들어오려면 어떤 데이터와 기술이 필요할까?’를 주제로 글을 쓰고 싶다”고 하고 말투 예시를 적어준다. 그런 다음 수정 및 추가 내용, 글의 배치에 대해 이야기해가며 완성해나간다. 마치 나만의 편집자와 대화하는 듯한 느낌이 든다.&lt;/p&gt;
-</description>
-        
-        <pubDate>Wed, 11 Sep 2024 09:09:09 +0900</pubDate>
-        <link>http://localhost:4000/post/tech/review/2024-09-11-When-do-you-use-AI/</link>
-        <guid isPermaLink="true">http://localhost:4000/post/tech/review/2024-09-11-When-do-you-use-AI/</guid>
       </item>
     
   </channel>

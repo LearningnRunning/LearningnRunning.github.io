@@ -6,7 +6,7 @@ categories: [ml-dl]
 description: >
   퇴근 후 프로젝트로 파생되는 것들에 대한 정리
 image: 
-  path: https://i.ytimg.com/vi/AqEN8qOcAcA/hqdefault.jpg
+  path: https://img.youtube.com/vi/AqEN8qOcAcA/maxresdefault.jpg
 author: LearningnRunning
 keywords: 맛집추천시스템, 쩝쩝LAB, 자기개발, 퇴근후프로젝트, 우아콘2024
 seo:
@@ -90,7 +90,7 @@ sitemap:
 
 퇴근 후에 꼭 자기개발을 해야 하느냐는 질문에, 나는 더 이상 ‘해야 한다’는 강박 대신, ‘그 시간에도 나답게 살아갈 수 있다면 그게 곧 자기개발’이라 생각한다.
 
-![](/assets/img/blog/Alan Wilson Watts.png)
+![Alan Wilson Watts](/assets/img/blog/Alan Wilson Watts.png)
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll

@@ -1,11 +1,9 @@
 ---
 layout: about
-image: https://velog.velcdn.com/images/sungrok7/post/8526a151-6a97-49c3-84c3-9d889f53d453/image.png
+image: /assets/img/blog/rok/my_profile_img_1x1.png
 description: >
   ‘린치핀’이 되는 것을 목표로 성장 중인 머신러닝 엔지니어, 김성록입니다.
 hide_description: true
-redirect_from:
-  - /download/
 ---
 
 # About Me
@@ -47,8 +45,8 @@ Docker 및 클라우드 환경에서의 서비스 운영도 익숙합니다.
 
 ### 🔗 주요 프로젝트 보기
 
-- [AI Snap](https://learningnrunning.github.io/example/#1-ai-snap) – 셀카 기반 이미지 생성 서비스  
-- [BalanceMakeup](https://learningnrunning.github.io/example/#2-balancemakeup) – 얼굴 분석 기반 메이크업 추천  
+- [AI Snap](/example/#1-ai-snap) – 셀카 기반 이미지 생성 서비스  
+- [BalanceMakeup](/example/#2-balancemakeup) – 얼굴 분석 기반 메이크업 추천  
 - [쩝쩝LAB](https://github.com/lunch-corp/yamyam-lab) - 개인화 맛집 추천 서비스
 - [What2Eat](https://github.com/LearningnRunning/What2Eat) – 음식점 평점 기반 추천 서비스  
 - [Catch V](https://github.com/Catch-V/DL) – 디지털 성범죄 탐지 오픈소스 

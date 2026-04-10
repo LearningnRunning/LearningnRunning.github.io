@@ -8,7 +8,7 @@ description: >
 image: 
   path: /assets/img/blog/fromkakaorokTowhat2eat.png
 ---
-지난 포스팅 [**카카오맵 하나로 괜찮은 맛집 찾기**](https://learningnrunning.github.io/example/tech/review/2022-10-22-Finding-good-restaurants-withKakaoMap/) 이후 계속해서 작업을 해왔고 어느 정도 프로토타입을 완성하여, 정리 겸 글을 써본다.
+지난 포스팅 [**카카오맵 하나로 괜찮은 맛집 찾기**](/post/data-analytics/2022-10-22-Finding-good-restaurants-withKakaoMap/) 이후 계속해서 작업을 해왔고 어느 정도 프로토타입을 완성하여, 정리 겸 글을 써본다.
 
 자타공인 인간 카카오맵인 내가 맛집을 찾을 때면, 해당 지역에서 ‘맛집’을 검색한 후 음식점 평균 평점이 3.5 이상이 되는 맛집들을 하나씩 살펴본다. 리뷰를 중점으로 봐왔지만 개인의 평균평점이 노출되는 카카오맵의 업데이트 이후 평점을 위주로 봐왔다. 그걸 자동화 해봤다.
 

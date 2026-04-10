@@ -3,22 +3,18 @@
 layout: list
 
 # The title of the tag's page.
-title: 録
+title: Summary
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
 slug: summary
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  기록한다는 건, 정리한다는 것.
-  설명할 수 있다는 건, 안다는 것.
+  카테고리별로 정리한 LearningnRunning 블로그 글 모음입니다.
 
 # (Optional) You can disable grouping posts by date.
 # no_groups: true
 
-# Exclude this example category from the sitemap.
-# DON'T USE THIS SETTING IN YOUR CATEGORIES!
-sitemap: false
 ---
 
 ## 카테고리 목차

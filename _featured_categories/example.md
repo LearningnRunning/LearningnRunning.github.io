@@ -1,11 +1,9 @@
 ---
 layout: about
-image: https://velog.velcdn.com/images/sungrok7/post/8526a151-6a97-49c3-84c3-9d889f53d453/image.png
+image: /assets/img/blog/rok/my_profile_img_1x1.png
 description: >
   안녕하세요:) 끊임없이 배우고 탄력적으로 성장하는 개발자, 김성록입니다.
 hide_description: true
-redirect_from:
-  - /download/
 ---
 
 # About Me
@@ -19,16 +17,16 @@ redirect_from:
 
 |프로젝트 이름|설명|
 |----------|----|
-|[AI Snap](https://learningnrunning.github.io/example/#1-ai-snap)|유저의 셀카 이미지로 다양한 콘셉트의 이미지 사진을 제작해 주는 AI 서비스|
-|[BalanceMakeup](https://learningnrunning.github.io/example/#2-balancemakeup)|유저의 얼굴 분석을 통해 ‘나에게 맞는 미‘, ‘나의 얼굴에 맞는 메이크업’을 제시해주는 서비스|
-|[Catch V](https://learningnrunning.github.io/example/#3-catch-v)|디지털 성범죄 피해자 얼굴을 학습하여, <br />유포 범죄에 악용되는 피해자 영상 URL를 찾아주는 오픈소스 프로젝트|
-|[What2Eat](https://learningnrunning.github.io/example/#1-what2eat-%EB%A8%B8%EB%A8%B9)|데이터 분석을 통한 맛집 추천 서비스|
-|[NoCountryForOldMan](https://learningnrunning.github.io/example/#2-nocountryforoldman)|NLP를 활용하는 모두랩 논문 연구 프로젝트|
-|[naverTrans](https://learningnrunning.github.io/example/#3-navertrans)|번역 기능을 사용할 수 있는 파이썬 패키지|
+|[AI Snap](/example/#1-ai-snap)|유저의 셀카 이미지로 다양한 콘셉트의 이미지 사진을 제작해 주는 AI 서비스|
+|[BalanceMakeup](/example/#2-balancemakeup)|유저의 얼굴 분석을 통해 ‘나에게 맞는 미‘, ‘나의 얼굴에 맞는 메이크업’을 제시해주는 서비스|
+|[Catch V](/example/#3-catch-v)|디지털 성범죄 피해자 얼굴을 학습하여, <br />유포 범죄에 악용되는 피해자 영상 URL를 찾아주는 오픈소스 프로젝트|
+|[What2Eat](/example/#1-what2eat-%EB%A8%B8%EB%A8%B9)|데이터 분석을 통한 맛집 추천 서비스|
+|[NoCountryForOldMan](/example/#2-nocountryforoldman)|NLP를 활용하는 모두랩 논문 연구 프로젝트|
+|[naverTrans](/example/#3-navertrans)|번역 기능을 사용할 수 있는 파이썬 패키지|
 
-[🛠️ 기술스택](https://learningnrunning.github.io/example/#%EF%B8%8F-%EA%B8%B0%EC%88%A0%EC%8A%A4%ED%83%9D)
-[🎖️ 수상 ](https://learningnrunning.github.io/example/#%EF%B8%8F-%EC%88%98%EC%83%81)
-[🗣️ 발표 및 기타 활동](https://learningnrunning.github.io/example/#%EF%B8%8F-%EB%B0%9C%ED%91%9C-%EB%B0%8F-%EA%B8%B0%ED%83%80-%ED%99%9C%EB%8F%99)
+[🛠️ 기술스택](/example/#%EF%B8%8F-%EA%B8%B0%EC%88%A0%EC%8A%A4%ED%83%9D)
+[🎖️ 수상 ](/example/#%EF%B8%8F-%EC%88%98%EC%83%81)
+[🗣️ 발표 및 기타 활동](/example/#%EF%B8%8F-%EB%B0%9C%ED%91%9C-%EB%B0%8F-%EA%B8%B0%ED%83%80-%ED%99%9C%EB%8F%99)
 
 # Work Experience.
 ## 🏢 ELINHA Co., Ltd
@@ -38,7 +36,7 @@ redirect_from:
 
 ## 🗂️ 주요 프로젝
 ### 1. AI Snap
-[기간: 2023.07.26. ~ 2023.12.12](https://learningnrunning.github.io/post/tech/review/2023-12-20-Deploying-AI-services-in-80-days/)
+[기간: 2023.07.26. ~ 2023.12.12](/post/engineering/2023-12-20-Deploying-AI-services-in-80-days/)
 
 ![Screenshot](../../assets/img/blog/ai_snap/ai_snap_process_ex.png){:.lead width="1920" height="1080" loading="lazy"}   
 유저의 셀카 이미지로 다양한 콘셉트의 이미지 사진을 제작해 주는 AI 서비스
@@ -69,7 +67,7 @@ redirect_from:
 ![Screenshot](../../assets/img/blog/ai_snap/ai_snap_use_guide.png){:.lead width="1920" height="1080" loading="lazy"}
 
 ### 2. BalanceMakeUp
-[기간: 2023.03.13.~2023.07.18.](https://learningnrunning.github.io/post/tech/review/2023-12-06-Reference-lessservices-fromplanningtodeployment/)
+[기간: 2023.03.13.~2023.07.18.](/post/engineering/2023-12-06-Reference-lessservices-fromplanningtodeployment/)
 ![Screenshot](../../assets/img/blog/ai_snap/balancemakeup_ex.png){:.lead width="1920" height="1080" loading="lazy"}   
 유저의 얼굴 분석을 통해 ‘나에게 맞는 미‘, ‘내 얼굴에 맞는 메이크업’을 제시해주는 서비스
    
@@ -131,7 +129,7 @@ redirect_from:
 로고디자인, 스크래핑, 데이터구조 설계, 웹 서비스 개발 등 혼자 하였습니다.
 지인 개발자끼리 모여 하루 해커톤을 열어, 데이터 구조 개편 작업을 하였습니다. 덕분에 읽기 속도가 빨라 졌습니다. 
 
-#### [개발 방법](https://learningnrunning.github.io/post/tech/review/2024-03-03-from-kakaoRok-to-What2Eat/)
+#### [개발 방법](/post/engineering/2024-03-03-from-kakaoRok-to-What2Eat/)
 ![Screenshot](../../assets/img/blog/ai_snap/What2Eat_AnalysisMethods.png){:.lead width="1920" height="1080" loading="lazy"}
 
 > 만족한 유저와 불만족한 유저 수를 계산하여 노출하기

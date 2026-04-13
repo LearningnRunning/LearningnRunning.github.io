@@ -29,6 +29,15 @@ gem "kramdown-math-katex"
 # A JavaScript runtime for ruby that helps with running the katex gem above.
 gem "duktape"
 
+# Ruby 3.1+ stopped implicitly exposing some stdlib/default gems that older
+# Jekyll dependencies still expect to be loadable.
+if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.1")
+  gem "logger"
+  gem "csv"
+  gem "base64"
+  gem "bigdecimal"
+end
+
 # Fixes `jekyll serve` in ruby 3
 gem "webrick"
 
@@ -46,10 +55,8 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
 
   # Non-Github Pages plugins:
-  gem "jekyll-last-modified-at"
   gem "jekyll-compose"
 end
 
 gem 'wdm' if Gem.win_platform?
 gem "tzinfo-data" if Gem.win_platform?
-

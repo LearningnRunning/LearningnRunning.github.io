@@ -1,8 +1,8 @@
 ---
 layout: list
-title: Posts
+title: 전체 글
 description: >
-  This is the `list` layout for showing blog posts, which shows just the title and groups them by year of publication.
-  Check out the `blog` layout for comparison.
+  LearningnRunning 블로그의 전체 글 목록입니다.
 grouped: true
+sitemap: false
 ---

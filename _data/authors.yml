@@ -1,9 +1,9 @@
 # The primary author of this blog.
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
-author1:
-  name:              <Kim> <Seongrok>
-  email:             <max_sungrok@naver.com>
+LearningnRunning:
+  name:              Seongrok Kim
+  email:             max_sungrok@naver.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -19,11 +19,11 @@ author1:
     짧은 경력이지만, 연구와 실무를 잇는 실행력과 리더십을 바탕으로 빠르게 성장해왔습니다.
   # This photo will be used in the about section
   picture:
-    path:            https://velog.velcdn.com/images/sungrok7/post/8526a151-6a97-49c3-84c3-9d889f53d453/image.png
+    path:            /assets/img/blog/rok/my_profile_img_1x1.png
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            https://velog.velcdn.com/images/sungrok7/post/8526a151-6a97-49c3-84c3-9d889f53d453/image.png
-      2x:            https://velog.velcdn.com/images/sungrok7/post/8526a151-6a97-49c3-84c3-9d889f53d453/image.png
+      1x:            /assets/img/blog/rok/my_profile_img_1x1.png
+      2x:            /assets/img/blog/rok/my_profile_img_1x1.png
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide

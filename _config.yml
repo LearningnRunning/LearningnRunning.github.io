@@ -4,6 +4,8 @@
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
 url: https://learningnrunning.github.io
+baseurl: ""
+timezone: Asia/Seoul
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
@@ -17,20 +19,21 @@ url: https://learningnrunning.github.io
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang: ko_KR
+lang: ko-KR
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title: LearningnRunning's Blog
+title: LearningnRunning
+name: LearningnRunning
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
-description: 학습과 실행을 통한 지식 공유 블로그
+description: 머신러닝, 데이터 분석, 추천 시스템, 서비스 개발 경험을 기록하는 김성록의 기술 블로그
 
 # A shorter description for the sidebar.
 tagline: la douleur passe la beauté reste.
 
 # A list of keywords for your blog
-keywords: [Recommendation System, Machine Learning, Deep Learning, Natural Language Processing, Computer Vision, Reinforcement Learning, 맛집추천, 머신러닝]
+keywords: [추천 시스템, 머신러닝, 딥러닝, 데이터 분석, NLP, 컴퓨터 비전, 서비스 개발, 맛집 추천]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -50,13 +53,7 @@ menu:
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
-legal:
-  - title:             LICENSE
-    url:               /LICENSE/
-  - title:             NOTICE
-    url:               /NOTICE/
-  - title:             CHANGELOG
-    url:               /CHANGELOG/
+legal: []
 
 # This text will appear in a `<small>` tag in the footer of every page.
 copyright:             © 2021. All rights reserved.
@@ -66,13 +63,13 @@ permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
-paginate_path:         /:n
+paginate_path:         /page:num/
 
 # Theme
 # ---------------------------------------------------------------------------------------
-# 커밋시 주석처리
-# remote_theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+# 로컬 `bundle exec jekyll build`에서는 Gemfile에 설치된 테마 gem을 사용합니다.
+theme: jekyll-theme-hydejack
+# remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
@@ -124,6 +121,26 @@ defaults:
       path:            licenses/
     values:
       layout:          plain
+      sitemap:         false
+
+  - scope:
+      type:            posts
+    values:
+      author:          LearningnRunning
+
+  - scope:
+      path:            CHANGELOG.md
+    values:
+      sitemap:         false
+
+  - scope:
+      path:            NOTICE.md
+    values:
+      sitemap:         false
+
+  - scope:
+      path:            LICENSE.md
+    values:
       sitemap:         false
 
   # # You can use the following to enable comments on all posts.
@@ -300,10 +317,16 @@ collections:
 exclude:
   - .jekyll-cache
   - .sass-cache
+  - .DS_Store
   - '*.toml'
   - vendor
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - docs/
+  - workers-site/
+  - about copy.md
+  - "="
 include:
   - .well-known
   - LICENSE.md
@@ -324,7 +347,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-titles-from-headings
   - jekyll-include-cache
-  - jekyll-last-modified-at
 
 
 # SEO Tag
@@ -416,5 +438,5 @@ jekyll_compose:
 
 # Jekyll SEO 태그 설정
 locale: ko_KR
-google_site_verification: # 구글 사이트 소유권 확인 코드 입력
-naver_site_verification: # 네이버 사이트 소유권 확인 코드 입력
+google_site_verification: google0d64cda6606e6a65
+naver_site_verification: naver7b076e7e739b7e134d1626e798cc4da4

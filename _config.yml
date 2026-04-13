@@ -68,7 +68,7 @@ paginate_path:         /page:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 # 로컬 `bundle exec jekyll build`에서는 Gemfile에 설치된 테마 gem을 사용합니다.
-# theme: jekyll-theme-hydejack
+theme: jekyll-theme-hydejack
 remote_theme: hydecorp/hydejack@v9
 
 

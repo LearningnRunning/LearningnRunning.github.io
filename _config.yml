@@ -67,8 +67,8 @@ paginate_path:         /page:num/
 
 # Theme
 # ---------------------------------------------------------------------------------------
-# GitHub Actions 빌드에서 Gemfile의 테마 gem을 직접 사용합니다.
-theme: jekyll-theme-hydejack
+# GitHub Actions + jekyll-remote-theme으로 Hydejack v9를 다운로드합니다.
+remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
@@ -335,6 +335,7 @@ include:
 # ----------------------------------------------------------------------------------------
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-default-layout
   - jekyll-feed
   - jekyll-optional-front-matter

@@ -12,23 +12,6 @@ gem "jekyll", "~> 4.1"
 
 gem "jekyll-remote-theme"
 
-# IMPORTANT: The followign gem is used to compile math formulas to 
-# KaTeX during site building.
-#
-# There are a couple of things to know about this gem:
-# *  It is not supported on GitHub Pages. 
-#    You have to build the site on your machine before uploading to GitHub,
-#    or use a more permissive cloud building tool such as Netlify.
-# *  You need some kind of JavaScript runtime on your machine.
-#    Usually installing NodeJS will suffice. 
-#    For details, see <https://github.com/kramdown/math-katex#documentation>
-#
-# If you're using the MathJax math engine instead, free to remove the line below:
-gem "kramdown-math-katex"
-
-# A JavaScript runtime for ruby that helps with running the katex gem above.
-gem "duktape"
-
 # Ruby 3.1+ stopped implicitly exposing some stdlib/default gems that older
 # Jekyll dependencies still expect to be loadable.
 if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.1")

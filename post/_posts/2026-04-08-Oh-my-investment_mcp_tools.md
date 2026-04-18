@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  "내가 쓰려고 만든 미국 투자 MCP"
-date:   2026-04-08 11:14:09 +0900
+date:   2026-04-17 11:14:09 +0900
 categories: [ml-dl]
 description: >
   개인 투자자가 Web Search의 한계를 넘기 위해 직접 만든 미국 투자용 MCP 제작기. 왜 만들었는지, 어떤 흐름으로 설계했는지, 실제로 어떻게 투자 조사에 활용했는지를 정리했다.
 image: 
-  path: https://img.youtube.com/vi/AqEN8qOcAcA/maxresdefault.jpg
+  path: https://github.com/user-attachments/assets/e23cc01b-0c13-48fd-b975-79099a48d105
 author: LearningnRunning
 keywords: mcp, investment
 seo:
@@ -283,6 +283,46 @@ DELL과 ANET 둘 다 매도 타이밍을 분석해줘.
 
 아직 갈 길이 멀지만, "금융을 몰라도 AI와 함께라면 시작할 수 있다"는 가능성은 분명히 확인했다. 내가 얻은 정도의 리포트를 금융 Specialist에게 얻으려면 그만큼 수수료가 들었을테고 이만큼 가까이 소통하지도 못했을 것이다. Agent의 가장 큰 장점은 Generalist를 쉽게 Specialist 급으로 올려주는 것 같다.
 다음에는 포트폴리오 리스크 관리까지 연결해서, 조사 도구를 조금 더 실전적이고 지속적으로 다듬어 보고 싶다.
+
+### 직접 써보고 싶다면
+
+이 MCP 서버를 직접 연결해서 사용해볼 수 있도록 공개 엔드포인트를 열어두었다. 별도의 설치 없이 URL만 등록하면 바로 사용할 수 있다.
+
+#### Claude Desktop / Claude Code에서 사용하기
+
+Claude Desktop의 경우 `Settings > Developer > Edit Config`에서, Claude Code의 경우 `.claude/mcp.json` 또는 프로젝트 설정에서 아래 JSON을 추가하면 된다.
+
+```json
+{
+  "mcpServers": {
+    "trade-bridge": {
+      "url": "https://trade-bridge.cloud/mcp"
+    }
+  }
+}
+```
+
+설정 후 Claude에게 "AAPL 펀더멘탈 분석해줘", "NVDA DCF 돌려줘" 같은 질문을 던지면 MCP 도구가 자동으로 호출된다.
+
+#### Google Gemini에서 사용하기
+
+Gemini CLI에서도 MCP 서버를 연결할 수 있다. 프로젝트 루트 또는 홈 디렉토리에 `.gemini/settings.json` 파일을 만들고 아래 내용을 추가하면 된다.
+
+```json
+{
+  "mcpServers": {
+    "trade-bridge": {
+      "url": "https://trade-bridge.cloud/mcp"
+    }
+  }
+}
+```
+
+설정 후 Gemini에서도 동일하게 투자 분석 관련 질문을 하면 MCP 도구를 통해 데이터를 가져온다.
+
+#### 질문 및 이슈
+
+사용 중 궁금한 점이나 버그, 기능 제안이 있다면 [GitHub 리포지토리](https://github.com/LearningnRunning/trade-bridge)에 이슈를 남겨주세요.
 
 ---
 

@@ -224,15 +224,6 @@ print(result)  # Output: '네이버에게 박수 부탁드립니다.'
 
 ![Screenshot](../../assets/img/blog/Presentation_Experience.png){:.lead width="1920" height="1080" loading="lazy"}
 
-## 🎓 교육
-- 2011 포항 대동고등학교 
-- 2015 용인대학교 영화영상학과
-- 2022 (주)엔코아 부트캠프 PLAYDATA AI 과정
-- 2023 방송통신대학교 통계 데이터학과
-
-
-
-
 <!-- ### 
 <div class="gumroad-product-embed" data-gumroad-product-id="nuOluY"><a href="https://gumroad.com/l/nuOluY">Loading…</a></div> -->
 

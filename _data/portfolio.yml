@@ -26,6 +26,13 @@ links:
     url: https://www.linkedin.com/in/learningnrunning/
   - label: Email
     url: mailto:max_sungrok@naver.com
+  - label: Brunch
+    url: https://brunch.co.kr/@maxsungrok
+
+# 기술 외 에세이 (홈 Writing 섹션 하단에 한 줄로 노출)
+essay:
+  label: 기술 밖의 생각은 브런치에 씁니다
+  url: https://brunch.co.kr/@maxsungrok
 
 # 취향 데이터 → 추천 : 세 도메인
 domains:
@@ -86,21 +93,11 @@ process:
       광고 검수의 '최종검토 에이전트 → 라벨러 재검토 → 재학습 → 재배포' 루프, Locals Only의 큐레이션 어드민처럼
       모델이 틀린 곳을 사람이 고치고, 그 수정이 재발행에도 지켜지는 구조로 마무리합니다.
 
-# 추천 외 0→1 프로젝트 (홈 하단 컴팩트 카드)
+# 추천 외 0→1 프로젝트 (홈 하단 컴팩트 카드) — 상세 페이지가 있는 프로젝트는 _projects/ 에서 featured: false 로 자동 노출
 more:
   - title: 토스 NEXT ML CHALLENGE
     tag: 랭킹 · CTR
     body: 대규모 정형 로그 기반 광고 클릭 예측. Private 리더보드 5위 / 2,897명 (3인 팀).
-  - title: trade-bridge
-    tag: LLM 도구 · MCP
-    body: LLM이 거시지표·섹터·재무·SEC 공시·DCF를 직접 조회하는 57개 tool MCP 서버와 계정 대시보드. 현업 트레이더 피드백으로 분석 로직 보정.
-    url: /post/ml-dl/2026-04-17-Oh-my-investment_mcp_tools/
-  - title: 간호 인수인계(SBAR) AI 튜터
-    tag: LLM 에이전트 · 교육
-    body: 간호교육학 박사과정 동료와 2인 협업. '평가(비노출) → 소크라테스식 질문(노출)'을 분리한 채점 구조. 목포대 간호학과 파일럿 중.
-  - title: Dear J
-    tag: 제품 설계 · 1인 개발
-    body: 프로젝트 백로그와 '오늘 할 일'을 잇는 일정관리 앱. 3회 연속 미룬 항목은 회고에서 스킵할 수 없게 한 행동 유도 설계.
 
 # 경력
 experience:
@@ -112,9 +109,9 @@ experience:
       모회사 광고대행사에서 광고 문구 법규 검수 ML 시스템과 광고 플랫폼 백엔드를 맡고 있습니다.
     items:
       - 일본 광고 약기법·경품표시법 위반 검수 시스템 개발 리드 — 앙상블 + RAG + LLM 의사결정 엔진, 지속 개선 루프
-      - SingleONE 광고 플랫폼(Mynavi baito 제휴) 백엔드 오너 — 도달 예측, 배치 검증, S3 데이터 연동, 신규 연동 데이터 기획
-      - LinkONE 인플루언서 성과 플랫폼 — 퍼널·전환 지표 설계, Batch ETL, PM (2025.05–08)
-      - Qoo10 광고 성과 분석 인프라 — 랭킹 Top200 시간 단위 수집, ROAS/CPC/CVR 대시보드, ML용 피처 스키마 정의
+      - SingleONE 광고 플랫폼(Mynavi baito 제휴) 백엔드 오너 — 도달 예측, 배치 업로드 검증, 배치 인프라
+      - 인플루언서 캠페인 성과 플랫폼 — 퍼널·전환 지표 설계, Batch ETL, PM (2025.05–08)
+      - 커머스 광고 성과 분석 인프라 — 시장 지표 수집 파이프라인과 성과 대시보드, ML용 피처 스키마 정의
       - AI Snap(80일 출시) · Balance MakeUp — 얼굴 분석 기반 개인화 뷰티 서비스 (2023)
 
 side:
@@ -123,13 +120,14 @@ side:
     period: 2024.10 – 2026.04
     summary: 12명이 함께 추천 논문 리뷰와 구현을 반복한 모임을 개설·운영. 데이터 파이프라인과 추천 아키텍처는 단독 설계.
 
-education:
-  - name: 한국방송통신대학교 통계학과
-    period: 2023.07 – 2025.09 · 졸업
-    note: 재직 중 편입 — 모델 평가와 실험 설계를 통계 이론 위에서 다시 정리
-  - name: 엔코아 Data/ML 부트캠프
-    period: 2022.04 – 2022.10 · 수료
-    note: 파이널 프로젝트로 2022 오픈소스개발자대회 동상(KT DS상)
+# 상세 포트폴리오 요청 안내 (홈 경력 섹션 · 회사 프로젝트 페이지 · 푸터에서 사용)
+request:
+  title: 상세 포트폴리오 요청
+  body: >-
+    회사 프로젝트는 사내 정책상 공개 가능한 범위만 적었습니다.
+    아키텍처 다이어그램, 실험 기록, 상세 수치가 담긴 포트폴리오는 메일 주시면 보내드립니다.
+  email: max_sungrok@naver.com
+  subject: "[포트폴리오 요청] 상세 자료 문의"
 
 awards:
   - year: "2025"

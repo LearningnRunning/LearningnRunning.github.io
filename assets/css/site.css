@@ -294,6 +294,18 @@ a.mini:hover { border-style: solid; border-color: var(--ink-2); }
 .project-nav span, .post-nav span { font-size: 12.5px; font-weight: 600; color: var(--muted); }
 .project-nav .next, .post-nav .next { text-align: right; grid-column: 2; }
 
+/* Screenshots */
+.project-main { min-width: 0; }
+.shots { display: flex; gap: 16px; overflow-x: auto; padding: 4px 2px 18px; margin-bottom: 36px; scroll-snap-type: x mandatory; border-bottom: 1px solid var(--line); }
+.shot { margin: 0; flex: none; scroll-snap-align: start; display: flex; flex-direction: column; gap: 8px; }
+.shot img { display: block; border-radius: 14px; border: 1px solid var(--line); background: var(--surface); box-shadow: var(--shadow); object-fit: cover; object-position: top; }
+.shot-mobile img { width: 200px; height: 433px; }
+.shot-desktop img { width: 480px; height: 300px; }
+.shot figcaption { font-size: 13px; color: var(--muted); max-width: 100%; }
+.shot-mobile figcaption { width: 200px; }
+.shot-desktop figcaption { width: 480px; }
+@media (max-width: 640px) { .shot-desktop img, .shot-desktop figcaption { width: 300px; } .shot-desktop img { height: 188px; } .shot-mobile img, .shot-mobile figcaption { width: 160px; } .shot-mobile img { height: 346px; } }
+
 /* Prose ------------------------------------------------------------------ */
 .prose { font-size: 16.5px; line-height: 1.85; color: var(--ink-2); min-width: 0; }
 .prose > * + * { margin-top: 1.1em; }

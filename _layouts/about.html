@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="wrap narrow prose-page">
+  <header class="page-head">
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lead">{{ page.description | strip_html }}</p>{% endif %}
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

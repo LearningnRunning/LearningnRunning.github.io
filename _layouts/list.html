@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{%- assign key = page.slug | default: page.name | remove: '.md' -%}
+{%- assign posts = site.categories[key] -%}
+<section class="wrap blog">
+  <header class="page-head">
+    <p class="eyebrow"><a href="{{ '/blog/' | relative_url }}">Blog</a></p>
+    <h1>{{ site.data.categories[key].label | default: page.title }}</h1>
+    {% if page.description %}<p class="lead">{{ page.description | strip_html }}</p>{% endif %}
+    <nav class="chips" aria-label="카테고리">
+      <a class="chip" href="{{ '/blog/' | relative_url }}">전체 <span>{{ site.posts | size }}</span></a>
+      {% for c in site.data.categories %}{% assign n = site.categories[c[0]] | size %}{% if n > 0 %}
+      <a class="chip{% if c[0] == key %} is-on{% endif %}" href="{{ '/' | append: c[0] | append: '/' | relative_url }}">{{ c[1].label }} <span>{{ n }}</span></a>
+      {% endif %}{% endfor %}
+    </nav>
+  </header>
+  {% if posts %}
+    {% include post-list.html posts=posts %}
+  {% else %}
+    <div class="prose">{{ content }}</div>
+  {% endif %}
+</section>

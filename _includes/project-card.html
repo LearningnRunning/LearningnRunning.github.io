@@ -1,0 +1,15 @@
+{%- assign p = include.project -%}
+<a class="pcard{% if include.large %} pcard-lg{% endif %}" href="{{ p.url | relative_url }}">
+  <div class="pcard-top">
+    <div class="dtags">{% for d in p.domains %}<span class="dtag d-{{ d }}">{{ site.data.domains[d].short }}</span>{% endfor %}</div>
+    <span class="pcard-period">{{ p.period }}</span>
+  </div>
+  <h3>{{ p.title }}</h3>
+  <p class="pcard-sub">{{ p.subtitle }}</p>
+  {% if p.metrics %}
+  <dl class="pcard-metrics">
+    {% for m in p.metrics limit: 3 %}<div><dt>{{ m.label }}</dt><dd>{{ m.value }}</dd></div>{% endfor %}
+  </dl>
+  {% endif %}
+  <span class="pcard-more">자세히 보기 <span aria-hidden="true">→</span></span>
+</a>

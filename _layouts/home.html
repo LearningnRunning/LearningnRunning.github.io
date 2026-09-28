@@ -1,0 +1,193 @@
+---
+layout: default
+---
+{%- assign pf = site.data.portfolio -%}
+{%- assign projects = site.projects | sort: 'order' -%}
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">{{ pf.hero.eyebrow }}</p>
+      <h1>{% for l in pf.hero.title_lines %}<span>{{ l }}</span>{% endfor %}</h1>
+      <p class="lead">{{ pf.hero.lead }}</p>
+      <div class="cta">
+        <a class="btn" href="#projects">프로젝트 보기</a>
+        <a class="btn ghost" href="#contact">연락하기</a>
+      </div>
+    </div>
+
+    <figure class="flow" aria-label="취향 신호가 추천이 되기까지">
+      <div class="flow-col">
+        <p class="flow-h">취향 신호</p>
+        <span class="node d-food">“웨이팅은 길어도 국물이 진해서 또 올 듯”</span>
+        <span class="node d-food">평소보다 +1.4점 준 별점</span>
+        <span class="node d-travel">리뷰어의 방문 시퀀스</span>
+        <span class="node d-people">대화 · 설문 응답</span>
+      </div>
+      <div class="flow-arrow" aria-hidden="true"></div>
+      <div class="flow-col">
+        <p class="flow-h">구조화</p>
+        <span class="node">문장 semantic_id × 극성</span>
+        <span class="node">Bayesian 보정 점수</span>
+        <span class="node mono">diner_token (32, 61, 55)</span>
+        <span class="node">결 타입 4축 + 선(boundary)</span>
+      </div>
+      <div class="flow-arrow" aria-hidden="true"></div>
+      <div class="flow-col">
+        <p class="flow-h">추천</p>
+        <span class="node out">유저 → 식당</span>
+        <span class="node out">유사 식당 · 유사 유저</span>
+        <span class="node out">다음 방문 예측</span>
+        <span class="node out">사람 매칭</span>
+      </div>
+      <figcaption>제가 만들어 온 파이프라인을 한 장으로 — 자세한 내용은 아래 프로젝트에 있습니다.</figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <dl class="stats">
+      {% for s in pf.hero.stats %}<div><dd>{{ s.value }}</dd><dt>{{ s.label }}</dt></div>{% endfor %}
+    </dl>
+  </div>
+</section>
+
+<section class="section" id="domains">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow">Taste → Recommendation</p>
+      <h2>세 가지 취향, 세 가지 추천</h2>
+      <p class="sec-lead">음식점, 여행지, 사람. 대상은 달라도 문제는 같습니다 — <strong>흩어진 취향 신호를 어떻게 믿을 수 있는 표현으로 바꾸고, 그걸로 무엇을 먼저 보여줄 것인가.</strong></p>
+    </header>
+    <div class="domains">
+      {% for d in pf.domains %}
+      <article class="domain d-{{ d.key }}">
+        <p class="domain-label">{{ d.label }}</p>
+        <p class="domain-signal"><span>신호</span>{{ d.signal }}</p>
+        <p class="domain-built">{{ d.built }}</p>
+        <p class="domain-links">
+          {% for slug in d.projects %}{% assign pj = site.projects | where_exp: "x", "x.url contains slug" | first %}{% if pj %}<a href="{{ pj.url | relative_url }}">{{ pj.title }} →</a>{% endif %}{% endfor %}
+        </p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="projects">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow">Projects</p>
+      <h2>주요 프로젝트</h2>
+      <p class="sec-lead">각 페이지에 문제 정의 · 판단 근거 · 검증 · <strong>한계와 다음 단계</strong>를 함께 적었습니다. 검증되지 않은 수치는 검증되지 않았다고 씁니다.</p>
+    </header>
+    <div class="pgrid">
+      {% for p in projects %}{% if p.featured %}
+        {% if forloop.first or p.wide %}{% include project-card.html project=p large=true %}{% else %}{% include project-card.html project=p %}{% endif %}
+      {% endif %}{% endfor %}
+    </div>
+    <div class="pgrid-small">
+      {% for p in projects %}{% unless p.featured %}
+        {% include project-card.html project=p %}
+      {% endunless %}{% endfor %}
+      {% for m in pf.more %}
+      <{% if m.url %}a href="{{ m.url | relative_url }}"{% else %}div{% endif %} class="mini">
+        <span class="mini-tag">{{ m.tag }}</span>
+        <h3>{{ m.title }}</h3>
+        <p>{{ m.body }}</p>
+      </{% if m.url %}a{% else %}div{% endif %}>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow">How I work</p>
+      <h2>방향만 받아도, 끝까지 가져갑니다</h2>
+      <p class="sec-lead">대표가 대략적인 BM과 방향을 말하면, 리서치 · PoC · 검증 · 피드백 · 테스트를 거쳐 운영까지 마무리해 왔습니다. 모든 단계에 실제 사례가 있습니다.</p>
+    </header>
+    <ol class="process">
+      {% for s in pf.process %}
+      <li>
+        <span class="step">{{ s.step }}</span>
+        <div>
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.body }}</p>
+          {% if s.ref %}<a class="ref" href="{{ s.ref.url | relative_url }}">{{ s.ref.label }} →</a>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section alt" id="career">
+  <div class="wrap career">
+    <div>
+      <header class="sec-head">
+        <p class="eyebrow">Experience</p>
+        <h2>경력</h2>
+      </header>
+      {% for e in pf.experience %}
+      <article class="job">
+        <div class="job-head"><h3>{{ e.org }}</h3><span>{{ e.period }}</span></div>
+        <p class="job-role">{{ e.role }}</p>
+        <p class="muted">{{ e.summary }}</p>
+        <ul>{% for i in e.items %}<li>{{ i }}</li>{% endfor %}</ul>
+      </article>
+      {% endfor %}
+      {% for e in pf.side %}
+      <article class="job">
+        <div class="job-head"><h3>{{ e.org }}</h3><span>{{ e.period }}</span></div>
+        <p class="job-role">{{ e.role }}</p>
+        <p class="muted">{{ e.summary }}</p>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="career-side">
+      <div class="side-block">
+        <h3>학력 · 교육</h3>
+        <ul class="plain">{% for e in pf.education %}<li><strong>{{ e.name }}</strong><span>{{ e.period }}</span><em>{{ e.note }}</em></li>{% endfor %}</ul>
+      </div>
+      <div class="side-block">
+        <h3>수상 · 경진대회</h3>
+        <ul class="plain">{% for a in pf.awards %}<li><strong>{{ a.title }}</strong><span>{{ a.year }}{% if a.note %} · {{ a.note }}{% endif %}</span></li>{% endfor %}</ul>
+      </div>
+      <div class="side-block">
+        <h3>논문</h3>
+        <ul class="plain"><li><strong>{{ pf.paper.title }}</strong><span>{{ pf.paper.venue }}</span><em>{{ pf.paper.note }}</em></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="talks">
+  <div class="wrap talks">
+    <div>
+      <header class="sec-head">
+        <p class="eyebrow">Talks</p>
+        <h2>발표</h2>
+      </header>
+      <ul class="talk-list">
+        {% for t in pf.talks %}
+        <li>
+          <span class="talk-meta">{{ t.event }} · {{ t.date }}</span>
+          <strong>{{ t.title }}</strong>
+          <span class="talk-links">{% if t.video %}<a href="{{ t.video }}" target="_blank" rel="noopener">영상</a>{% endif %}{% if t.post %}<a href="{{ t.post | relative_url }}">정리글</a>{% endif %}</span>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <header class="sec-head">
+        <p class="eyebrow">Writing</p>
+        <h2>추천 · 랭킹 관련 글</h2>
+      </header>
+      <ul class="write-list">
+        {% for w in pf.writing %}<li><a href="{{ w.url | relative_url }}"><span class="tag">{{ w.tag }}</span>{{ w.title }}</a></li>{% endfor %}
+      </ul>
+      <a class="ref" href="{{ '/blog/' | relative_url }}">전체 글 {{ site.posts | size }}개 보기 →</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,186 @@
+# 홈(포트폴리오) 화면에 쓰이는 데이터. 프로젝트 상세는 _projects/*.md 에 있습니다.
+
+hero:
+  eyebrow: ML Engineer · Recommendation & Personalization
+  title_lines:
+    - 흩어진 취향 신호를
+    - 추천으로 바꾸는 일을 합니다
+  lead: >-
+    리뷰 한 문장, 대화 한 줄, 방문 한 번에 남은 취향을 구조화하고,
+    그것을 사용자가 체감하는 추천으로 연결하는 ML 엔지니어 김성록입니다.
+    방향만 정해진 문제를 받아 리서치 → PoC → 검증 → 운영까지 끝까지 가져갑니다.
+  stats:
+    - value: "186만"
+      label: 리뷰 규모로 설계·검증한 음식점 랭킹 (리뷰어 55만)
+    - value: "0.475 → 0.900"
+      label: 광고 위반 탐지 Recall (held-out 1,222건)
+    - value: "5위 / 2,897명"
+      label: 토스 NEXT ML CHALLENGE · CTR 예측
+    - value: "4년차"
+      label: ML/AI 엔지니어 · 2022.10 ~
+
+links:
+  - label: GitHub
+    url: https://github.com/LearningnRunning
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/learningnrunning/
+  - label: Email
+    url: mailto:max_sungrok@naver.com
+
+# 취향 데이터 → 추천 : 세 도메인
+domains:
+  - key: food
+    label: 음식점 추천
+    signal: 리뷰 문장, 평점 편차, 방문 이력
+    built: >-
+      리뷰 문장을 의미 단위(semantic_id)로 묶어 유저→식당 · 유사 식당 · 유사 유저 추천 3종을 구현하고,
+      리뷰어의 '평소 대비' 평점 편차와 Bayesian 보정으로 신뢰할 만한 랭킹을 운영 중입니다.
+    projects: [jjeopjjeop-lab, tasteroute]
+  - key: travel
+    label: 여행지 · 로컬 발견
+    signal: 권역별 로컬 리뷰, 낯선 장소에서의 탐색 맥락
+    built: >-
+      서울·수도권뿐 아니라 동해권(고성·속초·양양·강릉)·제주·가평, 오사카·도쿄까지 권역별로 데이터를 모았습니다.
+      '토박이 모드'와 '여행자 모드'를 나눠 설계해, 광고에 오염되지 않은 로컬 맛집을 여행자에게 추려주는 방향을 잡았습니다.
+    projects: [tasteroute, jjeopjjeop-lab]
+  - key: people
+    label: 사람 추천 · 매칭
+    signal: 대화 맥락, 설문 응답, 생활 속성과 '선(boundary)'
+    built: >-
+      카카오톡 대화와 설문에서 관계 성향을 읽어 '결 타입'으로 매칭하는 플랫폼을 설계 중입니다.
+      측정(설문 문항 형식·묵종 편향)부터 매칭 단위, 안전장치까지 단계적으로 쌓고 있습니다.
+    projects: [hint]
+
+# 일하는 방식 — 방향을 받아 끝까지 가져가는 루프
+process:
+  - step: "01"
+    title: 방향을 문제로 바꾼다
+    body: >-
+      대표가 '관상 서비스'를 원했을 때, 먼저 가능 범위를 조사한 뒤 같은 기술(FaceMesh)로 더 빨리 가치를 낼 수 있는
+      '얼굴 비율 기반 메이크업 추천'을 대안으로 제안해 진행했습니다.
+    ref: { label: 귀신 피하려다가 호랑이 만나다, url: /post/engineering/2023-08-05-.Startup-service-development-period-copy/ }
+  - step: "02"
+    title: 리서치로 구조를 추정한다
+    body: >-
+      "하루빨리 AI 프로필 같은 걸" 이라는 요청에 경쟁 서비스(SNOW·Meitu·Carat)를 뜯어보고
+      '생성이 아니라 얼굴 교체'라는 구현 가설을 세워 80일 만에 AI Snap을 출시했습니다.
+    ref: { label: 80일 안에 AI 서비스 배포하기, url: /post/engineering/2023-12-20-Deploying-AI-services-in-80-days/ }
+  - step: "03"
+    title: 필요한 지식은 가진 사람에게 받아온다
+    body: >-
+      메이크업 전문가, 간호교육학 박사과정 연구자, 현업 주식 트레이더, CTO 기술고문, 라벨러까지 —
+      도메인 판단이 필요한 지점마다 직접 찾아가 요구사항을 받아 아키텍처 원칙으로 번역했습니다.
+  - step: "04"
+    title: 단계를 나눠 PoC부터 쌓는다
+    body: >-
+      실측 분포(리뷰어 63%가 리뷰 1건)를 근거로 '학습 없는 근사검색 → 생성형 시퀀스 추천 → 랭킹 결합'의 Phase A/B/C를 나누고,
+      광고 검수는 ML 단독부터 LLM 위임까지 4개 운영 모드로 쪼개 위험을 통제했습니다.
+  - step: "05"
+    title: 검증되지 않은 건 검증되지 않았다고 쓴다
+    body: >-
+      held-out 벤치마크, 실트래픽 Shadow 비교, 시점 컷오프로 리키지 차단. dry-run에서 체이닝 현상을 발견하면 전체 반영을 보류합니다.
+      모든 프로젝트 페이지에 '한계와 다음 단계'를 함께 적었습니다.
+  - step: "06"
+    title: 피드백이 다시 모델로 돌아오게 만든다
+    body: >-
+      최종검토 에이전트 → 라벨러 재검토 → 재학습 → 평가 → 재배포 루프, 대학 파일럿·실사용자 피드백처럼
+      한 번 만들고 끝나는 게 아니라 계속 좋아지는 구조로 마무리합니다.
+
+# 추천 외 0→1 프로젝트 (홈 하단 컴팩트 카드)
+more:
+  - title: 토스 NEXT ML CHALLENGE
+    tag: 랭킹 · CTR
+    body: 대규모 정형 로그 기반 광고 클릭 예측. Private 리더보드 5위 / 2,897명 (3인 팀).
+  - title: trade-bridge
+    tag: LLM 도구 · MCP
+    body: LLM이 거시지표·섹터·재무·SEC 공시·DCF를 직접 조회하는 57개 tool MCP 서버와 계정 대시보드. 현업 트레이더 피드백으로 분석 로직 보정.
+    url: /post/ml-dl/2026-04-17-Oh-my-investment_mcp_tools/
+  - title: 간호 인수인계(SBAR) AI 튜터
+    tag: LLM 에이전트 · 교육
+    body: 간호교육학 박사과정 동료와 2인 협업. '평가(비노출) → 소크라테스식 질문(노출)'을 분리한 채점 구조. 목포대 간호학과 파일럿 중.
+  - title: Dear J
+    tag: 제품 설계 · 1인 개발
+    body: 프로젝트 백로그와 '오늘 할 일'을 잇는 일정관리 앱. 3회 연속 미룬 항목은 회고에서 스킵할 수 없게 한 행동 유도 설계.
+
+# 경력
+experience:
+  - org: A1미디어그룹 (ELINHA)
+    role: ML/AI Engineer
+    period: 2022.10 – 현재
+    summary: >-
+      일본 대상 K-뷰티 플랫폼 Checco에서 컴퓨터비전 기반 개인화 서비스로 시작해,
+      모회사 광고대행사에서 광고 문구 법규 검수 ML 시스템과 광고 플랫폼 백엔드를 맡고 있습니다.
+    items:
+      - 일본 광고 약기법·경품표시법 위반 검수 시스템 개발 리드 — 앙상블 + RAG + LLM 의사결정 엔진, 지속 개선 루프
+      - SingleONE 광고 플랫폼(Mynavi baito 제휴) 백엔드 오너 — 도달 예측, 배치 검증, S3 데이터 연동, 신규 연동 데이터 기획
+      - LinkONE 인플루언서 성과 플랫폼 — 퍼널·전환 지표 설계, Batch ETL, PM (2025.05–08)
+      - Qoo10 광고 성과 분석 인프라 — 랭킹 Top200 시간 단위 수집, ROAS/CPC/CVR 대시보드, ML용 피처 스키마 정의
+      - AI Snap(80일 출시) · Balance MakeUp — 얼굴 분석 기반 개인화 뷰티 서비스 (2023)
+
+side:
+  - org: 쩝쩝LAB (모두의연구소 추천시스템 연구 모임)
+    role: 모임장 · 기술 리드
+    period: 2024.10 – 2026.04
+    summary: 12명이 함께 추천 논문 리뷰와 구현을 반복한 모임을 개설·운영. 데이터 파이프라인과 추천 아키텍처는 단독 설계.
+
+education:
+  - name: 한국방송통신대학교 통계학과
+    period: 2023.07 – 2025.09 · 졸업
+    note: 재직 중 편입 — 모델 평가와 실험 설계를 통계 이론 위에서 다시 정리
+  - name: 엔코아 Data/ML 부트캠프
+    period: 2022.04 – 2022.10 · 수료
+    note: 파이널 프로젝트로 2022 오픈소스개발자대회 동상(KT DS상)
+
+awards:
+  - year: "2025"
+    title: 토스 NEXT ML CHALLENGE — 광고 클릭 예측(CTR) Private 5위
+    note: 참가 2,897명 · 3인 팀
+  - year: "2024"
+    title: Gemma 파인튜닝톤 장려상
+  - year: "2023"
+    title: 수묵화 데이터셋 활용 공모전 장려상
+  - year: "2022"
+    title: 오픈소스 개발자대회 동상 (KT DS상)
+  - year: "2022"
+    title: 빅데이터 경진대회 '사회보장 유레카' 우수상
+
+paper:
+  title: "No country for old workers? Exploring cross-cultural perceptions of the senior workforce"
+  venue: Educational Gerontology · 2026.02 · 공저
+  note: 영화 리뷰 246,632문장을 권역별로 나눠 키워드 네트워크(Louvain) 분석 — 스크래핑, 방법론 설계, 분석, 시각화 담당
+
+talks:
+  - event: 모두콘 2025
+    date: 2025.12
+    title: 쩝쩝LAB MVP 공개
+  - event: 모두콘 2024
+    date: 2024.12
+    title: "쩝쩝LAB: 취향과 상황을 반영한 개인화 맛집 추천 시스템"
+    video: https://youtu.be/WDMhASulZMI
+    post: /post/engineering/2024-12-15-moducon-yamyamlab/
+  - event: 우아콘 2024 (외부 연사)
+    date: 2024.10
+    title: 지속적인 성장에는 흥미가 필요하다 — 퇴근 후 프로젝트
+    video: https://www.youtube.com/watch?v=pZX75fzaggU&t=608s
+    post: /post/engineering/2024-10-25-After-work-projects/
+
+# 취향 데이터·추천과 관련된 글 (홈에 노출)
+writing:
+  - title: "DisenHAN 논문 리뷰: 요인을 분리하여 더 똑똑한 추천 시스템 만들기"
+    url: /post/ml-dl/2025-05-18-DisenHAN-Paper-Review/
+    tag: 추천 논문
+  - title: 그래프 기반 추천 시스템 학습 로드맵
+    url: /post/ml-dl/2025-03-31-DisenHAN-road-map/
+    tag: 추천 설계
+  - title: 맛집 아직도 평균 평점으로만 찾으시나요?
+    url: /post/data-analytics/2024-12-30-Aggregate-restaurant-ratings-data/
+    tag: 랭킹
+  - title: ML활용을 위한 카카오맵 음식점 카테고리 재배치
+    url: /post/ml-dl/2024-12-27-reorganize-categories/
+    tag: 데이터 설계
+  - title: 카카오맵 리뷰데이터 분석으로 음식점 랭킹화
+    url: /post/data-analytics/2024-11-29-what2eat-upgrade/
+    tag: 랭킹
+  - title: 데이터 분석과 머신러닝을 통한 유저 맛집 추천하기
+    url: /post/ml-dl/2024-10-03-What-to-eat-today/
+    tag: 음식점 추천

@@ -1,5 +1,8 @@
 ---
-layout: about
+layout: page
+title: 이전 포트폴리오
+redirect_to: /
+sitemap: false
 image: /assets/img/blog/rok/my_profile_img_1x1.png
 description: >
   안녕하세요:) 끊임없이 배우고 탄력적으로 성장하는 개발자, 김성록입니다.

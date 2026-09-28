@@ -1,0 +1,76 @@
+---
+layout: default
+---
+{%- assign projects = site.projects | sort: 'order' -%}
+<article class="project">
+  <header class="project-head">
+    <div class="wrap">
+      <p class="eyebrow"><a href="{{ '/#projects' | relative_url }}">← 프로젝트</a></p>
+      <div class="dtags">{% for d in page.domains %}<span class="dtag d-{{ d }}">{{ site.data.domains[d].label }}</span>{% endfor %}</div>
+      <h1>{{ page.title }}</h1>
+      <p class="lead">{{ page.subtitle }}</p>
+      {% if page.service_url %}<p class="cta"><a class="btn" href="{{ page.service_url }}" target="_blank" rel="noopener">서비스 써보기 ↗</a></p>{% endif %}
+      <dl class="meta">
+        <div><dt>기간</dt><dd>{{ page.period }}</dd></div>
+        <div><dt>역할</dt><dd>{{ page.role }}</dd></div>
+        {% if page.team %}<div><dt>팀</dt><dd>{{ page.team }}</dd></div>{% endif %}
+        <div><dt>상태</dt><dd>{{ page.status }}</dd></div>
+      </dl>
+      {% if page.metrics %}
+      <dl class="stats compact">
+        {% for m in page.metrics %}<div><dd>{{ m.value }}</dd><dt>{{ m.label }}</dt></div>{% endfor %}
+      </dl>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="wrap project-body">
+    <aside class="project-aside">
+      {% if page.taste_signal %}
+      <div class="signal-box">
+        <p class="aside-h">취향 데이터 관점</p>
+        <p>{{ page.taste_signal }}</p>
+      </div>
+      {% endif %}
+      <div>
+        <p class="aside-h">기술</p>
+        <ul class="stack">{% for s in page.stack %}<li>{{ s }}</li>{% endfor %}</ul>
+      </div>
+      {% if page.links %}
+      <div>
+        <p class="aside-h">링크</p>
+        <ul class="aside-links">{% for l in page.links %}<li><a href="{{ l.url | relative_url }}"{% if l.url contains '://' %} target="_blank" rel="noopener"{% endif %}>{{ l.label }}</a></li>{% endfor %}</ul>
+      </div>
+      {% endif %}
+    </aside>
+    <div class="project-main">
+      {%- assign shots = "" | split: "" -%}
+      {%- for sh in page.screenshots -%}
+        {%- assign found = site.static_files | where: "path", sh.src | first -%}
+        {%- if found -%}{%- assign shots = shots | push: sh -%}{%- endif -%}
+      {%- endfor -%}
+      {% if shots.size > 0 %}
+      <section class="shots" aria-label="서비스 화면">
+        {% for sh in shots %}
+        <figure class="shot shot-{{ sh.kind | default: 'desktop' }}">
+          <a href="{{ sh.src | relative_url }}" target="_blank" rel="noopener"><img src="{{ sh.src | relative_url }}" alt="{{ sh.caption }}" loading="lazy"></a>
+          <figcaption>{{ sh.caption }}</figcaption>
+        </figure>
+        {% endfor %}
+      </section>
+      {% endif %}
+      <div class="prose">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+  <nav class="wrap project-nav" aria-label="다른 프로젝트">
+    {% for p in projects %}{% if p.url == page.url %}
+      {% assign i = forloop.index0 %}
+      {% assign prev_i = i | minus: 1 %}{% assign next_i = i | plus: 1 %}
+      {% if prev_i >= 0 %}{% assign pp = projects[prev_i] %}<a class="prev" href="{{ pp.url | relative_url }}"><span>이전 프로젝트</span>{{ pp.title }}</a>{% else %}<span></span>{% endif %}
+      {% if projects[next_i] %}{% assign np = projects[next_i] %}<a class="next" href="{{ np.url | relative_url }}"><span>다음 프로젝트</span>{{ np.title }}</a>{% endif %}
+    {% endif %}{% endfor %}
+  </nav>
+</article>

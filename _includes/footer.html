@@ -1,0 +1,13 @@
+<footer class="site-footer" id="contact">
+  <div class="wrap footer-in">
+    <div>
+      <p class="footer-title">같이 이야기해요</p>
+      <p class="muted">취향 데이터, 추천, 매칭에 관한 일이라면 언제든 연락 주세요.</p>
+    </div>
+    <ul class="footer-links">
+      {% for l in site.data.portfolio.links %}<li><a href="{{ l.url }}"{% unless l.url contains 'mailto' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a></li>{% endfor %}
+      <li><a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+    </ul>
+  </div>
+  <div class="wrap"><p class="copy">{{ site.copyright | default: '© Seongrok Kim' }}</p></div>
+</footer>

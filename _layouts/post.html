@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{%- assign cat = page.categories | last -%}
+<article class="wrap narrow post">
+  <header class="post-head">
+    <p class="eyebrow"><a href="{{ '/' | append: cat | append: '/' | relative_url }}">{{ site.data.categories[cat].label | default: cat }}</a> · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time></p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="lead">{{ page.description | strip_html | strip }}</p>{% endif %}
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+  <footer class="post-foot">
+    <nav class="post-nav">
+      {% if page.previous %}<a class="prev" href="{{ page.previous.url | relative_url }}"><span>이전 글</span>{{ page.previous.title }}</a>{% endif %}
+      {% if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span>다음 글</span>{{ page.next.title }}</a>{% endif %}
+    </nav>
+    <div class="author-card">
+      <p><strong>김성록</strong> — 취향 데이터를 추천으로 바꾸는 ML 엔지니어</p>
+      <a href="{{ '/' | relative_url }}">포트폴리오 보기 →</a>
+    </div>
+  </footer>
+</article>
+{% if page.content contains '$$' or page.math %}
+<script>window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+{% endif %}

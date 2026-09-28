@@ -10,7 +10,6 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.1"
 
-gem "jekyll-remote-theme"
 
 # Ruby 3.1+ stopped implicitly exposing some stdlib/default gems that older
 # Jekyll dependencies still expect to be loadable.
@@ -28,13 +27,10 @@ group :jekyll_plugins do
   gem "jekyll-default-layout"
   gem "jekyll-feed"
   gem "jekyll-optional-front-matter"
-  gem "jekyll-paginate"
-  gem "jekyll-readme-index"
   gem "jekyll-redirect-from"
   gem "jekyll-relative-links"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
-  gem "jekyll-titles-from-headings"
   gem "jekyll-include-cache"
 
   # Non-Github Pages plugins:

@@ -1,0 +1,19 @@
+{%- assign grouped = include.posts | group_by_exp: "p", "p.date | date: '%Y'" -%}
+<div class="post-list">
+{% for g in grouped %}
+  <section class="year-group">
+    <h2 class="year">{{ g.name }}</h2>
+    <ul>
+    {% for p in g.items %}{% assign pc = p.categories | last %}
+      <li>
+        <a href="{{ p.url | relative_url }}">
+          <span class="pl-title">{{ p.title }}</span>
+          {% if p.description %}<span class="pl-desc">{{ p.description | strip_html | strip | truncate: 90 }}</span>{% endif %}
+        </a>
+        <span class="pl-meta"><span class="tag">{{ site.data.categories[pc].label | default: pc }}</span><time datetime="{{ p.date | date_to_xmlschema }}">{{ p.date | date: '%m.%d' }}</time></span>
+      </li>
+    {% endfor %}
+    </ul>
+  </section>
+{% endfor %}
+</div>

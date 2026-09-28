@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<section class="wrap blog">
+  <header class="page-head">
+    <p class="eyebrow">Blog</p>
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.description | strip_html }}</p>
+    <nav class="chips" aria-label="카테고리">
+      <a class="chip is-on" href="{{ '/blog/' | relative_url }}">전체 <span>{{ site.posts | size }}</span></a>
+      {% for c in site.data.categories %}{% assign n = site.categories[c[0]] | size %}{% if n > 0 %}
+      <a class="chip" href="{{ '/' | append: c[0] | append: '/' | relative_url }}">{{ c[1].label }} <span>{{ n }}</span></a>
+      {% endif %}{% endfor %}
+    </nav>
+  </header>
+  {% include post-list.html posts=site.posts %}
+</section>

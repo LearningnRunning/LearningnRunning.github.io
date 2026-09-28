@@ -1,0 +1,6 @@
+food: { label: 음식점 추천, short: 음식 }
+travel: { label: 여행 · 로컬 발견, short: 여행 }
+people: { label: 사람 매칭, short: 사람 }
+beauty: { label: 뷰티 개인화, short: 뷰티 }
+production: { label: 프로덕션 ML, short: 운영 ML }
+platform: { label: 데이터 플랫폼, short: 플랫폼 }

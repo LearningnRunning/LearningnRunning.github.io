@@ -8,6 +8,10 @@ domains: [people]
 period: 2026.08 – 진행 중
 role: 아키텍처 · 매칭/프로파일링 설계 · 백엔드
 status: Phase 1 개발 중
+service_url: https://get-hint.vercel.app/
+links:
+  - label: Hint 바로가기
+    url: https://get-hint.vercel.app/
 taste_signal: 대화 맥락에서 드러나는 관계 성향 + 스스로 밝힌 생활 속성과 '이건 안 되는 선'
 stack: [Python, FastAPI, React Native (Expo), Next.js, Supabase, uv/npm workspaces]
 metrics:

@@ -21,6 +21,11 @@ layout: default
         {% for m in page.metrics %}<div><dd>{{ m.value }}</dd><dt>{{ m.label }}</dt></div>{% endfor %}
       </dl>
       {% endif %}
+      {% if page.confidential %}
+      {%- assign rq = site.data.portfolio.request -%}
+      <p class="confidential"><strong>공개 범위 안내</strong> — {{ page.confidential_note | default: '회사 프로젝트로, 사내 정책상 공개 가능한 범위만 적었습니다.' }}
+        아키텍처 · 실험 기록 · 상세 수치가 담긴 자료는 <a href="mailto:{{ rq.email }}?subject={{ rq.subject | uri_escape }}">메일로 요청</a>해 주시면 보내드립니다.</p>
+      {% endif %}
     </div>
   </header>
 

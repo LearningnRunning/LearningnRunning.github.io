@@ -146,9 +146,10 @@ layout: default
       {% endfor %}
     </div>
     <div class="career-side">
-      <div class="side-block">
-        <h3>학력 · 교육</h3>
-        <ul class="plain">{% for e in pf.education %}<li><strong>{{ e.name }}</strong><span>{{ e.period }}</span><em>{{ e.note }}</em></li>{% endfor %}</ul>
+      <div class="side-block request-box">
+        <h3>{{ pf.request.title }}</h3>
+        <p>{{ pf.request.body }}</p>
+        <a href="mailto:{{ pf.request.email }}?subject={{ pf.request.subject | uri_escape }}">메일로 요청하기 →</a>
       </div>
       <div class="side-block">
         <h3>수상 · 경진대회</h3>
@@ -188,6 +189,7 @@ layout: default
         {% for w in pf.writing %}<li><a href="{{ w.url | relative_url }}"><span class="tag">{{ w.tag }}</span>{{ w.title }}</a></li>{% endfor %}
       </ul>
       <a class="ref" href="{{ '/blog/' | relative_url }}">전체 글 {{ site.posts | size }}개 보기 →</a>
+      {% if pf.essay %}<a class="ref" href="{{ pf.essay.url }}" target="_blank" rel="noopener">{{ pf.essay.label }} ↗</a>{% endif %}
     </div>
   </div>
 </section>

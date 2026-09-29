@@ -2,7 +2,8 @@
 title: SingleONE 광고 플랫폼 백엔드
 subtitle: Mynavi baito 제휴 광고 플랫폼 — 도달 예측, 배치 검증, 배치 인프라를 1.5년간 오너십으로
 description: FastAPI·PostgreSQL·Redis 기반 광고 플랫폼 백엔드. 도달 예측 DB 우선 캐싱(응답 50% 단축), 행 단위 에러 207 Multi-Status 규격, 대량 외부 API 호출의 실패 반경 제한.
-order: 6
+order: 2
+track: work
 featured: true
 wide: true
 domains: [platform]

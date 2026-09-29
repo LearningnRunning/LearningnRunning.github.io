@@ -2,7 +2,8 @@
 title: Locals Only
 subtitle: '"오늘 뭐 먹지?"에서 출발해 그 동네 로컬이 실제로 가는 가게로 좁혀 가는, 음식 먼저 맛집 발견 서비스 — 메뉴 파이프라인 · 위치별 음식 타일 · 큐레이션 어드민까지 1인 개발'
 description: 가게가 아니라 음식을 먼저 보여주는 맛집 앱. 187만 메뉴 행을 대표메뉴 320개로 묶는 규칙+로컬 LLM 파이프라인과 큐레이션 어드민, 위치마다 새로 계산하는 음식 타일, 권역×업종별 로컬 픽 배지. kakaoRok → What2Eat → Locals Only.
-order: 2
+order: 12
+track: taste
 featured: true
 domains: [food, travel]
 period: 2022 – 운영 중

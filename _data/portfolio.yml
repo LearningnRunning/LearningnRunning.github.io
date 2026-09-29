@@ -1,23 +1,41 @@
 # 홈(포트폴리오) 화면에 쓰이는 데이터. 프로젝트 상세는 _projects/*.md 에 있습니다.
 
 hero:
-  eyebrow: ML Engineer · Recommendation & Personalization
+  eyebrow: ML/AI Engineer · Data → LLM · Agent · Recommendation
   title_lines:
-    - 흩어진 취향 신호를
-    - 추천으로 바꾸는 일을 합니다
+    - 정제되지 않은 데이터를
+    - LLM과 추천이 쓸 수 있게 만듭니다
   lead: >-
-    리뷰 한 문장, 대화 한 줄, 방문 한 번에 남은 취향을 구조화하고,
-    그것을 사용자가 체감하는 추천으로 연결하는 ML 엔지니어 김성록입니다.
-    방향만 정해진 문제를 받아 리서치 → PoC → 검증 → 운영까지 끝까지 가져갑니다.
+    광고 문구, 인사이트 스크린샷, 영상 메타데이터, 리뷰 한 문장처럼 그대로는 쓸 수 없는 데이터를
+    정제 파이프라인으로 구조화하고, 그 위에 LLM 판단 · 에이전트 도구 · 추천을 올려 실서비스로 운영해 온
+    4년차 ML/AI 엔지니어 김성록입니다. 다음은 이 방식을 취향 데이터 기반 추천으로 가져가려 합니다.
+  # 히어로 다이어그램: 원천 → 정제 → 활용 (행 단위로 정렬)
+  flow:
+    - key: production
+      raw: 일본어 광고 문구 · 법령 · 위반/정상 사례
+      refined: 성격별 분리 색인 · 하이브리드 RAG
+      use: LLM 위반 판정 + 근거 · 대체 문구
+    - key: platform
+      raw: 인플루언서 인사이트 스크린샷
+      refined: 크롭 + OCR → 성과 지표 7개
+      use: 제출값 자동 대조, 불일치만 사람이
+    - key: platform
+      raw: YouTube 제목 · 설명 · 메타데이터
+      refined: 상품 카테고리 · 브랜드 매핑
+      use: 상품에 맞는 광고 지면 추천
+    - key: food
+      raw: 리뷰 2,110만 mention · 메뉴 187만 행
+      refined: semantic_id · 대표메뉴 320개
+      use: 유저→식당 · 음식 먼저 발견
   stats:
-    - value: "186만"
-      label: 리뷰 규모로 설계·검증한 음식점 랭킹 (리뷰어 55만)
     - value: "0.475 → 0.900"
       label: 광고 위반 탐지 Recall (held-out 1,222건)
+    - value: "−50%"
+      label: 광고 도달 예측 API 평균 응답 시간 (SingleONE)
+    - value: "187만 → 320"
+      label: 메뉴 행을 대표메뉴로 정제 (규칙 + 로컬 LLM)
     - value: "5위 / 2,897명"
       label: 토스 NEXT ML CHALLENGE · CTR 예측
-    - value: "4년차"
-      label: ML/AI 엔지니어 · 2022.10 ~
 
 links:
   - label: GitHub
@@ -34,7 +52,59 @@ essay:
   label: 기술 밖의 생각은 브런치에 씁니다
   url: https://brunch.co.kr/@maxsungrok
 
-# 취향 데이터 → 추천 : 세 도메인
+# 데이터 우선 — 비정제 데이터 → 정제 → LLM · 에이전트 · 추천 (홈 #data 섹션)
+pipelines:
+  - project: ad-compliance-jp
+    key: production
+    where: 실무
+    raw: 일본어 광고 문구, 법령 · 가이드라인 · 위반/정상 사례
+    refined: held-out 1,222건으로 평가 기준을 먼저 고정하고, 코퍼스를 성격별로 분리 색인해 semantic + BM25 하이브리드 검색
+    consumer: LLM
+    use: 위반 판정에 근거와 대체 문구를 붙이고, 라벨러 재검토 결과가 다시 학습 데이터로
+  - project: influencer-platform
+    key: platform
+    where: 실무
+    raw: 크리에이터가 올린 형식 제각각의 인사이트 스크린샷
+    refined: 영역 크롭 + OCR로 성과 지표 7개를 추출해 제출값과 자동 대조
+    consumer: 운영
+    use: 마케터가 스크린샷을 한 장씩 옮겨 적던 일을 불일치 건 확인으로
+  - project: youtube-placement
+    key: platform
+    where: 실무
+    raw: YouTube 영상 제목 · 설명 · 메타데이터
+    refined: 최하위 상품 카테고리 약 3,000개로 영상 Pool 15만 수집, 카테고리 · 브랜드 매핑과 경쟁사 탐지
+    consumer: 추천
+    use: 상품에 맞는 채널 · 영상을 근거와 함께 광고 지면으로 추천
+  - project: trade-bridge
+    key: llm
+    where: 개인
+    raw: 시세 · 재무 · 거시지표 · SEC 공시 등 6종 외부 소스
+    refined: LLM이 바로 조회 · 조합할 수 있는 57개 tool 스키마로 정리
+    consumer: 에이전트
+    use: 거시 → 섹터 → 종목 Top-down 리서치를 에이전트가 직접 수행
+  - project: locals-only
+    key: food
+    where: 개인
+    raw: 가게마다 제각각 적힌 메뉴 187만 행
+    refined: 규칙 + 로컬 LLM으로 대표메뉴 320개에 매핑 (51.6% → 73.6%), 큐레이션 어드민으로 사람이 교정
+    consumer: 추천
+    use: 위치마다 '이 동네에서 잘하는 음식' 타일 → 로컬 가게
+  - project: jjeopjjeop-lab
+    key: food
+    where: 연구 모임
+    raw: 리뷰 2,110만 mention
+    refined: 문장 임베딩 → UMAP + HDBSCAN으로 의미 단위(semantic_id) 군집, 노이즈 96% → 48%
+    consumer: 추천
+    use: 유저→식당 · 유사 식당 · 유사 유저 추천 3종
+  - project: hint
+    key: people
+    where: 개인
+    raw: 카카오톡 대화 · 설문 응답
+    refined: 결 타입 4축 · 생활 속성 · 선(boundary) 3개 층으로 분리
+    consumer: 매칭
+    use: 대화가 통할 사람부터 연결 (Phase 1 개발 중)
+
+# 다음 방향 — 취향 데이터 → 추천 : 세 도메인 (홈 #next 섹션)
 domains:
   - key: food
     label: 음식점 추천
@@ -93,7 +163,7 @@ process:
       광고 검수의 '최종검토 에이전트 → 라벨러 재검토 → 재학습 → 재배포' 루프, Locals Only의 큐레이션 어드민처럼
       모델이 틀린 곳을 사람이 고치고, 그 수정이 재발행에도 지켜지는 구조로 마무리합니다.
 
-# 추천 외 0→1 프로젝트 (홈 하단 컴팩트 카드) — 상세 페이지가 있는 프로젝트는 _projects/ 에서 featured: false 로 자동 노출
+# 그 밖의 프로젝트 (홈 #more 컴팩트 카드) — 상세 페이지가 있는 프로젝트는 _projects/ 의 track: side 로 자동 노출
 more:
   - title: 토스 NEXT ML CHALLENGE
     tag: 랭킹 · CTR
@@ -110,6 +180,8 @@ experience:
     items:
       - 일본 광고 약기법·경품표시법 위반 검수 시스템 개발 리드 — 앙상블 + RAG + LLM 의사결정 엔진, 지속 개선 루프
       - SingleONE 광고 플랫폼(Mynavi baito 제휴) 백엔드 오너 — 도달 예측, 배치 업로드 검증, 배치 인프라
+      - 사내 해커톤 팀 리드(준우승) — SingleONE YouTube 게재위치 타깃팅: 상품 카테고리 기반 영상 Pool 수집, 카테고리·브랜드 매핑, A/B 테스트 설계
+      - 인플루언서 마케팅 플랫폼 1인 기획·개발·배포 — 캠페인·모집·성과 제출 통합, 크롭 + OCR 성과 자동 대조, Instagram·YouTube 수집과 소싱 (2026.07–)
       - 인플루언서 캠페인 성과 플랫폼 — 퍼널·전환 지표 설계, Batch ETL, PM (2025.05–08)
       - 커머스 광고 성과 분석 인프라 — 시장 지표 수집 파이프라인과 성과 대시보드, ML용 피처 스키마 정의
       - AI Snap(80일 출시) · Balance MakeUp — 얼굴 분석 기반 개인화 뷰티 서비스 (2023)
@@ -130,6 +202,9 @@ request:
   subject: "[포트폴리오 요청] 상세 자료 문의"
 
 awards:
+  - year: "2026"
+    title: 사내 해커톤 준우승 — YouTube 게재위치 타깃팅 (팀 리드)
+    note: 6개 팀 중 · 5인 팀
   - year: "2025"
     title: 토스 NEXT ML CHALLENGE — 광고 클릭 예측(CTR) Private 5위
     note: 참가 2,897명 · 3인 팀

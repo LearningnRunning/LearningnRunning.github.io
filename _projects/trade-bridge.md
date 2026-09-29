@@ -2,14 +2,15 @@
 title: trade-bridge
 subtitle: LLM이 실시간 금융 데이터를 직접 조회·조합하게 만든 57개 tool MCP 서버 — 1인 개발 · 배포
 description: 미국 주식 리서치 MCP 서버(Python FastMCP, 57개 tool)와 계정·키 발급 웹 대시보드. 거시지표 → 섹터 → 종목 Top-down 리서치, DCF·옵션 체인 분석, 환경변수 하나로 바꾸는 인증 모드.
-order: 7
+order: 21
+track: side
 featured: false
 domains: [llm]
 period: 2026.04 – 운영 중
 role: 1인 프로젝트 — 기획 · 개발 · 인프라 · 배포
 status: 배포 완료 · 본인과 지인 소수 사용 중
 service_url: https://www.trade-bridge.cloud/dashboard/guide
-taste_signal: 추천 프로젝트는 아니지만, LLM 에이전트가 실시간 데이터를 구조화된 형태로 다루도록 '도구'를 설계한 경험
+taste_signal: '흩어진 금융 데이터 6종을 LLM 에이전트가 바로 조회 · 조합할 수 있는 57개 tool 스키마로 정리한 경험'
 stack: [Python, FastMCP, Streamable HTTP, Docker, Nginx, Oracle Cloud, Next.js, Vercel, Supabase Auth, yfinance, FRED, SEC EDGAR]
 metrics:
   - value: "57개"

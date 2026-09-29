@@ -2,13 +2,14 @@
 title: Dear J
 subtitle: 프로젝트 백로그와 '오늘 할 일'을 잇는 일정관리 앱 — 방치를 막는 행동 유도 설계
 description: 매일 오늘 할 일을 고르고(Pick) 시작·회고·마무리하는 '오늘' 루틴 중심 일정관리 앱. 3회 연속 미룬 항목은 회고에서 스킵할 수 없게 한 설계, Flutter 원본을 React/TS로 재구현.
-order: 9
+order: 23
+track: side
 featured: false
 domains: [product]
 period: 2026 – 비공개 베타
 role: 1인 프로젝트 — 기획 · 설계 · 구현 · 인프라
 status: 웹(SPA) 비공개 베타 · iOS 위젯 개발 중
-taste_signal: 추천 프로젝트는 아니지만, 사용자의 반복 행동을 관찰해 제품 규칙으로 바꾼 제품 설계 경험
+taste_signal: '사용자의 반복 행동(미루기)을 관찰해 제품 규칙으로 바꾼 설계 — 행동 기록이 곧 제품의 입력'
 stack: [React 18, TypeScript, Vite, Tailwind, Supabase (Postgres · Auth · RLS), Vercel, React Native, WidgetKit]
 metrics:
   - value: "3회"

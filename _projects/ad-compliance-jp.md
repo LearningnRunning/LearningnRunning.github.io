@@ -2,7 +2,8 @@
 title: 일본 광고 법규 검수 시스템
 subtitle: 레거시 분류기를 앙상블 + RAG + LLM 의사결정 엔진으로 — 놓치는 위반 문구를 1/5로
 description: 약기법·경품표시법·건강증진법 위반 광고 문구 검출. 가중 소프트보팅 앙상블, 하이브리드 RAG 근거 생성, 4개 운영 모드, Shadow 검증과 지속 개선 루프.
-order: 4
+order: 1
+track: work
 featured: true
 domains: [production]
 period: A1미디어그룹 · 운영 중
@@ -10,7 +11,7 @@ role: 개발 리드 (모델링 · RAG · 의사결정 엔진 설계)
 status: 실서비스 운영 중
 confidential: true
 confidential_note: 회사 프로젝트로, 협업 인원 구성 · 학습/라벨 데이터와 RAG 코퍼스 규모 · 실운영 지표는 사내 정책상 공개하지 않습니다.
-taste_signal: 추천 프로젝트는 아니지만, ML을 '운영에 올리고 계속 좋아지게 만드는' 방식을 가장 잘 보여주는 실무 프로젝트
+taste_signal: '법령 · 가이드라인 · 위반/정상 사례를 성격별로 나눠 색인한 근거 코퍼스 — LLM이 “왜 위반인지”를 근거와 함께 말하게 만드는 입력'
 stack: [Transformer 분류기, fastText, 문자 n-gram, Qdrant, multilingual-e5-large, BM25, vLLM, Qwen, GPT-4o-mini, Gemini]
 metrics:
   - value: "0.475 → 0.900"

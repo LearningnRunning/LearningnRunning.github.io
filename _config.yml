@@ -8,9 +8,9 @@ locale: ko_KR
 
 title: 김성록 · LearningnRunning
 name: LearningnRunning
-description: 취향 데이터를 추천으로 바꾸는 ML 엔지니어 김성록의 포트폴리오와 기술 블로그
-tagline: 취향 데이터를 추천으로 바꾸는 ML 엔지니어
-keywords: [취향 데이터, 개인화, 추천 시스템, 랭킹, 머신러닝, 임베딩, 리뷰 분석, 매칭, 맛집 추천]
+description: 정제되지 않은 데이터를 LLM · 에이전트 · 추천이 쓸 수 있게 만드는 ML/AI 엔지니어 김성록의 포트폴리오와 기술 블로그
+tagline: 정제되지 않은 데이터를 LLM과 추천이 쓸 수 있게 만드는 ML/AI 엔지니어
+keywords: [데이터 파이프라인, 데이터 정제, LLM, AI 에이전트, RAG, MCP, 추천 시스템, 취향 데이터, 개인화, 랭킹, 머신러닝, 광고 검수]
 logo: /assets/img/logo.png
 author: LearningnRunning
 

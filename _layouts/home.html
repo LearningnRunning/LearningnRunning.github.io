@@ -16,31 +16,18 @@ layout: default
       </div>
     </div>
 
-    <figure class="flow" aria-label="취향 신호가 추천이 되기까지">
-      <div class="flow-col">
-        <p class="flow-h">취향 신호</p>
-        <span class="node d-food">“웨이팅은 길어도 국물이 진해서 또 올 듯”</span>
-        <span class="node d-food">평소보다 +1.4점 준 별점</span>
-        <span class="node d-travel">리뷰어의 방문 시퀀스</span>
-        <span class="node d-people">대화 · 설문 응답</span>
-      </div>
-      <div class="flow-arrow" aria-hidden="true"></div>
-      <div class="flow-col">
-        <p class="flow-h">구조화</p>
-        <span class="node">문장 semantic_id × 극성</span>
-        <span class="node">Bayesian 보정 점수</span>
-        <span class="node mono">diner_token (32, 61, 55)</span>
-        <span class="node">결 타입 4축 + 선(boundary)</span>
-      </div>
-      <div class="flow-arrow" aria-hidden="true"></div>
-      <div class="flow-col">
-        <p class="flow-h">추천</p>
-        <span class="node out">유저 → 식당</span>
-        <span class="node out">유사 식당 · 유사 유저</span>
-        <span class="node out">다음 방문 예측</span>
-        <span class="node out">사람 매칭</span>
-      </div>
-      <figcaption>제가 만들어 온 파이프라인을 한 장으로 — 자세한 내용은 아래 프로젝트에 있습니다.</figcaption>
+    <figure class="flow rows" aria-label="정제되지 않은 데이터가 LLM · 에이전트 · 추천의 입력이 되기까지">
+      <p class="flow-h">원천 데이터</p><span class="flow-sp"></span>
+      <p class="flow-h">정제 · 구조화</p><span class="flow-sp"></span>
+      <p class="flow-h">활용</p>
+      {% for r in pf.hero.flow %}
+      <span class="node lane d-{{ r.key }}">{{ r.raw }}</span>
+      <span class="flow-arrow" aria-hidden="true"></span>
+      <span class="node">{{ r.refined }}</span>
+      <span class="flow-arrow" aria-hidden="true"></span>
+      <span class="node out">{{ r.use }}</span>
+      {% endfor %}
+      <figcaption>실무(위 3줄)와 추천 리서치(아래 줄)에서 같은 패턴으로 만들어 온 파이프라인 — 자세한 내용은 아래에 있습니다.</figcaption>
     </figure>
   </div>
 
@@ -51,13 +38,51 @@ layout: default
   </div>
 </section>
 
-<section class="section" id="domains">
+<section class="section alt" id="projects">
   <div class="wrap">
     <header class="sec-head">
-      <p class="eyebrow">Taste → Recommendation</p>
-      <h2>세 가지 취향, 세 가지 추천</h2>
-      <p class="sec-lead">음식점, 여행지, 사람. 대상은 달라도 문제는 같습니다 — <strong>흩어진 취향 신호를 어떻게 믿을 수 있는 표현으로 바꾸고, 그걸로 무엇을 먼저 보여줄 것인가.</strong></p>
+      <p class="eyebrow">Production · A1미디어그룹</p>
+      <h2>실무에서 운영 중인 프로젝트</h2>
+      <p class="sec-lead">일본 광고 문구 법규 검수, 광고 플랫폼 백엔드, 사내 플랫폼을 맡고 있습니다. 회사 프로젝트는 공개 가능한 범위만 적었고, 각 페이지에 문제 정의 · 판단 근거 · 검증 · <strong>한계와 다음 단계</strong>를 함께 적었습니다.</p>
     </header>
+    <div class="pgrid">
+      {% assign work = projects | where: "track", "work" %}
+      {% for p in work %}{% include project-card.html project=p large=forloop.first %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="data">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow">Data first</p>
+      <h2>서비스 품질의 차이는 모델 앞단의 데이터에서 납니다</h2>
+      <p class="sec-lead">LLM이든 에이전트든 추천 모델이든, 무엇을 입력으로 받느냐가 결과의 상한을 정합니다. 그래서 늘 <strong>정제되지 않은 데이터를 믿을 수 있고 다루기 쉬운 형태로 바꾸는 파이프라인</strong>부터 설계합니다. 실무와 개인 프로젝트에서 같은 패턴을 반복해 왔습니다.</p>
+    </header>
+    <ol class="pipes">
+      {% for r in pf.pipelines %}{% assign pj = site.projects | where_exp: "x", "x.url contains r.project" | first %}
+      <li class="pipe d-{{ r.key }}">
+        <p class="pipe-proj">{% if pj %}<a href="{{ pj.url | relative_url }}">{{ pj.title }}</a>{% endif %}<span>{{ r.where }}</span></p>
+        <p class="pipe-step"><b>원천</b>{{ r.raw }}</p>
+        <p class="pipe-step"><b>정제</b>{{ r.refined }}</p>
+        <p class="pipe-step out"><b>{{ r.consumer }}</b>{{ r.use }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section alt" id="next">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="eyebrow">Next · Taste → Recommendation</p>
+      <h2>다음으로 깊게 파고 싶은 곳: 취향 데이터 기반 추천</h2>
+      <p class="sec-lead">회사 밖에서는 같은 방식을 취향 데이터에 적용해 왔습니다. 음식점 · 여행지 · 사람 — 대상은 달라도 문제는 같습니다. <strong>흩어진 취향 신호를 어떻게 믿을 수 있는 표현으로 바꾸고, 그걸로 무엇을 먼저 보여줄 것인가.</strong></p>
+    </header>
+    <div class="pgrid">
+      {% assign taste = projects | where: "track", "taste" %}
+      {% for p in taste %}{% include project-card.html project=p large=forloop.first %}{% endfor %}
+    </div>
     <div class="domains">
       {% for d in pf.domains %}
       <article class="domain d-{{ d.key }}">
@@ -73,22 +98,15 @@ layout: default
   </div>
 </section>
 
-<section class="section alt" id="projects">
+<section class="section compact" id="more">
   <div class="wrap">
     <header class="sec-head">
-      <p class="eyebrow">Projects</p>
-      <h2>주요 프로젝트</h2>
-      <p class="sec-lead">각 페이지에 문제 정의 · 판단 근거 · 검증 · <strong>한계와 다음 단계</strong>를 함께 적었습니다. 검증되지 않은 수치는 검증되지 않았다고 씁니다.</p>
+      <p class="eyebrow">More</p>
+      <h2>그 밖의 프로젝트</h2>
     </header>
-    <div class="pgrid">
-      {% for p in projects %}{% if p.featured %}
-        {% if forloop.first or p.wide %}{% include project-card.html project=p large=true %}{% else %}{% include project-card.html project=p %}{% endif %}
-      {% endif %}{% endfor %}
-    </div>
     <div class="pgrid-small">
-      {% for p in projects %}{% unless p.featured %}
-        {% include project-card.html project=p %}
-      {% endunless %}{% endfor %}
+      {% assign side = projects | where: "track", "side" %}
+      {% for p in side %}{% include project-card.html project=p %}{% endfor %}
       {% for m in pf.more %}
       <{% if m.url %}a href="{{ m.url | relative_url }}"{% else %}div{% endif %} class="mini">
         <span class="mini-tag">{{ m.tag }}</span>
@@ -100,7 +118,7 @@ layout: default
   </div>
 </section>
 
-<section class="section" id="how">
+<section class="section alt" id="how">
   <div class="wrap">
     <header class="sec-head">
       <p class="eyebrow">How I work</p>
@@ -122,7 +140,7 @@ layout: default
   </div>
 </section>
 
-<section class="section alt" id="career">
+<section class="section" id="career">
   <div class="wrap career">
     <div>
       <header class="sec-head">
@@ -163,7 +181,7 @@ layout: default
   </div>
 </section>
 
-<section class="section" id="talks">
+<section class="section alt" id="talks">
   <div class="wrap talks">
     <div>
       <header class="sec-head">

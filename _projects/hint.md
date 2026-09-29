@@ -2,7 +2,8 @@
 title: Hint
 subtitle: 스와이프가 아니라 대화의 '결'로 사람을 잇는 관계 매칭 플랫폼
 description: 카카오톡 대화와 설문에서 관계 성향을 읽어 결 타입으로 매칭하는 플랫폼. 측정 설계(리커트 전환·묵종 편향 상쇄), 생활 속성·경계 레이어 분리, 단계적 매칭 로드맵.
-order: 3
+order: 13
+track: taste
 featured: true
 domains: [people]
 period: 2026.08 – 진행 중

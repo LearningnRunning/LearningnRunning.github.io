@@ -3,6 +3,7 @@ title: Balance MakeUp · AI Snap
 subtitle: 얼굴이라는 취향 신호로 만든 개인화 뷰티 서비스 — 대표의 한 줄 요청에서 출시까지
 description: MediaPipe FaceMesh 기반 7가지 얼굴형·11가지 비율 분석 메이크업 추천(Balance MakeUp)과, 경쟁 서비스 분석으로 80일 만에 출시한 AI Snap.
 order: 5
+track: work
 featured: true
 domains: [beauty]
 period: 2023.03 – 2023.12

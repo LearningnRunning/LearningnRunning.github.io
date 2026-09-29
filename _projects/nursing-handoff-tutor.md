@@ -2,7 +2,8 @@
 title: 간호 인수인계(SBAR) AI 튜터
 subtitle: 정답을 알려주지 않는 튜터 — 평가와 응답을 구조적으로 분리한 소크라테스식 LLM 튜터링 시뮬레이터
 description: 간호교육학 박사과정 연구자와 2인 협업. 평가자 → 상태머신 → 튜터 3단계 채점 구조, LLM 프로바이더 추상화, Cloud Run 비용 최적화. 목포대 간호학과 파일럿 테스트 중.
-order: 8
+order: 22
+track: side
 featured: false
 domains: [llm]
 period: 진행 중 · 파일럿 테스트
@@ -10,7 +11,7 @@ role: 기술 고문 · 백엔드 / AI 엔진 개발
 team: 간호교육학 박사과정 연구자와 2인 협업
 status: 목포대학교 간호학과 재학생 · 교수진 대상 파일럿 테스트 중
 service_url: https://handovereducation.vercel.app/
-taste_signal: 추천 프로젝트는 아니지만, 비개발자 도메인 전문가의 요구사항을 시스템 설계 원칙으로 번역한 협업 경험
+taste_signal: '비개발자 도메인 전문가의 평가 기준을 LLM이 따를 수 있는 채점 구조(평가자 → 상태머신 → 튜터)로 번역한 협업 경험'
 stack: [Next.js 15, React 19, TypeScript, FastAPI, OpenAI, Gemini, Supabase, Vercel, GCP Cloud Run]
 metrics:
   - value: "3단계"

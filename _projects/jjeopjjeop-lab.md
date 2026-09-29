@@ -2,7 +2,8 @@
 title: 쩝쩝LAB 리서치
 subtitle: 리뷰 문장을 '의미 단위'로 묶어 만든 음식점 추천 — 유저→식당 · 유사 식당 · 유사 유저
 description: 리뷰 2,100만 mention을 정제하고 문장 semantic_id 기반 추천 3종을 구현한 개인화 음식점 추천 리서치. 방법론 전환, 데이터 품질 이슈 규명, 단계적 추천 아키텍처 설계.
-order: 1
+order: 11
+track: taste
 featured: true
 domains: [food, travel]
 period: 2024.10 – 진행 중

@@ -3,16 +3,9 @@ layout: default
 ---
 {%- assign pf = site.data.portfolio -%}
 {%- assign bento = pf.bento -%}
-{%- assign live_count = 0 -%}
-{%- for g in bento.groups -%}{%- for c in g.cards -%}{%- if c.live -%}{%- assign live_count = live_count | plus: 1 -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
 
 <section class="bento-hero">
   <div class="wrap">
-    <a class="island" href="#live">
-      <img class="island-avatar" src="{{ '/assets/img/blog/rok/my_profile_img_1x1.png' | relative_url }}" alt="" width="34" height="34">
-      <span class="island-who"><b>김성록</b><span>ML/AI Engineer</span></span>
-      <span class="island-status"><i aria-hidden="true"></i>공개 중인 서비스 {{ live_count }}</span>
-    </a>
     <h1 class="bento-intro">{% for l in bento.intro %}<span>{{ l }}</span> {% endfor %}</h1>
   </div>
 </section>
@@ -43,35 +36,12 @@ layout: default
             <h3><a class="stretch" href="{{ p.url | relative_url }}">{{ name }}</a></h3>
             <p>{{ c.tagline | default: p.subtitle }}</p>
           </div>
-          {% if c.live and p.service_url %}
+          {% if p.service_url and c.live or p.service_url and c.service_link %}
           <a class="bcard-live" href="{{ p.service_url }}" target="_blank" rel="noopener" aria-label="{{ name }} 서비스 열기 (새 창)">열기<span aria-hidden="true">↗</span></a>
           {% else %}
           <span class="bcard-go" aria-hidden="true">→</span>
           {% endif %}
         </div>
-      </article>
-
-      {%- elsif c.type == 'profile' -%}
-      <article class="bcard s-{{ c.size }} bcard-profile">
-        <div class="bcard-visual"><img src="{{ '/assets/img/blog/rok/my_profile_img_1x1.png' | relative_url }}" alt="김성록 프로필 사진" loading="lazy"></div>
-        <div class="bcard-foot">
-          <div class="bcard-text">
-            <h3><a class="stretch" href="{{ '/portfolio/' | relative_url }}">김성록</a></h3>
-            <p>{{ pf.hero.eyebrow | split: ' · ' | first }}</p>
-          </div>
-          <span class="bcard-go" aria-hidden="true">→</span>
-        </div>
-      </article>
-
-      {%- elsif c.type == 'contact' -%}
-      <article class="bcard s-{{ c.size }} bcard-contact">
-        <div class="bcard-text">
-          <h3>같이 이야기해요</h3>
-          <p>데이터 파이프라인, LLM · 에이전트, 취향 데이터 기반 추천에 관한 일이라면 언제든 연락 주세요.</p>
-        </div>
-        <ul class="bcard-links">
-          {% for l in pf.links %}<li><a href="{{ l.url }}"{% unless l.url contains 'mailto' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a></li>{% endfor %}
-        </ul>
       </article>
 
       {%- elsif c.type == 'award' -%}
@@ -120,4 +90,14 @@ layout: default
     </div>
   </section>
   {% endfor %}
+
+  <section class="bcard bcard-contact" aria-labelledby="contact-h">
+    <div class="bcard-text">
+      <h2 id="contact-h">같이 이야기해요</h2>
+      <p>데이터 파이프라인, LLM · 에이전트, 취향 데이터 기반 추천에 관한 일이라면 언제든 연락 주세요.</p>
+    </div>
+    <ul class="bcard-links">
+      {% for l in pf.links %}<li><a href="{{ l.url }}"{% unless l.url contains 'mailto' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a></li>{% endfor %}
+    </ul>
+  </section>
 </div>

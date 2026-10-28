@@ -267,38 +267,35 @@ bento:
     - 정제되지 않은 데이터를 <strong>LLM과 추천</strong>이 쓸 수 있게 만드는 ML/AI 엔지니어 김성록입니다.
     - A1미디어그룹에서 광고 문구 검수와 광고 플랫폼을 만들고,
     - 퇴근 후에는 직접 만든 서비스를 <strong>운영</strong>합니다.
+  # 그룹마다 4열 그리드를 빈칸 없이 채우도록 크기를 맞춘다 (1x1=1칸, 2x1·1x2=2칸, 2x2=4칸). 연락 띠는 레이아웃에서 그룹 뒤에 붙는다
   groups:
-    - label: 직접 만든 서비스 — 지금 열어볼 수 있어요
+    - label: 직접 만들어 운영하는 서비스
       id: live
       cards:
-        - { type: profile, size: 1x2 }
         - { project: locals-only, size: 2x2, badge: 운영 중, live: true, image: /assets/img/projects/locals-only/card.jpg,
             tagline: "음식 먼저 고르고, 그 동네 로컬이 가는 가게로 좁혀 가는 맛집 발견 서비스" }
         - { project: trade-bridge, size: 1x2, badge: 운영 중, live: true, image: /assets/img/projects/trade-bridge/card.jpg,
             tagline: "LLM이 미국 주식 데이터를 직접 조회하는 MCP 서버" }
         - { project: nursing-handoff-tutor, name: 간호 인수인계 AI 튜터, size: 1x2, badge: 파일럿 운영, live: true, image: /assets/img/projects/nursing-handoff-tutor/card.jpg,
             tagline: "정답을 알려주지 않는 소크라테스식 튜터" }
-        - { project: hint, size: 1x2, badge: 개발 중, live: true, image: /assets/img/projects/hint/card.jpg,
+        - { project: ad-compliance-jp, size: 2x1, badge: 사내 운영 중,
+            tagline: "일본 광고 문구 법규 위반 검수 — 앙상블 + RAG + LLM 판정" }
+        - { project: hint, size: 2x1, badge: 개발 중, image: /assets/img/projects/hint/card.jpg, service_link: true,
             tagline: "대화의 결로 사람을 잇는 매칭 플랫폼" }
-        - { project: dear-j, size: 2x1, badge: 비공개 베타,
-            tagline: "미루기를 막는 '오늘' 중심 일정관리 앱" }
-        - { type: contact, size: 2x1 }
     - label: 실무 · 리서치
       id: work
       cards:
-        - { project: ad-compliance-jp, size: 2x1, badge: 실무 · 운영 중,
-            tagline: "일본 광고 문구 법규 위반 검수 — 앙상블 + RAG + LLM 판정" }
-        - { project: singleone, name: SingleONE 백엔드, size: 1x1, badge: 실무,
+        - { project: singleone, name: SingleONE 백엔드, size: 2x1,
             tagline: "광고 플랫폼 백엔드 1.5년 오너십" }
-        - { project: influencer-platform, name: 인플루언서 플랫폼, size: 1x1, badge: 실무,
+        - { project: influencer-platform, name: 인플루언서 플랫폼, size: 1x1,
             tagline: "캠페인 운영을 하나로 — 1인 개발" }
         - { project: youtube-placement, name: YouTube 지면 타깃팅, size: 1x1, badge: 해커톤 준우승,
             tagline: "상품에 맞는 광고 지면 추천" }
-        - { project: beauty-personalization, name: Balance MakeUp · AI Snap, size: 1x1, badge: 실무 · 2023,
+        - { project: beauty-personalization, name: Balance MakeUp · AI Snap, size: 1x1,
             tagline: "얼굴 비율 기반 메이크업 추천" }
         - { project: jjeopjjeop-lab, size: 1x1, badge: 리서치,
             tagline: "리뷰 문장 단위 음식점 추천" }
-        - { type: award, size: 1x1, value: "5위 / 2,897명", label: "토스 NEXT ML CHALLENGE · CTR 예측" }
+        - { type: award, size: 2x1, value: "5위 / 2,897명", label: "토스 NEXT ML CHALLENGE · CTR 예측" }
     - label: 기록
       id: notes
       cards:

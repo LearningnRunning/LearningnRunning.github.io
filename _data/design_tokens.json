@@ -1,0 +1,84 @@
+{
+  "$description": "Starter design tokens distilled from https://dy-lee.com (measured 2026-10-28, 1440px viewport). W3C DTCG format; mirrored in assets/css/tokens.css. Values marked $extensions.derived are not on the reference site and were inferred.",
+  "color": {
+    "$type": "color",
+    "canvas":         { "$value": "#f3f3f5", "$description": "Page background behind the bento grid" },
+    "surface":        { "$value": "#ffffff", "$description": "Card background" },
+    "surface-muted":  { "$value": "#edeff0", "$description": "Status badge background" },
+    "surface-tint":   { "$value": "#e7ecf4", "$description": "Round icon-button background on cards" },
+    "ink":            { "$value": "#09090b", "$description": "Strongest text, emphasis" },
+    "ink-2":          { "$value": "#2b2b2b", "$description": "Body copy and card titles" },
+    "muted":          { "$value": "#666666", "$description": "Card subtitles, secondary text" },
+    "subtle":         { "$value": "#4a4d55", "$description": "Badge / caption text" },
+    "faint":          { "$value": "#999999" },
+    "line":           { "$value": "#0000001f", "$description": "Hairline border on light surfaces" },
+    "inverse": {
+      "bg":           { "$value": "#050505", "$description": "Top status 'island'" },
+      "surface":      { "$value": "#121316", "$description": "Dark window / card" },
+      "surface-2":    { "$value": "#1c1e22", "$description": "Raised element inside a dark window" },
+      "ink":          { "$value": "#ffffff" },
+      "muted":        { "$value": "#ffffff99" },
+      "line":         { "$value": "#ffffff1a" }
+    },
+    "accent":         { "$value": "#31ee33", "$description": "Signature neon green (status dot, hero gradient)" },
+    "accent-soft":    { "$value": "#6afb8c", "$description": "'Available' status text on dark" }
+  },
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "sans":    { "$value": ["Inter", "Pretendard Variable", "Pretendard", "system-ui", "sans-serif"], "$extensions": { "derived": "Pretendard fallback added for Korean" } },
+      "display": { "$value": ["Inter Display", "Inter", "system-ui", "sans-serif"] },
+      "mono":    { "$value": ["JetBrains Mono", "ui-monospace", "Menlo", "monospace"], "$extensions": { "derived": true } }
+    },
+    "weight": {
+      "$type": "fontWeight",
+      "regular":  { "$value": 400 },
+      "medium":   { "$value": 500 },
+      "semibold": { "$value": 600 }
+    }
+  },
+  "typography": {
+    "$type": "typography",
+    "title":   { "$value": { "fontFamily": "{font.family.sans}", "fontSize": "18px", "fontWeight": 500, "lineHeight": 1.4, "letterSpacing": "-0.01em" }, "$description": "Card titles and hero lines" },
+    "body":    { "$value": { "fontFamily": "{font.family.sans}", "fontSize": "14px", "fontWeight": 400, "lineHeight": "20px", "letterSpacing": "0" } },
+    "caption": { "$value": { "fontFamily": "{font.family.sans}", "fontSize": "12px", "fontWeight": 500, "lineHeight": "16px", "letterSpacing": "0" }, "$description": "Badges" },
+    "label":   { "$value": { "fontFamily": "{font.family.display}", "fontSize": "14px", "fontWeight": 500, "lineHeight": 1, "letterSpacing": "-0.04em" }, "$description": "Clock / status-bar numerals" }
+  },
+  "space": {
+    "$type": "dimension",
+    "1":  { "$value": "4px" },
+    "2":  { "$value": "8px" },
+    "3":  { "$value": "12px" },
+    "4":  { "$value": "16px" },
+    "6":  { "$value": "24px" },
+    "8":  { "$value": "32px" },
+    "12": { "$value": "48px" },
+    "30": { "$value": "120px" }
+  },
+  "radius": {
+    "$type": "dimension",
+    "sm":   { "$value": "8px" },
+    "md":   { "$value": "12px" },
+    "lg":   { "$value": "20px", "$description": "Dark windows; island bottom corners" },
+    "xl":   { "$value": "24px", "$description": "Bento cards" },
+    "pill": { "$value": "999px" }
+  },
+  "shadow": {
+    "$type": "shadow",
+    "window":   { "$value": { "color": "#0000004d", "offsetX": "0px", "offsetY": "12px", "blur": "30px", "spread": "0px" } },
+    "hairline": { "$value": { "color": "#ffffff1a", "offsetX": "0px", "offsetY": "0px", "blur": "0px", "spread": "1px", "inset": true } },
+    "inner":    { "$value": { "color": "#00000008", "offsetX": "0px", "offsetY": "0px", "blur": "80px", "spread": "0px", "inset": true } }
+  },
+  "motion": {
+    "duration": { "$type": "duration", "base": { "$value": "620ms" } },
+    "easing":   { "$type": "cubicBezier", "out": { "$value": [0.22, 0.68, 0.24, 1] } }
+  },
+  "layout": {
+    "$type": "dimension",
+    "grid-gap":       { "$value": "12px" },
+    "card-padding":   { "$value": "24px 16px 16px", "$type": "string" },
+    "page-padding":   { "$value": "120px 48px 48px", "$type": "string" },
+    "content-max":    { "$value": "1344px" },
+    "icon-button":    { "$value": "24px" }
+  }
+}

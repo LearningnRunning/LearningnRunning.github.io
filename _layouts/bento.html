@@ -1,0 +1,123 @@
+---
+layout: default
+---
+{%- assign pf = site.data.portfolio -%}
+{%- assign bento = pf.bento -%}
+{%- assign live_count = 0 -%}
+{%- for g in bento.groups -%}{%- for c in g.cards -%}{%- if c.live -%}{%- assign live_count = live_count | plus: 1 -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
+
+<section class="bento-hero">
+  <div class="wrap">
+    <a class="island" href="#live">
+      <img class="island-avatar" src="{{ '/assets/img/blog/rok/my_profile_img_1x1.png' | relative_url }}" alt="" width="34" height="34">
+      <span class="island-who"><b>김성록</b><span>ML/AI Engineer</span></span>
+      <span class="island-status"><i aria-hidden="true"></i>공개 중인 서비스 {{ live_count }}</span>
+    </a>
+    <h1 class="bento-intro">{% for l in bento.intro %}<span>{{ l }}</span> {% endfor %}</h1>
+  </div>
+</section>
+
+<div class="wrap bento-wrap" id="projects">
+  {% for g in bento.groups %}
+  <section class="bento-group" id="{{ g.id }}" aria-labelledby="bg-{{ g.id }}">
+    <h2 class="bento-label" id="bg-{{ g.id }}">{{ g.label }}</h2>
+    <div class="bento">
+      {% for c in g.cards %}
+      {%- assign p = nil -%}
+      {%- if c.project -%}{%- assign path = '/projects/' | append: c.project | append: '/' -%}{%- assign p = site.projects | where: "url", path | first -%}{%- endif -%}
+
+      {%- if p -%}
+      {%- assign name = c.name | default: p.title -%}
+      <article class="bcard s-{{ c.size }} d-{{ p.domains | first }}{% if c.image %} has-shot{% endif %}">
+        <div class="bcard-visual">
+          {% if c.badge %}<span class="bcard-badge{% if c.live %} is-live{% endif %}"><i aria-hidden="true"></i>{{ c.badge }}</span>{% endif %}
+          {% if c.image %}
+          <div class="bcard-shot"><img src="{{ c.image | relative_url }}" alt="{{ name }} 서비스 화면" loading="lazy" width="390" height="780"></div>
+          {% elsif p.metrics %}
+          {%- assign m = p.metrics | first -%}
+          <p class="bcard-metric"><b>{{ m.value }}</b><span>{{ m.label }}</span></p>
+          {% endif %}
+        </div>
+        <div class="bcard-foot">
+          <div class="bcard-text">
+            <h3><a class="stretch" href="{{ p.url | relative_url }}">{{ name }}</a></h3>
+            <p>{{ c.tagline | default: p.subtitle }}</p>
+          </div>
+          {% if c.live and p.service_url %}
+          <a class="bcard-live" href="{{ p.service_url }}" target="_blank" rel="noopener" aria-label="{{ name }} 서비스 열기 (새 창)">열기<span aria-hidden="true">↗</span></a>
+          {% else %}
+          <span class="bcard-go" aria-hidden="true">→</span>
+          {% endif %}
+        </div>
+      </article>
+
+      {%- elsif c.type == 'profile' -%}
+      <article class="bcard s-{{ c.size }} bcard-profile">
+        <div class="bcard-visual"><img src="{{ '/assets/img/blog/rok/my_profile_img_1x1.png' | relative_url }}" alt="김성록 프로필 사진" loading="lazy"></div>
+        <div class="bcard-foot">
+          <div class="bcard-text">
+            <h3><a class="stretch" href="{{ '/portfolio/' | relative_url }}">김성록</a></h3>
+            <p>{{ pf.hero.eyebrow | split: ' · ' | first }}</p>
+          </div>
+          <span class="bcard-go" aria-hidden="true">→</span>
+        </div>
+      </article>
+
+      {%- elsif c.type == 'contact' -%}
+      <article class="bcard s-{{ c.size }} bcard-contact">
+        <div class="bcard-text">
+          <h3>같이 이야기해요</h3>
+          <p>데이터 파이프라인, LLM · 에이전트, 취향 데이터 기반 추천에 관한 일이라면 언제든 연락 주세요.</p>
+        </div>
+        <ul class="bcard-links">
+          {% for l in pf.links %}<li><a href="{{ l.url }}"{% unless l.url contains 'mailto' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a></li>{% endfor %}
+        </ul>
+      </article>
+
+      {%- elsif c.type == 'award' -%}
+      <article class="bcard s-{{ c.size }} d-production">
+        <div class="bcard-visual">
+          <span class="bcard-badge"><i aria-hidden="true"></i>수상</span>
+          <p class="bcard-metric"><b>{{ c.value }}</b><span>{{ c.label }}</span></p>
+        </div>
+        <div class="bcard-foot">
+          <div class="bcard-text">
+            <h3><a class="stretch" href="{{ '/portfolio/#career' | relative_url }}">수상 {{ pf.awards | size }}회</a></h3>
+            <p>경진대회 · 해커톤 · 공모전</p>
+          </div>
+          <span class="bcard-go" aria-hidden="true">→</span>
+        </div>
+      </article>
+
+      {%- elsif c.type == 'blog' -%}
+      <article class="bcard s-{{ c.size }} bcard-list">
+        <div class="bcard-text">
+          <h3><a href="{{ '/blog/' | relative_url }}">블로그 <span class="muted">· 글 {{ site.posts | size }}개</span></a></h3>
+        </div>
+        <ul>
+          {% for post in site.posts limit: 3 %}<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span>{{ post.date | date: '%Y.%m' }}</span></li>{% endfor %}
+        </ul>
+      </article>
+
+      {%- elsif c.type == 'talks' -%}
+      <article class="bcard s-{{ c.size }} bcard-list">
+        <div class="bcard-text"><h3>발표</h3></div>
+        <ul>
+          {% for t in pf.talks %}<li>{% if t.post or t.video %}<a href="{{ t.post | default: t.video | relative_url }}">{{ t.event }}</a>{% else %}<b>{{ t.event }}</b>{% endif %}<span>{{ t.date }}</span></li>{% endfor %}
+        </ul>
+      </article>
+
+      {%- elsif c.type == 'portfolio' -%}
+      <article class="bcard s-{{ c.size }} bcard-more">
+        <div class="bcard-text">
+          <h3><a class="stretch" href="{{ '/portfolio/' | relative_url }}">전체 포트폴리오</a></h3>
+          <p>일하는 방식 · 경력 · 데이터 파이프라인 · 논문</p>
+        </div>
+        <span class="bcard-go" aria-hidden="true">→</span>
+      </article>
+      {%- endif -%}
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>

@@ -180,7 +180,7 @@ experience:
     items:
       - 일본 광고 약기법·경품표시법 위반 검수 시스템 개발 리드 — 앙상블 + RAG + LLM 의사결정 엔진, 지속 개선 루프
       - SingleONE 광고 플랫폼(Mynavi baito 제휴) 백엔드 오너 — 도달 예측, 배치 업로드 검증, 배치 인프라
-      - 사내 해커톤 팀 리드(준우승) — SingleONE YouTube 게재위치 타깃팅: 상품 카테고리 기반 영상 Pool 수집, 카테고리·브랜드 매핑, A/B 테스트 설계
+      - "사내 해커톤 팀 리드(준우승) — SingleONE YouTube 게재위치 타깃팅: 상품 카테고리 기반 영상 Pool 수집, 카테고리·브랜드 매핑, A/B 테스트 설계"
       - 인플루언서 마케팅 플랫폼 1인 기획·개발·배포 — 캠페인·모집·성과 제출 통합, 크롭 + OCR 성과 자동 대조, Instagram·YouTube 수집과 소싱 (2026.07–)
       - 인플루언서 캠페인 성과 플랫폼 — 퍼널·전환 지표 설계, Batch ETL, PM (2025.05–08)
       - 커머스 광고 성과 분석 인프라 — 시장 지표 수집 파이프라인과 성과 대시보드, ML용 피처 스키마 정의
@@ -258,8 +258,8 @@ writing:
     url: /post/ml-dl/2024-10-03-What-to-eat-today/
     tag: 음식점 추천
 
-# 홈 벤토 그리드 (/). 카드 순서 · 크기 · 문구를 여기서 조정합니다.
-#   size: 1x1 | 2x1 | 1x2 | 2x2  (가로 x 세로 칸)
+# 홈 (/) — 벤토 서비스 그리드 + 포트폴리오 섹션을 한 페이지에.
+#   서비스 카드 size: 1x1 | 2x1 | 1x2 | 2x2  (가로 x 세로 칸). 4열 그리드를 빈칸 없이 채우도록 맞춘다
 #   project: _projects/ 파일명 — 제목 · 상세 페이지 · service_url · metrics[0]을 가져옵니다
 #   image: 있으면 카드 비주얼로 서비스 화면을, 없으면 대표 지표를 보여줍니다
 bento:
@@ -267,38 +267,15 @@ bento:
     - 정제되지 않은 데이터를 <strong>LLM과 추천</strong>이 쓸 수 있게 만드는 ML/AI 엔지니어 김성록입니다.
     - A1미디어그룹에서 광고 문구 검수와 광고 플랫폼을 만들고,
     - 퇴근 후에는 직접 만든 서비스를 <strong>운영</strong>합니다.
-  # 그룹마다 4열 그리드를 빈칸 없이 채우도록 크기를 맞춘다 (1x1=1칸, 2x1·1x2=2칸, 2x2=4칸). 연락 띠는 레이아웃에서 그룹 뒤에 붙는다
-  groups:
-    - label: 직접 만들어 운영하는 서비스
-      id: live
-      cards:
-        - { project: locals-only, size: 2x2, badge: 운영 중, live: true, image: /assets/img/projects/locals-only/card.jpg,
-            tagline: "음식 먼저 고르고, 그 동네 로컬이 가는 가게로 좁혀 가는 맛집 발견 서비스" }
-        - { project: trade-bridge, size: 1x2, badge: 운영 중, live: true, image: /assets/img/projects/trade-bridge/card.jpg,
-            tagline: "LLM이 미국 주식 데이터를 직접 조회하는 MCP 서버" }
-        - { project: nursing-handoff-tutor, name: 간호 인수인계 AI 튜터, size: 1x2, badge: 파일럿 운영, live: true, image: /assets/img/projects/nursing-handoff-tutor/card.jpg,
-            tagline: "정답을 알려주지 않는 소크라테스식 튜터" }
-        - { project: ad-compliance-jp, size: 2x1, badge: 사내 운영 중,
-            tagline: "일본 광고 문구 법규 위반 검수 — 앙상블 + RAG + LLM 판정" }
-        - { project: hint, size: 2x1, badge: 개발 중, image: /assets/img/projects/hint/card.jpg, service_link: true,
-            tagline: "대화의 결로 사람을 잇는 매칭 플랫폼" }
-    - label: 실무 · 리서치
-      id: work
-      cards:
-        - { project: singleone, name: SingleONE 백엔드, size: 2x1,
-            tagline: "광고 플랫폼 백엔드 1.5년 오너십" }
-        - { project: influencer-platform, name: 인플루언서 플랫폼, size: 1x1,
-            tagline: "캠페인 운영을 하나로 — 1인 개발" }
-        - { project: youtube-placement, name: YouTube 지면 타깃팅, size: 1x1, badge: 해커톤 준우승,
-            tagline: "상품에 맞는 광고 지면 추천" }
-        - { project: beauty-personalization, name: Balance MakeUp · AI Snap, size: 1x1,
-            tagline: "얼굴 비율 기반 메이크업 추천" }
-        - { project: jjeopjjeop-lab, size: 1x1, badge: 리서치,
-            tagline: "리뷰 문장 단위 음식점 추천" }
-        - { type: award, size: 2x1, value: "5위 / 2,897명", label: "토스 NEXT ML CHALLENGE · CTR 예측" }
-    - label: 기록
-      id: notes
-      cards:
-        - { type: blog, size: 2x1 }
-        - { type: talks, size: 1x1 }
-        - { type: portfolio, size: 1x1 }
+  services:
+    - { project: locals-only, size: 2x2, badge: 운영 중, live: true, image: /assets/img/projects/locals-only/card.jpg,
+        tagline: "음식 먼저 고르고, 그 동네 로컬이 가는 가게로 좁혀 가는 맛집 발견 서비스" }
+    - { project: trade-bridge, size: 1x2, badge: 운영 중, live: true, image: /assets/img/projects/trade-bridge/card.jpg,
+        tagline: "LLM이 미국 주식 데이터를 직접 조회하는 MCP 서버" }
+    - { project: nursing-handoff-tutor, name: 간호 인수인계 AI 튜터, size: 1x2, badge: 파일럿 운영, live: true, image: /assets/img/projects/nursing-handoff-tutor/card.jpg,
+        tagline: "정답을 알려주지 않는 소크라테스식 튜터" }
+    - { project: hint, size: 2x1, badge: 개발 중, image: /assets/img/projects/hint/card.jpg, service_link: true,
+        tagline: "대화의 결로 사람을 잇는 매칭 플랫폼" }
+    - { type: next, size: 2x1 }
+  # 실무 · 리서치 — 포트폴리오 카드(도메인 · 기간 · 지표 3개)로 노출. 순서대로
+  work: [ad-compliance-jp, singleone, influencer-platform, youtube-placement, beauty-personalization, jjeopjjeop-lab]

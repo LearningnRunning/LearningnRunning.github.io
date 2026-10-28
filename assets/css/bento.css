@@ -2,7 +2,8 @@
    Bento home — card grid built on tokens.css (--ds-*)
    ========================================================================== */
 
-.bento-page { --bg: var(--ds-canvas); }
+/* Portfolio components (site.css) pick up the bento surfaces on this page */
+.bento-page { --bg: var(--ds-canvas); --surface: var(--ds-surface); --line: var(--ds-line); }
 /* The contact band replaces the footer's contact block on this page */
 .bento-page .site-footer { border-top: 0; padding: var(--ds-space-6) 0 var(--ds-space-8); }
 .bento-page .footer-in { display: none; }
@@ -21,8 +22,29 @@
 
 /* Grid ------------------------------------------------------------------ */
 .bento-wrap { max-width: var(--ds-content-max); }
-.bento-group + .bento-group { margin-top: var(--ds-space-8); }
-.bento-label { font: var(--ds-text-body); color: var(--ds-muted); margin: 0 4px var(--ds-space-3); letter-spacing: 0; }
+.bento-group { scroll-margin-top: 72px; }
+.bento-group + .bento-group { margin-top: 96px; }
+.bento-head { max-width: 720px; margin: 0 4px var(--ds-space-6); }
+.bento-label { font: var(--ds-text-caption); letter-spacing: .04em; text-transform: uppercase; color: var(--ds-muted); }
+.bento-head h2 { margin-top: 6px; font-size: clamp(22px, 2.6vw, 28px); font-weight: 700; letter-spacing: -0.02em; color: var(--ds-ink); }
+.bento-head > p:not(.bento-label) { margin-top: 10px; font-size: 16px; line-height: 1.65; color: var(--ds-ink-2); }
+.bento-head strong { color: var(--ds-ink); }
+
+/* Panels wrapping portfolio lists so they sit on the same card surface */
+.bpanel { background: var(--ds-surface); border-radius: var(--ds-radius-xl); box-shadow: var(--ds-shadow-inner); padding: var(--ds-space-6) var(--ds-space-8); }
+.bpanel-h { font-size: 15px; font-weight: 700; margin-bottom: var(--ds-space-2); }
+.bento-page .process { gap: 0 48px; }
+.bento-page .process li:nth-child(-n+2) { border-top: 0; }
+.bento-page .career .bpanel .job:first-child { border-top: 0; padding-top: 0; }
+.bento-page .side-block { border: 0; border-radius: var(--ds-radius-xl); box-shadow: var(--ds-shadow-inner); }
+.bento-page .talks { gap: var(--ds-grid-gap); }
+.bento-page .talk-list li:first-child, .bento-page .write-list li:first-child { border-top: 0; }
+.bento-page .pipe { border: 0; border-left: 4px solid var(--c); border-radius: var(--ds-radius-lg); box-shadow: var(--ds-shadow-inner); }
+
+/* Project cards from the portfolio, restyled to match the bento cards */
+.bento-page .pgrid { gap: var(--ds-grid-gap); }
+.bento-page .pcard { border: 0; border-radius: var(--ds-radius-xl); box-shadow: var(--ds-shadow-inner); padding: var(--ds-space-6); }
+.bento-page .pcard:hover { box-shadow: var(--ds-shadow-inner), 0 12px 30px -16px rgba(0,0,0,.25); }
 
 .bento {
   display: grid; gap: var(--ds-grid-gap);
@@ -129,19 +151,23 @@
 .bcard-list li a:hover { color: var(--ds-ink); text-decoration: underline; text-underline-offset: 3px; }
 .bcard-list li span { flex: none; font: var(--ds-text-caption); color: var(--ds-faint); }
 
-/* Portfolio link */
-.bcard-more { flex-direction: row; align-items: flex-end; padding: var(--ds-card-padding); background: var(--ds-surface-tint); }
+/* Next direction — domain rows */
+.bcard-next li a { display: inline-flex; align-items: center; gap: 8px; }
+.bcard-next li i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); flex: none; }
 
 /* Responsive ------------------------------------------------------------ */
 @media (max-width: 960px) {
   .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bento-page .process li:nth-child(2) { border-top: 1px solid var(--line); }
 }
 @media (max-width: 600px) {
+  .bpanel { padding: var(--ds-space-4) var(--ds-space-4); }
+  .bento-group + .bento-group { margin-top: 64px; }
+  .bento-page .pgrid { grid-template-columns: minmax(0, 1fr); }
   .bento-hero { padding: var(--ds-space-8) 0; }
   .bento-intro span { display: inline; }
   .bento { grid-template-columns: minmax(0, 1fr); grid-auto-rows: 200px; }
   .s-2x1, .s-2x2 { grid-column: auto; }
-  .s-2x1.bcard-list { grid-row: span 2; }
   .bcard-contact { flex-direction: column; align-items: flex-start; }
   .s-2x1.has-shot { grid-row: span 2; flex-direction: column; }
   .s-2x1.has-shot .bcard-visual { flex: 1; padding-top: 56px; }

@@ -1,18 +1,24 @@
-<header class="site-header">
-  <div class="wrap header-in">
-    <a class="brand" href="{{ '/' | relative_url }}" aria-label="홈">
-      <span class="brand-mark" aria-hidden="true">SK</span>
-      <span class="brand-name">김성록</span>
-    </a>
-    <nav class="nav" aria-label="주요 메뉴">
-      {%- assign is_home = false -%}{%- if page.url == '/' -%}{%- assign is_home = true -%}{%- endif -%}
-      <a href="{{ '/#projects' | relative_url }}">프로젝트</a>
-      <a href="{{ '/portfolio/#how' | relative_url }}">일하는 방식</a>
-      <a href="{{ '/portfolio/#career' | relative_url }}">경력</a>
-      <a href="{{ '/blog/' | relative_url }}"{% if page.layout == 'post' or page.layout == 'blog' or page.layout == 'list' %} aria-current="page"{% endif %}>블로그</a>
-      <button class="theme-toggle" type="button" aria-label="다크 모드 전환" data-theme-toggle>
-        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
-      </button>
-    </nav>
+{%- assign live_count = 0 -%}
+{%- for g in site.data.portfolio.bento.groups -%}{%- for c in g.cards -%}{%- if c.live -%}{%- assign live_count = live_count | plus: 1 -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
+{%- assign gh = site.data.portfolio.links | where: "label", "GitHub" | first -%}
+<header class="notch" data-notch>
+  <div class="notch-body">
+    <button class="notch-top" type="button" aria-expanded="false" aria-controls="notch-nav" aria-label="메뉴 열기" data-notch-toggle>
+      <img class="notch-avatar" src="{{ '/assets/img/blog/rok/my_profile_img_1x1.png' | relative_url }}" alt="" width="34" height="34">
+      <span class="notch-who"><b>김성록</b><span>ML/AI Engineer</span></span>
+      <time class="notch-time" data-notch-clock aria-label="서울 현재 시각"></time>
+    </button>
+    <div class="notch-drawer">
+      <nav class="notch-nav" id="notch-nav" aria-label="주요 메뉴">
+        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>홈</a>
+        <a href="{{ '/portfolio/' | relative_url }}"{% if page.url == '/portfolio/' %} aria-current="page"{% endif %}>포트폴리오</a>
+        <a href="{{ '/blog/' | relative_url }}"{% if page.layout == 'post' or page.layout == 'blog' or page.layout == 'list' %} aria-current="page"{% endif %}>블로그</a>
+        <a href="{{ gh.url }}" target="_blank" rel="noopener">GitHub</a>
+        <button class="notch-theme" type="button" aria-label="다크 모드 전환" data-theme-toggle>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+        </button>
+        <a class="notch-status" href="{{ '/#live' | relative_url }}"><i aria-hidden="true"></i>서비스 {{ live_count }}개 운영 중</a>
+      </nav>
+    </div>
   </div>
 </header>

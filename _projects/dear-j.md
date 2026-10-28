@@ -1,4 +1,5 @@
 ---
+published: false   # 비공개 베타 — 사이트에서 숨김
 title: Dear J
 subtitle: 프로젝트 백로그와 '오늘 할 일'을 잇는 일정관리 앱 — 방치를 막는 행동 유도 설계
 description: 매일 오늘 할 일을 고르고(Pick) 시작·회고·마무리하는 '오늘' 루틴 중심 일정관리 앱. 3회 연속 미룬 항목은 회고에서 스킵할 수 없게 한 설계, Flutter 원본을 React/TS로 재구현.

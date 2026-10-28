@@ -1,0 +1,167 @@
+/* ==========================================================================
+   Bento home — card grid built on tokens.css (--ds-*)
+   ========================================================================== */
+
+.bento-page { --bg: var(--ds-canvas); }
+.bento-page .site-footer { margin-top: var(--ds-space-12); }
+
+/* Hero ------------------------------------------------------------------ */
+.bento-hero { padding: var(--ds-space-8) 0 var(--ds-space-12); text-align: center; }
+
+.island {
+  display: inline-flex; align-items: center; gap: var(--ds-space-3);
+  padding: 8px 16px 8px 8px; border-radius: var(--ds-radius-pill);
+  background: var(--ds-inverse-bg); color: var(--ds-inverse-ink);
+  box-shadow: var(--ds-shadow-hairline); text-decoration: none; text-align: left;
+}
+.island-avatar { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; }
+.island-who { display: flex; flex-direction: column; font: var(--ds-text-caption); }
+.island-who b { font-size: 14px; font-weight: var(--ds-weight-semibold); }
+.island-who span { color: var(--ds-inverse-muted); }
+.island-status {
+  display: inline-flex; align-items: center; gap: 6px; margin-left: var(--ds-space-2);
+  padding-left: var(--ds-space-3); border-left: 1px solid var(--ds-inverse-line);
+  font: var(--ds-text-caption); color: var(--ds-accent-soft);
+}
+.island-status i { width: 8px; height: 8px; border-radius: 50%; background: currentColor; }
+.island-status i, .bcard-badge.is-live i { animation: pulse 2.4s var(--ds-ease-out) infinite; }
+
+.bento-intro {
+  margin-top: var(--ds-space-8);
+  font-size: clamp(18px, 2.2vw, 22px); font-weight: var(--ds-weight-regular);
+  line-height: 1.5; letter-spacing: var(--ds-tracking-title); color: var(--ds-ink-2);
+}
+.bento-intro span { display: block; }
+.bento-intro strong { color: var(--ds-ink); font-weight: var(--ds-weight-semibold); }
+
+/* Grid ------------------------------------------------------------------ */
+.bento-wrap { max-width: var(--ds-content-max); }
+.bento-group + .bento-group { margin-top: var(--ds-space-8); }
+.bento-label { font: var(--ds-text-body); color: var(--ds-muted); margin: 0 4px var(--ds-space-3); letter-spacing: 0; }
+
+.bento {
+  display: grid; gap: var(--ds-grid-gap);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 216px; grid-auto-flow: row dense;
+}
+.s-2x1 { grid-column: span 2; }
+.s-1x2 { grid-row: span 2; }
+.s-2x2 { grid-column: span 2; grid-row: span 2; }
+
+/* Card ------------------------------------------------------------------ */
+.bcard {
+  --c: var(--ds-subtle);
+  position: relative; display: flex; flex-direction: column; overflow: hidden;
+  background: var(--ds-surface); border-radius: var(--ds-radius-xl);
+  box-shadow: var(--ds-shadow-inner);
+}
+.bcard-visual {
+  position: relative; flex: 1; min-height: 0; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  background: color-mix(in srgb, var(--c) 9%, var(--ds-surface));
+}
+.bcard-foot { display: flex; align-items: flex-end; gap: var(--ds-space-3); padding: var(--ds-card-padding); padding-top: var(--ds-space-3); }
+.bcard-text { flex: 1; min-width: 0; }
+.bcard h3 { font: var(--ds-text-title); letter-spacing: var(--ds-tracking-title); color: var(--ds-ink-2); }
+.bcard h3 a { text-decoration: none; }
+.bcard-text p {
+  font: var(--ds-text-body); color: var(--ds-muted); margin-top: 2px;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.stretch::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
+.bcard:has(.stretch:focus-visible) { outline: 2px solid var(--accent); outline-offset: 3px; }
+.stretch:focus-visible { outline: none; }
+
+.bcard-go, .bcard-live {
+  flex: none; display: inline-grid; place-items: center;
+  height: 32px; border-radius: var(--ds-radius-pill);
+  background: var(--ds-surface-tint); color: var(--ds-ink-2);
+  font: var(--ds-text-caption); text-decoration: none;
+  transition: transform var(--ds-duration) var(--ds-ease-out), background .2s;
+}
+.bcard-go { width: 32px; font-size: 15px; }
+.bcard-live { position: relative; z-index: 2; grid-auto-flow: column; gap: 4px; padding: 0 12px; font-weight: var(--ds-weight-semibold); }
+.bcard-live:hover { background: var(--ds-ink); color: var(--ds-surface); }
+.bcard:hover .bcard-go { transform: translateX(3px); }
+
+.bcard-badge {
+  position: absolute; top: var(--ds-space-3); left: var(--ds-space-3); z-index: 2;
+  display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px 4px 8px;
+  border-radius: var(--ds-radius-pill); background: var(--ds-surface-muted);
+  font: var(--ds-text-caption); color: var(--ds-subtle);
+}
+.bcard-badge i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+.bcard-badge.is-live i { background: #22c55e; }
+
+/* Metric visual */
+.bcard-metric { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 40px var(--ds-space-4) var(--ds-space-2); text-align: center; }
+.bcard-metric b { font-size: clamp(24px, 2.6vw, 34px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; color: var(--c); }
+.bcard-metric span { font: var(--ds-text-caption); color: var(--ds-muted); max-width: 24ch; }
+
+/* Service screenshot visual — a phone that peeks up from the card foot */
+.has-shot .bcard-visual { align-items: flex-start; padding-top: 56px; }
+.bcard-shot {
+  width: min(64%, 230px); aspect-ratio: 1 / 2; flex: none;
+  border-radius: 26px 26px 0 0; overflow: hidden;
+  border: 6px solid var(--ds-inverse-surface); border-bottom: 0;
+  box-shadow: var(--ds-shadow-window);
+  transition: transform var(--ds-duration) var(--ds-ease-out);
+}
+.s-2x2 .bcard-shot { width: min(40%, 260px); }
+.bcard-shot img { display: block; width: 100%; height: auto; }
+.bcard:hover .bcard-shot { transform: translateY(-8px); }
+
+/* Profile */
+.bcard-profile .bcard-visual img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--ds-duration) var(--ds-ease-out); }
+.bcard-profile:hover .bcard-visual img { transform: scale(1.03); }
+
+/* Contact — inverse surface */
+.bcard-contact {
+  justify-content: space-between; padding: var(--ds-space-6) var(--ds-space-6) var(--ds-space-4);
+  background: var(--ds-inverse-surface); box-shadow: var(--ds-shadow-hairline);
+}
+.bcard-contact h3 { color: var(--ds-inverse-ink); }
+.bcard-contact .bcard-text p { color: var(--ds-inverse-muted); }
+.bcard-links { list-style: none; display: flex; flex-wrap: wrap; gap: var(--ds-space-2); margin: 0; padding: 0; }
+.bcard-links a {
+  display: inline-block; padding: 6px 14px; border-radius: var(--ds-radius-pill);
+  background: var(--ds-inverse-surface-2); box-shadow: var(--ds-shadow-hairline);
+  color: var(--ds-inverse-ink); font: var(--ds-text-body); font-weight: var(--ds-weight-medium); text-decoration: none;
+}
+.bcard-links a:hover { background: var(--ds-inverse-ink); color: var(--ds-inverse-bg); }
+
+/* Lists (blog, talks) */
+.bcard-list { padding: var(--ds-space-6) var(--ds-space-4) var(--ds-space-4); gap: var(--ds-space-3); }
+.bcard-list h3 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.bcard-list ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.bcard-list li {
+  display: flex; align-items: baseline; justify-content: space-between; gap: var(--ds-space-3);
+  padding: 8px 0; border-top: 1px solid var(--ds-line); font: var(--ds-text-body);
+}
+.bcard-list li a, .bcard-list li b { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--ds-ink-2); font-weight: var(--ds-weight-medium); text-decoration: none; }
+.bcard-list li a:hover { color: var(--ds-ink); text-decoration: underline; text-underline-offset: 3px; }
+.bcard-list li span { flex: none; font: var(--ds-text-caption); color: var(--ds-faint); }
+
+/* Portfolio link */
+.bcard-more { flex-direction: row; align-items: flex-end; padding: var(--ds-card-padding); background: var(--ds-surface-tint); }
+
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+
+/* Responsive ------------------------------------------------------------ */
+@media (max-width: 960px) {
+  .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .bento-hero { padding-top: var(--ds-space-6); }
+  .island-status { display: none; }
+  .bento-intro span { display: inline; }
+  .bento { grid-template-columns: minmax(0, 1fr); grid-auto-rows: 200px; }
+  .s-2x1, .s-2x2 { grid-column: auto; }
+  .s-2x1.bcard-list, .s-2x1.bcard-contact { grid-row: span 2; }
+  .s-2x2 .bcard-shot { width: min(64%, 230px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bcard-shot, .bcard-go, .bcard-live, .bcard-profile .bcard-visual img { transition: none; }
+  .island-status i, .bcard-badge.is-live i { animation: none; }
+  .bcard:hover .bcard-shot, .bcard:hover .bcard-go, .bcard-profile:hover .bcard-visual img { transform: none; }
+}

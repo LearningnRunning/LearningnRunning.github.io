@@ -1,0 +1,93 @@
+/* ==========================================================================
+   Design tokens — starter set distilled from https://dy-lee.com
+   Source of truth: _data/design_tokens.json (keep both in sync).
+   Prefixed with --ds- so they don't collide with site.css (--bg, --ink, …).
+   ========================================================================== */
+
+:root {
+  /* Color ---------------------------------------------------------------- */
+  --ds-canvas: #f3f3f5;
+  --ds-surface: #ffffff;
+  --ds-surface-muted: #edeff0;
+  --ds-surface-tint: #e7ecf4;
+  --ds-ink: #09090b;
+  --ds-ink-2: #2b2b2b;
+  --ds-muted: #666666;
+  --ds-subtle: #4a4d55;
+  --ds-faint: #999999;
+  --ds-line: rgba(0, 0, 0, .12);
+  --ds-accent: #31ee33;
+  --ds-accent-soft: #6afb8c;
+
+  /* Inverse (dark chrome: status island, dark windows) */
+  --ds-inverse-bg: #050505;
+  --ds-inverse-surface: #121316;
+  --ds-inverse-surface-2: #1c1e22;
+  --ds-inverse-ink: #ffffff;
+  --ds-inverse-muted: rgba(255, 255, 255, .6);
+  --ds-inverse-line: rgba(255, 255, 255, .1);
+
+  /* Typography ----------------------------------------------------------- */
+  --ds-font-sans: "Inter", "Pretendard Variable", Pretendard, system-ui, sans-serif;
+  --ds-font-display: "Inter Display", "Inter", system-ui, sans-serif;
+  --ds-font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+
+  --ds-weight-regular: 400;
+  --ds-weight-medium: 500;
+  --ds-weight-semibold: 600;
+
+  --ds-text-title: 500 18px/1.4 var(--ds-font-sans);
+  --ds-text-body: 400 14px/20px var(--ds-font-sans);
+  --ds-text-caption: 500 12px/16px var(--ds-font-sans);
+  --ds-text-label: 500 14px/1 var(--ds-font-display);
+  --ds-tracking-title: -0.01em;
+  --ds-tracking-label: -0.04em;
+
+  /* Space ---------------------------------------------------------------- */
+  --ds-space-1: 4px;
+  --ds-space-2: 8px;
+  --ds-space-3: 12px;
+  --ds-space-4: 16px;
+  --ds-space-6: 24px;
+  --ds-space-8: 32px;
+  --ds-space-12: 48px;
+  --ds-space-30: 120px;
+
+  /* Radius --------------------------------------------------------------- */
+  --ds-radius-sm: 8px;
+  --ds-radius-md: 12px;
+  --ds-radius-lg: 20px;
+  --ds-radius-xl: 24px;
+  --ds-radius-pill: 999px;
+
+  /* Elevation ------------------------------------------------------------ */
+  --ds-shadow-window: 0 12px 30px rgba(0, 0, 0, .3);
+  --ds-shadow-hairline: inset 0 0 0 1px var(--ds-inverse-line);
+  --ds-shadow-inner: inset 0 0 80px rgba(0, 0, 0, .03);
+
+  /* Motion --------------------------------------------------------------- */
+  --ds-duration: 620ms;
+  --ds-ease-out: cubic-bezier(.22, .68, .24, 1);
+
+  /* Layout --------------------------------------------------------------- */
+  --ds-grid-gap: 12px;
+  --ds-card-padding: 24px 16px 16px;
+  --ds-page-padding: 120px 48px 48px;
+  --ds-content-max: 1344px;
+  --ds-icon-button: 24px;
+}
+
+/* Dark mode — derived (the reference site is light-only); built from its
+   dark-window palette so the two themes stay recognisably related. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ds-canvas: #0b0c0e; --ds-surface: #121316; --ds-surface-muted: #1c1e22; --ds-surface-tint: #23262c;
+    --ds-ink: #f4f4f5; --ds-ink-2: #e4e4e7; --ds-muted: #a1a1aa; --ds-subtle: #9ca0a8; --ds-faint: #6b6e76;
+    --ds-line: rgba(255, 255, 255, .1); --ds-accent: #6afb8c; --ds-accent-soft: #6afb8c;
+  }
+}
+:root[data-theme="dark"] {
+  --ds-canvas: #0b0c0e; --ds-surface: #121316; --ds-surface-muted: #1c1e22; --ds-surface-tint: #23262c;
+  --ds-ink: #f4f4f5; --ds-ink-2: #e4e4e7; --ds-muted: #a1a1aa; --ds-subtle: #9ca0a8; --ds-faint: #6b6e76;
+  --ds-line: rgba(255, 255, 255, .1); --ds-accent: #6afb8c; --ds-accent-soft: #6afb8c;
+}

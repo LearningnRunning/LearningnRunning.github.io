@@ -126,11 +126,11 @@ body { padding-top: 64px; }
 .notch-status { margin-left: auto; gap: 6px; color: var(--ds-accent) !important; }
 .notch-status i { width: 7px; height: 7px; border-radius: 50%; background: currentColor; animation: pulse 2.4s var(--ds-ease-out) infinite; }
 
-.notch.is-open, .notch:has(:focus-visible) { width: min(460px, calc(100vw - 2 * var(--n-r) - 16px)); }
+.notch.is-open, .notch:has(:focus-visible) { width: min(520px, calc(100vw - 2 * var(--n-r) - 16px)); }
 .notch.is-open .notch-body, .notch:has(:focus-visible) .notch-body { grid-template-rows: auto 1fr; }
 .notch.is-open .notch-nav, .notch:has(:focus-visible) .notch-nav { opacity: 1; transform: none; }
 @media (hover: hover) {
-  .notch:hover { width: min(460px, calc(100vw - 2 * var(--n-r) - 16px)); }
+  .notch:hover { width: min(520px, calc(100vw - 2 * var(--n-r) - 16px)); }
   .notch:hover .notch-body { grid-template-rows: auto 1fr; }
   .notch:hover .notch-nav { opacity: 1; transform: none; }
 }

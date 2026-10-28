@@ -10,12 +10,14 @@ layout: default
   </div>
 </section>
 
-<div class="wrap bento-wrap" id="projects">
-  {% for g in bento.groups %}
-  <section class="bento-group" id="{{ g.id }}" aria-labelledby="bg-{{ g.id }}">
-    <h2 class="bento-label" id="bg-{{ g.id }}">{{ g.label }}</h2>
+<div class="wrap bento-wrap">
+  <section class="bento-group" id="live" aria-labelledby="h-live">
+    <header class="bento-head">
+      <p class="bento-label">Services</p>
+      <h2 id="h-live">직접 만들어 운영하는 서비스</h2>
+    </header>
     <div class="bento">
-      {% for c in g.cards %}
+      {% for c in bento.services %}
       {%- assign p = nil -%}
       {%- if c.project -%}{%- assign path = '/projects/' | append: c.project | append: '/' -%}{%- assign p = site.projects | where: "url", path | first -%}{%- endif -%}
 
@@ -44,54 +46,144 @@ layout: default
         </div>
       </article>
 
-      {%- elsif c.type == 'award' -%}
-      <article class="bcard s-{{ c.size }} d-production">
-        <div class="bcard-visual">
-          <span class="bcard-badge"><i aria-hidden="true"></i>수상</span>
-          <p class="bcard-metric"><b>{{ c.value }}</b><span>{{ c.label }}</span></p>
-        </div>
-        <div class="bcard-foot">
-          <div class="bcard-text">
-            <h3><a class="stretch" href="{{ '/portfolio/#career' | relative_url }}">수상 {{ pf.awards | size }}회</a></h3>
-            <p>경진대회 · 해커톤 · 공모전</p>
-          </div>
-          <span class="bcard-go" aria-hidden="true">→</span>
-        </div>
-      </article>
-
-      {%- elsif c.type == 'blog' -%}
-      <article class="bcard s-{{ c.size }} bcard-list">
+      {%- elsif c.type == 'next' -%}
+      <article class="bcard s-{{ c.size }} bcard-list bcard-next">
         <div class="bcard-text">
-          <h3><a href="{{ '/blog/' | relative_url }}">블로그 <span class="muted">· 글 {{ site.posts | size }}개</span></a></h3>
+          <h3>다음 방향 <span class="muted">· 취향 데이터 → 추천</span></h3>
         </div>
         <ul>
-          {% for post in site.posts limit: 3 %}<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span>{{ post.date | date: '%Y.%m' }}</span></li>{% endfor %}
+          {% for d in pf.domains %}{% assign slug = d.projects | first %}{% assign pj = site.projects | where_exp: "x", "x.url contains slug" | first %}
+          <li class="d-{{ d.key }}"><a href="{{ pj.url | relative_url }}"><i aria-hidden="true"></i>{{ d.label }}</a><span>{{ d.signal | split: ',' | first }}</span></li>
+          {% endfor %}
         </ul>
-      </article>
-
-      {%- elsif c.type == 'talks' -%}
-      <article class="bcard s-{{ c.size }} bcard-list">
-        <div class="bcard-text"><h3>발표</h3></div>
-        <ul>
-          {% for t in pf.talks %}<li>{% if t.post or t.video %}<a href="{{ t.post | default: t.video | relative_url }}">{{ t.event }}</a>{% else %}<b>{{ t.event }}</b>{% endif %}<span>{{ t.date }}</span></li>{% endfor %}
-        </ul>
-      </article>
-
-      {%- elsif c.type == 'portfolio' -%}
-      <article class="bcard s-{{ c.size }} bcard-more">
-        <div class="bcard-text">
-          <h3><a class="stretch" href="{{ '/portfolio/' | relative_url }}">전체 포트폴리오</a></h3>
-          <p>일하는 방식 · 경력 · 데이터 파이프라인 · 논문</p>
-        </div>
-        <span class="bcard-go" aria-hidden="true">→</span>
       </article>
       {%- endif -%}
       {% endfor %}
     </div>
   </section>
-  {% endfor %}
 
-  <section class="bcard bcard-contact" aria-labelledby="contact-h">
+  <section class="bento-group" id="projects" aria-labelledby="h-work">
+    <header class="bento-head">
+      <p class="bento-label">Production · Research</p>
+      <h2 id="h-work">실무 · 리서치</h2>
+      <p>A1미디어그룹에서 맡고 있는 시스템과 추천 리서치입니다. 회사 프로젝트는 공개 가능한 범위만 적었고, 각 페이지에 문제 정의 · 판단 근거 · 검증 · <strong>한계와 다음 단계</strong>를 함께 적었습니다.</p>
+    </header>
+    <div class="pgrid">
+      {% for slug in bento.work %}{%- assign path = '/projects/' | append: slug | append: '/' -%}{%- assign p = site.projects | where: "url", path | first -%}
+      {% if p %}{% include project-card.html project=p %}{% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="bento-group" id="data" aria-labelledby="h-data">
+    <header class="bento-head">
+      <p class="bento-label">Data first</p>
+      <h2 id="h-data">서비스 품질의 차이는 모델 앞단의 데이터에서 납니다</h2>
+      <p>LLM이든 에이전트든 추천 모델이든, 무엇을 입력으로 받느냐가 결과의 상한을 정합니다. 그래서 늘 <strong>정제되지 않은 데이터를 믿을 수 있는 형태로 바꾸는 파이프라인</strong>부터 설계합니다.</p>
+    </header>
+    <ol class="pipes">
+      {% for r in pf.pipelines %}{% assign pj = site.projects | where_exp: "x", "x.url contains r.project" | first %}
+      <li class="pipe d-{{ r.key }}">
+        <p class="pipe-proj">{% if pj %}<a href="{{ pj.url | relative_url }}">{{ pj.title }}</a>{% endif %}<span>{{ r.where }}</span></p>
+        <p class="pipe-step"><b>원천</b>{{ r.raw }}</p>
+        <p class="pipe-step"><b>정제</b>{{ r.refined }}</p>
+        <p class="pipe-step out"><b>{{ r.consumer }}</b>{{ r.use }}</p>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="bento-group" id="how" aria-labelledby="h-how">
+    <header class="bento-head">
+      <p class="bento-label">How I work</p>
+      <h2 id="h-how">방향만 받아도, 끝까지 가져갑니다</h2>
+      <p>대략적인 BM과 방향을 받으면 리서치 · PoC · 검증 · 피드백 · 테스트를 거쳐 운영까지 마무리해 왔습니다. 모든 단계에 실제 사례가 있습니다.</p>
+    </header>
+    <ol class="process bpanel">
+      {% for s in pf.process %}
+      <li>
+        <span class="step">{{ s.step }}</span>
+        <div>
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.body }}</p>
+          {% if s.ref %}<a class="ref" href="{{ s.ref.url | relative_url }}">{{ s.ref.label }} →</a>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="bento-group" id="career" aria-labelledby="h-career">
+    <header class="bento-head">
+      <p class="bento-label">Experience</p>
+      <h2 id="h-career">경력</h2>
+    </header>
+    <div class="career">
+      <div class="bpanel">
+        {% for e in pf.experience %}
+        <article class="job">
+          <div class="job-head"><h3>{{ e.org }}</h3><span>{{ e.period }}</span></div>
+          <p class="job-role">{{ e.role }}</p>
+          <p class="muted">{{ e.summary }}</p>
+          <ul>{% for i in e.items %}<li>{{ i }}</li>{% endfor %}</ul>
+        </article>
+        {% endfor %}
+        {% for e in pf.side %}
+        <article class="job">
+          <div class="job-head"><h3>{{ e.org }}</h3><span>{{ e.period }}</span></div>
+          <p class="job-role">{{ e.role }}</p>
+          <p class="muted">{{ e.summary }}</p>
+        </article>
+        {% endfor %}
+      </div>
+      <div class="career-side">
+        <div class="side-block">
+          <h3>수상 · 경진대회</h3>
+          <ul class="plain">{% for a in pf.awards %}<li><strong>{{ a.title }}</strong><span>{{ a.year }}{% if a.note %} · {{ a.note }}{% endif %}</span></li>{% endfor %}</ul>
+        </div>
+        <div class="side-block">
+          <h3>논문</h3>
+          <ul class="plain"><li><strong>{{ pf.paper.title }}</strong><span>{{ pf.paper.venue }}</span><em>{{ pf.paper.note }}</em></li></ul>
+        </div>
+        <div class="side-block request-box">
+          <h3>{{ pf.request.title }}</h3>
+          <p>{{ pf.request.body }}</p>
+          <a href="mailto:{{ pf.request.email }}?subject={{ pf.request.subject | uri_escape }}">메일로 요청하기 →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bento-group" id="writing" aria-labelledby="h-writing">
+    <header class="bento-head">
+      <p class="bento-label">Talks · Writing</p>
+      <h2 id="h-writing">발표와 글</h2>
+    </header>
+    <div class="talks">
+      <div class="bpanel">
+        <h3 class="bpanel-h">발표</h3>
+        <ul class="talk-list">
+          {% for t in pf.talks %}
+          <li>
+            <span class="talk-meta">{{ t.event }} · {{ t.date }}</span>
+            <strong>{{ t.title }}</strong>
+            {% if t.video or t.post %}<span class="talk-links">{% if t.video %}<a href="{{ t.video }}" target="_blank" rel="noopener">영상</a>{% endif %}{% if t.post %}<a href="{{ t.post | relative_url }}">정리글</a>{% endif %}</span>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="bpanel">
+        <h3 class="bpanel-h">추천 · 랭킹 관련 글</h3>
+        <ul class="write-list">
+          {% for w in pf.writing %}<li><a href="{{ w.url | relative_url }}"><span class="tag">{{ w.tag }}</span>{{ w.title }}</a></li>{% endfor %}
+        </ul>
+        <a class="ref" href="{{ '/blog/' | relative_url }}">전체 글 {{ site.posts | size }}개 보기 →</a>
+        {% if pf.essay %}<a class="ref" href="{{ pf.essay.url }}" target="_blank" rel="noopener">{{ pf.essay.label }} ↗</a>{% endif %}
+      </div>
+    </div>
+  </section>
+
+  <section class="bcard bcard-contact" id="contact" aria-labelledby="contact-h">
     <div class="bcard-text">
       <h2 id="contact-h">같이 이야기해요</h2>
       <p>데이터 파이프라인, LLM · 에이전트, 취향 데이터 기반 추천에 관한 일이라면 언제든 연락 주세요.</p>

@@ -1,5 +1,5 @@
 {%- assign live_count = 0 -%}
-{%- for g in site.data.portfolio.bento.groups -%}{%- for c in g.cards -%}{%- if c.live -%}{%- assign live_count = live_count | plus: 1 -%}{%- endif -%}{%- endfor -%}{%- endfor -%}
+{%- for c in site.data.portfolio.bento.services -%}{%- if c.live -%}{%- assign live_count = live_count | plus: 1 -%}{%- endif -%}{%- endfor -%}
 {%- assign gh = site.data.portfolio.links | where: "label", "GitHub" | first -%}
 <header class="notch" data-notch>
   <div class="notch-body">
@@ -11,7 +11,8 @@
     <div class="notch-drawer">
       <nav class="notch-nav" id="notch-nav" aria-label="주요 메뉴">
         <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>홈</a>
-        <a href="{{ '/portfolio/' | relative_url }}"{% if page.url == '/portfolio/' %} aria-current="page"{% endif %}>포트폴리오</a>
+        <a href="{{ '/#projects' | relative_url }}">프로젝트</a>
+        <a href="{{ '/#career' | relative_url }}">경력</a>
         <a href="{{ '/blog/' | relative_url }}"{% if page.layout == 'post' or page.layout == 'blog' or page.layout == 'list' %} aria-current="page"{% endif %}>블로그</a>
         <a href="{{ gh.url }}" target="_blank" rel="noopener">GitHub</a>
         <button class="notch-theme" type="button" aria-label="다크 모드 전환" data-theme-toggle>

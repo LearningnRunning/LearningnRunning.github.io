@@ -1,6 +1,6 @@
 ---
 title: trade-bridge
-subtitle: LLM이 실시간 금융 데이터를 직접 조회·조합하게 만든 57개 tool MCP 서버 — 1인 개발 · 배포
+subtitle: LLM이 실시간 금융 데이터를 직접 조회하고 조합하는 57개 tool MCP 서버, 혼자 개발하고 배포했습니다
 description: 미국 주식 리서치 MCP 서버(Python FastMCP, 57개 tool)와 계정·키 발급 웹 대시보드. 거시지표 → 섹터 → 종목 Top-down 리서치, DCF·옵션 체인 분석, 환경변수 하나로 바꾸는 인증 모드.
 order: 21
 track: side

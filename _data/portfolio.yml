@@ -264,7 +264,7 @@ writing:
 #   image: 카드 아래쪽에 올라오는 실제 서비스 화면
 home:
   intro:
-    - 정제되지 않은 데이터를 <strong>LLM과 추천</strong>이 쓸 수 있게 만드는 ML/AI 엔지니어 김성록입니다.
+    - ML/AI 엔지니어 김성록입니다.
     - A1미디어그룹에서 광고 문구 검수와 광고 플랫폼을 만들고,
     - 퇴근 후에는 직접 만든 서비스를 <strong>운영</strong>합니다.
   services:

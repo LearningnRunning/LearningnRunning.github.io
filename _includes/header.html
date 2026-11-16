@@ -1,25 +1,22 @@
 {%- assign live_count = 0 -%}
-{%- for c in site.data.portfolio.bento.services -%}{%- if c.live -%}{%- assign live_count = live_count | plus: 1 -%}{%- endif -%}{%- endfor -%}
+{%- for c in site.data.portfolio.home.services -%}{%- if c.live -%}{%- assign live_count = live_count | plus: 1 -%}{%- endif -%}{%- endfor -%}
 {%- assign gh = site.data.portfolio.links | where: "label", "GitHub" | first -%}
-<header class="notch" data-notch>
-  <div class="notch-body">
-    <button class="notch-top" type="button" aria-expanded="false" aria-controls="notch-nav" aria-label="메뉴 열기" data-notch-toggle>
-      <img class="notch-avatar" src="{{ '/assets/img/blog/rok/my_profile_img_1x1.png' | relative_url }}" alt="" width="34" height="34">
-      <span class="notch-who"><b>김성록</b><span>ML/AI Engineer</span></span>
-      <time class="notch-time" data-notch-clock aria-label="서울 현재 시각"></time>
-    </button>
-    <div class="notch-drawer">
-      <nav class="notch-nav" id="notch-nav" aria-label="주요 메뉴">
-        <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>홈</a>
-        <a href="{{ '/#projects' | relative_url }}">프로젝트</a>
-        <a href="{{ '/#career' | relative_url }}">경력</a>
-        <a href="{{ '/blog/' | relative_url }}"{% if page.layout == 'post' or page.layout == 'blog' or page.layout == 'list' %} aria-current="page"{% endif %}>블로그</a>
-        <a href="{{ gh.url }}" target="_blank" rel="noopener">GitHub</a>
-        <button class="notch-theme" type="button" aria-label="다크 모드 전환" data-theme-toggle>
-          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
-        </button>
-        <a class="notch-status" href="{{ '/#live' | relative_url }}"><i aria-hidden="true"></i>서비스 {{ live_count }}개 운영 중</a>
-      </nav>
-    </div>
+<header class="topbar" data-topbar>
+  <div class="wrap topbar-in">
+    <a class="brand" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>
+      <img src="{{ '/assets/img/blog/rok/my_profile_img_1x1.png' | relative_url }}" alt="" width="28" height="28">
+      김성록 <span>ML/AI Engineer</span>
+    </a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>메뉴</button>
+    <nav class="topbar-nav" id="site-nav" aria-label="주요 메뉴">
+      <a class="nav-status" href="{{ '/#live' | relative_url }}"><i aria-hidden="true"></i>서비스 {{ live_count }}개 운영 중</a>
+      <a href="{{ '/#projects' | relative_url }}">프로젝트</a>
+      <a href="{{ '/#career' | relative_url }}">경력</a>
+      <a href="{{ '/blog/' | relative_url }}"{% if page.layout == 'post' or page.layout == 'blog' or page.layout == 'list' %} aria-current="page"{% endif %}>블로그</a>
+      <a href="{{ gh.url }}" target="_blank" rel="noopener">GitHub</a>
+      <button class="theme-btn" type="button" aria-label="다크 모드 전환" data-theme-toggle>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </button>
+    </nav>
   </div>
 </header>

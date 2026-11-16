@@ -6,7 +6,7 @@ layout: default
   <header class="project-head">
     <div class="wrap">
       <p class="eyebrow"><a href="{{ '/#projects' | relative_url }}">← 프로젝트</a></p>
-      <div class="dtags">{% for d in page.domains %}<span class="dtag d-{{ d }}">{{ site.data.domains[d].label }}</span>{% endfor %}</div>
+      <div class="dtags">{% for d in page.domains %}<span class="dtag">{{ site.data.domains[d].label }}</span>{% endfor %}</div>
       <h1>{{ page.title }}</h1>
       <p class="lead">{{ page.subtitle }}</p>
       {% if page.service_url %}<p class="cta"><a class="btn" href="{{ page.service_url }}" target="_blank" rel="noopener">서비스 써보기 ↗</a></p>{% endif %}
@@ -18,7 +18,7 @@ layout: default
       </dl>
       {% if page.metrics %}
       <dl class="stats compact">
-        {% for m in page.metrics %}<div><dd>{{ m.value }}</dd><dt>{{ m.label }}</dt></div>{% endfor %}
+        {% for m in page.metrics %}<div><dd>{% include figure.html value=m.value %}</dd><dt>{{ m.label }}</dt></div>{% endfor %}
       </dl>
       {% endif %}
       {% if page.confidential %}

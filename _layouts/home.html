@@ -1,0 +1,189 @@
+---
+layout: default
+---
+{%- assign pf = site.data.portfolio -%}
+{%- assign home = pf.home -%}
+
+<section class="wrap hero">
+  <div>
+    <h1>{% for l in pf.hero.title_lines %}<span>{{ l }}</span> {% endfor %}</h1>
+    <p class="lead">{% for l in home.intro %}{{ l }} {% endfor %}</p>
+    <div class="cta">
+      <a class="btn" href="#projects">프로젝트 보기</a>
+      <a class="btn ghost" href="#contact">연락하기</a>
+    </div>
+  </div>
+  <dl class="ledger">
+    {% for s in pf.hero.stats %}<div><dt>{{ s.label }}</dt><dd>{% include figure.html value=s.value %}</dd></div>{% endfor %}
+  </dl>
+</section>
+
+<div class="wrap home-wrap">
+  <section class="group" id="live" aria-labelledby="h-live">
+    <header class="group-head">
+      <h2 id="h-live">직접 만들어 운영하는 서비스</h2>
+    </header>
+
+    {% for c in home.services %}
+    {%- assign path = '/projects/' | append: c.project | append: '/' -%}
+    {%- assign p = site.projects | where: "url", path | first -%}
+    {%- if p -%}
+    {%- assign name = c.name | default: p.title -%}
+    {% if forloop.index == 2 %}<div class="svc-row">{% endif %}
+    <article class="svc{% if forloop.first %} svc-lead{% endif %}">
+      <div class="svc-text">
+        {% if c.badge %}<p class="svc-status{% if c.live %} is-live{% endif %}"><i aria-hidden="true"></i>{{ c.badge }}</p>{% endif %}
+        <h3><a class="stretch" href="{{ p.url | relative_url }}">{{ name }}</a></h3>
+        <p class="svc-tag">{{ c.tagline | default: p.subtitle }}</p>
+        {% if p.service_url and c.live or p.service_url and c.service_link %}
+        <a class="svc-open" href="{{ p.service_url }}" target="_blank" rel="noopener" aria-label="{{ name }} 서비스 열기 (새 창)">서비스 열기 <span aria-hidden="true">↗</span></a>
+        {% endif %}
+        {% if forloop.first and p.metrics %}
+        <dl class="svc-figs">
+          {% for m in p.metrics limit: 3 %}<div><dt>{{ m.label }}</dt><dd>{% include figure.html value=m.value %}</dd></div>{% endfor %}
+        </dl>
+        {% endif %}
+      </div>
+      {% if c.image %}<div class="svc-shot"><img src="{{ c.image | relative_url }}" alt="{{ name }} 서비스 화면" loading="lazy" width="390" height="780"></div>{% endif %}
+    </article>
+    {% if forloop.last %}</div>{% endif %}
+    {%- endif -%}
+    {% endfor %}
+
+    <div class="next">
+      <h3>다음 방향 <span class="muted">취향 데이터 → 추천</span></h3>
+      <ul>
+        {% for d in pf.domains %}{% assign slug = d.projects | first %}{% assign pj = site.projects | where_exp: "x", "x.url contains slug" | first %}
+        <li><a href="{{ pj.url | relative_url }}">{{ d.label }}</a><span>{{ d.signal | split: ',' | first }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section class="group" id="projects" aria-labelledby="h-work">
+    <header class="group-head">
+      <h2 id="h-work">실무 · 리서치</h2>
+      <p>A1미디어그룹에서 맡고 있는 시스템과 추천 리서치입니다. 회사 프로젝트는 공개 가능한 범위만 적었고, 각 페이지에 문제 정의 · 판단 근거 · 검증 · <strong>한계와 다음 단계</strong>를 함께 적었습니다.</p>
+    </header>
+    <div class="plist">
+      {% for slug in home.work %}{%- assign path = '/projects/' | append: slug | append: '/' -%}{%- assign p = site.projects | where: "url", path | first -%}
+      {% if p %}{% include project-card.html project=p large=forloop.first %}{% endif %}
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="group" id="data" aria-labelledby="h-data">
+    <header class="group-head">
+      <h2 id="h-data">모델보다 데이터 정제부터 설계합니다</h2>
+      <p>LLM이든 에이전트든 추천 모델이든, 무엇을 입력으로 받느냐가 결과의 상한을 정합니다. 그래서 늘 <strong>정제되지 않은 데이터를 믿을 수 있는 형태로 바꾸는 파이프라인</strong>부터 설계합니다.</p>
+    </header>
+    <div class="pipes-table">
+      <div class="pipes-cols" aria-hidden="true"><span>프로젝트</span><span class="c-raw">원천</span><span class="c-ref">정제</span><span class="c-use">활용</span></div>
+      <ol class="pipes">
+        {% for r in pf.pipelines %}{% assign pj = site.projects | where_exp: "x", "x.url contains r.project" | first %}
+        <li class="pipe">
+          <p class="pipe-proj">{% if pj %}<a href="{{ pj.url | relative_url }}">{{ pj.title }}</a>{% endif %}<span>{{ r.where }}</span></p>
+          <p class="pipe-raw"><b>원천</b>{{ r.raw }}</p>
+          <p class="pipe-ref"><b>정제</b>{{ r.refined }}</p>
+          <p class="pipe-use"><b>{{ r.consumer }}</b>{{ r.use }}</p>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <section class="group" id="how" aria-labelledby="h-how">
+    <header class="group-head">
+      <h2 id="h-how">대략적인 방향에서 운영까지 맡아 온 과정</h2>
+      <p>대략적인 BM과 방향을 받으면 리서치 · PoC · 검증 · 피드백 · 테스트를 거쳐 운영까지 마무리해 왔습니다. 모든 단계에 실제 사례가 있습니다.</p>
+    </header>
+    <ol class="process">
+      {% for s in pf.process %}
+      <li>
+        <span class="step">{{ s.step }}</span>
+        <div>
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.body }}</p>
+          {% if s.ref %}<a class="ref" href="{{ s.ref.url | relative_url }}">{{ s.ref.label }}</a>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="group" id="career" aria-labelledby="h-career">
+    <header class="group-head">
+      <h2 id="h-career">경력</h2>
+    </header>
+    <div class="career">
+      <div>
+        {% for e in pf.experience %}
+        <article class="job">
+          <div class="job-head"><h3>{{ e.org }}</h3><span>{{ e.period }}</span></div>
+          <p class="job-role">{{ e.role }}</p>
+          <p class="muted">{{ e.summary }}</p>
+          <ul>{% for i in e.items %}<li>{{ i }}</li>{% endfor %}</ul>
+        </article>
+        {% endfor %}
+        {% for e in pf.side %}
+        <article class="job">
+          <div class="job-head"><h3>{{ e.org }}</h3><span>{{ e.period }}</span></div>
+          <p class="job-role">{{ e.role }}</p>
+          <p class="muted">{{ e.summary }}</p>
+        </article>
+        {% endfor %}
+      </div>
+      <div class="career-side">
+        <div class="side-block">
+          <h3>수상 · 경진대회</h3>
+          <ul class="plain">{% for a in pf.awards %}<li><strong>{{ a.title }}</strong><span>{{ a.year }}{% if a.note %} · {{ a.note }}{% endif %}</span></li>{% endfor %}</ul>
+        </div>
+        <div class="side-block">
+          <h3>논문</h3>
+          <ul class="plain"><li><strong>{{ pf.paper.title }}</strong><span>{{ pf.paper.venue }}</span><em>{{ pf.paper.note }}</em></li></ul>
+        </div>
+        <div class="side-block request-box">
+          <h3>{{ pf.request.title }}</h3>
+          <p>{{ pf.request.body }}</p>
+          <a class="ref" href="mailto:{{ pf.request.email }}?subject={{ pf.request.subject | uri_escape }}">메일로 요청하기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="group" id="writing" aria-labelledby="h-writing">
+    <header class="group-head">
+      <h2 id="h-writing">발표와 글</h2>
+    </header>
+    <div class="talks">
+      <div>
+        <h3 class="sub-h">발표</h3>
+        <ul class="talk-list">
+          {% for t in pf.talks %}
+          <li>
+            <span class="talk-meta">{{ t.event }} · {{ t.date }}</span>
+            <strong>{{ t.title }}</strong>
+            {% if t.video or t.post %}<span class="talk-links">{% if t.video %}<a href="{{ t.video }}" target="_blank" rel="noopener">영상</a>{% endif %}{% if t.post %}<a href="{{ t.post | relative_url }}">정리글</a>{% endif %}</span>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3 class="sub-h">추천 · 랭킹 관련 글</h3>
+        <ul class="write-list">
+          {% for w in pf.writing %}<li><a href="{{ w.url | relative_url }}"><span class="tag">{{ w.tag }}</span>{{ w.title }}</a></li>{% endfor %}
+        </ul>
+        <a class="ref" href="{{ '/blog/' | relative_url }}">전체 글 {{ site.posts | size }}개 보기</a>
+        {% if pf.essay %}<a class="ref" href="{{ pf.essay.url }}" target="_blank" rel="noopener">{{ pf.essay.label }} ↗</a>{% endif %}
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">같이 이야기해요</h2>
+    <p>데이터 파이프라인, LLM · 에이전트, 취향 데이터 기반 추천에 관한 일이라면 언제든 연락 주세요.</p>
+    <ul class="contact-links">
+      {% for l in pf.links %}<li><a href="{{ l.url }}"{% unless l.url contains 'mailto' %} target="_blank" rel="noopener"{% endunless %}>{{ l.label }}</a></li>{% endfor %}
+    </ul>
+  </section>
+</div>

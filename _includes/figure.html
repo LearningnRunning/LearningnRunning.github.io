@@ -1,0 +1,6 @@
+{%- assign parts = include.value | split: ' → ' -%}
+{%- if parts.size == 2 -%}
+<span class="fig"><span class="fig-was">{{ parts[0] }}</span><span class="fig-arrow">→</span><span>{{ parts[1] }}</span></span>
+{%- else -%}
+<span class="fig">{{ include.value }}</span>
+{%- endif -%}

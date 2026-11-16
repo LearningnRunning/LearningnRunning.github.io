@@ -258,24 +258,23 @@ writing:
     url: /post/ml-dl/2024-10-03-What-to-eat-today/
     tag: 음식점 추천
 
-# 홈 (/) — 벤토 서비스 그리드 + 포트폴리오 섹션을 한 페이지에.
-#   서비스 카드 size: 1x1 | 2x1 | 1x2 | 2x2  (가로 x 세로 칸). 4열 그리드를 빈칸 없이 채우도록 맞춘다
-#   project: _projects/ 파일명 — 제목 · 상세 페이지 · service_url · metrics[0]을 가져옵니다
-#   image: 있으면 카드 비주얼로 서비스 화면을, 없으면 대표 지표를 보여줍니다
-bento:
+# 홈 (/) — 서비스 + 포트폴리오 섹션을 한 페이지에.
+#   services: 첫 항목이 큰 대표 서비스(지표 3개 포함), 나머지는 그 아래 3열
+#   project: _projects/ 파일명 — 제목 · 상세 페이지 · service_url · metrics를 가져옵니다
+#   image: 카드 아래쪽에 올라오는 실제 서비스 화면
+home:
   intro:
-    - 정제되지 않은 데이터를 <strong>LLM과 추천</strong>이 쓸 수 있게 만드는 ML/AI 엔지니어 김성록입니다.
+    - ML/AI 엔지니어 김성록입니다.
     - A1미디어그룹에서 광고 문구 검수와 광고 플랫폼을 만들고,
     - 퇴근 후에는 직접 만든 서비스를 <strong>운영</strong>합니다.
   services:
-    - { project: locals-only, size: 2x2, badge: 운영 중, live: true, image: /assets/img/projects/locals-only/card.jpg,
+    - { project: locals-only, badge: 운영 중, live: true, image: /assets/img/projects/locals-only/card.jpg,
         tagline: "음식 먼저 고르고, 그 동네 로컬이 가는 가게로 좁혀 가는 맛집 발견 서비스" }
-    - { project: trade-bridge, size: 1x2, badge: 운영 중, live: true, image: /assets/img/projects/trade-bridge/card.jpg,
+    - { project: trade-bridge, badge: 운영 중, live: true, image: /assets/img/projects/trade-bridge/card.jpg,
         tagline: "LLM이 미국 주식 데이터를 직접 조회하는 MCP 서버" }
-    - { project: nursing-handoff-tutor, name: 간호 인수인계 AI 튜터, size: 1x2, badge: 파일럿 운영, live: true, image: /assets/img/projects/nursing-handoff-tutor/card.jpg,
+    - { project: nursing-handoff-tutor, name: 간호 인수인계 AI 튜터, badge: 파일럿 운영, live: true, image: /assets/img/projects/nursing-handoff-tutor/card.jpg,
         tagline: "정답을 알려주지 않는 소크라테스식 튜터" }
-    - { project: hint, size: 2x1, badge: 개발 중, image: /assets/img/projects/hint/card.jpg, service_link: true,
+    - { project: hint, badge: 개발 중, image: /assets/img/projects/hint/card.jpg, service_link: true,
         tagline: "대화의 결로 사람을 잇는 매칭 플랫폼" }
-    - { type: next, size: 2x1 }
-  # 실무 · 리서치 — 포트폴리오 카드(도메인 · 기간 · 지표 3개)로 노출. 순서대로
+  # 실무 · 리서치 — 프로젝트 행(도메인 · 기간 · 지표 3개)으로 노출. 첫 항목이 대표 프로젝트. 순서대로
   work: [ad-compliance-jp, singleone, influencer-platform, youtube-placement, beauty-personalization, jjeopjjeop-lab]

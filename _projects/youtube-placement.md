@@ -1,6 +1,6 @@
 ---
 title: YouTube 게재위치 타깃팅
-subtitle: 사내 해커톤 준우승 · 팀 리드 — 상품 카테고리로 YouTube 채널·영상을 골라 광고 지면을 추천
+subtitle: 상품 카테고리로 YouTube 채널과 영상을 골라 광고 지면을 추천합니다. 사내 해커톤 준우승, 팀 리드
 description: Qoo10 SingleONE에 YouTube 동영상 광고를 붙이기 위한 사내 해커톤 프로젝트. 상품 카테고리 약 3,000개 기반 YouTube Pool 수집 배치, 카테고리·브랜드 매핑 파이프라인, 경쟁사 탐지, A/B 테스트 설계.
 order: 4
 track: work
